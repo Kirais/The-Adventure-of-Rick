@@ -59,5 +59,7 @@ Attack accuracy
 
 ## Tools
 GBStudio: for making GB RPG games without programming.
+
 Aseprite: making sprites
+
 Tiled: making maps
