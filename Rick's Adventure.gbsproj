@@ -672,7 +672,8 @@
                 0,
                 0,
                 0
-            ]
+            ],
+            "notes": "Starting point of the game."
         },
         {
             "id": "7cf80d50-cea7-4c6b-9e7d-d9fb47aff1e1",
@@ -1464,7 +1465,8 @@
                 0,
                 0,
                 0
-            ]
+            ],
+            "notes": "For taking graduate courses, teaching duty, qe and final defense"
         },
         {
             "id": "d2a8157d-56b1-4ecf-8f26-3cefb1fd3ad4",
@@ -1522,7 +1524,8 @@
                 0,
                 0,
                 0
-            ]
+            ],
+            "notes": "Get admission letter for university"
         },
         {
             "id": "3a531c45-602a-46c4-abac-dcfae1c9e068",
@@ -1650,7 +1653,8 @@
                 0,
                 0,
                 0
-            ]
+            ],
+            "notes": "For sleeping and saving data"
         },
         {
             "id": "bb69947c-3a95-4fad-b108-550b8c6887e3",
@@ -1791,7 +1795,8 @@
                 0,
                 0,
                 0
-            ]
+            ],
+            "notes": "For selecting supervisors"
         },
         {
             "id": "ef669de7-1271-42f8-b79c-064f1b32deff",
@@ -1958,7 +1963,8 @@
                 0,
                 0,
                 0
-            ]
+            ],
+            "notes": "For low temperature transport measurement"
         },
         {
             "id": "d2068854-59d0-46b3-adfa-6f7ab72e46c0",
@@ -2407,7 +2413,8 @@
                 0,
                 0,
                 0
-            ]
+            ],
+            "notes": "For nanofabrication"
         }
     ],
     "music": [
