@@ -1,4 +1,4 @@
-# Adventure of Rick: Grad School
+# Rick's Adventure : Grad School
 
 A tale of grad school inspired by Rick and Morty and my own PhD life. This is a JRPG style PhD student simulator game.
 
