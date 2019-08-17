@@ -1416,7 +1416,41 @@
             "y": 584,
             "width": 32,
             "height": 32,
-            "actors": [],
+            "actors": [
+                {
+                    "id": "ba04b0ae-66ff-474d-a339-f93b314ea5ff",
+                    "spriteSheetId": "0c8f78b4-e872-4cf9-adaf-e792c1d0868c",
+                    "x": 8,
+                    "y": 13,
+                    "movementType": "faceInteraction",
+                    "direction": "down",
+                    "moveSpeed": "1",
+                    "animSpeed": "3",
+                    "name": "Supervisor",
+                    "script": [
+                        {
+                            "id": "d5c33c3a-438f-4984-acfb-712fcfddbeb9",
+                            "command": "EVENT_TEXT",
+                            "args": {
+                                "text": "Do you want to\ntake qualifying\nexam?"
+                            }
+                        },
+                        {
+                            "id": "f8a84259-921a-45a2-bfaf-87eec45af5c0",
+                            "command": "EVENT_CHOICE",
+                            "args": {
+                                "variable": "0",
+                                "trueText": "Yes",
+                                "falseText": "No"
+                            }
+                        },
+                        {
+                            "id": "644b540b-41ec-466e-ad31-43adefadb5db",
+                            "command": "EVENT_END"
+                        }
+                    ]
+                }
+            ],
             "triggers": [
                 {
                     "id": "536f0264-37fd-411e-931f-7d07a66cf17d",
@@ -1952,7 +1986,8 @@
                             "id": "644b540b-41ec-466e-ad31-43adefadb5db",
                             "command": "EVENT_END"
                         }
-                    ]
+                    ],
+                    "name": "Supervisor"
                 }
             ],
             "triggers": [
