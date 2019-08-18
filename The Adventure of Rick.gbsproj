@@ -5,9 +5,9 @@
         "startX": 0,
         "startY": 0,
         "startDirection": "up",
-        "zoom": 100,
+        "zoom": 50,
         "startSceneId": "12282cd5-d71e-4ea9-a48b-09b2e3e2ef3c",
-        "playerSpriteSheetId": "62ff8b0a-2bc6-435f-b329-5081f1116656"
+        "playerSpriteSheetId": "6365e2a7-df50-4bd0-9975-089fc78b33ac"
     },
     "_version": "1.1.0",
     "author": "Kirais",
@@ -262,6 +262,54 @@
             "_v": 1566052356873
         },
         {
+            "id": "f27e6a95-e776-4243-87eb-ec9b5e452115",
+            "name": "Goblin",
+            "numFrames": 1,
+            "type": "static",
+            "filename": "Goblin.png",
+            "_v": 1566052356873
+        },
+        {
+            "id": "faa40495-00c2-4408-b859-b2deb3b31d20",
+            "name": "Heart",
+            "numFrames": 1,
+            "type": "static",
+            "filename": "Heart.png",
+            "_v": 1566052356873
+        },
+        {
+            "id": "9fc7ab07-719f-4b80-91f5-12cda59291b1",
+            "name": "Items",
+            "numFrames": 4,
+            "type": "animated",
+            "filename": "Items.png",
+            "_v": 1566052356873
+        },
+        {
+            "id": "6365e2a7-df50-4bd0-9975-089fc78b33ac",
+            "name": "Rick-blackhair",
+            "numFrames": 6,
+            "type": "actor_animated",
+            "filename": "Rick-blackhair.png",
+            "_v": 1566115224802
+        },
+        {
+            "id": "3145337b-57af-48e8-aff5-8fd10d6c25b0",
+            "name": "Rick",
+            "numFrames": 6,
+            "type": "actor_animated",
+            "filename": "Rick.png",
+            "_v": 1566098775344
+        },
+        {
+            "id": "e5a60aad-9551-4e3b-8826-9ca060e4025f",
+            "name": "Squirrel",
+            "numFrames": 3,
+            "type": "actor",
+            "filename": "Squirrel.png",
+            "_v": 1566052356874
+        },
+        {
             "id": "aff753be-6ace-4f50-b50b-fa29642604f8",
             "name": "bed",
             "numFrames": 1,
@@ -318,35 +366,11 @@
             "_v": 1566052356873
         },
         {
-            "id": "f27e6a95-e776-4243-87eb-ec9b5e452115",
-            "name": "Goblin",
-            "numFrames": 1,
-            "type": "static",
-            "filename": "Goblin.png",
-            "_v": 1566052356873
-        },
-        {
-            "id": "faa40495-00c2-4408-b859-b2deb3b31d20",
-            "name": "Heart",
-            "numFrames": 1,
-            "type": "static",
-            "filename": "Heart.png",
-            "_v": 1566052356873
-        },
-        {
             "id": "61e3ccf8-e0e0-44f6-87ad-be760a0cda2c",
             "name": "ice",
             "numFrames": 1,
             "type": "static",
             "filename": "ice.png",
-            "_v": 1566052356873
-        },
-        {
-            "id": "9fc7ab07-719f-4b80-91f5-12cda59291b1",
-            "name": "Items",
-            "numFrames": 4,
-            "type": "animated",
-            "filename": "Items.png",
             "_v": 1566052356873
         },
         {
@@ -435,14 +459,6 @@
             "numFrames": 1,
             "type": "static",
             "filename": "soil.png",
-            "_v": 1566052356874
-        },
-        {
-            "id": "e5a60aad-9551-4e3b-8826-9ca060e4025f",
-            "name": "Squirrel",
-            "numFrames": 3,
-            "type": "actor",
-            "filename": "Squirrel.png",
             "_v": 1566052356874
         },
         {
