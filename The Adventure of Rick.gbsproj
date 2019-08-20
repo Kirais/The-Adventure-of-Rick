@@ -67,7 +67,7 @@
         },
         {
             "id": "102",
-            "name": "Fight"
+            "name": "Attack"
         }
     ],
     "backgrounds": [
@@ -79,7 +79,7 @@
             "imageWidth": 160,
             "imageHeight": 144,
             "filename": "cave.png",
-            "_v": 1566226259688
+            "_v": 1566305210383
         },
         {
             "id": "436ffbd9-39e8-47bb-8b21-98d406bca294",
@@ -89,7 +89,7 @@
             "imageWidth": 256,
             "imageHeight": 256,
             "filename": "Down-1-Lake.png",
-            "_v": 1566226259688
+            "_v": 1566305210383
         },
         {
             "id": "5dac439f-ce92-4631-9135-210800bb1580",
@@ -99,7 +99,7 @@
             "imageWidth": 160,
             "imageHeight": 144,
             "filename": "Empty-Menu.png",
-            "_v": 1566226259688
+            "_v": 1566305210383
         },
         {
             "id": "18c0b3ee-9193-4d93-926c-e58f4909b060",
@@ -109,7 +109,7 @@
             "imageWidth": 208,
             "imageHeight": 144,
             "filename": "Gurbs-adventure-tile-set-1.png",
-            "_v": 1566226259688
+            "_v": 1566305210383
         },
         {
             "id": "26e5bf7b-6e9e-46b7-b914-fb53d42769b9",
@@ -119,7 +119,7 @@
             "imageWidth": 160,
             "imageHeight": 160,
             "filename": "Gurbs-adventure-title-1.png",
-            "_v": 1566226259688
+            "_v": 1566305210383
         },
         {
             "id": "e1650476-5020-46be-b037-ef54df7c8601",
@@ -129,7 +129,7 @@
             "imageWidth": 160,
             "imageHeight": 200,
             "filename": "Gurbs-adventure-title.png",
-            "_v": 1566226259688
+            "_v": 1566305210383
         },
         {
             "id": "bd99eb4a-6b4b-4996-ad87-5df7e3d26ee1",
@@ -139,7 +139,7 @@
             "imageWidth": 160,
             "imageHeight": 144,
             "filename": "house.png",
-            "_v": 1566226259688
+            "_v": 1566305210383
         },
         {
             "id": "839e5bae-866f-4cf0-b301-c9ecc0fbfc2a",
@@ -149,7 +149,7 @@
             "imageWidth": 160,
             "imageHeight": 144,
             "filename": "Inventory.png",
-            "_v": 1566226259688
+            "_v": 1566305210383
         },
         {
             "id": "0a6664e8-1a37-4203-89d1-ae6efe824e02",
@@ -159,7 +159,7 @@
             "imageWidth": 256,
             "imageHeight": 256,
             "filename": "Left-1-SquirrelPath.png",
-            "_v": 1566226259688
+            "_v": 1566305210383
         },
         {
             "id": "a9c8d3b3-04f7-45a7-aed5-822b5674f81c",
@@ -169,7 +169,7 @@
             "imageWidth": 160,
             "imageHeight": 144,
             "filename": "logo.png",
-            "_v": 1566226259688
+            "_v": 1566305210383
         },
         {
             "id": "d7c8346f-7a8d-49dd-982f-0aa6d08c2bb9",
@@ -179,7 +179,7 @@
             "imageWidth": 160,
             "imageHeight": 144,
             "filename": "Main-Menu.png",
-            "_v": 1566226259688
+            "_v": 1566305210383
         },
         {
             "id": "4b344aa6-2281-40e3-a759-860e78a53ac4",
@@ -189,7 +189,7 @@
             "imageWidth": 256,
             "imageHeight": 256,
             "filename": "Map-Start.png",
-            "_v": 1566226259688
+            "_v": 1566305210383
         },
         {
             "id": "bb24688d-837f-4024-bd25-f409a675bb7e",
@@ -199,7 +199,7 @@
             "imageWidth": 160,
             "imageHeight": 144,
             "filename": "menu.png",
-            "_v": 1566226259688
+            "_v": 1566305210383
         },
         {
             "id": "ac05a586-a3c3-4c87-b65e-b2052646e012",
@@ -209,7 +209,7 @@
             "imageWidth": 256,
             "imageHeight": 256,
             "filename": "outside.png",
-            "_v": 1566226259688
+            "_v": 1566305210383
         },
         {
             "id": "cece1f71-bb1b-4b87-a22d-498cafff27d8",
@@ -219,7 +219,7 @@
             "imageWidth": 256,
             "imageHeight": 256,
             "filename": "Right-1-Town.png",
-            "_v": 1566226259688
+            "_v": 1566305210383
         },
         {
             "id": "dd1aad20-2fe2-4d99-98a6-9a1e8c7e8cd4",
@@ -229,7 +229,7 @@
             "imageWidth": 256,
             "imageHeight": 256,
             "filename": "stars.png",
-            "_v": 1566226259688
+            "_v": 1566305210383
         },
         {
             "id": "974820e0-d847-4e62-97b2-a6a0c3b1572a",
@@ -239,7 +239,7 @@
             "imageWidth": 128,
             "imageHeight": 208,
             "filename": "Tileset-1.png",
-            "_v": 1566226259688
+            "_v": 1566305210383
         },
         {
             "id": "eaf9b6ca-d468-4136-a78e-3988dc3c1861",
@@ -249,7 +249,7 @@
             "imageWidth": 128,
             "imageHeight": 528,
             "filename": "Tileset-2.png",
-            "_v": 1566226259688
+            "_v": 1566305210383
         },
         {
             "id": "4ea96a38-0029-40a1-9cad-3cddf3efb819",
@@ -259,7 +259,7 @@
             "imageWidth": 128,
             "imageHeight": 160,
             "filename": "Tileset-3.png",
-            "_v": 1566226259688
+            "_v": 1566305210384
         },
         {
             "id": "4d52e106-fec1-45d5-b738-4e545b7132b1",
@@ -269,7 +269,7 @@
             "imageWidth": 128,
             "imageHeight": 240,
             "filename": "Tileset-4.png",
-            "_v": 1566226259688
+            "_v": 1566305210384
         },
         {
             "id": "fa5ca27f-f451-4a56-ab5b-045e719b14c6",
@@ -279,7 +279,7 @@
             "imageWidth": 128,
             "imageHeight": 224,
             "filename": "Tileset-5.png",
-            "_v": 1566226259688
+            "_v": 1566305210384
         },
         {
             "id": "36f94c05-f243-4cf4-8dc6-5153824c88c4",
@@ -289,7 +289,7 @@
             "imageWidth": 160,
             "imageHeight": 144,
             "filename": "titlescreen.png",
-            "_v": 1566226259688
+            "_v": 1566305210384
         },
         {
             "id": "9b38ba6d-ea82-4d0e-9c93-1fbf8cd6804f",
@@ -299,7 +299,7 @@
             "imageWidth": 256,
             "imageHeight": 256,
             "filename": "underground.png",
-            "_v": 1566226259688
+            "_v": 1566305210384
         },
         {
             "id": "88900ba7-202e-4f5a-922a-9f0eafd5fa1b",
@@ -309,7 +309,7 @@
             "imageWidth": 256,
             "imageHeight": 256,
             "filename": "University.png",
-            "_v": 1566226259688
+            "_v": 1566305210384
         }
     ],
     "spriteSheets": [
@@ -319,7 +319,7 @@
             "numFrames": 0.25,
             "type": "animated",
             "filename": "Bar.png",
-            "_v": 1566226259695
+            "_v": 1566305210391
         },
         {
             "id": "aff753be-6ace-4f50-b50b-fa29642604f8",
@@ -327,7 +327,7 @@
             "numFrames": 1,
             "type": "static",
             "filename": "bed.png",
-            "_v": 1566226259695
+            "_v": 1566305210391
         },
         {
             "id": "2c66c422-96b1-4bcb-b342-71f514611f7f",
@@ -335,7 +335,7 @@
             "numFrames": 1,
             "type": "static",
             "filename": "cat.png",
-            "_v": 1566226259695
+            "_v": 1566305210391
         },
         {
             "id": "3e0f7562-9292-4dc8-8ce1-9a44cad60779",
@@ -343,7 +343,7 @@
             "numFrames": 3,
             "type": "actor",
             "filename": "checkbox.png",
-            "_v": 1566226259695
+            "_v": 1566305210391
         },
         {
             "id": "3b5ddfc5-553f-495c-b00a-2c76e5a5f54c",
@@ -351,7 +351,7 @@
             "numFrames": 1,
             "type": "static",
             "filename": "dog.png",
-            "_v": 1566226259695
+            "_v": 1566305210391
         },
         {
             "id": "514ece9d-c49f-404b-b843-12d22a22710d",
@@ -359,7 +359,7 @@
             "numFrames": 2,
             "type": "animated",
             "filename": "duck.png",
-            "_v": 1566226259695
+            "_v": 1566305210391
         },
         {
             "id": "453c341e-8abb-4b1e-ba73-026b6bcfc937",
@@ -367,7 +367,7 @@
             "numFrames": 4,
             "type": "animated",
             "filename": "fire.png",
-            "_v": 1566226259695
+            "_v": 1566305210391
         },
         {
             "id": "79fca63a-1653-492d-b051-d610544a7cb7",
@@ -375,7 +375,7 @@
             "numFrames": 4,
             "type": "animated",
             "filename": "flower1.png",
-            "_v": 1566226259695
+            "_v": 1566305210391
         },
         {
             "id": "f27e6a95-e776-4243-87eb-ec9b5e452115",
@@ -383,7 +383,7 @@
             "numFrames": 1,
             "type": "static",
             "filename": "Goblin.png",
-            "_v": 1566226259695
+            "_v": 1566305210391
         },
         {
             "id": "faa40495-00c2-4408-b859-b2deb3b31d20",
@@ -391,7 +391,7 @@
             "numFrames": 1,
             "type": "static",
             "filename": "Heart.png",
-            "_v": 1566226259695
+            "_v": 1566305210391
         },
         {
             "id": "61e3ccf8-e0e0-44f6-87ad-be760a0cda2c",
@@ -399,7 +399,7 @@
             "numFrames": 1,
             "type": "static",
             "filename": "ice.png",
-            "_v": 1566226259695
+            "_v": 1566305210391
         },
         {
             "id": "9fc7ab07-719f-4b80-91f5-12cda59291b1",
@@ -407,7 +407,7 @@
             "numFrames": 4,
             "type": "animated",
             "filename": "Items.png",
-            "_v": 1566226259695
+            "_v": 1566305210391
         },
         {
             "id": "ed299b8f-7667-40ea-a856-064fc95712df",
@@ -415,7 +415,7 @@
             "numFrames": 3,
             "type": "actor",
             "filename": "npc001.png",
-            "_v": 1566226259695
+            "_v": 1566305210391
         },
         {
             "id": "058c41f7-e3e6-441c-aa45-7578b1a07f4f",
@@ -423,7 +423,7 @@
             "numFrames": 3,
             "type": "actor",
             "filename": "npc002.png",
-            "_v": 1566226259695
+            "_v": 1566305210391
         },
         {
             "id": "f10d093f-e05d-4471-89b8-adad412b6899",
@@ -431,7 +431,7 @@
             "numFrames": 6,
             "type": "actor_animated",
             "filename": "npc003.png",
-            "_v": 1566226259695
+            "_v": 1566305210391
         },
         {
             "id": "62ff8b0a-2bc6-435f-b329-5081f1116656",
@@ -439,7 +439,7 @@
             "numFrames": 6,
             "type": "actor_animated",
             "filename": "player.png",
-            "_v": 1566226259695
+            "_v": 1566305210391
         },
         {
             "id": "956208da-720d-48e9-a601-6f1aed0918ba",
@@ -447,7 +447,7 @@
             "numFrames": 1,
             "type": "static",
             "filename": "radio.png",
-            "_v": 1566226259695
+            "_v": 1566305210391
         },
         {
             "id": "f7306258-4eec-4c06-a9ec-f95441173969",
@@ -455,7 +455,7 @@
             "numFrames": 6,
             "type": "actor_animated",
             "filename": "Rick-blackhair.png",
-            "_v": 1566226259695
+            "_v": 1566305210391
         },
         {
             "id": "3145337b-57af-48e8-aff5-8fd10d6c25b0",
@@ -463,7 +463,7 @@
             "numFrames": 6,
             "type": "actor_animated",
             "filename": "Rick.png",
-            "_v": 1566226259696
+            "_v": 1566305210391
         },
         {
             "id": "ad18f586-eef6-4217-adbf-b7fe7b0f68ef",
@@ -471,7 +471,7 @@
             "numFrames": 1,
             "type": "static",
             "filename": "rock.png",
-            "_v": 1566226259696
+            "_v": 1566305210391
         },
         {
             "id": "706d77c9-040e-463a-992c-0ec9efdd83ef",
@@ -479,7 +479,7 @@
             "numFrames": 1,
             "type": "static",
             "filename": "sage.png",
-            "_v": 1566226259696
+            "_v": 1566305210391
         },
         {
             "id": "1d4745ce-72ea-4a66-ac76-0c3ead2e7991",
@@ -487,7 +487,7 @@
             "numFrames": 2,
             "type": "animated",
             "filename": "savepoint.png",
-            "_v": 1566226259696
+            "_v": 1566305210391
         },
         {
             "id": "341e4100-8b9b-4eaa-ad39-803169238658",
@@ -495,7 +495,7 @@
             "numFrames": 1,
             "type": "static",
             "filename": "seed.png",
-            "_v": 1566226259696
+            "_v": 1566305210391
         },
         {
             "id": "e1354ca4-b68d-4ff0-970f-cf391b988047",
@@ -503,7 +503,7 @@
             "numFrames": 1,
             "type": "static",
             "filename": "signpost.png",
-            "_v": 1566226259696
+            "_v": 1566305210392
         },
         {
             "id": "73bae49a-718e-4dcd-b8c1-98aa5b095920",
@@ -511,7 +511,7 @@
             "numFrames": 1,
             "type": "static",
             "filename": "soil.png",
-            "_v": 1566226259696
+            "_v": 1566305210392
         },
         {
             "id": "e5a60aad-9551-4e3b-8826-9ca060e4025f",
@@ -519,7 +519,7 @@
             "numFrames": 3,
             "type": "actor",
             "filename": "Squirrel.png",
-            "_v": 1566226259696
+            "_v": 1566305210392
         },
         {
             "id": "15c12b89-8a44-41ca-8a92-c9674bf05433",
@@ -527,7 +527,7 @@
             "numFrames": 6,
             "type": "actor_animated",
             "filename": "Supervisor1.png",
-            "_v": 1566226259696
+            "_v": 1566305210392
         },
         {
             "id": "e027c92c-abed-42b7-8999-010d28093d3d",
@@ -535,7 +535,7 @@
             "numFrames": 4,
             "type": "animated",
             "filename": "sword.png",
-            "_v": 1566226259696
+            "_v": 1566305210392
         },
         {
             "id": "6b89a409-9c01-498f-9321-5d7c12751b25",
@@ -543,7 +543,7 @@
             "numFrames": 1,
             "type": "static",
             "filename": "torch.png",
-            "_v": 1566226259696
+            "_v": 1566305210392
         }
     ],
     "scenes": [
@@ -2687,35 +2687,56 @@
                     "name": "Supervisor Final Defense",
                     "script": [
                         {
-                            "id": "21da7915-9505-412c-8c6b-fc58e16397c1",
-                            "command": "EVENT_SET_VALUE",
+                            "id": "d4684db4-8ac6-4a0c-8291-c1d7f91b5f83",
+                            "command": "EVENT_GROUP",
                             "args": {
-                                "variable": "7",
-                                "value": 200
-                            }
-                        },
-                        {
-                            "id": "4b597767-5251-4fde-8e54-c1bdb028d620",
-                            "command": "EVENT_SET_VALUE",
-                            "args": {
-                                "variable": "8",
-                                "value": 10
-                            }
-                        },
-                        {
-                            "id": "7ec822de-2f3d-490f-b40f-6e50c4178b6c",
-                            "command": "EVENT_SET_VALUE",
-                            "args": {
-                                "variable": "10",
-                                "value": 100
-                            }
+                                "__label": "Initialize Enemy Stats",
+                                "__collapse": true
+                            },
+                            "true": [
+                                {
+                                    "id": "21da7915-9505-412c-8c6b-fc58e16397c1",
+                                    "command": "EVENT_SET_VALUE",
+                                    "args": {
+                                        "variable": "7",
+                                        "value": 200,
+                                        "__label": "Initialize Enemy HP",
+                                        "__collapse": true
+                                    }
+                                },
+                                {
+                                    "id": "4b597767-5251-4fde-8e54-c1bdb028d620",
+                                    "command": "EVENT_SET_VALUE",
+                                    "args": {
+                                        "variable": "8",
+                                        "value": 10,
+                                        "__label": "Initialize Enemy STR",
+                                        "__collapse": true
+                                    }
+                                },
+                                {
+                                    "id": "7ec822de-2f3d-490f-b40f-6e50c4178b6c",
+                                    "command": "EVENT_SET_VALUE",
+                                    "args": {
+                                        "variable": "10",
+                                        "value": 100,
+                                        "__label": "Initialize Enemy XP gain",
+                                        "__collapse": true
+                                    }
+                                },
+                                {
+                                    "id": "9bed62e6-81c2-47ba-bc29-de500f5f2608",
+                                    "command": "EVENT_END"
+                                }
+                            ]
                         },
                         {
                             "id": "0096b657-e993-4dde-a775-9de09642db11",
                             "command": "EVENT_TEXT",
                             "args": {
                                 "text": "Do you want to\ntake qualifying\nexam?",
-                                "__collapse": true
+                                "__collapse": true,
+                                "__label": "Openning dialogue"
                             }
                         },
                         {
@@ -2725,7 +2746,8 @@
                                 "variable": "100",
                                 "trueText": "Yes",
                                 "falseText": "No",
-                                "__collapse": true
+                                "__collapse": true,
+                                "__label": "Start combat?"
                             }
                         },
                         {
@@ -2734,38 +2756,47 @@
                             "args": {
                                 "variable": "100",
                                 "operator": "==",
-                                "comparator": 1
+                                "comparator": 1,
+                                "__collapseElse": true,
+                                "__label": "Combat == True",
+                                "__collapse": false
                             },
                             "true": [
                                 {
                                     "id": "ff1941d4-cde1-4aa6-be18-9076eb4b11e5",
                                     "command": "EVENT_LOOP",
                                     "args": {
-                                        "__collapse": false
+                                        "__collapse": false,
+                                        "__label": "Combat Loop"
                                     },
                                     "true": [
                                         {
                                             "id": "b774e991-8ffc-4099-88de-bac6e1972216",
                                             "command": "EVENT_TEXT",
                                             "args": {
-                                                "text": "Attack?"
+                                                "text": "Attack?",
+                                                "__label": "Attack dialogue"
                                             }
                                         },
                                         {
                                             "id": "6da05045-1783-4fe7-accd-92a0e872280f",
                                             "command": "EVENT_CHOICE",
                                             "args": {
-                                                "variable": "100",
+                                                "variable": "102",
                                                 "trueText": "Yes",
-                                                "falseText": "No"
+                                                "falseText": "No",
+                                                "__label": "Attack?",
+                                                "__collapse": true
                                             }
                                         },
                                         {
                                             "id": "0ba69a91-3a36-4bf1-9245-1b5b323b26a6",
                                             "command": "EVENT_IF_TRUE",
                                             "args": {
-                                                "variable": "100",
-                                                "__collapse": false
+                                                "variable": "102",
+                                                "__collapse": true,
+                                                "__label": "Attack == True",
+                                                "__collapseElse": true
                                             },
                                             "true": [
                                                 {
@@ -2787,7 +2818,8 @@
                                                         "value": "1",
                                                         "minValue": "0",
                                                         "maxValue": "255",
-                                                        "__collapse": false
+                                                        "__collapse": true,
+                                                        "__label": "Copy STR as ATK"
                                                     }
                                                 },
                                                 {
@@ -2800,7 +2832,9 @@
                                                         "vectorY": "9",
                                                         "value": "1",
                                                         "minValue": 1,
-                                                        "maxValue": 3
+                                                        "maxValue": 3,
+                                                        "__label": "Random Crit",
+                                                        "__collapse": true
                                                     }
                                                 },
                                                 {
@@ -2811,7 +2845,8 @@
                                                         "operator": "==",
                                                         "comparator": 3,
                                                         "__collapseElse": true,
-                                                        "__collapse": true
+                                                        "__collapse": true,
+                                                        "__label": "Crit == True"
                                                     },
                                                     "true": [
                                                         {
@@ -2824,14 +2859,17 @@
                                                                 "vectorY": "9",
                                                                 "value": 2,
                                                                 "minValue": "0",
-                                                                "maxValue": "255"
+                                                                "maxValue": "255",
+                                                                "__label": "Calculate ATK",
+                                                                "__collapse": true
                                                             }
                                                         },
                                                         {
                                                             "id": "f4e9443a-8c16-449f-9f32-38365301ec04",
                                                             "command": "EVENT_TEXT",
                                                             "args": {
-                                                                "text": "You crit! Deal\n$09$ damage."
+                                                                "text": "You crit! Deal\n$09$ damage.",
+                                                                "__collapse": true
                                                             }
                                                         },
                                                         {
@@ -2851,14 +2889,16 @@
                                                                 "value": 1,
                                                                 "minValue": "0",
                                                                 "maxValue": "255",
-                                                                "__collapse": false
+                                                                "__collapse": true,
+                                                                "__label": "Calculate ATK"
                                                             }
                                                         },
                                                         {
                                                             "id": "76ccbafa-26dd-4cf0-b79d-9e2e935c641f",
                                                             "command": "EVENT_TEXT",
                                                             "args": {
-                                                                "text": "No crit. Deal\n$09$ damage."
+                                                                "text": "No crit. Deal\n$09$ damage.",
+                                                                "__collapse": true
                                                             }
                                                         },
                                                         {
@@ -2874,8 +2914,9 @@
                                                         "vectorX": "7",
                                                         "operator": ">",
                                                         "vectorY": "9",
-                                                        "__collapse": false,
-                                                        "__collapseElse": false
+                                                        "__collapse": true,
+                                                        "__collapseElse": true,
+                                                        "__label": "Calculate Enemy HP"
                                                     },
                                                     "true": [
                                                         {
@@ -2888,14 +2929,9 @@
                                                                 "vectorY": "9",
                                                                 "value": "1",
                                                                 "minValue": "0",
-                                                                "maxValue": "255"
-                                                            }
-                                                        },
-                                                        {
-                                                            "id": "3652bc83-f224-41ea-b9c4-70114edf18cf",
-                                                            "command": "EVENT_TEXT",
-                                                            "args": {
-                                                                "text": "Supervisor\nremaining HP: $07$"
+                                                                "maxValue": "255",
+                                                                "__label": "Calculate Enemy HP",
+                                                                "__collapse": true
                                                             }
                                                         },
                                                         {
@@ -2909,7 +2945,8 @@
                                                             "command": "EVENT_SET_VALUE",
                                                             "args": {
                                                                 "variable": "7",
-                                                                "value": "0"
+                                                                "value": "0",
+                                                                "__label": "Calculate Enemy HP"
                                                             }
                                                         },
                                                         {
@@ -2917,6 +2954,15 @@
                                                             "command": "EVENT_END"
                                                         }
                                                     ]
+                                                },
+                                                {
+                                                    "id": "3652bc83-f224-41ea-b9c4-70114edf18cf",
+                                                    "command": "EVENT_TEXT",
+                                                    "args": {
+                                                        "text": "Supervisor\nremaining HP: $07$",
+                                                        "__label": "Display Enemy HP",
+                                                        "__collapse": true
+                                                    }
                                                 },
                                                 {
                                                     "id": "0c980295-0a5b-406b-9005-69e36e58c6f4",
@@ -2937,7 +2983,8 @@
                                                 "variable": "7",
                                                 "operator": "<=",
                                                 "comparator": "0",
-                                                "__collapse": false
+                                                "__collapse": false,
+                                                "__label": "Enemy HP == 0"
                                             },
                                             "true": [
                                                 {
@@ -2950,7 +2997,9 @@
                                                         "vectorY": "10",
                                                         "value": "1",
                                                         "minValue": "0",
-                                                        "maxValue": "255"
+                                                        "maxValue": "255",
+                                                        "__label": "Calculate Player XP",
+                                                        "__collapse": true
                                                     }
                                                 },
                                                 {
@@ -2960,7 +3009,8 @@
                                                         "text": [
                                                             "Congratulations!\nYou got $10$ XP.\n",
                                                             "Now you have $04$\nXP."
-                                                        ]
+                                                        ],
+                                                        "__label": "Display Player XP"
                                                     }
                                                 },
                                                 {
@@ -2969,55 +3019,80 @@
                                                     "args": {
                                                         "variable": "4",
                                                         "operator": ">",
-                                                        "comparator": 100
+                                                        "comparator": 100,
+                                                        "__label": "Level Up?",
+                                                        "__collapse": true
                                                     },
                                                     "true": [
                                                         {
-                                                            "id": "8b8183f7-23e2-43cb-86c4-425547e3a1d1",
-                                                            "command": "EVENT_INC_VALUE",
+                                                            "id": "1e146866-4e18-4e4b-8ef5-9f2d10011efe",
+                                                            "command": "EVENT_GROUP",
                                                             "args": {
-                                                                "variable": "6"
-                                                            }
-                                                        },
-                                                        {
-                                                            "id": "1dc8e6d5-8437-470a-b747-10ed3addfc9c",
-                                                            "command": "EVENT_VARIABLE_MATH",
-                                                            "args": {
-                                                                "vectorX": "3",
-                                                                "operation": "add",
-                                                                "other": "val",
-                                                                "vectorY": "10",
-                                                                "value": 20,
-                                                                "minValue": "0",
-                                                                "maxValue": "255"
-                                                            }
-                                                        },
-                                                        {
-                                                            "id": "60f6f34b-d85f-4f24-8e86-3b148eb25c4a",
-                                                            "command": "EVENT_VARIABLE_MATH",
-                                                            "args": {
-                                                                "vectorX": "5",
-                                                                "operation": "add",
-                                                                "other": "val",
-                                                                "vectorY": "10",
-                                                                "value": 5,
-                                                                "minValue": "0",
-                                                                "maxValue": "255"
-                                                            }
-                                                        },
-                                                        {
-                                                            "id": "e79f19f6-4ebf-4fab-bac6-b27da94a9a76",
-                                                            "command": "EVENT_SET_VALUE",
-                                                            "args": {
-                                                                "variable": "4",
-                                                                "value": "0"
-                                                            }
+                                                                "__label": "Increase Player Stats",
+                                                                "__collapse": true
+                                                            },
+                                                            "true": [
+                                                                {
+                                                                    "id": "8b8183f7-23e2-43cb-86c4-425547e3a1d1",
+                                                                    "command": "EVENT_INC_VALUE",
+                                                                    "args": {
+                                                                        "variable": "6",
+                                                                        "__label": "Level +1"
+                                                                    }
+                                                                },
+                                                                {
+                                                                    "id": "1dc8e6d5-8437-470a-b747-10ed3addfc9c",
+                                                                    "command": "EVENT_VARIABLE_MATH",
+                                                                    "args": {
+                                                                        "vectorX": "3",
+                                                                        "operation": "add",
+                                                                        "other": "val",
+                                                                        "vectorY": "10",
+                                                                        "value": 20,
+                                                                        "minValue": "0",
+                                                                        "maxValue": "255",
+                                                                        "__label": "Increase HP",
+                                                                        "__collapse": true
+                                                                    }
+                                                                },
+                                                                {
+                                                                    "id": "60f6f34b-d85f-4f24-8e86-3b148eb25c4a",
+                                                                    "command": "EVENT_VARIABLE_MATH",
+                                                                    "args": {
+                                                                        "vectorX": "5",
+                                                                        "operation": "add",
+                                                                        "other": "val",
+                                                                        "vectorY": "10",
+                                                                        "value": 5,
+                                                                        "minValue": "0",
+                                                                        "maxValue": "255",
+                                                                        "__label": "Increase STR",
+                                                                        "__collapse": true
+                                                                    }
+                                                                },
+                                                                {
+                                                                    "id": "e79f19f6-4ebf-4fab-bac6-b27da94a9a76",
+                                                                    "command": "EVENT_SET_VALUE",
+                                                                    "args": {
+                                                                        "variable": "4",
+                                                                        "value": "0",
+                                                                        "__label": "Reset XP",
+                                                                        "__collapse": true
+                                                                    }
+                                                                },
+                                                                {
+                                                                    "id": "115b8030-60be-4b34-a700-f24efe6c3029",
+                                                                    "command": "EVENT_END"
+                                                                }
+                                                            ]
                                                         },
                                                         {
                                                             "id": "95c657bc-f0cd-434e-abd6-a2f93368470c",
                                                             "command": "EVENT_TEXT",
                                                             "args": {
-                                                                "text": "You leveled up!\nPlayer Level: $06$"
+                                                                "text": "You leveled up!\nPlayer Level: $06$",
+                                                                "__label": "Display Level",
+                                                                "__collapse": true
                                                             }
                                                         },
                                                         {
@@ -3025,7 +3100,8 @@
                                                             "command": "EVENT_ACTOR_EMOTE",
                                                             "args": {
                                                                 "actorId": "player",
-                                                                "emoteId": 0
+                                                                "emoteId": 0,
+                                                                "__collapse": true
                                                             }
                                                         },
                                                         {
@@ -3070,7 +3146,9 @@
                                             "args": {
                                                 "vectorX": "3",
                                                 "operator": ">",
-                                                "vectorY": "8"
+                                                "vectorY": "8",
+                                                "__label": "Enemy Attack",
+                                                "__collapseElse": true
                                             },
                                             "true": [
                                                 {
@@ -3084,7 +3162,8 @@
                                                         "value": "1",
                                                         "minValue": "0",
                                                         "maxValue": "255",
-                                                        "__collapse": false
+                                                        "__collapse": true,
+                                                        "__label": "Calculate Player HP"
                                                     }
                                                 },
                                                 {
@@ -3098,7 +3177,8 @@
                                                     "command": "EVENT_SET_VALUE",
                                                     "args": {
                                                         "variable": "3",
-                                                        "value": "0"
+                                                        "value": "0",
+                                                        "__label": "Calculate Player HP"
                                                     }
                                                 },
                                                 {
@@ -3111,14 +3191,16 @@
                                             "id": "04538fa1-a333-439c-8104-92155a7103ac",
                                             "command": "EVENT_TEXT",
                                             "args": {
-                                                "text": "Supervisor\nattacked you for\n$08$ damage!"
+                                                "text": "Supervisor\nattacked you for\n$08$ damage!",
+                                                "__collapse": false
                                             }
                                         },
                                         {
                                             "id": "36844c6f-0e4d-46fd-96a5-b16aac4c87a6",
                                             "command": "EVENT_TEXT",
                                             "args": {
-                                                "text": "Your\nremaining HP: $03$"
+                                                "text": "Your remaining HP:\n$03$ ",
+                                                "__collapse": false
                                             }
                                         },
                                         {
@@ -3127,14 +3209,18 @@
                                             "args": {
                                                 "variable": "3",
                                                 "operator": "<=",
-                                                "comparator": "0"
+                                                "comparator": "0",
+                                                "__label": "Player HP=0",
+                                                "__collapse": true
                                             },
                                             "true": [
                                                 {
                                                     "id": "b018871f-aaa4-4556-ae55-3031327efeb5",
                                                     "command": "EVENT_TEXT",
                                                     "args": {
-                                                        "text": "You are dead. Game\nOver!"
+                                                        "text": "You are dead. Game\nOver!",
+                                                        "__label": "Dead message",
+                                                        "__collapse": true
                                                     }
                                                 },
                                                 {
@@ -3142,7 +3228,8 @@
                                                     "command": "EVENT_ACTOR_EMOTE",
                                                     "args": {
                                                         "actorId": "player",
-                                                        "emoteId": 0
+                                                        "emoteId": 0,
+                                                        "__collapse": true
                                                     }
                                                 },
                                                 {
@@ -3151,13 +3238,16 @@
                                                     "args": {
                                                         "actorId": "player",
                                                         "x": 15,
-                                                        "y": 12
+                                                        "y": 12,
+                                                        "__collapse": true
                                                     }
                                                 },
                                                 {
                                                     "id": "55b4ba61-5127-4ce5-9e13-e25b5abc07c4",
                                                     "command": "EVENT_STOP",
-                                                    "args": {}
+                                                    "args": {
+                                                        "__collapse": true
+                                                    }
                                                 },
                                                 {
                                                     "id": "375d2bb7-0fa1-465a-a53e-7d34db49cb8a",
@@ -7987,13 +8077,13 @@
             "id": "d8d04fc7-ada8-4593-a93c-583b35a726ea",
             "name": "Peters_Song_NEW",
             "filename": "Peters_Song_NEW.mod",
-            "_v": 1566226259698
+            "_v": 1566305210394
         },
         {
             "id": "f50428ab-a084-4591-9bba-2ba10fe7b1c6",
             "name": "template",
             "filename": "template.mod",
-            "_v": 1566226259698
+            "_v": 1566305210394
         }
     ]
 }
