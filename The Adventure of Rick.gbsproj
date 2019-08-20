@@ -5,7 +5,7 @@
         "startX": 0,
         "startY": 0,
         "startDirection": "up",
-        "zoom": 100,
+        "zoom": 200,
         "startSceneId": "12282cd5-d71e-4ea9-a48b-09b2e3e2ef3c",
         "playerSpriteSheetId": "f7306258-4eec-4c06-a9ec-f95441173969"
     },
@@ -372,6 +372,70 @@
             "_v": 1566305210391
         },
         {
+            "id": "f27e6a95-e776-4243-87eb-ec9b5e452115",
+            "name": "Goblin",
+            "numFrames": 1,
+            "type": "static",
+            "filename": "Goblin.png",
+            "_v": 1566305210391
+        },
+        {
+            "id": "faa40495-00c2-4408-b859-b2deb3b31d20",
+            "name": "Heart",
+            "numFrames": 1,
+            "type": "static",
+            "filename": "Heart.png",
+            "_v": 1566305210391
+        },
+        {
+            "id": "9fc7ab07-719f-4b80-91f5-12cda59291b1",
+            "name": "Items",
+            "numFrames": 4,
+            "type": "animated",
+            "filename": "Items.png",
+            "_v": 1566305210391
+        },
+        {
+            "id": "49f18b02-8273-4803-8b78-719db50ab553",
+            "name": "PC",
+            "numFrames": 1,
+            "type": "static",
+            "filename": "PC.png",
+            "_v": 1566309621248
+        },
+        {
+            "id": "f7306258-4eec-4c06-a9ec-f95441173969",
+            "name": "Rick-blackhair",
+            "numFrames": 6,
+            "type": "actor_animated",
+            "filename": "Rick-blackhair.png",
+            "_v": 1566305210391
+        },
+        {
+            "id": "3145337b-57af-48e8-aff5-8fd10d6c25b0",
+            "name": "Rick",
+            "numFrames": 6,
+            "type": "actor_animated",
+            "filename": "Rick.png",
+            "_v": 1566305210391
+        },
+        {
+            "id": "e5a60aad-9551-4e3b-8826-9ca060e4025f",
+            "name": "Squirrel",
+            "numFrames": 3,
+            "type": "actor",
+            "filename": "Squirrel.png",
+            "_v": 1566305210392
+        },
+        {
+            "id": "15c12b89-8a44-41ca-8a92-c9674bf05433",
+            "name": "Supervisor1",
+            "numFrames": 6,
+            "type": "actor_animated",
+            "filename": "Supervisor1.png",
+            "_v": 1566305210392
+        },
+        {
             "id": "aff753be-6ace-4f50-b50b-fa29642604f8",
             "name": "bed",
             "numFrames": 1,
@@ -428,35 +492,11 @@
             "_v": 1566305210391
         },
         {
-            "id": "f27e6a95-e776-4243-87eb-ec9b5e452115",
-            "name": "Goblin",
-            "numFrames": 1,
-            "type": "static",
-            "filename": "Goblin.png",
-            "_v": 1566305210391
-        },
-        {
-            "id": "faa40495-00c2-4408-b859-b2deb3b31d20",
-            "name": "Heart",
-            "numFrames": 1,
-            "type": "static",
-            "filename": "Heart.png",
-            "_v": 1566305210391
-        },
-        {
             "id": "61e3ccf8-e0e0-44f6-87ad-be760a0cda2c",
             "name": "ice",
             "numFrames": 1,
             "type": "static",
             "filename": "ice.png",
-            "_v": 1566305210391
-        },
-        {
-            "id": "9fc7ab07-719f-4b80-91f5-12cda59291b1",
-            "name": "Items",
-            "numFrames": 4,
-            "type": "animated",
-            "filename": "Items.png",
             "_v": 1566305210391
         },
         {
@@ -497,22 +537,6 @@
             "numFrames": 1,
             "type": "static",
             "filename": "radio.png",
-            "_v": 1566305210391
-        },
-        {
-            "id": "f7306258-4eec-4c06-a9ec-f95441173969",
-            "name": "Rick-blackhair",
-            "numFrames": 6,
-            "type": "actor_animated",
-            "filename": "Rick-blackhair.png",
-            "_v": 1566305210391
-        },
-        {
-            "id": "3145337b-57af-48e8-aff5-8fd10d6c25b0",
-            "name": "Rick",
-            "numFrames": 6,
-            "type": "actor_animated",
-            "filename": "Rick.png",
             "_v": 1566305210391
         },
         {
@@ -561,22 +585,6 @@
             "numFrames": 1,
             "type": "static",
             "filename": "soil.png",
-            "_v": 1566305210392
-        },
-        {
-            "id": "e5a60aad-9551-4e3b-8826-9ca060e4025f",
-            "name": "Squirrel",
-            "numFrames": 3,
-            "type": "actor",
-            "filename": "Squirrel.png",
-            "_v": 1566305210392
-        },
-        {
-            "id": "15c12b89-8a44-41ca-8a92-c9674bf05433",
-            "name": "Supervisor1",
-            "numFrames": 6,
-            "type": "actor_animated",
-            "filename": "Supervisor1.png",
             "_v": 1566305210392
         },
         {
@@ -844,9 +852,9 @@
                                     "command": "EVENT_SWITCH_SCENE",
                                     "args": {
                                         "sceneId": "d2a8157d-56b1-4ecf-8f26-3cefb1fd3ad4",
-                                        "x": 9,
-                                        "y": 9,
-                                        "direction": "down",
+                                        "x": 6,
+                                        "y": 8,
+                                        "direction": "right",
                                         "fadeSpeed": "2",
                                         "__collapse": false
                                     }
@@ -912,7 +920,28 @@
             "y": 271,
             "width": 32,
             "height": 32,
-            "actors": [],
+            "actors": [
+                {
+                    "id": "bfe8c311-52ea-4a30-bcc2-91f182d1f741",
+                    "spriteSheetId": "1d4745ce-72ea-4a66-ac76-0c3ead2e7991",
+                    "x": 17,
+                    "y": 14,
+                    "movementType": "static",
+                    "direction": "down",
+                    "moveSpeed": "1",
+                    "animSpeed": "3"
+                },
+                {
+                    "id": "4eca02dd-1b45-4cd3-9bc5-97ed09c38f56",
+                    "spriteSheetId": "e1354ca4-b68d-4ff0-970f-cf391b988047",
+                    "x": 13,
+                    "y": 14,
+                    "movementType": "static",
+                    "direction": "down",
+                    "moveSpeed": "1",
+                    "animSpeed": "3"
+                }
+            ],
             "triggers": [
                 {
                     "id": "aa8178e9-1b1a-4e34-960e-a6453860f607",
@@ -943,7 +972,7 @@
                     "id": "1dfe0d4a-94fc-4d4e-bb30-9bc0d847bacb",
                     "x": 22,
                     "y": 24,
-                    "width": 4,
+                    "width": 2,
                     "height": 1,
                     "trigger": "walk",
                     "script": [
@@ -4074,7 +4103,28 @@
             "y": 74,
             "width": 20,
             "height": 18,
-            "actors": [],
+            "actors": [
+                {
+                    "id": "968458c3-bc59-46ec-915f-8684d754b034",
+                    "spriteSheetId": "aff753be-6ace-4f50-b50b-fa29642604f8",
+                    "x": 4,
+                    "y": 8,
+                    "movementType": "static",
+                    "direction": "down",
+                    "moveSpeed": "1",
+                    "animSpeed": "3"
+                },
+                {
+                    "id": "8e45286d-4553-45ee-9be2-91e96c8ba694",
+                    "spriteSheetId": "49f18b02-8273-4803-8b78-719db50ab553",
+                    "x": 15,
+                    "y": 8,
+                    "movementType": "static",
+                    "direction": "down",
+                    "moveSpeed": "1",
+                    "animSpeed": "3"
+                }
+            ],
             "triggers": [
                 {
                     "id": "f41b7a11-054d-4d12-b2ce-3010b2f8bc44",
