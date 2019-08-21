@@ -2736,16 +2736,6 @@
             "height": 18,
             "actors": [
                 {
-                    "id": "0c43e9d7-765e-4e12-8165-aedbf8a7da5d",
-                    "spriteSheetId": "aff753be-6ace-4f50-b50b-fa29642604f8",
-                    "x": 4,
-                    "y": 9,
-                    "movementType": "static",
-                    "direction": "down",
-                    "moveSpeed": "1",
-                    "animSpeed": "3"
-                },
-                {
                     "id": "7af289d9-452f-4b9d-a7e0-bd21ad8e4ec3",
                     "spriteSheetId": "1d4745ce-72ea-4a66-ac76-0c3ead2e7991",
                     "x": 14,
@@ -2802,6 +2792,126 @@
                         },
                         {
                             "id": "48ae2c76-1f6f-4eba-b6e6-bea9d57f1410",
+                            "command": "EVENT_END"
+                        }
+                    ]
+                },
+                {
+                    "id": "783bcaaf-eab8-4c41-95ba-f983b3e05f2e",
+                    "spriteSheetId": "aff753be-6ace-4f50-b50b-fa29642604f8",
+                    "x": 4,
+                    "y": 9,
+                    "movementType": "static",
+                    "direction": "down",
+                    "moveSpeed": "1",
+                    "animSpeed": "3",
+                    "name": "Bed",
+                    "script": [
+                        {
+                            "id": "e2c692d8-9cdb-4481-8773-75a2e52a1748",
+                            "command": "EVENT_CHOICE",
+                            "args": {
+                                "variable": "104",
+                                "trueText": "Sleep?",
+                                "falseText": "Cancel",
+                                "__label": "Sleep?",
+                                "__collapse": true
+                            }
+                        },
+                        {
+                            "id": "0a4de63e-9e58-4ba7-8f53-f67aa852fa4f",
+                            "command": "EVENT_IF_TRUE",
+                            "args": {
+                                "variable": "104",
+                                "__label": "Sleep == True"
+                            },
+                            "true": [
+                                {
+                                    "id": "12c73ba0-593c-4052-9fb2-d897b3a4a023",
+                                    "command": "EVENT_ACTOR_MOVE_TO",
+                                    "args": {
+                                        "actorId": "player",
+                                        "x": 4,
+                                        "y": 8,
+                                        "__label": "Go to bed",
+                                        "__collapse": true
+                                    }
+                                },
+                                {
+                                    "id": "7d06565f-f219-494e-8775-37db396ecdd3",
+                                    "command": "EVENT_FADE_OUT",
+                                    "args": {
+                                        "speed": "1",
+                                        "__collapse": true
+                                    }
+                                },
+                                {
+                                    "id": "57a5bca4-1332-4b6b-bdaa-a1aed6380bdb",
+                                    "command": "EVENT_WAIT",
+                                    "args": {
+                                        "time": 1,
+                                        "__collapse": true
+                                    }
+                                },
+                                {
+                                    "id": "6bbc9f98-e0fd-4287-ace7-e09feb4dbd0d",
+                                    "command": "EVENT_FADE_IN",
+                                    "args": {
+                                        "speed": "1",
+                                        "__collapse": true
+                                    }
+                                },
+                                {
+                                    "id": "28ca3989-2b11-47ca-9270-6ff9bdc84d1f",
+                                    "command": "EVENT_ACTOR_MOVE_TO",
+                                    "args": {
+                                        "actorId": "player",
+                                        "x": 6,
+                                        "y": 8,
+                                        "__label": "Get up",
+                                        "__collapse": true
+                                    }
+                                },
+                                {
+                                    "id": "40028327-83b6-466f-b51b-012c4165561c",
+                                    "command": "EVENT_VARIABLE_MATH",
+                                    "args": {
+                                        "vectorX": "3",
+                                        "operation": "set",
+                                        "other": "var",
+                                        "vectorY": "2",
+                                        "value": "1",
+                                        "minValue": "0",
+                                        "maxValue": "255",
+                                        "__label": "Replenish HP",
+                                        "__collapse": true
+                                    }
+                                },
+                                {
+                                    "id": "54fd711f-8ce6-4431-b029-75b8138671b4",
+                                    "command": "EVENT_TEXT",
+                                    "args": {
+                                        "text": [
+                                            "It's a new day!",
+                                            "HP has been\nrecoverd."
+                                        ],
+                                        "__collapse": true
+                                    }
+                                },
+                                {
+                                    "id": "57553b5e-55eb-4bdc-896d-9c2eece813c2",
+                                    "command": "EVENT_END"
+                                }
+                            ],
+                            "false": [
+                                {
+                                    "id": "2972a5e0-35ec-415f-8b22-f97daada74fb",
+                                    "command": "EVENT_END"
+                                }
+                            ]
+                        },
+                        {
+                            "id": "6aec3145-0f6b-4998-974f-6dd0daaa4387",
                             "command": "EVENT_END"
                         }
                     ]
