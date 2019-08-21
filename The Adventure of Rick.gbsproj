@@ -82,6 +82,16 @@
             "_v": 1566361424891
         },
         {
+            "id": "d96ffdf0-ead9-4099-8a07-869ba5cb567c",
+            "name": "Cleanroom",
+            "width": 32,
+            "height": 32,
+            "imageWidth": 256,
+            "imageHeight": 256,
+            "filename": "Cleanroom.png",
+            "_v": 1566363086879
+        },
+        {
             "id": "5deee38e-f383-4a41-b217-23dd28692324",
             "name": "Conference Airport",
             "width": 20,
@@ -1333,7 +1343,7 @@
                             "command": "EVENT_SWITCH_SCENE",
                             "args": {
                                 "sceneId": "2fcd3a6f-963e-4792-ac19-7339873f24a2",
-                                "x": 21,
+                                "x": 6,
                                 "y": 30,
                                 "direction": "up",
                                 "fadeSpeed": "2"
@@ -3923,7 +3933,7 @@
         {
             "id": "2fcd3a6f-963e-4792-ac19-7339873f24a2",
             "name": "Cleanroom",
-            "backgroundId": "9b38ba6d-ea82-4d0e-9c93-1fbf8cd6804f",
+            "backgroundId": "d96ffdf0-ead9-4099-8a07-869ba5cb567c",
             "x": 1083,
             "y": 1184,
             "width": 32,
@@ -3932,7 +3942,7 @@
             "triggers": [
                 {
                     "id": "145de94c-4651-4dd8-b84f-8b4e1de9d38e",
-                    "x": 21,
+                    "x": 6,
                     "y": 31,
                     "width": 2,
                     "height": 1,
