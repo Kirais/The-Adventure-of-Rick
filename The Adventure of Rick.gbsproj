@@ -298,6 +298,16 @@
             "_v": 1566399738011
         },
         {
+            "id": "82af7dc3-13e9-40b8-80a7-6ebe507cde3e",
+            "name": "Stats",
+            "width": 20,
+            "height": 18,
+            "imageWidth": 160,
+            "imageHeight": 144,
+            "filename": "Stats.png",
+            "_v": 1566400710925
+        },
+        {
             "id": "974820e0-d847-4e62-97b2-a6a0c3b1572a",
             "name": "Tileset-1",
             "width": 16,
@@ -5330,7 +5340,7 @@
         {
             "id": "fb8bb82c-a497-4ca9-a171-614c0969fde0",
             "name": "Stats",
-            "backgroundId": "5dac439f-ce92-4631-9135-210800bb1580",
+            "backgroundId": "82af7dc3-13e9-40b8-80a7-6ebe507cde3e",
             "x": 64,
             "y": 1082,
             "width": 20,
@@ -5395,7 +5405,9 @@
                 {
                     "id": "97950206-7577-4185-a829-2a22557bbcd8",
                     "command": "EVENT_LOOP",
-                    "args": {},
+                    "args": {
+                        "__collapse": true
+                    },
                     "true": [
                         {
                             "id": "50a84fd3-9266-43fa-926c-e8f7e29d0c6c",
@@ -5403,7 +5415,8 @@
                             "args": {
                                 "input": [
                                     "b"
-                                ]
+                                ],
+                                "__collapse": true
                             },
                             "true": [
                                 {
@@ -5571,48 +5584,7 @@
                 }
             ],
             "triggers": [],
-            "collisions": [
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0
-            ],
+            "collisions": [],
             "script": [
                 {
                     "id": "000bb6eb-1b7e-4ffe-894b-62e1cbd946af",
@@ -5693,7 +5665,7 @@
                                                 "operator": "==",
                                                 "comparator": 2,
                                                 "__label": "At Conference?",
-                                                "__collapse": false,
+                                                "__collapse": true,
                                                 "__collapseElse": true
                                             },
                                             "true": [
