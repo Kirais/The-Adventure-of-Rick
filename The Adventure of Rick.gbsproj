@@ -5,7 +5,7 @@
         "startX": 0,
         "startY": 0,
         "startDirection": "up",
-        "zoom": 200,
+        "zoom": 100,
         "startSceneId": "12282cd5-d71e-4ea9-a48b-09b2e3e2ef3c",
         "playerSpriteSheetId": "f7306258-4eec-4c06-a9ec-f95441173969"
     },
@@ -102,15 +102,7 @@
             "name": "Quest6_complete"
         },
         {
-            "id": "112",
-            "name": "At University"
-        },
-        {
-            "id": "113",
-            "name": "At Conference"
-        },
-        {
-            "id": "111",
+            "id": "115",
             "name": "Location"
         }
     ],
@@ -1297,7 +1289,22 @@
                 255,
                 255
             ],
-            "notes": "Starting point of the game."
+            "notes": "Starting point of the game.",
+            "script": [
+                {
+                    "id": "3924ce68-b0c4-48f7-b3c7-c0feb5bc67ac",
+                    "command": "EVENT_SET_VALUE",
+                    "args": {
+                        "variable": "115",
+                        "value": "0",
+                        "__label": "Set Location"
+                    }
+                },
+                {
+                    "id": "f5c5bf31-ae7c-4da7-a339-3137d3905c84",
+                    "command": "EVENT_END"
+                }
+            ]
         },
         {
             "id": "7cf80d50-cea7-4c6b-9e7d-d9fb47aff1e1",
@@ -1431,6 +1438,21 @@
                 248,
                 255,
                 255
+            ],
+            "script": [
+                {
+                    "id": "fbc45d2d-713e-4e28-a133-094683b47e29",
+                    "command": "EVENT_SET_VALUE",
+                    "args": {
+                        "variable": "115",
+                        "value": 1,
+                        "__label": "Set Location"
+                    }
+                },
+                {
+                    "id": "d077ee88-7289-4e67-906a-15fbb62cd014",
+                    "command": "EVENT_END"
+                }
             ]
         },
         {
@@ -1832,6 +1854,21 @@
                 248,
                 255,
                 255
+            ],
+            "script": [
+                {
+                    "id": "b4193932-d275-46f0-80d6-43ba0063df70",
+                    "command": "EVENT_SET_VALUE",
+                    "args": {
+                        "variable": "115",
+                        "value": "0",
+                        "__label": "Set Location"
+                    }
+                },
+                {
+                    "id": "3fe0d12e-51e5-4251-932f-35fc22633bea",
+                    "command": "EVENT_END"
+                }
             ]
         },
         {
@@ -2603,7 +2640,22 @@
                 0,
                 0
             ],
-            "notes": "Get admission letter for university"
+            "notes": "Get admission letter for university",
+            "script": [
+                {
+                    "id": "761bc7bb-1fbb-4efd-b277-bd0e0bb766af",
+                    "command": "EVENT_SET_VALUE",
+                    "args": {
+                        "variable": "115",
+                        "value": "0",
+                        "__label": "Set Location"
+                    }
+                },
+                {
+                    "id": "7b33f9fb-7cd8-48bf-bb0c-a8473be585b0",
+                    "command": "EVENT_END"
+                }
+            ]
         },
         {
             "id": "3a531c45-602a-46c4-abac-dcfae1c9e068",
@@ -4146,6 +4198,21 @@
                 248,
                 255,
                 255
+            ],
+            "script": [
+                {
+                    "id": "43c584ba-c966-45ce-9540-ef85b4b2864c",
+                    "command": "EVENT_SET_VALUE",
+                    "args": {
+                        "variable": "115",
+                        "value": 2,
+                        "__label": "Set Location"
+                    }
+                },
+                {
+                    "id": "bc45808e-c530-41a6-89c8-52293affc049",
+                    "command": "EVENT_END"
+                }
             ]
         },
         {
@@ -4653,7 +4720,7 @@
                             "args": {
                                 "variable": "105",
                                 "__collapseElse": true,
-                                "__collapse": true,
+                                "__collapse": false,
                                 "__label": "Quest1 Check"
                             },
                             "true": [
@@ -5555,29 +5622,23 @@
                     }
                 },
                 {
-                    "id": "db352c89-1154-4cfd-88ce-5322f56145e4",
-                    "command": "EVENT_SET_VALUE",
-                    "args": {
-                        "variable": "111",
-                        "value": 0
-                    }
-                },
-                {
                     "id": "6b2529fe-a796-48f8-b6e9-c099541c8887",
                     "command": "EVENT_GROUP",
                     "args": {
-                        "__label": "Show Location"
+                        "__label": "Show Location",
+                        "__collapse": true
                     },
                     "true": [
                         {
                             "id": "b16cb54b-4115-4539-a39f-899dd68541d5",
                             "command": "EVENT_IF_VALUE",
                             "args": {
-                                "variable": "111",
+                                "variable": "115",
                                 "operator": "==",
                                 "comparator": "0",
                                 "__label": "At Home?",
-                                "__collapseElse": true
+                                "__collapseElse": true,
+                                "__collapse": true
                             },
                             "true": [
                                 {
@@ -5600,11 +5661,11 @@
                                     "id": "bbacb4ac-6a7a-4099-900e-a6bb1b94dcdd",
                                     "command": "EVENT_IF_VALUE",
                                     "args": {
-                                        "variable": "111",
+                                        "variable": "115",
                                         "operator": "==",
                                         "comparator": 1,
                                         "__label": "At University?",
-                                        "__collapse": true,
+                                        "__collapse": false,
                                         "__collapseElse": true
                                     },
                                     "true": [
@@ -5627,7 +5688,7 @@
                                             "id": "df9326f8-4c46-44cc-bda7-76a8a5a211bc",
                                             "command": "EVENT_IF_VALUE",
                                             "args": {
-                                                "variable": "111",
+                                                "variable": "115",
                                                 "operator": "==",
                                                 "comparator": 2,
                                                 "__label": "At Conference?",
