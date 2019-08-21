@@ -100,6 +100,18 @@
         {
             "id": "110",
             "name": "Quest6_complete"
+        },
+        {
+            "id": "112",
+            "name": "At University"
+        },
+        {
+            "id": "113",
+            "name": "At Conference"
+        },
+        {
+            "id": "111",
+            "name": "Location"
         }
     ],
     "backgrounds": [
@@ -474,6 +486,78 @@
             "_v": 1566394921392
         },
         {
+            "id": "f27e6a95-e776-4243-87eb-ec9b5e452115",
+            "name": "Goblin",
+            "numFrames": 1,
+            "type": "static",
+            "filename": "Goblin.png",
+            "_v": 1566394921392
+        },
+        {
+            "id": "faa40495-00c2-4408-b859-b2deb3b31d20",
+            "name": "Heart",
+            "numFrames": 1,
+            "type": "static",
+            "filename": "Heart.png",
+            "_v": 1566394921392
+        },
+        {
+            "id": "9fc7ab07-719f-4b80-91f5-12cda59291b1",
+            "name": "Items",
+            "numFrames": 4,
+            "type": "animated",
+            "filename": "Items.png",
+            "_v": 1566394921392
+        },
+        {
+            "id": "49f18b02-8273-4803-8b78-719db50ab553",
+            "name": "PC",
+            "numFrames": 1,
+            "type": "static",
+            "filename": "PC.png",
+            "_v": 1566394921392
+        },
+        {
+            "id": "f7306258-4eec-4c06-a9ec-f95441173969",
+            "name": "Rick-blackhair",
+            "numFrames": 6,
+            "type": "actor_animated",
+            "filename": "Rick-blackhair.png",
+            "_v": 1566394921392
+        },
+        {
+            "id": "31090c22-2e38-46c0-8594-0217c55adc64",
+            "name": "Rick-head",
+            "numFrames": 2,
+            "type": "animated",
+            "filename": "Rick-head.png",
+            "_v": 1566395971141
+        },
+        {
+            "id": "3145337b-57af-48e8-aff5-8fd10d6c25b0",
+            "name": "Rick",
+            "numFrames": 6,
+            "type": "actor_animated",
+            "filename": "Rick.png",
+            "_v": 1566394921392
+        },
+        {
+            "id": "e5a60aad-9551-4e3b-8826-9ca060e4025f",
+            "name": "Squirrel",
+            "numFrames": 3,
+            "type": "actor",
+            "filename": "Squirrel.png",
+            "_v": 1566394921392
+        },
+        {
+            "id": "15c12b89-8a44-41ca-8a92-c9674bf05433",
+            "name": "Supervisor1",
+            "numFrames": 6,
+            "type": "actor_animated",
+            "filename": "Supervisor1.png",
+            "_v": 1566394921392
+        },
+        {
             "id": "aff753be-6ace-4f50-b50b-fa29642604f8",
             "name": "bed",
             "numFrames": 1,
@@ -530,35 +614,11 @@
             "_v": 1566394921392
         },
         {
-            "id": "f27e6a95-e776-4243-87eb-ec9b5e452115",
-            "name": "Goblin",
-            "numFrames": 1,
-            "type": "static",
-            "filename": "Goblin.png",
-            "_v": 1566394921392
-        },
-        {
-            "id": "faa40495-00c2-4408-b859-b2deb3b31d20",
-            "name": "Heart",
-            "numFrames": 1,
-            "type": "static",
-            "filename": "Heart.png",
-            "_v": 1566394921392
-        },
-        {
             "id": "61e3ccf8-e0e0-44f6-87ad-be760a0cda2c",
             "name": "ice",
             "numFrames": 1,
             "type": "static",
             "filename": "ice.png",
-            "_v": 1566394921392
-        },
-        {
-            "id": "9fc7ab07-719f-4b80-91f5-12cda59291b1",
-            "name": "Items",
-            "numFrames": 4,
-            "type": "animated",
-            "filename": "Items.png",
             "_v": 1566394921392
         },
         {
@@ -586,14 +646,6 @@
             "_v": 1566394921392
         },
         {
-            "id": "49f18b02-8273-4803-8b78-719db50ab553",
-            "name": "PC",
-            "numFrames": 1,
-            "type": "static",
-            "filename": "PC.png",
-            "_v": 1566394921392
-        },
-        {
             "id": "62ff8b0a-2bc6-435f-b329-5081f1116656",
             "name": "player",
             "numFrames": 6,
@@ -607,22 +659,6 @@
             "numFrames": 1,
             "type": "static",
             "filename": "radio.png",
-            "_v": 1566394921392
-        },
-        {
-            "id": "f7306258-4eec-4c06-a9ec-f95441173969",
-            "name": "Rick-blackhair",
-            "numFrames": 6,
-            "type": "actor_animated",
-            "filename": "Rick-blackhair.png",
-            "_v": 1566394921392
-        },
-        {
-            "id": "3145337b-57af-48e8-aff5-8fd10d6c25b0",
-            "name": "Rick",
-            "numFrames": 6,
-            "type": "actor_animated",
-            "filename": "Rick.png",
             "_v": 1566394921392
         },
         {
@@ -671,22 +707,6 @@
             "numFrames": 1,
             "type": "static",
             "filename": "soil.png",
-            "_v": 1566394921392
-        },
-        {
-            "id": "e5a60aad-9551-4e3b-8826-9ca060e4025f",
-            "name": "Squirrel",
-            "numFrames": 3,
-            "type": "actor",
-            "filename": "Squirrel.png",
-            "_v": 1566394921392
-        },
-        {
-            "id": "15c12b89-8a44-41ca-8a92-c9674bf05433",
-            "name": "Supervisor1",
-            "numFrames": 6,
-            "type": "actor_animated",
-            "filename": "Supervisor1.png",
             "_v": 1566394921392
         },
         {
@@ -5468,7 +5488,20 @@
             "y": 887.5,
             "width": 20,
             "height": 16,
-            "actors": [],
+            "actors": [
+                {
+                    "id": "b42f38cf-365e-42d3-a9a5-bd9b67a21c9a",
+                    "spriteSheetId": "31090c22-2e38-46c0-8594-0217c55adc64",
+                    "x": 2,
+                    "y": 4,
+                    "movementType": "static",
+                    "direction": "down",
+                    "moveSpeed": "1",
+                    "animSpeed": "3",
+                    "name": "Rick-head",
+                    "animate": true
+                }
+            ],
             "triggers": [],
             "collisions": [
                 0,
@@ -5517,13 +5550,136 @@
                     "id": "000bb6eb-1b7e-4ffe-894b-62e1cbd946af",
                     "command": "EVENT_ACTOR_HIDE",
                     "args": {
-                        "actorId": "player"
+                        "actorId": "player",
+                        "__collapse": true
                     }
+                },
+                {
+                    "id": "db352c89-1154-4cfd-88ce-5322f56145e4",
+                    "command": "EVENT_SET_VALUE",
+                    "args": {
+                        "variable": "111",
+                        "value": 0
+                    }
+                },
+                {
+                    "id": "6b2529fe-a796-48f8-b6e9-c099541c8887",
+                    "command": "EVENT_GROUP",
+                    "args": {
+                        "__label": "Show Location"
+                    },
+                    "true": [
+                        {
+                            "id": "b16cb54b-4115-4539-a39f-899dd68541d5",
+                            "command": "EVENT_IF_VALUE",
+                            "args": {
+                                "variable": "111",
+                                "operator": "==",
+                                "comparator": "0",
+                                "__label": "At Home?",
+                                "__collapseElse": true
+                            },
+                            "true": [
+                                {
+                                    "id": "3c525f2d-962e-4d30-b998-065fe6a332d1",
+                                    "command": "EVENT_ACTOR_SET_POSITION",
+                                    "args": {
+                                        "actorId": "b42f38cf-365e-42d3-a9a5-bd9b67a21c9a",
+                                        "x": 2,
+                                        "y": 4,
+                                        "__collapse": false
+                                    }
+                                },
+                                {
+                                    "id": "3d0920b2-9b3d-4318-90f7-e24b8ff22fdc",
+                                    "command": "EVENT_END"
+                                }
+                            ],
+                            "false": [
+                                {
+                                    "id": "bbacb4ac-6a7a-4099-900e-a6bb1b94dcdd",
+                                    "command": "EVENT_IF_VALUE",
+                                    "args": {
+                                        "variable": "111",
+                                        "operator": "==",
+                                        "comparator": 1,
+                                        "__label": "At University?",
+                                        "__collapse": true,
+                                        "__collapseElse": true
+                                    },
+                                    "true": [
+                                        {
+                                            "id": "20cfcfad-63e1-437a-99e0-08991e5eba67",
+                                            "command": "EVENT_ACTOR_SET_POSITION",
+                                            "args": {
+                                                "actorId": "b42f38cf-365e-42d3-a9a5-bd9b67a21c9a",
+                                                "x": 13,
+                                                "y": 5
+                                            }
+                                        },
+                                        {
+                                            "id": "8f094dd5-5d2f-4e38-9221-351244956f58",
+                                            "command": "EVENT_END"
+                                        }
+                                    ],
+                                    "false": [
+                                        {
+                                            "id": "df9326f8-4c46-44cc-bda7-76a8a5a211bc",
+                                            "command": "EVENT_IF_VALUE",
+                                            "args": {
+                                                "variable": "111",
+                                                "operator": "==",
+                                                "comparator": 2,
+                                                "__label": "At Conference?",
+                                                "__collapse": true,
+                                                "__collapseElse": true
+                                            },
+                                            "true": [
+                                                {
+                                                    "id": "b1480133-3f14-4e34-a365-8a127163b11b",
+                                                    "command": "EVENT_ACTOR_SET_POSITION",
+                                                    "args": {
+                                                        "actorId": "b42f38cf-365e-42d3-a9a5-bd9b67a21c9a",
+                                                        "x": 12,
+                                                        "y": 12
+                                                    }
+                                                },
+                                                {
+                                                    "id": "a6f4d8f7-d17a-4d0d-b762-43dd0b1dd9a4",
+                                                    "command": "EVENT_END"
+                                                }
+                                            ],
+                                            "false": [
+                                                {
+                                                    "id": "7f0b8c7d-b5a0-46ed-af40-671d6dbe615d",
+                                                    "command": "EVENT_END"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "id": "cc015fc4-cfe5-4910-be09-a44ca5628d36",
+                                            "command": "EVENT_END"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "id": "ee0160b4-ccb7-4c45-9d85-e14e5b0ef5eb",
+                                    "command": "EVENT_END"
+                                }
+                            ]
+                        },
+                        {
+                            "id": "cb98b48b-0ac3-47f3-a194-70474d3b1444",
+                            "command": "EVENT_END"
+                        }
+                    ]
                 },
                 {
                     "id": "6480c900-5374-42a2-83f7-5fad2cc28c4c",
                     "command": "EVENT_LOOP",
-                    "args": {},
+                    "args": {
+                        "__collapse": true
+                    },
                     "true": [
                         {
                             "id": "435d1532-fabe-4464-8399-2f9aec33a5a4",
