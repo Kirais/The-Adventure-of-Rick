@@ -5044,7 +5044,7 @@
                                 "input": [
                                     "right"
                                 ],
-                                "__collapse": false,
+                                "__collapse": true,
                                 "__collapseElse": true,
                                 "__label": "Items"
                             },
@@ -5084,7 +5084,7 @@
                                 "input": [
                                     "up"
                                 ],
-                                "__collapse": false,
+                                "__collapse": true,
                                 "__collapseElse": true,
                                 "__label": "Map"
                             },
@@ -5122,7 +5122,8 @@
                             "command": "EVENT_IF_INPUT",
                             "args": {
                                 "input": [
-                                    "down"
+                                    "down",
+                                    "b"
                                 ],
                                 "__collapse": false,
                                 "__label": "Exit"
