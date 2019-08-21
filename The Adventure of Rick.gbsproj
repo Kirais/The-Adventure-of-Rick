@@ -5,7 +5,7 @@
         "startX": 0,
         "startY": 0,
         "startDirection": "up",
-        "zoom": 200,
+        "zoom": 100,
         "startSceneId": "12282cd5-d71e-4ea9-a48b-09b2e3e2ef3c",
         "playerSpriteSheetId": "f7306258-4eec-4c06-a9ec-f95441173969"
     },
@@ -1198,9 +1198,9 @@
             "triggers": [
                 {
                     "id": "3ec6db88-7397-4655-bb1a-c03f905b2724",
-                    "x": 4,
+                    "x": 3,
                     "y": 12,
-                    "width": 2,
+                    "width": 3,
                     "height": 2,
                     "trigger": "walk",
                     "script": [
@@ -1224,9 +1224,9 @@
                 {
                     "id": "faedd91c-908c-4e1a-8dea-7ece4b9d0316",
                     "x": 1,
-                    "y": 2,
+                    "y": 1,
                     "width": 2,
-                    "height": 1,
+                    "height": 2,
                     "trigger": "walk",
                     "script": [
                         {
@@ -1248,9 +1248,9 @@
                 },
                 {
                     "id": "2cd90631-e737-42db-a397-24f3b6d5e83b",
-                    "x": 4,
+                    "x": 3,
                     "y": 5,
-                    "width": 2,
+                    "width": 3,
                     "height": 2,
                     "trigger": "walk",
                     "script": [
@@ -1275,7 +1275,7 @@
             "collisions": [
                 0,
                 0,
-                224,
+                128,
                 1,
                 0,
                 24,
@@ -1285,10 +1285,10 @@
                 0,
                 0,
                 0,
-                192,
+                64,
                 12,
                 0,
-                204,
+                196,
                 0,
                 128,
                 1,
@@ -1303,9 +1303,9 @@
                 0,
                 0,
                 0,
-                204,
+                196,
                 0,
-                192,
+                64,
                 12,
                 0,
                 24,
@@ -1458,9 +1458,9 @@
                 {
                     "id": "65d84093-ba63-411f-b9cf-8c1b1ac4366c",
                     "x": 3,
-                    "y": 28,
+                    "y": 27,
                     "width": 2,
-                    "height": 1,
+                    "height": 2,
                     "trigger": "walk",
                     "script": [
                         {
@@ -1590,7 +1590,7 @@
                 0,
                 0,
                 0,
-                120,
+                96,
                 0,
                 0,
                 0,
@@ -1624,9 +1624,9 @@
             "triggers": [
                 {
                     "id": "661bd8bc-92a2-4e55-9757-57b44633ad06",
-                    "x": 4,
+                    "x": 3,
                     "y": 12,
-                    "width": 2,
+                    "width": 3,
                     "height": 2,
                     "trigger": "walk",
                     "script": [
@@ -1650,9 +1650,9 @@
                 {
                     "id": "8738afa4-c5a6-49fb-94a5-42c6faefacde",
                     "x": 1,
-                    "y": 2,
+                    "y": 1,
                     "width": 2,
-                    "height": 1,
+                    "height": 2,
                     "trigger": "walk",
                     "script": [
                         {
@@ -1676,7 +1676,7 @@
             "collisions": [
                 0,
                 0,
-                224,
+                128,
                 1,
                 0,
                 24,
@@ -1704,9 +1704,9 @@
                 0,
                 0,
                 0,
-                204,
+                196,
                 0,
-                192,
+                64,
                 12,
                 0,
                 24,
@@ -3667,9 +3667,9 @@
                 {
                     "id": "ba899308-4887-4642-a7f5-4d3ff9d098f0",
                     "x": 1,
-                    "y": 2,
+                    "y": 1,
                     "width": 2,
-                    "height": 1,
+                    "height": 2,
                     "trigger": "walk",
                     "script": [
                         {
@@ -3691,9 +3691,9 @@
                 },
                 {
                     "id": "fa1f7400-a3cb-451e-8acf-d77ec703c5c4",
-                    "x": 4,
+                    "x": 3,
                     "y": 12,
-                    "width": 2,
+                    "width": 3,
                     "height": 2,
                     "trigger": "walk",
                     "script": [
@@ -3718,7 +3718,7 @@
             "collisions": [
                 0,
                 0,
-                224,
+                128,
                 1,
                 0,
                 24,
@@ -3746,9 +3746,9 @@
                 0,
                 0,
                 0,
-                204,
+                196,
                 0,
-                192,
+                64,
                 12,
                 0,
                 24,
@@ -3773,6 +3773,31 @@
             "height": 32,
             "actors": [],
             "triggers": [
+                {
+                    "id": "0ca40713-8058-403e-970b-3004b1a1c0fd",
+                    "x": 12,
+                    "y": 15,
+                    "width": 2,
+                    "height": 1,
+                    "trigger": "walk",
+                    "script": [
+                        {
+                            "id": "fa26107f-89f2-47d8-baf9-10e70169b49b",
+                            "command": "EVENT_SWITCH_SCENE",
+                            "args": {
+                                "sceneId": "79571dd7-6690-4b0d-b16d-f11f3d298700",
+                                "x": 15,
+                                "y": 30,
+                                "direction": "up",
+                                "fadeSpeed": "2"
+                            }
+                        },
+                        {
+                            "id": "f0863145-92f9-465b-9546-0ec662a7b221",
+                            "command": "EVENT_END"
+                        }
+                    ]
+                },
                 {
                     "id": "1ae044df-cae3-4105-bfc0-cde8ad81353d",
                     "x": 7,
@@ -4223,7 +4248,33 @@
             "width": 32,
             "height": 32,
             "actors": [],
-            "triggers": [],
+            "triggers": [
+                {
+                    "id": "82e24deb-ac81-44e5-966c-de6010667f87",
+                    "x": 15,
+                    "y": 31,
+                    "width": 2,
+                    "height": 1,
+                    "trigger": "walk",
+                    "script": [
+                        {
+                            "id": "b95fa999-b735-4600-a173-5d996f7ff060",
+                            "command": "EVENT_SWITCH_SCENE",
+                            "args": {
+                                "sceneId": "81e3d67b-847b-418f-a159-f426b5328e70",
+                                "x": 12,
+                                "y": 16,
+                                "direction": "down",
+                                "fadeSpeed": "2"
+                            }
+                        },
+                        {
+                            "id": "f0863145-92f9-465b-9546-0ec662a7b221",
+                            "command": "EVENT_END"
+                        }
+                    ]
+                }
+            ],
             "collisions": [
                 255,
                 255,
