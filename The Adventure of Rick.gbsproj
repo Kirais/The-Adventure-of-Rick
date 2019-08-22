@@ -1955,6 +1955,16 @@
                             }
                         },
                         {
+                            "id": "b0531f5f-69aa-434e-9680-71fca606b9a5",
+                            "command": "EVENT_TEXT",
+                            "args": {
+                                "text": [
+                                    "Great! You are\nenrolled in PHY501",
+                                    "Quantum\nInformation\nProcessing"
+                                ]
+                            }
+                        },
+                        {
                             "id": "93011198-8f22-46d6-897e-718a9b25ceef",
                             "command": "EVENT_END"
                         }
