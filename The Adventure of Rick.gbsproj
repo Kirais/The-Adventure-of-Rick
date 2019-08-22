@@ -78,10 +78,6 @@
             "name": "Location"
         },
         {
-            "id": "111",
-            "name": "Quest7_complete"
-        },
-        {
             "id": "11",
             "name": "Yes to supervisor"
         },
@@ -164,6 +160,18 @@
         {
             "id": "25",
             "name": "Do experiment?"
+        },
+        {
+            "id": "26",
+            "name": "Variable 026"
+        },
+        {
+            "id": "100",
+            "name": "Answer"
+        },
+        {
+            "id": "111",
+            "name": "Q7 Passed final defense"
         }
     ],
     "backgrounds": [
@@ -1554,15 +1562,55 @@
                     "trigger": "walk",
                     "script": [
                         {
-                            "id": "dfef48ff-af09-4c45-a042-5491d0c097b1",
-                            "command": "EVENT_SWITCH_SCENE",
+                            "id": "cc12184a-4b11-4c09-96e5-f5f60607a443",
+                            "command": "EVENT_IF_TRUE",
                             "args": {
-                                "sceneId": "2fcd3a6f-963e-4792-ac19-7339873f24a2",
-                                "x": 6,
-                                "y": 30,
-                                "direction": "up",
-                                "fadeSpeed": "2"
-                            }
+                                "variable": "105",
+                                "__collapseElse": false,
+                                "__collapse": false
+                            },
+                            "true": [
+                                {
+                                    "id": "dfef48ff-af09-4c45-a042-5491d0c097b1",
+                                    "command": "EVENT_SWITCH_SCENE",
+                                    "args": {
+                                        "sceneId": "2fcd3a6f-963e-4792-ac19-7339873f24a2",
+                                        "x": 6,
+                                        "y": 30,
+                                        "direction": "up",
+                                        "fadeSpeed": "2"
+                                    }
+                                },
+                                {
+                                    "id": "4f102890-7172-42a7-8e9f-99ffb5b5f5f8",
+                                    "command": "EVENT_END"
+                                }
+                            ],
+                            "false": [
+                                {
+                                    "id": "60f1ee31-d790-49e4-821f-3d865c6c644f",
+                                    "command": "EVENT_TEXT",
+                                    "args": {
+                                        "text": [
+                                            "You don't have\naccess to the\ncleanroom!",
+                                            "Ask your\nsupervisor for\npermission."
+                                        ]
+                                    }
+                                },
+                                {
+                                    "id": "84b9bdc4-a098-4e3a-aae1-f3405a0aa343",
+                                    "command": "EVENT_ACTOR_MOVE_RELATIVE",
+                                    "args": {
+                                        "actorId": "player",
+                                        "x": 0,
+                                        "y": 2
+                                    }
+                                },
+                                {
+                                    "id": "e67f6008-a8e2-4285-80d7-25d56611633d",
+                                    "command": "EVENT_END"
+                                }
+                            ]
                         },
                         {
                             "id": "45c1c476-a100-474c-ba52-43e348a51552",
@@ -1604,15 +1652,55 @@
                     "trigger": "walk",
                     "script": [
                         {
-                            "id": "056a593d-9876-4b81-86e1-3155574ec9d4",
-                            "command": "EVENT_SWITCH_SCENE",
+                            "id": "c52b9061-8f76-400b-b545-ca50145b4f59",
+                            "command": "EVENT_IF_TRUE",
                             "args": {
-                                "sceneId": "ef669de7-1271-42f8-b79c-064f1b32deff",
-                                "x": 15,
-                                "y": 30,
-                                "direction": "up",
-                                "fadeSpeed": "2"
-                            }
+                                "variable": "105",
+                                "__collapseElse": true,
+                                "__collapse": true
+                            },
+                            "true": [
+                                {
+                                    "id": "056a593d-9876-4b81-86e1-3155574ec9d4",
+                                    "command": "EVENT_SWITCH_SCENE",
+                                    "args": {
+                                        "sceneId": "ef669de7-1271-42f8-b79c-064f1b32deff",
+                                        "x": 15,
+                                        "y": 30,
+                                        "direction": "up",
+                                        "fadeSpeed": "2"
+                                    }
+                                },
+                                {
+                                    "id": "deed3cfa-1651-4969-b504-384c989d6336",
+                                    "command": "EVENT_END"
+                                }
+                            ],
+                            "false": [
+                                {
+                                    "id": "1bd2b67f-fc8d-48e4-9d40-91f8dfe8ccbc",
+                                    "command": "EVENT_TEXT",
+                                    "args": {
+                                        "text": [
+                                            "You don't have\naccess to the lab!",
+                                            "Ask your\nsupervisor for\npermission."
+                                        ]
+                                    }
+                                },
+                                {
+                                    "id": "40052f56-86b3-45ba-a829-9c27742fa474",
+                                    "command": "EVENT_ACTOR_MOVE_RELATIVE",
+                                    "args": {
+                                        "actorId": "player",
+                                        "x": 0,
+                                        "y": 2
+                                    }
+                                },
+                                {
+                                    "id": "7d26ad43-3df9-499c-86aa-87a46d4edaf0",
+                                    "command": "EVENT_END"
+                                }
+                            ]
                         },
                         {
                             "id": "45c1c476-a100-474c-ba52-43e348a51552",
@@ -2369,57 +2457,175 @@
                     "direction": "down",
                     "moveSpeed": "1",
                     "animSpeed": "3",
-                    "name": "Supervisor Final Defense",
+                    "name": "Examiner",
                     "script": [
                         {
-                            "id": "6cb91f8b-b31e-47ee-9905-8a9e52369ed7",
-                            "command": "EVENT_SET_VALUE",
+                            "id": "571651bb-5a38-43e9-b5fc-0e77a06b5cd4",
+                            "command": "EVENT_IF_TRUE",
                             "args": {
-                                "variable": "7",
-                                "value": 200
-                            }
+                                "variable": "15",
+                                "__collapse": true,
+                                "__collapseElse": true,
+                                "__label": "QE?"
+                            },
+                            "true": [
+                                {
+                                    "id": "8aa95afd-c795-4fb6-9ec9-4972ca92e87d",
+                                    "command": "EVENT_TEXT",
+                                    "args": {
+                                        "text": "Do you want to\ntake qualifying\nexam?",
+                                        "__collapse": false
+                                    }
+                                },
+                                {
+                                    "id": "17dfad70-8646-4917-8242-2a53c798a1d1",
+                                    "command": "EVENT_CHOICE",
+                                    "args": {
+                                        "variable": "100",
+                                        "trueText": "Yes",
+                                        "falseText": "No",
+                                        "__collapse": true
+                                    }
+                                },
+                                {
+                                    "id": "9d446035-1b91-4c70-a16a-d368f53d9cde",
+                                    "command": "EVENT_GROUP",
+                                    "args": {
+                                        "__collapse": true,
+                                        "__label": "Initilialize examiner stats"
+                                    },
+                                    "true": [
+                                        {
+                                            "id": "6cb91f8b-b31e-47ee-9905-8a9e52369ed7",
+                                            "command": "EVENT_SET_VALUE",
+                                            "args": {
+                                                "variable": "7",
+                                                "value": 50,
+                                                "__collapse": false
+                                            }
+                                        },
+                                        {
+                                            "id": "75451647-ae1a-44ca-b8a3-912151e0b756",
+                                            "command": "EVENT_SET_VALUE",
+                                            "args": {
+                                                "variable": "8",
+                                                "value": 0,
+                                                "__collapse": false
+                                            }
+                                        },
+                                        {
+                                            "id": "ef494b97-e0ca-4b25-9c8a-45dba0ef21c8",
+                                            "command": "EVENT_SET_VALUE",
+                                            "args": {
+                                                "variable": "10",
+                                                "value": 40,
+                                                "__collapse": false
+                                            }
+                                        },
+                                        {
+                                            "id": "9e86f6c7-6b8a-453d-9027-85e06f696ed7",
+                                            "command": "EVENT_END"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "id": "999e3a07-dad7-422f-8ae0-cc4538da4786",
+                                    "command": "EVENT_END"
+                                }
+                            ],
+                            "false": [
+                                {
+                                    "id": "b8fe85c2-e24a-44b9-812f-0637e982da3c",
+                                    "command": "EVENT_IF_TRUE",
+                                    "args": {
+                                        "variable": "16",
+                                        "__collapse": false,
+                                        "__label": "Defense?"
+                                    },
+                                    "true": [
+                                        {
+                                            "id": "e30bee25-4d34-4ab1-96ab-eb1f37df3955",
+                                            "command": "EVENT_TEXT",
+                                            "args": {
+                                                "text": "Are you ready for\nfinal defense?"
+                                            }
+                                        },
+                                        {
+                                            "id": "24aea266-fb08-4fa0-b2ca-03c909ee0f3a",
+                                            "command": "EVENT_CHOICE",
+                                            "args": {
+                                                "variable": "100",
+                                                "trueText": "Yes",
+                                                "falseText": "No",
+                                                "__collapse": true
+                                            }
+                                        },
+                                        {
+                                            "id": "ca36c453-f907-446f-9430-0661efe683f8",
+                                            "command": "EVENT_GROUP",
+                                            "args": {
+                                                "__collapse": false,
+                                                "__label": "Initilialize examiner stats"
+                                            },
+                                            "true": [
+                                                {
+                                                    "id": "5225d556-6db1-4331-8f79-1b787dbc063d",
+                                                    "command": "EVENT_SET_VALUE",
+                                                    "args": {
+                                                        "variable": "7",
+                                                        "value": 200,
+                                                        "__collapse": true
+                                                    }
+                                                },
+                                                {
+                                                    "id": "b3e2ca89-16b3-48c1-8b2c-a64f62d97ce3",
+                                                    "command": "EVENT_SET_VALUE",
+                                                    "args": {
+                                                        "variable": "8",
+                                                        "value": 10,
+                                                        "__collapse": true
+                                                    }
+                                                },
+                                                {
+                                                    "id": "5c1fab76-898a-43be-ab8e-57f997b6287d",
+                                                    "command": "EVENT_SET_VALUE",
+                                                    "args": {
+                                                        "variable": "10",
+                                                        "value": 100,
+                                                        "__collapse": true
+                                                    }
+                                                },
+                                                {
+                                                    "id": "6c29b368-554c-4107-921b-32975a1f15dc",
+                                                    "command": "EVENT_END"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "id": "815a485f-2bbc-47b6-92c7-69d2a86c85ff",
+                                            "command": "EVENT_END"
+                                        }
+                                    ],
+                                    "false": [
+                                        {
+                                            "id": "34255d5b-0d57-43a3-a48c-febd4bb148dd",
+                                            "command": "EVENT_END"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "id": "dafc0998-2b1e-48f1-9dba-352a00101867",
+                                    "command": "EVENT_END"
+                                }
+                            ]
                         },
                         {
-                            "id": "75451647-ae1a-44ca-b8a3-912151e0b756",
-                            "command": "EVENT_SET_VALUE",
-                            "args": {
-                                "variable": "8",
-                                "value": 10
-                            }
-                        },
-                        {
-                            "id": "ef494b97-e0ca-4b25-9c8a-45dba0ef21c8",
-                            "command": "EVENT_SET_VALUE",
-                            "args": {
-                                "variable": "10",
-                                "value": 100
-                            }
-                        },
-                        {
-                            "id": "8aa95afd-c795-4fb6-9ec9-4972ca92e87d",
-                            "command": "EVENT_TEXT",
-                            "args": {
-                                "text": "Do you want to\ntake qualifying\nexam?",
-                                "__collapse": true
-                            }
-                        },
-                        {
-                            "id": "49987a91-2870-43c2-9566-1c3818389e60",
-                            "command": "EVENT_CHOICE",
+                            "id": "57d0420f-4eeb-4f11-bfcc-3db8d950ade2",
+                            "command": "EVENT_IF_TRUE",
                             "args": {
                                 "variable": "100",
-                                "trueText": "Yes",
-                                "falseText": "No",
-                                "__collapse": true
-                            }
-                        },
-                        {
-                            "id": "072651af-df7f-4672-8895-b71e6554e04e",
-                            "command": "EVENT_IF_VALUE",
-                            "args": {
-                                "variable": "100",
-                                "operator": "==",
-                                "comparator": 1
+                                "__collapseElse": false,
+                                "__collapse": false
                             },
                             "true": [
                                 {
@@ -2430,19 +2636,12 @@
                                     },
                                     "true": [
                                         {
-                                            "id": "361bb87d-538b-4772-869e-f67ae255bcad",
-                                            "command": "EVENT_TEXT",
-                                            "args": {
-                                                "text": "Attack?"
-                                            }
-                                        },
-                                        {
                                             "id": "a3daeb32-cb4f-4857-be17-6f2b0cdce4e0",
                                             "command": "EVENT_CHOICE",
                                             "args": {
                                                 "variable": "100",
-                                                "trueText": "Yes",
-                                                "falseText": "No"
+                                                "trueText": "Attack?",
+                                                "falseText": "Cancel"
                                             }
                                         },
                                         {
@@ -2654,7 +2853,8 @@
                                                     "args": {
                                                         "variable": "4",
                                                         "operator": ">",
-                                                        "comparator": 100
+                                                        "comparator": 100,
+                                                        "__collapse": false
                                                     },
                                                     "true": [
                                                         {
@@ -2726,16 +2926,147 @@
                                                     ]
                                                 },
                                                 {
-                                                    "id": "d7d29700-870f-4622-909f-ea57be42ba14",
-                                                    "command": "EVENT_ACTOR_HIDE",
+                                                    "id": "5ae78e14-c279-4134-be7b-ce91ee62eef7",
+                                                    "command": "EVENT_IF_TRUE",
                                                     "args": {
-                                                        "actorId": "5dc484b8-a6e1-47a0-af25-63114d26b61b"
-                                                    }
-                                                },
-                                                {
-                                                    "id": "2a8178c3-99f9-4d71-8243-800d641290bf",
-                                                    "command": "EVENT_STOP",
-                                                    "args": {}
+                                                        "variable": "15"
+                                                    },
+                                                    "true": [
+                                                        {
+                                                            "id": "283395ab-e81e-4c4f-93aa-0b11df236b97",
+                                                            "command": "EVENT_GROUP",
+                                                            "args": {
+                                                                "__label": "Pass QE",
+                                                                "__collapse": true
+                                                            },
+                                                            "true": [
+                                                                {
+                                                                    "id": "b0d28b92-ece8-43f2-8266-b3ce4f9f127f",
+                                                                    "command": "EVENT_TEXT",
+                                                                    "args": {
+                                                                        "text": "Congrats! You\npassed QE!"
+                                                                    }
+                                                                },
+                                                                {
+                                                                    "id": "9bf00000-9a77-4cc9-8de4-be62ac9c2948",
+                                                                    "command": "EVENT_SET_TRUE",
+                                                                    "args": {
+                                                                        "variable": "108"
+                                                                    }
+                                                                },
+                                                                {
+                                                                    "id": "a180ccc5-d776-4f9e-8186-ed7994fc3b79",
+                                                                    "command": "EVENT_SET_FALSE",
+                                                                    "args": {
+                                                                        "variable": "15"
+                                                                    }
+                                                                },
+                                                                {
+                                                                    "id": "d7d29700-870f-4622-909f-ea57be42ba14",
+                                                                    "command": "EVENT_ACTOR_HIDE",
+                                                                    "args": {
+                                                                        "actorId": "5372e0c0-7e8b-44a8-8fae-28f277938e12"
+                                                                    }
+                                                                },
+                                                                {
+                                                                    "id": "2a8178c3-99f9-4d71-8243-800d641290bf",
+                                                                    "command": "EVENT_STOP",
+                                                                    "args": {}
+                                                                },
+                                                                {
+                                                                    "id": "0c3c64fd-1501-4d98-86ab-5819e8fe60af",
+                                                                    "command": "EVENT_END"
+                                                                }
+                                                            ]
+                                                        },
+                                                        {
+                                                            "id": "76f142da-21a8-4338-a269-72fad3dd8517",
+                                                            "command": "EVENT_END"
+                                                        }
+                                                    ],
+                                                    "false": [
+                                                        {
+                                                            "id": "d6883583-860d-4153-b413-a4c4b592ba71",
+                                                            "command": "EVENT_IF_TRUE",
+                                                            "args": {
+                                                                "variable": "16",
+                                                                "__collapse": false
+                                                            },
+                                                            "true": [
+                                                                {
+                                                                    "id": "33e54122-4acf-4a4d-b0a9-bd71ca4c1af2",
+                                                                    "command": "EVENT_GROUP",
+                                                                    "args": {
+                                                                        "__label": "Pass Defense",
+                                                                        "__collapse": false
+                                                                    },
+                                                                    "true": [
+                                                                        {
+                                                                            "id": "6300ec00-dee1-4b28-8417-94e1d1416996",
+                                                                            "command": "EVENT_TEXT",
+                                                                            "args": {
+                                                                                "text": [
+                                                                                    "Congrats! You\npassed final\ndefense!",
+                                                                                    "You are now\nofficially Dr.\nSanchez!"
+                                                                                ]
+                                                                            }
+                                                                        },
+                                                                        {
+                                                                            "id": "5375f5e8-9c38-44b9-aff9-83839c5626f3",
+                                                                            "command": "EVENT_SET_TRUE",
+                                                                            "args": {
+                                                                                "variable": "111"
+                                                                            }
+                                                                        },
+                                                                        {
+                                                                            "id": "1729ffc7-dd2e-494a-a445-6299cb2dd80f",
+                                                                            "command": "EVENT_SET_FALSE",
+                                                                            "args": {
+                                                                                "variable": "16"
+                                                                            }
+                                                                        },
+                                                                        {
+                                                                            "id": "313d1810-d21a-4b51-b6c5-48c42acb9f95",
+                                                                            "command": "EVENT_ACTOR_HIDE",
+                                                                            "args": {
+                                                                                "actorId": "5372e0c0-7e8b-44a8-8fae-28f277938e12"
+                                                                            }
+                                                                        },
+                                                                        {
+                                                                            "id": "93b42124-3989-47cb-a36b-bb34a98f59c6",
+                                                                            "command": "EVENT_SET_FALSE",
+                                                                            "args": {
+                                                                                "variable": "100"
+                                                                            }
+                                                                        },
+                                                                        {
+                                                                            "id": "5ec2a0b3-e236-418b-874c-83cae232574f",
+                                                                            "command": "EVENT_STOP",
+                                                                            "args": {}
+                                                                        },
+                                                                        {
+                                                                            "id": "c6fc406d-5d09-409d-9609-a47f0d9234fe",
+                                                                            "command": "EVENT_END"
+                                                                        }
+                                                                    ]
+                                                                },
+                                                                {
+                                                                    "id": "25ed2e15-5aa2-42f8-9886-a52ca918680b",
+                                                                    "command": "EVENT_END"
+                                                                }
+                                                            ],
+                                                            "false": [
+                                                                {
+                                                                    "id": "e679dd84-e808-40e3-87ab-7f02a0bfebbc",
+                                                                    "command": "EVENT_END"
+                                                                }
+                                                            ]
+                                                        },
+                                                        {
+                                                            "id": "cbe2560a-c1f7-4758-8c6b-0c74c0cb96f0",
+                                                            "command": "EVENT_END"
+                                                        }
+                                                    ]
                                                 },
                                                 {
                                                     "id": "dc2eee78-dbb1-4e0b-9b77-f29a8992d4c8",
@@ -2776,33 +3107,13 @@
                                     ]
                                 },
                                 {
-                                    "id": "59eed774-4e6d-4eea-adef-2c003d2e9f78",
+                                    "id": "fadba3ce-a980-41a3-8e76-5aa3acaddf58",
                                     "command": "EVENT_END"
                                 }
                             ],
                             "false": [
                                 {
-                                    "id": "4d32652f-5bf8-40e6-bd34-4616caec2d7a",
-                                    "command": "EVENT_TEXT",
-                                    "args": {
-                                        "text": "Supervisor: I'll\nget you next time!"
-                                    }
-                                },
-                                {
-                                    "id": "89c7881e-df0f-4c47-a7ab-d08196dd9dc2",
-                                    "command": "EVENT_ACTOR_EMOTE",
-                                    "args": {
-                                        "actorId": "5dc484b8-a6e1-47a0-af25-63114d26b61b",
-                                        "emoteId": "4"
-                                    }
-                                },
-                                {
-                                    "id": "c09e4846-37e8-44df-8d0c-ca4e383e92b3",
-                                    "command": "EVENT_STOP",
-                                    "args": {}
-                                },
-                                {
-                                    "id": "d7dc45f5-66df-4ea6-a118-53d97617d093",
+                                    "id": "353b7cc0-0586-4b8e-a7b5-78a813bf4057",
                                     "command": "EVENT_END"
                                 }
                             ]
