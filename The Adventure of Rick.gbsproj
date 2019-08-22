@@ -86,10 +86,6 @@
             "name": "Quest2_complete"
         },
         {
-            "id": "105",
-            "name": "Quest1_complete"
-        },
-        {
             "id": "108",
             "name": "Quest4_complete"
         },
@@ -116,6 +112,10 @@
         {
             "id": "12",
             "name": "Which supervisor"
+        },
+        {
+            "id": "105",
+            "name": "Q1 Find Supervisor"
         }
     ],
     "backgrounds": [
@@ -3179,7 +3179,7 @@
                                 "variable": "11",
                                 "__label": "Yes",
                                 "__collapse": true,
-                                "__collapseElse": false
+                                "__collapseElse": true
                             },
                             "true": [
                                 {
@@ -3380,7 +3380,7 @@
                                 "variable": "11",
                                 "__label": "Yes",
                                 "__collapse": true,
-                                "__collapseElse": false
+                                "__collapseElse": true
                             },
                             "true": [
                                 {
