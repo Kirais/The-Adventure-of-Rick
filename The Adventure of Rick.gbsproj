@@ -106,10 +106,6 @@
             "name": "Take QE?"
         },
         {
-            "id": "109",
-            "name": "Quest5_complete"
-        },
-        {
             "id": "108",
             "name": "Q4 Pass QE"
         },
@@ -156,6 +152,14 @@
         {
             "id": "110",
             "name": "Q6 Published a paper"
+        },
+        {
+            "id": "24",
+            "name": "Present?"
+        },
+        {
+            "id": "109",
+            "name": "Q5 Go to conference"
         }
     ],
     "backgrounds": [
@@ -5818,7 +5822,80 @@
             "y": 1115,
             "width": 32,
             "height": 32,
-            "actors": [],
+            "actors": [
+                {
+                    "id": "2381aae2-0547-421d-8729-8edd8b9fca0c",
+                    "spriteSheetId": "e027c92c-abed-42b7-8999-010d28093d3d",
+                    "x": 9,
+                    "y": 4,
+                    "movementType": "static",
+                    "direction": "down",
+                    "moveSpeed": "1",
+                    "animSpeed": "3",
+                    "script": [
+                        {
+                            "id": "acf7dd16-02c3-485b-855d-115c02c177d5",
+                            "command": "EVENT_TEXT",
+                            "args": {
+                                "text": "Are you ready to\ndo presentation?"
+                            }
+                        },
+                        {
+                            "id": "ff69ec98-8696-490f-8513-311a433600b8",
+                            "command": "EVENT_CHOICE",
+                            "args": {
+                                "variable": "24",
+                                "trueText": "Yes",
+                                "falseText": "No"
+                            }
+                        },
+                        {
+                            "id": "062429f2-4a7b-48a9-ad28-bf9798d69853",
+                            "command": "EVENT_IF_TRUE",
+                            "args": {
+                                "variable": "24"
+                            },
+                            "true": [
+                                {
+                                    "id": "7fae2b95-5609-46bb-990b-8237e8037895",
+                                    "command": "EVENT_TEXT",
+                                    "args": {
+                                        "text": "Good luck!"
+                                    }
+                                },
+                                {
+                                    "id": "89c7336f-2b5f-490b-a028-e54e6be5d591",
+                                    "command": "EVENT_SET_TRUE",
+                                    "args": {
+                                        "variable": "109"
+                                    }
+                                },
+                                {
+                                    "id": "b6531dc6-6978-4871-b751-268b2c5f6153",
+                                    "command": "EVENT_END"
+                                }
+                            ],
+                            "false": [
+                                {
+                                    "id": "f75a46ef-7f45-4e9d-842d-8e3709e2c29e",
+                                    "command": "EVENT_TEXT",
+                                    "args": {
+                                        "text": "Not ready yet?\nPlease prepare\nbetter."
+                                    }
+                                },
+                                {
+                                    "id": "3e6b2dc1-4904-4cb3-b7b0-73ba2e3a47d0",
+                                    "command": "EVENT_END"
+                                }
+                            ]
+                        },
+                        {
+                            "id": "7bd7ae99-6f17-4796-865b-28d7bcb83fc3",
+                            "command": "EVENT_END"
+                        }
+                    ]
+                }
+            ],
             "triggers": [
                 {
                     "id": "82e24deb-ac81-44e5-966c-de6010667f87",
