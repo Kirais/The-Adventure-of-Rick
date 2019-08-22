@@ -160,6 +160,10 @@
         {
             "id": "109",
             "name": "Q5 Go to conference"
+        },
+        {
+            "id": "25",
+            "name": "Do experiment?"
         }
     ],
     "backgrounds": [
@@ -4583,15 +4587,52 @@
                             }
                         },
                         {
-                            "id": "3b8e4b64-efad-4315-bd52-3bcecf351e9a",
-                            "command": "EVENT_SWITCH_SCENE",
+                            "id": "265b6346-270a-4270-a2a6-0aa6199f25fc",
+                            "command": "EVENT_CHOICE",
                             "args": {
-                                "sceneId": "3a531c45-602a-46c4-abac-dcfae1c9e068",
-                                "x": 9,
-                                "y": 16,
-                                "direction": "up",
-                                "fadeSpeed": "2"
+                                "variable": "25",
+                                "trueText": "Yes",
+                                "falseText": "No"
                             }
+                        },
+                        {
+                            "id": "bfc74370-f643-48e4-898d-1d3a5caee1c4",
+                            "command": "EVENT_IF_TRUE",
+                            "args": {
+                                "variable": "25"
+                            },
+                            "true": [
+                                {
+                                    "id": "3b8e4b64-efad-4315-bd52-3bcecf351e9a",
+                                    "command": "EVENT_SWITCH_SCENE",
+                                    "args": {
+                                        "sceneId": "3a531c45-602a-46c4-abac-dcfae1c9e068",
+                                        "x": 9,
+                                        "y": 16,
+                                        "direction": "up",
+                                        "fadeSpeed": "2"
+                                    }
+                                },
+                                {
+                                    "id": "e012c6d6-9404-4ac6-a368-cc6603c60ec1",
+                                    "command": "EVENT_END"
+                                }
+                            ],
+                            "false": [
+                                {
+                                    "id": "bafbc039-e2a4-4db3-8cfe-9346d3f239f6",
+                                    "command": "EVENT_ACTOR_MOVE_RELATIVE",
+                                    "args": {
+                                        "actorId": "player",
+                                        "x": 0,
+                                        "y": 1
+                                    }
+                                },
+                                {
+                                    "id": "d6c43795-7daa-4254-ada8-6f7989ffc406",
+                                    "command": "EVENT_END"
+                                }
+                            ]
                         },
                         {
                             "id": "45c1c476-a100-474c-ba52-43e348a51552",
