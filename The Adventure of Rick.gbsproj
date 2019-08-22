@@ -124,6 +124,10 @@
         {
             "id": "106",
             "name": "Q2 Took Grad Course"
+        },
+        {
+            "id": "16",
+            "name": "Try defense"
         }
     ],
     "backgrounds": [
@@ -1944,8 +1948,9 @@
                                     "command": "EVENT_IF_FALSE",
                                     "args": {
                                         "variable": "106",
-                                        "__collapse": false,
-                                        "__collapseElse": false
+                                        "__collapse": true,
+                                        "__collapseElse": false,
+                                        "__label": "Haven't passed grad courses"
                                     },
                                     "true": [
                                         {
@@ -2036,69 +2041,164 @@
                                     ],
                                     "false": [
                                         {
-                                            "id": "5a07629e-98c9-4f98-95d4-cc092695f0f3",
-                                            "command": "EVENT_GROUP",
+                                            "id": "6ed05e5c-d5cf-4cbd-a2e2-c27c647a6010",
+                                            "command": "EVENT_IF_FALSE",
                                             "args": {
-                                                "__label": "Qualifying Exam"
+                                                "variable": "108",
+                                                "__collapse": false,
+                                                "__label": "Haven't passed QE",
+                                                "__collapseElse": false
                                             },
                                             "true": [
                                                 {
-                                                    "id": "7865401d-a227-49e3-b609-bf5bfa951a99",
-                                                    "command": "EVENT_TEXT",
+                                                    "id": "5a07629e-98c9-4f98-95d4-cc092695f0f3",
+                                                    "command": "EVENT_GROUP",
                                                     "args": {
-                                                        "text": "Do you want to\ntake qualifying\nexam?",
-                                                        "__collapse": false
-                                                    }
-                                                },
-                                                {
-                                                    "id": "da8a228f-9c90-46fb-be09-85f6d7dc471e",
-                                                    "command": "EVENT_CHOICE",
-                                                    "args": {
-                                                        "variable": "15",
-                                                        "trueText": "Yes",
-                                                        "falseText": "No",
-                                                        "__collapse": true,
-                                                        "__label": "Take QE?"
-                                                    }
-                                                },
-                                                {
-                                                    "id": "5cacaf7f-6f90-44fb-8220-8325a1dbd080",
-                                                    "command": "EVENT_IF_TRUE",
-                                                    "args": {
-                                                        "variable": "15"
+                                                        "__label": "Qualifying Exam",
+                                                        "__collapse": true
                                                     },
                                                     "true": [
                                                         {
-                                                            "id": "334681d0-e210-435e-8ecf-214a24752d28",
+                                                            "id": "7865401d-a227-49e3-b609-bf5bfa951a99",
                                                             "command": "EVENT_TEXT",
                                                             "args": {
-                                                                "text": [
-                                                                    "You can go inside\nto take QE."
-                                                                ],
+                                                                "text": "Do you want to\ntake qualifying\nexam?",
                                                                 "__collapse": false
                                                             }
                                                         },
                                                         {
-                                                            "id": "db6b8296-e7b7-4f4c-bfcd-cb90a96ecdfb",
-                                                            "command": "EVENT_END"
-                                                        }
-                                                    ],
-                                                    "false": [
-                                                        {
-                                                            "id": "f259e22d-5d4f-42b8-b2b1-d3e4cec26cb8",
-                                                            "command": "EVENT_TEXT",
+                                                            "id": "da8a228f-9c90-46fb-be09-85f6d7dc471e",
+                                                            "command": "EVENT_CHOICE",
                                                             "args": {
-                                                                "text": "Try next time!"
+                                                                "variable": "15",
+                                                                "trueText": "Yes",
+                                                                "falseText": "No",
+                                                                "__collapse": true,
+                                                                "__label": "Take QE?"
                                                             }
                                                         },
                                                         {
-                                                            "id": "93156e8b-5156-4be5-b880-06951308cb54",
+                                                            "id": "5cacaf7f-6f90-44fb-8220-8325a1dbd080",
+                                                            "command": "EVENT_IF_TRUE",
+                                                            "args": {
+                                                                "variable": "15"
+                                                            },
+                                                            "true": [
+                                                                {
+                                                                    "id": "334681d0-e210-435e-8ecf-214a24752d28",
+                                                                    "command": "EVENT_TEXT",
+                                                                    "args": {
+                                                                        "text": [
+                                                                            "You can go inside\nto take QE."
+                                                                        ],
+                                                                        "__collapse": false
+                                                                    }
+                                                                },
+                                                                {
+                                                                    "id": "db6b8296-e7b7-4f4c-bfcd-cb90a96ecdfb",
+                                                                    "command": "EVENT_END"
+                                                                }
+                                                            ],
+                                                            "false": [
+                                                                {
+                                                                    "id": "f259e22d-5d4f-42b8-b2b1-d3e4cec26cb8",
+                                                                    "command": "EVENT_TEXT",
+                                                                    "args": {
+                                                                        "text": "Try next time!"
+                                                                    }
+                                                                },
+                                                                {
+                                                                    "id": "93156e8b-5156-4be5-b880-06951308cb54",
+                                                                    "command": "EVENT_END"
+                                                                }
+                                                            ]
+                                                        },
+                                                        {
+                                                            "id": "9c54ee47-0e92-4795-9759-64bcb08a6b94",
                                                             "command": "EVENT_END"
                                                         }
                                                     ]
                                                 },
                                                 {
-                                                    "id": "9c54ee47-0e92-4795-9759-64bcb08a6b94",
+                                                    "id": "30e31335-c623-42d7-b186-0bba6867648c",
+                                                    "command": "EVENT_END"
+                                                }
+                                            ],
+                                            "false": [
+                                                {
+                                                    "id": "5b443422-0a9a-44a6-817d-250cd65b8ba2",
+                                                    "command": "EVENT_GROUP",
+                                                    "args": {
+                                                        "__label": "Final Defense",
+                                                        "__collapse": true
+                                                    },
+                                                    "true": [
+                                                        {
+                                                            "id": "e1093560-4481-4ae2-bc2a-cc79a95dda1c",
+                                                            "command": "EVENT_TEXT",
+                                                            "args": {
+                                                                "text": "Are you ready\nfor the final\ndefense?",
+                                                                "__collapse": true
+                                                            }
+                                                        },
+                                                        {
+                                                            "id": "5e2e6741-9b9b-4316-aac8-f889a16d84e6",
+                                                            "command": "EVENT_CHOICE",
+                                                            "args": {
+                                                                "variable": "16",
+                                                                "trueText": "Yes",
+                                                                "falseText": "No",
+                                                                "__collapse": true,
+                                                                "__label": "Final defense?"
+                                                            }
+                                                        },
+                                                        {
+                                                            "id": "81d1f72f-e297-498b-8b37-973c71472006",
+                                                            "command": "EVENT_IF_TRUE",
+                                                            "args": {
+                                                                "variable": "16",
+                                                                "__collapse": true,
+                                                                "__collapseElse": true
+                                                            },
+                                                            "true": [
+                                                                {
+                                                                    "id": "aab20402-dca4-469f-ab86-66aaf2d46f85",
+                                                                    "command": "EVENT_TEXT",
+                                                                    "args": {
+                                                                        "text": [
+                                                                            "Good luck for your\nfinal defense",
+                                                                            "You can go\ninside."
+                                                                        ],
+                                                                        "__collapse": false
+                                                                    }
+                                                                },
+                                                                {
+                                                                    "id": "42497d0f-1ba8-46f0-a072-2a8638fc9a85",
+                                                                    "command": "EVENT_END"
+                                                                }
+                                                            ],
+                                                            "false": [
+                                                                {
+                                                                    "id": "5fa7caa5-0339-4512-8d07-46063b19704c",
+                                                                    "command": "EVENT_TEXT",
+                                                                    "args": {
+                                                                        "text": "Try next time!"
+                                                                    }
+                                                                },
+                                                                {
+                                                                    "id": "aed2ad66-b597-4963-9360-37655bc88d6c",
+                                                                    "command": "EVENT_END"
+                                                                }
+                                                            ]
+                                                        },
+                                                        {
+                                                            "id": "c557279e-e7cc-4282-8506-5d20d380fdbc",
+                                                            "command": "EVENT_END"
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "id": "59fbbbd4-0aab-49d1-a86c-7e1e020b212b",
                                                     "command": "EVENT_END"
                                                 }
                                             ]
