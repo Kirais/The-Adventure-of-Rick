@@ -106,10 +106,6 @@
             "name": "Cat Dead"
         },
         {
-            "id": "107",
-            "name": "Q3 Do Experiment"
-        },
-        {
             "id": "15",
             "name": "Take QE?"
         },
@@ -128,6 +124,10 @@
         {
             "id": "16",
             "name": "Try defense"
+        },
+        {
+            "id": "107",
+            "name": "Q3 Finish Experiment"
         }
     ],
     "backgrounds": [
@@ -1949,7 +1949,7 @@
                                     "args": {
                                         "variable": "106",
                                         "__collapse": false,
-                                        "__collapseElse": true,
+                                        "__collapseElse": false,
                                         "__label": "Haven't passed grad courses"
                                     },
                                     "true": [
@@ -1985,8 +1985,8 @@
                                                     "args": {
                                                         "variable": "13",
                                                         "__label": "Grad Courses == True",
-                                                        "__collapse": true,
-                                                        "__collapseElse": true
+                                                        "__collapse": false,
+                                                        "__collapseElse": false
                                                     },
                                                     "true": [
                                                         {
@@ -2055,7 +2055,7 @@
                                                     "command": "EVENT_GROUP",
                                                     "args": {
                                                         "__label": "Qualifying Exam",
-                                                        "__collapse": true
+                                                        "__collapse": false
                                                     },
                                                     "true": [
                                                         {
@@ -2085,14 +2085,48 @@
                                                             },
                                                             "true": [
                                                                 {
-                                                                    "id": "334681d0-e210-435e-8ecf-214a24752d28",
-                                                                    "command": "EVENT_TEXT",
+                                                                    "id": "6011580a-58f8-4b2b-9557-13920d043ad6",
+                                                                    "command": "EVENT_IF_TRUE",
                                                                     "args": {
-                                                                        "text": [
-                                                                            "You can go inside\nto take QE."
-                                                                        ],
-                                                                        "__collapse": false
-                                                                    }
+                                                                        "variable": "107",
+                                                                        "__label": "Finish Experiment",
+                                                                        "__collapse": false,
+                                                                        "__collapseElse": false
+                                                                    },
+                                                                    "true": [
+                                                                        {
+                                                                            "id": "334681d0-e210-435e-8ecf-214a24752d28",
+                                                                            "command": "EVENT_TEXT",
+                                                                            "args": {
+                                                                                "text": [
+                                                                                    "You can go inside\nto take QE."
+                                                                                ],
+                                                                                "__collapse": false
+                                                                            }
+                                                                        },
+                                                                        {
+                                                                            "id": "3b4225f9-5580-47df-b1c4-2d28b6dfeace",
+                                                                            "command": "EVENT_END"
+                                                                        }
+                                                                    ],
+                                                                    "false": [
+                                                                        {
+                                                                            "id": "1df93ecd-0cf4-4ffa-bc50-cef4ac2b5685",
+                                                                            "command": "EVENT_TEXT",
+                                                                            "args": {
+                                                                                "text": [
+                                                                                    "Are you nut?",
+                                                                                    "How can you take\nQE without any\ndata?!!",
+                                                                                    "Go back to the lab\nto collect data!!!"
+                                                                                ],
+                                                                                "__collapse": false
+                                                                            }
+                                                                        },
+                                                                        {
+                                                                            "id": "edbb1372-76a9-4f4c-86f2-7d69d9fee7b6",
+                                                                            "command": "EVENT_END"
+                                                                        }
+                                                                    ]
                                                                 },
                                                                 {
                                                                     "id": "db6b8296-e7b7-4f4c-bfcd-cb90a96ecdfb",
