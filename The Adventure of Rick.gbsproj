@@ -108,6 +108,14 @@
         {
             "id": "111",
             "name": "Quest7_complete"
+        },
+        {
+            "id": "11",
+            "name": "Yes to supervisor"
+        },
+        {
+            "id": "12",
+            "name": "Which supervisor"
         }
     ],
     "backgrounds": [
@@ -3133,634 +3141,305 @@
             "height": 32,
             "actors": [
                 {
-                    "id": "6d2d6c6f-ec73-4d22-8871-bc11e5070526",
+                    "id": "4e928f70-d4b4-43ba-8c3c-4670a17b1a56",
                     "spriteSheetId": "15c12b89-8a44-41ca-8a92-c9674bf05433",
-                    "x": 23,
+                    "x": 4,
                     "y": 11,
-                    "movementType": "static",
+                    "movementType": "faceInteraction",
                     "direction": "down",
                     "moveSpeed": "1",
                     "animSpeed": "3",
-                    "name": "Supervisor Final Defense",
                     "script": [
                         {
-                            "id": "c75135c8-a90d-444a-b83f-630ae3a9a665",
-                            "command": "EVENT_GROUP",
-                            "args": {
-                                "__label": "Initialize Enemy Stats",
-                                "__collapse": true
-                            },
-                            "true": [
-                                {
-                                    "id": "ab066eba-06ad-4bd8-8e06-14def787a81a",
-                                    "command": "EVENT_SET_VALUE",
-                                    "args": {
-                                        "variable": "7",
-                                        "value": 200,
-                                        "__label": "Initialize Enemy HP",
-                                        "__collapse": true
-                                    }
-                                },
-                                {
-                                    "id": "8df21212-7cf8-47d4-8aaf-2d93fabe6011",
-                                    "command": "EVENT_SET_VALUE",
-                                    "args": {
-                                        "variable": "8",
-                                        "value": 10,
-                                        "__label": "Initialize Enemy STR",
-                                        "__collapse": true
-                                    }
-                                },
-                                {
-                                    "id": "e465b78c-0aac-4720-97ca-7066a38f9e07",
-                                    "command": "EVENT_SET_VALUE",
-                                    "args": {
-                                        "variable": "10",
-                                        "value": 100,
-                                        "__label": "Initialize Enemy XP gain",
-                                        "__collapse": true
-                                    }
-                                },
-                                {
-                                    "id": "04c68e3d-8f85-41cd-9d3a-17d68dc9cd25",
-                                    "command": "EVENT_END"
-                                }
-                            ]
-                        },
-                        {
-                            "id": "5f48e007-e253-4b4e-a6e1-ed415d0494b5",
+                            "id": "d88027ad-2127-4a20-8cb1-53613ff33fc1",
                             "command": "EVENT_TEXT",
                             "args": {
-                                "text": "Do you want to\ntake qualifying\nexam?",
-                                "__collapse": true,
-                                "__label": "Openning dialogue"
+                                "text": [
+                                    "Hey, I am\nsupervisor 1.",
+                                    "Do you want to\njoin my lab?"
+                                ],
+                                "__collapse": true
                             }
                         },
                         {
-                            "id": "2694b312-ed56-417e-b8b8-8069d5c15bc3",
+                            "id": "8f3438f9-4f83-47a2-9dcf-0d52a6f618ff",
                             "command": "EVENT_CHOICE",
                             "args": {
-                                "variable": "100",
+                                "variable": "11",
                                 "trueText": "Yes",
                                 "falseText": "No",
                                 "__collapse": true,
-                                "__label": "Start combat?"
+                                "__label": "Choose supervisor?"
                             }
                         },
                         {
-                            "id": "24fe8bfb-8ae9-4db2-afe0-759d86b32948",
-                            "command": "EVENT_IF_VALUE",
+                            "id": "9512913c-ecbd-447e-b7f6-3adebf6c8d83",
+                            "command": "EVENT_IF_TRUE",
                             "args": {
-                                "variable": "100",
-                                "operator": "==",
-                                "comparator": 1,
-                                "__collapseElse": true,
-                                "__label": "Combat == True",
-                                "__collapse": false
+                                "variable": "11",
+                                "__label": "Yes",
+                                "__collapse": true,
+                                "__collapseElse": false
                             },
                             "true": [
                                 {
-                                    "id": "773206ae-47ec-40e3-bfca-621aed37c474",
-                                    "command": "EVENT_LOOP",
+                                    "id": "888501f1-ff46-4b8b-acc2-fd767cd218a1",
+                                    "command": "EVENT_VARIABLE_MATH",
                                     "args": {
-                                        "__collapse": false,
-                                        "__label": "Combat Loop"
-                                    },
-                                    "true": [
-                                        {
-                                            "id": "ab0d8eb3-46c1-479e-b155-2eba31844ed9",
-                                            "command": "EVENT_TEXT",
-                                            "args": {
-                                                "text": "Attack?",
-                                                "__label": "Attack dialogue"
-                                            }
-                                        },
-                                        {
-                                            "id": "124dcff0-e608-4969-a0f1-766672783a9f",
-                                            "command": "EVENT_CHOICE",
-                                            "args": {
-                                                "variable": "102",
-                                                "trueText": "Yes",
-                                                "falseText": "No",
-                                                "__label": "Attack?",
-                                                "__collapse": true
-                                            }
-                                        },
-                                        {
-                                            "id": "96d7debc-4fd7-4dba-bf77-e1a505f89b40",
-                                            "command": "EVENT_IF_TRUE",
-                                            "args": {
-                                                "variable": "102",
-                                                "__collapse": true,
-                                                "__label": "Attack == True",
-                                                "__collapseElse": true
-                                            },
-                                            "true": [
-                                                {
-                                                    "id": "cb2a3b38-5aec-4e3e-aadd-8e271850c3f3",
-                                                    "command": "EVENT_ACTOR_EMOTE",
-                                                    "args": {
-                                                        "actorId": "player",
-                                                        "emoteId": "4"
-                                                    }
-                                                },
-                                                {
-                                                    "id": "36e7f9b7-a266-4d0e-ae2e-92afee217650",
-                                                    "command": "EVENT_VARIABLE_MATH",
-                                                    "args": {
-                                                        "vectorX": "9",
-                                                        "operation": "set",
-                                                        "other": "var",
-                                                        "vectorY": "5",
-                                                        "value": "1",
-                                                        "minValue": "0",
-                                                        "maxValue": "255",
-                                                        "__collapse": true,
-                                                        "__label": "Copy STR as ATK"
-                                                    }
-                                                },
-                                                {
-                                                    "id": "2b69301b-68bc-4fd7-bfbd-616e2510a3d6",
-                                                    "command": "EVENT_VARIABLE_MATH",
-                                                    "args": {
-                                                        "vectorX": "101",
-                                                        "operation": "set",
-                                                        "other": "rnd",
-                                                        "vectorY": "9",
-                                                        "value": "1",
-                                                        "minValue": 1,
-                                                        "maxValue": 3,
-                                                        "__label": "Random Crit",
-                                                        "__collapse": true
-                                                    }
-                                                },
-                                                {
-                                                    "id": "345849b1-f8ed-4d5c-b7c3-d72db94b1690",
-                                                    "command": "EVENT_IF_VALUE",
-                                                    "args": {
-                                                        "variable": "101",
-                                                        "operator": "==",
-                                                        "comparator": 3,
-                                                        "__collapseElse": true,
-                                                        "__collapse": true,
-                                                        "__label": "Crit == True"
-                                                    },
-                                                    "true": [
-                                                        {
-                                                            "id": "0cd75e1d-36e9-4fd1-a7aa-87cbeb6a79d4",
-                                                            "command": "EVENT_VARIABLE_MATH",
-                                                            "args": {
-                                                                "vectorX": "9",
-                                                                "operation": "mul",
-                                                                "other": "val",
-                                                                "vectorY": "9",
-                                                                "value": 2,
-                                                                "minValue": "0",
-                                                                "maxValue": "255",
-                                                                "__label": "Calculate ATK",
-                                                                "__collapse": true
-                                                            }
-                                                        },
-                                                        {
-                                                            "id": "4c887e16-9d06-4851-bf4c-46b693b70046",
-                                                            "command": "EVENT_TEXT",
-                                                            "args": {
-                                                                "text": "You crit! Deal\n$09$ damage.",
-                                                                "__collapse": true
-                                                            }
-                                                        },
-                                                        {
-                                                            "id": "f8e68bd1-9dda-4880-8593-2d8f12d29f76",
-                                                            "command": "EVENT_END"
-                                                        }
-                                                    ],
-                                                    "false": [
-                                                        {
-                                                            "id": "e2779474-c7cf-4c52-ab4d-74a44cc719cc",
-                                                            "command": "EVENT_VARIABLE_MATH",
-                                                            "args": {
-                                                                "vectorX": "9",
-                                                                "operation": "mul",
-                                                                "other": "val",
-                                                                "vectorY": "9",
-                                                                "value": 1,
-                                                                "minValue": "0",
-                                                                "maxValue": "255",
-                                                                "__collapse": true,
-                                                                "__label": "Calculate ATK"
-                                                            }
-                                                        },
-                                                        {
-                                                            "id": "803a11ba-bf24-4aab-b23f-cc897d2a327f",
-                                                            "command": "EVENT_TEXT",
-                                                            "args": {
-                                                                "text": "No crit. Deal\n$09$ damage.",
-                                                                "__collapse": true
-                                                            }
-                                                        },
-                                                        {
-                                                            "id": "0b2c9c5d-4f05-46cf-aa8a-a036be5705a7",
-                                                            "command": "EVENT_END"
-                                                        }
-                                                    ]
-                                                },
-                                                {
-                                                    "id": "a14e0689-42a6-42e3-8fa2-209f909c2aa9",
-                                                    "command": "EVENT_IF_VALUE_COMPARE",
-                                                    "args": {
-                                                        "vectorX": "7",
-                                                        "operator": ">",
-                                                        "vectorY": "9",
-                                                        "__collapse": true,
-                                                        "__collapseElse": true,
-                                                        "__label": "Calculate Enemy HP"
-                                                    },
-                                                    "true": [
-                                                        {
-                                                            "id": "0c53319b-f8bc-4e49-abd7-02b04bf76398",
-                                                            "command": "EVENT_VARIABLE_MATH",
-                                                            "args": {
-                                                                "vectorX": "7",
-                                                                "operation": "sub",
-                                                                "other": "var",
-                                                                "vectorY": "9",
-                                                                "value": "1",
-                                                                "minValue": "0",
-                                                                "maxValue": "255",
-                                                                "__label": "Calculate Enemy HP",
-                                                                "__collapse": true
-                                                            }
-                                                        },
-                                                        {
-                                                            "id": "4da42554-20aa-4d22-bbdb-6ae71223f319",
-                                                            "command": "EVENT_END"
-                                                        }
-                                                    ],
-                                                    "false": [
-                                                        {
-                                                            "id": "bcc1dec8-3e7c-49ea-886c-6d51e8658d1d",
-                                                            "command": "EVENT_SET_VALUE",
-                                                            "args": {
-                                                                "variable": "7",
-                                                                "value": "0",
-                                                                "__label": "Calculate Enemy HP"
-                                                            }
-                                                        },
-                                                        {
-                                                            "id": "7f7804c4-6153-4763-be61-c900b7467f5f",
-                                                            "command": "EVENT_END"
-                                                        }
-                                                    ]
-                                                },
-                                                {
-                                                    "id": "1150be4a-896c-40c4-95c1-ed8b9adfbd8e",
-                                                    "command": "EVENT_TEXT",
-                                                    "args": {
-                                                        "text": "Supervisor\nremaining HP: $07$",
-                                                        "__label": "Display Enemy HP",
-                                                        "__collapse": true
-                                                    }
-                                                },
-                                                {
-                                                    "id": "296eeb3b-5203-4b38-9621-4f9d34cb603a",
-                                                    "command": "EVENT_END"
-                                                }
-                                            ],
-                                            "false": [
-                                                {
-                                                    "id": "eb37ec44-c11d-4407-bdd8-920d7d8d90a4",
-                                                    "command": "EVENT_END"
-                                                }
-                                            ]
-                                        },
-                                        {
-                                            "id": "bf125547-6734-4771-8aae-b609ccfbe9b1",
-                                            "command": "EVENT_IF_VALUE",
-                                            "args": {
-                                                "variable": "7",
-                                                "operator": "<=",
-                                                "comparator": "0",
-                                                "__collapse": false,
-                                                "__label": "Enemy HP == 0"
-                                            },
-                                            "true": [
-                                                {
-                                                    "id": "79c8ec9d-a796-42d9-87ea-218024987179",
-                                                    "command": "EVENT_VARIABLE_MATH",
-                                                    "args": {
-                                                        "vectorX": "4",
-                                                        "operation": "add",
-                                                        "other": "var",
-                                                        "vectorY": "10",
-                                                        "value": "1",
-                                                        "minValue": "0",
-                                                        "maxValue": "255",
-                                                        "__label": "Calculate Player XP",
-                                                        "__collapse": true
-                                                    }
-                                                },
-                                                {
-                                                    "id": "abbe3c4c-a8ce-468e-9edd-a0b9790d9f61",
-                                                    "command": "EVENT_TEXT",
-                                                    "args": {
-                                                        "text": [
-                                                            "Congratulations!\nYou got $10$ XP.\n",
-                                                            "Now you have $04$\nXP."
-                                                        ],
-                                                        "__label": "Display Player XP"
-                                                    }
-                                                },
-                                                {
-                                                    "id": "97598f21-8c34-42a9-a187-bd29d7785f2c",
-                                                    "command": "EVENT_IF_VALUE",
-                                                    "args": {
-                                                        "variable": "4",
-                                                        "operator": ">",
-                                                        "comparator": 100,
-                                                        "__label": "Level Up?",
-                                                        "__collapse": true
-                                                    },
-                                                    "true": [
-                                                        {
-                                                            "id": "0541fc7e-fc63-43dd-af41-7dae68984ac1",
-                                                            "command": "EVENT_GROUP",
-                                                            "args": {
-                                                                "__label": "Increase Player Stats",
-                                                                "__collapse": true
-                                                            },
-                                                            "true": [
-                                                                {
-                                                                    "id": "62fb59f2-6ab1-4dbd-8d3b-396ce97d321a",
-                                                                    "command": "EVENT_INC_VALUE",
-                                                                    "args": {
-                                                                        "variable": "6",
-                                                                        "__label": "Level +1"
-                                                                    }
-                                                                },
-                                                                {
-                                                                    "id": "accd3d0f-b4e2-4a20-bdc7-2505ee62d521",
-                                                                    "command": "EVENT_VARIABLE_MATH",
-                                                                    "args": {
-                                                                        "vectorX": "3",
-                                                                        "operation": "add",
-                                                                        "other": "val",
-                                                                        "vectorY": "10",
-                                                                        "value": 20,
-                                                                        "minValue": "0",
-                                                                        "maxValue": "255",
-                                                                        "__label": "Increase HP",
-                                                                        "__collapse": true
-                                                                    }
-                                                                },
-                                                                {
-                                                                    "id": "033a9bc5-bc9f-4b72-9093-3b408e791ae9",
-                                                                    "command": "EVENT_VARIABLE_MATH",
-                                                                    "args": {
-                                                                        "vectorX": "5",
-                                                                        "operation": "add",
-                                                                        "other": "val",
-                                                                        "vectorY": "10",
-                                                                        "value": 5,
-                                                                        "minValue": "0",
-                                                                        "maxValue": "255",
-                                                                        "__label": "Increase STR",
-                                                                        "__collapse": true
-                                                                    }
-                                                                },
-                                                                {
-                                                                    "id": "8cdcfc07-a64a-4db0-903e-a6e7fb575cc4",
-                                                                    "command": "EVENT_SET_VALUE",
-                                                                    "args": {
-                                                                        "variable": "4",
-                                                                        "value": "0",
-                                                                        "__label": "Reset XP",
-                                                                        "__collapse": true
-                                                                    }
-                                                                },
-                                                                {
-                                                                    "id": "3bf14c0e-71db-429d-99f7-008f898de4a9",
-                                                                    "command": "EVENT_END"
-                                                                }
-                                                            ]
-                                                        },
-                                                        {
-                                                            "id": "a8143243-9009-416c-8f6d-09076c66ab9c",
-                                                            "command": "EVENT_TEXT",
-                                                            "args": {
-                                                                "text": "You leveled up!\nPlayer Level: $06$",
-                                                                "__label": "Display Level",
-                                                                "__collapse": true
-                                                            }
-                                                        },
-                                                        {
-                                                            "id": "7329c1d5-e42a-4dd4-b83a-8d4cffc5475a",
-                                                            "command": "EVENT_ACTOR_EMOTE",
-                                                            "args": {
-                                                                "actorId": "player",
-                                                                "emoteId": 0,
-                                                                "__collapse": true
-                                                            }
-                                                        },
-                                                        {
-                                                            "id": "b234f449-182f-4ced-961b-c95f53db27c5",
-                                                            "command": "EVENT_END"
-                                                        }
-                                                    ],
-                                                    "false": [
-                                                        {
-                                                            "id": "467e69bb-228b-43d7-b48b-51b6deb59840",
-                                                            "command": "EVENT_END"
-                                                        }
-                                                    ]
-                                                },
-                                                {
-                                                    "id": "6dc0491e-ee85-433a-951d-b0ac920b0c47",
-                                                    "command": "EVENT_ACTOR_HIDE",
-                                                    "args": {
-                                                        "actorId": "5dc484b8-a6e1-47a0-af25-63114d26b61b"
-                                                    }
-                                                },
-                                                {
-                                                    "id": "2b69c700-14a2-40c3-a1da-524f3b5c4f18",
-                                                    "command": "EVENT_STOP",
-                                                    "args": {}
-                                                },
-                                                {
-                                                    "id": "95d691f0-6042-4079-8caa-8e45e4735eb0",
-                                                    "command": "EVENT_END"
-                                                }
-                                            ],
-                                            "false": [
-                                                {
-                                                    "id": "2db21c06-960e-432e-b86e-c8d2a3845ebf",
-                                                    "command": "EVENT_END"
-                                                }
-                                            ]
-                                        },
-                                        {
-                                            "id": "18352b5d-1123-44de-8e5f-4135f3e20f48",
-                                            "command": "EVENT_IF_VALUE_COMPARE",
-                                            "args": {
-                                                "vectorX": "3",
-                                                "operator": ">",
-                                                "vectorY": "8",
-                                                "__label": "Enemy Attack",
-                                                "__collapseElse": true
-                                            },
-                                            "true": [
-                                                {
-                                                    "id": "fcaca37d-25a6-4d15-af42-f4b44c6c5c9b",
-                                                    "command": "EVENT_VARIABLE_MATH",
-                                                    "args": {
-                                                        "vectorX": "3",
-                                                        "operation": "sub",
-                                                        "other": "var",
-                                                        "vectorY": "8",
-                                                        "value": "1",
-                                                        "minValue": "0",
-                                                        "maxValue": "255",
-                                                        "__collapse": true,
-                                                        "__label": "Calculate Player HP"
-                                                    }
-                                                },
-                                                {
-                                                    "id": "b589e999-5428-482b-9f85-36bba4d0447e",
-                                                    "command": "EVENT_END"
-                                                }
-                                            ],
-                                            "false": [
-                                                {
-                                                    "id": "f6b52d45-e7bb-4bf4-9550-0783dcc65c4e",
-                                                    "command": "EVENT_SET_VALUE",
-                                                    "args": {
-                                                        "variable": "3",
-                                                        "value": "0",
-                                                        "__label": "Calculate Player HP"
-                                                    }
-                                                },
-                                                {
-                                                    "id": "c1280264-0d04-45a1-afae-d1d27e908ff9",
-                                                    "command": "EVENT_END"
-                                                }
-                                            ]
-                                        },
-                                        {
-                                            "id": "cf4ad4f2-af77-462e-b04e-29b742750a0f",
-                                            "command": "EVENT_TEXT",
-                                            "args": {
-                                                "text": "Supervisor\nattacked you for\n$08$ damage!",
-                                                "__collapse": false
-                                            }
-                                        },
-                                        {
-                                            "id": "30ed5db3-e365-4a24-b3f7-41d1a1f02f10",
-                                            "command": "EVENT_TEXT",
-                                            "args": {
-                                                "text": "Your remaining HP:\n$03$ ",
-                                                "__collapse": false
-                                            }
-                                        },
-                                        {
-                                            "id": "761b9750-efff-4fc8-944d-cfea36e24caf",
-                                            "command": "EVENT_IF_VALUE",
-                                            "args": {
-                                                "variable": "3",
-                                                "operator": "<=",
-                                                "comparator": "0",
-                                                "__label": "Player HP=0",
-                                                "__collapse": true
-                                            },
-                                            "true": [
-                                                {
-                                                    "id": "c7155fc6-150d-41e6-bee2-89fbdb3245ad",
-                                                    "command": "EVENT_TEXT",
-                                                    "args": {
-                                                        "text": "You are dead. Game\nOver!",
-                                                        "__label": "Dead message",
-                                                        "__collapse": true
-                                                    }
-                                                },
-                                                {
-                                                    "id": "3a3ab2cd-b657-41dd-a715-12b8aa0a7bab",
-                                                    "command": "EVENT_ACTOR_EMOTE",
-                                                    "args": {
-                                                        "actorId": "player",
-                                                        "emoteId": 0,
-                                                        "__collapse": true
-                                                    }
-                                                },
-                                                {
-                                                    "id": "abf565b0-1b91-4973-bbff-0372fce4d4dc",
-                                                    "command": "EVENT_ACTOR_MOVE_TO",
-                                                    "args": {
-                                                        "actorId": "player",
-                                                        "x": 15,
-                                                        "y": 12,
-                                                        "__collapse": true
-                                                    }
-                                                },
-                                                {
-                                                    "id": "fe75e456-edb2-47b2-8c07-02a1175636cb",
-                                                    "command": "EVENT_STOP",
-                                                    "args": {
-                                                        "__collapse": true
-                                                    }
-                                                },
-                                                {
-                                                    "id": "db4d4dfb-befd-4bd4-9543-298b69bb044c",
-                                                    "command": "EVENT_END"
-                                                }
-                                            ],
-                                            "false": [
-                                                {
-                                                    "id": "d1f736b3-bdb8-4986-8c38-e960369fa666",
-                                                    "command": "EVENT_END"
-                                                }
-                                            ]
-                                        },
-                                        {
-                                            "id": "39d3b5a2-54c5-441b-a73f-82098fb7e3d2",
-                                            "command": "EVENT_END"
-                                        }
-                                    ]
+                                        "vectorX": "12",
+                                        "operation": "set",
+                                        "other": "val",
+                                        "vectorY": "11",
+                                        "value": 1,
+                                        "minValue": "0",
+                                        "maxValue": "255",
+                                        "__collapse": true,
+                                        "__label": "Set supervisor"
+                                    }
                                 },
                                 {
-                                    "id": "064f68ea-dfde-47aa-a0b4-9a5f2e7837a6",
+                                    "id": "84d780ab-e18d-481f-94ac-0494eb7522ad",
+                                    "command": "EVENT_SET_TRUE",
+                                    "args": {
+                                        "variable": "105",
+                                        "__label": "Complete Quest1",
+                                        "__collapse": true
+                                    }
+                                },
+                                {
+                                    "id": "bb7263c1-a7e6-4524-b5d2-3b7c106ea71d",
+                                    "command": "EVENT_TEXT",
+                                    "args": {
+                                        "text": "Great! You will be\nmy student from\nnow on!",
+                                        "__collapse": true
+                                    }
+                                },
+                                {
+                                    "id": "94ac6904-7b5e-479d-b4af-0c5d57b89acc",
                                     "command": "EVENT_END"
                                 }
                             ],
                             "false": [
                                 {
-                                    "id": "322468d8-20d2-4587-9627-4c3bdf2eb19a",
+                                    "id": "bb9a5e88-80e7-42f0-8aea-7c0c3008c107",
                                     "command": "EVENT_TEXT",
                                     "args": {
-                                        "text": "Supervisor: I'll\nget you next time!"
+                                        "text": "Alright, let me\nknow when you make\nup your mind."
                                     }
                                 },
                                 {
-                                    "id": "2a81939f-7444-4cc3-8425-c6993ed4070e",
-                                    "command": "EVENT_ACTOR_EMOTE",
-                                    "args": {
-                                        "actorId": "5dc484b8-a6e1-47a0-af25-63114d26b61b",
-                                        "emoteId": "4"
-                                    }
-                                },
-                                {
-                                    "id": "7acc2636-5df2-445f-83bd-a4cbbe61e27c",
-                                    "command": "EVENT_STOP",
-                                    "args": {}
-                                },
-                                {
-                                    "id": "6b6d6301-21d3-4a72-98f0-98e3396f9026",
+                                    "id": "c865aeec-ed9a-4417-a87e-644e645577d3",
                                     "command": "EVENT_END"
                                 }
                             ]
                         },
                         {
-                            "id": "c0f66f85-8270-472b-bedb-1cf441436ccb",
+                            "id": "93011198-8f22-46d6-897e-718a9b25ceef",
                             "command": "EVENT_END"
                         }
-                    ]
+                    ],
+                    "name": "Supervisor1",
+                    "animate": false
+                },
+                {
+                    "id": "27a66357-38be-4b12-be00-cca6886db2bc",
+                    "spriteSheetId": "15c12b89-8a44-41ca-8a92-c9674bf05433",
+                    "x": 15,
+                    "y": 11,
+                    "movementType": "faceInteraction",
+                    "direction": "down",
+                    "moveSpeed": "1",
+                    "animSpeed": "3",
+                    "script": [
+                        {
+                            "id": "b48705b0-b116-4693-bcf5-5e20d84c7ede",
+                            "command": "EVENT_TEXT",
+                            "args": {
+                                "text": [
+                                    "Hey, I am\nsupervisor 2.",
+                                    "Do you want to\njoin my lab?"
+                                ],
+                                "__collapse": false
+                            }
+                        },
+                        {
+                            "id": "ee6393d0-667b-4236-baf4-f11cae37aa3a",
+                            "command": "EVENT_CHOICE",
+                            "args": {
+                                "variable": "11",
+                                "trueText": "Yes",
+                                "falseText": "No",
+                                "__collapse": true,
+                                "__label": "Choose supervisor?"
+                            }
+                        },
+                        {
+                            "id": "879337e3-b108-4468-be33-996228901ac6",
+                            "command": "EVENT_IF_TRUE",
+                            "args": {
+                                "variable": "11",
+                                "__label": "Yes",
+                                "__collapse": false,
+                                "__collapseElse": true
+                            },
+                            "true": [
+                                {
+                                    "id": "60f76811-545b-4cc6-9be0-527f823e2f86",
+                                    "command": "EVENT_VARIABLE_MATH",
+                                    "args": {
+                                        "vectorX": "12",
+                                        "operation": "set",
+                                        "other": "val",
+                                        "vectorY": "11",
+                                        "value": 2,
+                                        "minValue": "0",
+                                        "maxValue": "255",
+                                        "__collapse": false,
+                                        "__label": "Set supervisor"
+                                    }
+                                },
+                                {
+                                    "id": "d88d0d8e-1f49-4f85-bbbc-e21f7b276cc4",
+                                    "command": "EVENT_SET_TRUE",
+                                    "args": {
+                                        "variable": "105",
+                                        "__label": "Complete Quest1",
+                                        "__collapse": true
+                                    }
+                                },
+                                {
+                                    "id": "9a88e10f-99e3-4fa3-a917-48e0cdbc386f",
+                                    "command": "EVENT_TEXT",
+                                    "args": {
+                                        "text": "Great! You will be\nmy student from\nnow on!",
+                                        "__collapse": true
+                                    }
+                                },
+                                {
+                                    "id": "ad329e54-f121-42ed-af0c-f0ca43144ac9",
+                                    "command": "EVENT_END"
+                                }
+                            ],
+                            "false": [
+                                {
+                                    "id": "cfa6456c-61a5-49b4-ba7c-01fc2d781c7b",
+                                    "command": "EVENT_TEXT",
+                                    "args": {
+                                        "text": "Alright, let me\nknow when you make\nup your mind."
+                                    }
+                                },
+                                {
+                                    "id": "03848297-ed3a-477d-b785-280a06fd324c",
+                                    "command": "EVENT_END"
+                                }
+                            ]
+                        },
+                        {
+                            "id": "5c495ec9-3d13-4ba0-9ad8-ca933a9a24c6",
+                            "command": "EVENT_END"
+                        }
+                    ],
+                    "name": "Supervisor2"
+                },
+                {
+                    "id": "30723af9-9d70-4737-8fa5-e6fdb4581977",
+                    "spriteSheetId": "15c12b89-8a44-41ca-8a92-c9674bf05433",
+                    "x": 26,
+                    "y": 11,
+                    "movementType": "faceInteraction",
+                    "direction": "down",
+                    "moveSpeed": "1",
+                    "animSpeed": "3",
+                    "script": [
+                        {
+                            "id": "75ae8e2a-5ff1-41fa-8420-ec9206a71a51",
+                            "command": "EVENT_TEXT",
+                            "args": {
+                                "text": [
+                                    "Hey, I am\nsupervisor 3.",
+                                    "Do you want to\njoin my lab?"
+                                ],
+                                "__collapse": true
+                            }
+                        },
+                        {
+                            "id": "3550771e-be2c-411b-810e-e9ffc2c69e28",
+                            "command": "EVENT_CHOICE",
+                            "args": {
+                                "variable": "11",
+                                "trueText": "Yes",
+                                "falseText": "No",
+                                "__collapse": false,
+                                "__label": "Choose supervisor?"
+                            }
+                        },
+                        {
+                            "id": "0eb521c5-d2ed-4da7-b4be-c88ce6155da7",
+                            "command": "EVENT_IF_TRUE",
+                            "args": {
+                                "variable": "11",
+                                "__label": "Yes",
+                                "__collapse": true,
+                                "__collapseElse": false
+                            },
+                            "true": [
+                                {
+                                    "id": "d76cb6ca-1bb6-4332-9e07-c33714defd8e",
+                                    "command": "EVENT_VARIABLE_MATH",
+                                    "args": {
+                                        "vectorX": "12",
+                                        "operation": "set",
+                                        "other": "val",
+                                        "vectorY": "11",
+                                        "value": 0,
+                                        "minValue": "0",
+                                        "maxValue": "255",
+                                        "__collapse": false,
+                                        "__label": "Set supervisor"
+                                    }
+                                },
+                                {
+                                    "id": "db37da9f-a2a2-47fc-bf56-630ab4f8d8bd",
+                                    "command": "EVENT_SET_TRUE",
+                                    "args": {
+                                        "variable": "105",
+                                        "__label": "Complete Quest1",
+                                        "__collapse": true
+                                    }
+                                },
+                                {
+                                    "id": "68718977-afe3-453c-8704-1f83d1b8b442",
+                                    "command": "EVENT_TEXT",
+                                    "args": {
+                                        "text": "Great! You will be\nmy student from\nnow on!",
+                                        "__collapse": true
+                                    }
+                                },
+                                {
+                                    "id": "5a3a48b7-ad6c-4a47-8121-4aed1854e910",
+                                    "command": "EVENT_END"
+                                }
+                            ],
+                            "false": [
+                                {
+                                    "id": "e7532105-a059-4979-b0e7-3549fc6b8339",
+                                    "command": "EVENT_TEXT",
+                                    "args": {
+                                        "text": "Alright, let me\nknow when you make\nup your mind."
+                                    }
+                                },
+                                {
+                                    "id": "1bff6606-bb97-4b6a-a3b2-ed0b3b4c6e5e",
+                                    "command": "EVENT_END"
+                                }
+                            ]
+                        },
+                        {
+                            "id": "e25c5ac3-e0f1-428e-b366-c17e638d4f95",
+                            "command": "EVENT_END"
+                        }
+                    ],
+                    "name": "Supervisor3"
                 }
             ],
             "triggers": [
