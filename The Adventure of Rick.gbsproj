@@ -126,8 +126,36 @@
             "name": "Q3 Finish Experiment"
         },
         {
+            "id": "17",
+            "name": "How much data"
+        },
+        {
+            "id": "19",
+            "name": "Nature Data Requirement"
+        },
+        {
+            "id": "20",
+            "name": "APL Data Requirement"
+        },
+        {
+            "id": "21",
+            "name": "Data Ratio"
+        },
+        {
+            "id": "22",
+            "name": "Journal Data Requirement"
+        },
+        {
+            "id": "23",
+            "name": "Random Number"
+        },
+        {
+            "id": "18",
+            "name": "Nature?"
+        },
+        {
             "id": "110",
-            "name": "Q6 Publish a paper"
+            "name": "Q6 Published a paper"
         }
     ],
     "backgrounds": [
@@ -1928,7 +1956,7 @@
                     "id": "e8d94560-fddb-4bd1-937a-49b5feb06507",
                     "spriteSheetId": "f10d093f-e05d-4471-89b8-adad412b6899",
                     "x": 15,
-                    "y": 18,
+                    "y": 17,
                     "movementType": "randomFace",
                     "direction": "down",
                     "moveSpeed": "1",
@@ -3034,7 +3062,7 @@
                             "id": "2c958e86-36f5-431b-a88e-2b0b03e2f05d",
                             "command": "EVENT_SWITCH_SCENE",
                             "args": {
-                                "sceneId": "8737976e-bf88-407c-b5eb-2c5b8d804ff1",
+                                "sceneId": "ef669de7-1271-42f8-b79c-064f1b32deff",
                                 "x": 15,
                                 "y": 21,
                                 "direction": "up",
@@ -4118,7 +4146,336 @@
             "y": 716,
             "width": 32,
             "height": 32,
-            "actors": [],
+            "actors": [
+                {
+                    "id": "6ebd2a53-2ac1-4811-b5d6-14e4135a588b",
+                    "spriteSheetId": "49f18b02-8273-4803-8b78-719db50ab553",
+                    "x": 22,
+                    "y": 4,
+                    "movementType": "static",
+                    "direction": "down",
+                    "moveSpeed": "1",
+                    "animSpeed": "3",
+                    "name": "PC",
+                    "script": [
+                        {
+                            "id": "995307af-f98a-4a09-8437-741e0a253185",
+                            "command": "EVENT_SET_VALUE",
+                            "args": {
+                                "variable": "17",
+                                "value": 10
+                            }
+                        },
+                        {
+                            "id": "2d283b45-ebed-418d-b08d-316422f85986",
+                            "command": "EVENT_SET_VALUE",
+                            "args": {
+                                "variable": "19",
+                                "value": 20,
+                                "__collapse": true,
+                                "__label": "Set Nature Data Requirement"
+                            }
+                        },
+                        {
+                            "id": "e0edd137-8121-41e2-8134-3ebd4175c6bf",
+                            "command": "EVENT_SET_VALUE",
+                            "args": {
+                                "variable": "20",
+                                "value": 5,
+                                "__collapse": true,
+                                "__label": "Set APL Data Requirement"
+                            }
+                        },
+                        {
+                            "id": "2b74247c-7e5c-4ecf-a659-e60dd4bbe5d1",
+                            "command": "EVENT_TEXT",
+                            "args": {
+                                "text": "Submit paper?",
+                                "__collapse": true
+                            }
+                        },
+                        {
+                            "id": "bcd5ec20-c4d3-49ad-9dad-ae3bcafd761d",
+                            "command": "EVENT_IF_VALUE",
+                            "args": {
+                                "variable": "17",
+                                "operator": ">",
+                                "comparator": 3,
+                                "__label": "How much data?",
+                                "__collapse": true,
+                                "__collapseElse": true
+                            },
+                            "true": [
+                                {
+                                    "id": "3a369dd4-5680-4396-bf2d-b025cb85d3b4",
+                                    "command": "EVENT_TEXT",
+                                    "args": {
+                                        "text": "Which journal do\nyou want to submit\nto?",
+                                        "__collapse": true
+                                    }
+                                },
+                                {
+                                    "id": "f76ee8d5-d2bf-4197-adc2-eb6f3d4d470c",
+                                    "command": "EVENT_CHOICE",
+                                    "args": {
+                                        "variable": "18",
+                                        "trueText": "Nature?",
+                                        "falseText": "APL?",
+                                        "__label": "Select Journal",
+                                        "__collapse": true
+                                    }
+                                },
+                                {
+                                    "id": "ed83cbfe-46ad-421b-a989-555bae14f248",
+                                    "command": "EVENT_IF_TRUE",
+                                    "args": {
+                                        "variable": "18",
+                                        "__label": "Journal == Nature",
+                                        "__collapseElse": true,
+                                        "__collapse": true
+                                    },
+                                    "true": [
+                                        {
+                                            "id": "44df28ca-22ee-4a10-8618-b93a9364d882",
+                                            "command": "EVENT_TEXT",
+                                            "args": {
+                                                "text": "Nature? Wow, you\nare ambitious!"
+                                            }
+                                        },
+                                        {
+                                            "id": "1e607d71-ea33-4e52-84ba-41f075fdd256",
+                                            "command": "EVENT_VARIABLE_MATH",
+                                            "args": {
+                                                "vectorX": "22",
+                                                "operation": "set",
+                                                "other": "var",
+                                                "vectorY": "19",
+                                                "value": "1",
+                                                "minValue": "0",
+                                                "maxValue": "255"
+                                            }
+                                        },
+                                        {
+                                            "id": "29d96a3b-a5a3-410b-9e51-22b6de9c43a7",
+                                            "command": "EVENT_END"
+                                        }
+                                    ],
+                                    "false": [
+                                        {
+                                            "id": "80e4e051-b6c0-4865-835c-0ef36828e0a8",
+                                            "command": "EVENT_TEXT",
+                                            "args": {
+                                                "text": "APL? You are such\na loser."
+                                            }
+                                        },
+                                        {
+                                            "id": "11834c0a-ad45-4d15-b0fe-6a7308356c90",
+                                            "command": "EVENT_VARIABLE_MATH",
+                                            "args": {
+                                                "vectorX": "22",
+                                                "operation": "set",
+                                                "other": "var",
+                                                "vectorY": "20",
+                                                "value": "1",
+                                                "minValue": "0",
+                                                "maxValue": "255"
+                                            }
+                                        },
+                                        {
+                                            "id": "aaf8767b-3b4c-4014-bd41-58b3334b8d27",
+                                            "command": "EVENT_END"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "id": "3456fcbd-a8b8-4977-9800-c38e287bc371",
+                                    "command": "EVENT_GROUP",
+                                    "args": {
+                                        "__label": "Accepted?",
+                                        "__collapse": true
+                                    },
+                                    "true": [
+                                        {
+                                            "id": "17515a63-94eb-4165-a9fc-0c16295e4653",
+                                            "command": "EVENT_VARIABLE_MATH",
+                                            "args": {
+                                                "vectorX": "21",
+                                                "operation": "set",
+                                                "other": "var",
+                                                "vectorY": "17",
+                                                "value": "1",
+                                                "minValue": 0,
+                                                "maxValue": 2,
+                                                "__collapse": true
+                                            }
+                                        },
+                                        {
+                                            "id": "055cdb3c-4ddc-4813-a6a4-e069fe251923",
+                                            "command": "EVENT_VARIABLE_MATH",
+                                            "args": {
+                                                "vectorX": "21",
+                                                "operation": "div",
+                                                "other": "var",
+                                                "vectorY": "22",
+                                                "value": "1",
+                                                "minValue": 0,
+                                                "maxValue": 2,
+                                                "__collapse": true
+                                            }
+                                        },
+                                        {
+                                            "id": "a5e0c822-7bd5-4447-a677-f315c5cd7d62",
+                                            "command": "EVENT_VARIABLE_MATH",
+                                            "args": {
+                                                "vectorX": "23",
+                                                "operation": "set",
+                                                "other": "rnd",
+                                                "vectorY": "22",
+                                                "value": "1",
+                                                "minValue": "0",
+                                                "maxValue": 3
+                                            }
+                                        },
+                                        {
+                                            "id": "613c72fa-fa91-4f5e-965a-4a7ec584e1ff",
+                                            "command": "EVENT_VARIABLE_MATH",
+                                            "args": {
+                                                "vectorX": "21",
+                                                "operation": "div",
+                                                "other": "var",
+                                                "vectorY": "23",
+                                                "value": "1",
+                                                "minValue": "0",
+                                                "maxValue": "255"
+                                            }
+                                        },
+                                        {
+                                            "id": "a4cc3566-00e0-4049-aecd-0771bef36631",
+                                            "command": "EVENT_IF_VALUE",
+                                            "args": {
+                                                "variable": "21",
+                                                "operator": ">=",
+                                                "comparator": 1,
+                                                "__label": "Publish!",
+                                                "__collapse": true,
+                                                "__collapseElse": true
+                                            },
+                                            "true": [
+                                                {
+                                                    "id": "c4f62a88-3878-4f2d-9cf6-58a374ba14b7",
+                                                    "command": "EVENT_SET_TRUE",
+                                                    "args": {
+                                                        "variable": "110",
+                                                        "__collapse": true,
+                                                        "__label": "Complete Quest 6"
+                                                    }
+                                                },
+                                                {
+                                                    "id": "9e7a10df-cf26-41c4-8475-5cae99f313a7",
+                                                    "command": "EVENT_SET_VALUE",
+                                                    "args": {
+                                                        "variable": "17",
+                                                        "value": "0",
+                                                        "__label": "Reset data",
+                                                        "__collapse": true
+                                                    }
+                                                },
+                                                {
+                                                    "id": "556acbb0-ad21-48ed-9ec6-b36e9d5af816",
+                                                    "command": "EVENT_IF_TRUE",
+                                                    "args": {
+                                                        "variable": "18",
+                                                        "__collapseElse": true,
+                                                        "__collapse": true
+                                                    },
+                                                    "true": [
+                                                        {
+                                                            "id": "279cc39b-f0ad-40e6-9912-46571728f241",
+                                                            "command": "EVENT_TEXT",
+                                                            "args": {
+                                                                "text": "Congrats! You\npublish on Nature!",
+                                                                "__collapse": false
+                                                            }
+                                                        },
+                                                        {
+                                                            "id": "6428036b-2b8d-44f2-94ba-2399be17d275",
+                                                            "command": "EVENT_END"
+                                                        }
+                                                    ],
+                                                    "false": [
+                                                        {
+                                                            "id": "c6f25040-20ee-4c67-8663-8764a0a06079",
+                                                            "command": "EVENT_TEXT",
+                                                            "args": {
+                                                                "text": "Congrats! You\npublish on APL!"
+                                                            }
+                                                        },
+                                                        {
+                                                            "id": "576f0474-49ac-4ffa-94ae-00e83d5a40fe",
+                                                            "command": "EVENT_END"
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "id": "11e09d31-f2ae-4f60-b739-7a5d6689b1e7",
+                                                    "command": "EVENT_END"
+                                                }
+                                            ],
+                                            "false": [
+                                                {
+                                                    "id": "62b2abfb-6502-4c0b-9167-4aa95c6d2a02",
+                                                    "command": "EVENT_TEXT",
+                                                    "args": {
+                                                        "text": [
+                                                            "Your paper is\nrejected...",
+                                                            "Collect more data\nand try again.",
+                                                            "Or... you can just\nsubmit again right\naway."
+                                                        ],
+                                                        "__collapse": false
+                                                    }
+                                                },
+                                                {
+                                                    "id": "2256996c-bd70-4b40-bfe0-889f4f988ee0",
+                                                    "command": "EVENT_END"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "id": "0d7a0969-dd3f-42eb-ac85-488fad88589b",
+                                            "command": "EVENT_END"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "id": "adc14b26-aba0-498f-b97e-f448e862f0fe",
+                                    "command": "EVENT_END"
+                                }
+                            ],
+                            "false": [
+                                {
+                                    "id": "dda0943b-9d3e-4937-8bb5-98c1834cb84d",
+                                    "command": "EVENT_TEXT",
+                                    "args": {
+                                        "text": [
+                                            "You don't have\nenough data to\npublish.",
+                                            "Collect more data\nand come back!"
+                                        ]
+                                    }
+                                },
+                                {
+                                    "id": "8b595f77-7117-4093-8584-292149af2699",
+                                    "command": "EVENT_END"
+                                }
+                            ]
+                        },
+                        {
+                            "id": "7bd7ae99-6f17-4796-865b-28d7bcb83fc3",
+                            "command": "EVENT_END"
+                        }
+                    ],
+                    "notes": "Submit paper.\nPaper acceptance: random number * data / journal data requirement > 1"
+                }
+            ],
             "triggers": [
                 {
                     "id": "aacb3b65-bc5b-48d8-b631-a29fefcbdd26",
