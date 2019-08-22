@@ -3171,7 +3171,7 @@
         },
         {
             "id": "3a531c45-602a-46c4-abac-dcfae1c9e068",
-            "name": "Q3 Do Experiment",
+            "name": "Experiment 1",
             "backgroundId": "a5de1155-3ea0-4993-aeea-68b01562e93a",
             "x": 1495,
             "y": 676,
@@ -4518,6 +4518,31 @@
             ],
             "triggers": [
                 {
+                    "id": "43685f94-836f-4101-9bf8-26d5353f36ad",
+                    "x": 2,
+                    "y": 3,
+                    "width": 2,
+                    "height": 2,
+                    "trigger": "walk",
+                    "script": [
+                        {
+                            "id": "7450426f-8060-478c-b547-61d34b2b50e3",
+                            "command": "EVENT_SWITCH_SCENE",
+                            "args": {
+                                "sceneId": "a89e901e-f312-4d6b-81af-d5c92b9fd823",
+                                "x": 9,
+                                "y": 16,
+                                "direction": "up",
+                                "fadeSpeed": "2"
+                            }
+                        },
+                        {
+                            "id": "7bd7ae99-6f17-4796-865b-28d7bcb83fc3",
+                            "command": "EVENT_END"
+                        }
+                    ]
+                },
+                {
                     "id": "aacb3b65-bc5b-48d8-b631-a29fefcbdd26",
                     "x": 15,
                     "y": 31,
@@ -4588,11 +4613,11 @@
                 63,
                 255,
                 255,
-                31,
+                1,
                 48,
                 1,
                 248,
-                31,
+                1,
                 240,
                 1,
                 128,
@@ -5034,6 +5059,31 @@
             "actors": [],
             "triggers": [
                 {
+                    "id": "c7b7902b-7709-4630-b697-dd3d52c8abf0",
+                    "x": 25,
+                    "y": 20,
+                    "width": 2,
+                    "height": 2,
+                    "trigger": "walk",
+                    "script": [
+                        {
+                            "id": "8a48d55e-fe94-4450-87cf-35d202c65a0f",
+                            "command": "EVENT_SWITCH_SCENE",
+                            "args": {
+                                "sceneId": "f7aba9e7-448c-4e9a-a05d-f6757099e3cf",
+                                "x": 9,
+                                "y": 16,
+                                "direction": "up",
+                                "fadeSpeed": "2"
+                            }
+                        },
+                        {
+                            "id": "7bd7ae99-6f17-4796-865b-28d7bcb83fc3",
+                            "command": "EVENT_END"
+                        }
+                    ]
+                },
+                {
                     "id": "145de94c-4651-4dd8-b84f-8b4e1de9d38e",
                     "x": 6,
                     "y": 31,
@@ -5054,6 +5104,31 @@
                         },
                         {
                             "id": "1ed0b097-fe61-440c-a30f-505a2e7d1bda",
+                            "command": "EVENT_END"
+                        }
+                    ]
+                },
+                {
+                    "id": "95ea8e6d-4c19-49d8-9b86-56838a489951",
+                    "x": 28,
+                    "y": 3,
+                    "width": 2,
+                    "height": 2,
+                    "trigger": "walk",
+                    "script": [
+                        {
+                            "id": "a3ff27f5-6805-4a37-8f22-de9d07758987",
+                            "command": "EVENT_SWITCH_SCENE",
+                            "args": {
+                                "sceneId": "b56478ca-e056-4235-a09f-5fa45e1dc46d",
+                                "x": 9,
+                                "y": 16,
+                                "direction": "up",
+                                "fadeSpeed": "2"
+                            }
+                        },
+                        {
+                            "id": "7bd7ae99-6f17-4796-865b-28d7bcb83fc3",
                             "command": "EVENT_END"
                         }
                     ]
@@ -6469,6 +6544,573 @@
                 },
                 {
                     "id": "b7874894-6a1f-41a1-8253-6c66c12d16fc",
+                    "command": "EVENT_END"
+                }
+            ]
+        },
+        {
+            "id": "a89e901e-f312-4d6b-81af-d5c92b9fd823",
+            "name": "Experiment 2",
+            "backgroundId": "a5de1155-3ea0-4993-aeea-68b01562e93a",
+            "x": 1496,
+            "y": 850,
+            "width": 20,
+            "height": 18,
+            "actors": [
+                {
+                    "id": "ca930fd5-88bf-42da-ade9-d0b36d2865a7",
+                    "spriteSheetId": "2c66c422-96b1-4bcb-b342-71f514611f7f",
+                    "x": 9,
+                    "y": 8,
+                    "movementType": "static",
+                    "direction": "down",
+                    "moveSpeed": "1",
+                    "animSpeed": "3",
+                    "name": "Schrodinger's Cat",
+                    "script": [
+                        {
+                            "id": "c163ca4f-0889-42b2-841d-6caf79bb6b16",
+                            "command": "EVENT_GROUP",
+                            "args": {
+                                "__collapse": false
+                            },
+                            "true": [
+                                {
+                                    "id": "efff60f7-5ed3-4159-aea6-c5630822b7a7",
+                                    "command": "EVENT_TEXT",
+                                    "args": {
+                                        "text": "Am I dead, alive\nor at the same\ntime?"
+                                    }
+                                },
+                                {
+                                    "id": "924da5bf-6612-428f-997d-04d2f8599868",
+                                    "command": "EVENT_CHOICE",
+                                    "args": {
+                                        "variable": "14",
+                                        "trueText": "Dead",
+                                        "falseText": "Alive"
+                                    }
+                                },
+                                {
+                                    "id": "b489c142-f4f1-4bf6-8313-546d696bdb78",
+                                    "command": "EVENT_SET_TRUE",
+                                    "args": {
+                                        "variable": "107",
+                                        "__label": "Complete Quest 3"
+                                    }
+                                },
+                                {
+                                    "id": "67573c8d-2bb5-4eb0-b49f-581791d7d22f",
+                                    "command": "EVENT_GROUP",
+                                    "args": {},
+                                    "true": [
+                                        {
+                                            "id": "6189b1ff-f1a5-4aa8-9058-5a2e3ea86204",
+                                            "command": "EVENT_VARIABLE_MATH",
+                                            "args": {
+                                                "vectorX": "23",
+                                                "operation": "set",
+                                                "other": "rnd",
+                                                "vectorY": "110",
+                                                "value": "1",
+                                                "minValue": "0",
+                                                "maxValue": 5
+                                            }
+                                        },
+                                        {
+                                            "id": "081935b1-13ae-4f19-ad89-61a6fd1f0ea6",
+                                            "command": "EVENT_VARIABLE_MATH",
+                                            "args": {
+                                                "vectorX": "17",
+                                                "operation": "add",
+                                                "other": "var",
+                                                "vectorY": "23",
+                                                "value": "1",
+                                                "minValue": "0",
+                                                "maxValue": "255"
+                                            }
+                                        },
+                                        {
+                                            "id": "04909525-d8ed-4d8a-bf46-3d6412df9809",
+                                            "command": "EVENT_TEXT",
+                                            "args": {
+                                                "text": "You obtained $23$\ndata. You total\ndata is $17$."
+                                            }
+                                        },
+                                        {
+                                            "id": "5d27d900-9f04-4f80-9f6b-1f54733a75ba",
+                                            "command": "EVENT_END"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "id": "a2fee3cb-f232-43d5-9675-87d7228b1359",
+                                    "command": "EVENT_END"
+                                }
+                            ]
+                        },
+                        {
+                            "id": "ba5b9583-435f-4a30-87fd-b27781f80d1b",
+                            "command": "EVENT_END"
+                        }
+                    ]
+                }
+            ],
+            "triggers": [
+                {
+                    "id": "bd015633-7a95-4f7f-910e-3861c8322337",
+                    "x": 9,
+                    "y": 17,
+                    "width": 2,
+                    "height": 1,
+                    "trigger": "walk",
+                    "script": [
+                        {
+                            "id": "1be54c9c-fc2b-4740-925a-69bd97ba1f49",
+                            "command": "EVENT_SWITCH_SCENE",
+                            "args": {
+                                "sceneId": "ef669de7-1271-42f8-b79c-064f1b32deff",
+                                "x": 2,
+                                "y": 5,
+                                "direction": "down",
+                                "fadeSpeed": "2"
+                            }
+                        },
+                        {
+                            "id": "6ddd676e-2b44-443c-b1c4-469105d281e9",
+                            "command": "EVENT_END"
+                        }
+                    ]
+                }
+            ],
+            "collisions": [
+                0,
+                0,
+                224,
+                255,
+                127,
+                2,
+                0,
+                36,
+                0,
+                64,
+                2,
+                0,
+                36,
+                0,
+                64,
+                2,
+                0,
+                36,
+                0,
+                64,
+                2,
+                0,
+                36,
+                0,
+                64,
+                2,
+                0,
+                36,
+                0,
+                64,
+                2,
+                0,
+                36,
+                0,
+                64,
+                2,
+                0,
+                36,
+                0,
+                64,
+                254,
+                249,
+                7,
+                0,
+                0
+            ],
+            "script": [
+                {
+                    "id": "93011198-8f22-46d6-897e-718a9b25ceef",
+                    "command": "EVENT_END"
+                }
+            ]
+        },
+        {
+            "id": "f7aba9e7-448c-4e9a-a05d-f6757099e3cf",
+            "name": "Experiment 3",
+            "backgroundId": "a5de1155-3ea0-4993-aeea-68b01562e93a",
+            "x": 1166,
+            "y": 1052,
+            "width": 20,
+            "height": 18,
+            "actors": [
+                {
+                    "id": "1b39933c-5000-46b1-9af0-0a8b3c761660",
+                    "spriteSheetId": "2c66c422-96b1-4bcb-b342-71f514611f7f",
+                    "x": 9,
+                    "y": 8,
+                    "movementType": "static",
+                    "direction": "down",
+                    "moveSpeed": "1",
+                    "animSpeed": "3",
+                    "name": "Schrodinger's Cat",
+                    "script": [
+                        {
+                            "id": "b33026f6-4f55-4987-b89b-28da758f5dd3",
+                            "command": "EVENT_GROUP",
+                            "args": {
+                                "__collapse": false
+                            },
+                            "true": [
+                                {
+                                    "id": "f1dd1365-8f44-4080-80d6-d58b39504260",
+                                    "command": "EVENT_TEXT",
+                                    "args": {
+                                        "text": "Am I dead, alive\nor at the same\ntime?"
+                                    }
+                                },
+                                {
+                                    "id": "b3e707e4-563e-4aaa-9ac3-8d1a58057427",
+                                    "command": "EVENT_CHOICE",
+                                    "args": {
+                                        "variable": "14",
+                                        "trueText": "Dead",
+                                        "falseText": "Alive"
+                                    }
+                                },
+                                {
+                                    "id": "80096ce8-b1c7-49d8-b96e-611c1a2b5511",
+                                    "command": "EVENT_SET_TRUE",
+                                    "args": {
+                                        "variable": "107",
+                                        "__label": "Complete Quest 3"
+                                    }
+                                },
+                                {
+                                    "id": "8a3030c4-2ea6-4635-987b-2a720a593b94",
+                                    "command": "EVENT_GROUP",
+                                    "args": {},
+                                    "true": [
+                                        {
+                                            "id": "357f2371-cd77-4c8d-adb6-78c28b872ea7",
+                                            "command": "EVENT_VARIABLE_MATH",
+                                            "args": {
+                                                "vectorX": "23",
+                                                "operation": "set",
+                                                "other": "rnd",
+                                                "vectorY": "110",
+                                                "value": "1",
+                                                "minValue": "0",
+                                                "maxValue": 5
+                                            }
+                                        },
+                                        {
+                                            "id": "8dc49417-4255-4fdf-81e4-47dce324d470",
+                                            "command": "EVENT_VARIABLE_MATH",
+                                            "args": {
+                                                "vectorX": "17",
+                                                "operation": "add",
+                                                "other": "var",
+                                                "vectorY": "23",
+                                                "value": "1",
+                                                "minValue": "0",
+                                                "maxValue": "255"
+                                            }
+                                        },
+                                        {
+                                            "id": "a5337d95-568e-4e14-b4ae-abd7d2e36b2e",
+                                            "command": "EVENT_TEXT",
+                                            "args": {
+                                                "text": "You obtained $23$\ndata. You total\ndata is $17$."
+                                            }
+                                        },
+                                        {
+                                            "id": "1e76fb44-5763-4938-b087-c1180f336f4d",
+                                            "command": "EVENT_END"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "id": "9a1eda74-7a9b-4731-87cb-7d33c781db83",
+                                    "command": "EVENT_END"
+                                }
+                            ]
+                        },
+                        {
+                            "id": "8d04c194-43a3-4c79-abbd-840805152fd8",
+                            "command": "EVENT_END"
+                        }
+                    ]
+                }
+            ],
+            "triggers": [
+                {
+                    "id": "16c0ee1c-5d84-434b-8341-570ded88f708",
+                    "x": 9,
+                    "y": 17,
+                    "width": 2,
+                    "height": 1,
+                    "trigger": "walk",
+                    "script": [
+                        {
+                            "id": "0c60c9eb-ec66-4894-ab37-1a8fa0d8a9e8",
+                            "command": "EVENT_SWITCH_SCENE",
+                            "args": {
+                                "sceneId": "2fcd3a6f-963e-4792-ac19-7339873f24a2",
+                                "x": 25,
+                                "y": 22,
+                                "direction": "down",
+                                "fadeSpeed": "2"
+                            }
+                        },
+                        {
+                            "id": "e7243596-29e5-4142-ad47-4cf933a71481",
+                            "command": "EVENT_END"
+                        }
+                    ]
+                }
+            ],
+            "collisions": [
+                0,
+                0,
+                224,
+                255,
+                127,
+                2,
+                0,
+                36,
+                0,
+                64,
+                2,
+                0,
+                36,
+                0,
+                64,
+                2,
+                0,
+                36,
+                0,
+                64,
+                2,
+                0,
+                36,
+                0,
+                64,
+                2,
+                0,
+                36,
+                0,
+                64,
+                2,
+                0,
+                36,
+                0,
+                64,
+                2,
+                0,
+                36,
+                0,
+                64,
+                254,
+                249,
+                7,
+                0,
+                0
+            ],
+            "script": [
+                {
+                    "id": "93011198-8f22-46d6-897e-718a9b25ceef",
+                    "command": "EVENT_END"
+                }
+            ]
+        },
+        {
+            "id": "b56478ca-e056-4235-a09f-5fa45e1dc46d",
+            "name": "Experiment 4",
+            "backgroundId": "a5de1155-3ea0-4993-aeea-68b01562e93a",
+            "x": 1415,
+            "y": 1046,
+            "width": 20,
+            "height": 18,
+            "actors": [
+                {
+                    "id": "9df0422a-5b82-45a2-913b-5dce07638a54",
+                    "spriteSheetId": "2c66c422-96b1-4bcb-b342-71f514611f7f",
+                    "x": 9,
+                    "y": 8,
+                    "movementType": "static",
+                    "direction": "down",
+                    "moveSpeed": "1",
+                    "animSpeed": "3",
+                    "name": "Schrodinger's Cat",
+                    "script": [
+                        {
+                            "id": "d32e7512-8eac-4329-b994-7d07a4829d42",
+                            "command": "EVENT_GROUP",
+                            "args": {
+                                "__collapse": false
+                            },
+                            "true": [
+                                {
+                                    "id": "22780cfc-1971-476b-a402-ded36a3d3f55",
+                                    "command": "EVENT_TEXT",
+                                    "args": {
+                                        "text": "Am I dead, alive\nor at the same\ntime?"
+                                    }
+                                },
+                                {
+                                    "id": "6c6ac6b5-a13b-45d1-9d65-a231337f8391",
+                                    "command": "EVENT_CHOICE",
+                                    "args": {
+                                        "variable": "14",
+                                        "trueText": "Dead",
+                                        "falseText": "Alive"
+                                    }
+                                },
+                                {
+                                    "id": "b9613a59-3efc-4af8-8976-d56ef7555695",
+                                    "command": "EVENT_SET_TRUE",
+                                    "args": {
+                                        "variable": "107",
+                                        "__label": "Complete Quest 3"
+                                    }
+                                },
+                                {
+                                    "id": "201cca00-e714-408a-89b3-52d74c5f68c3",
+                                    "command": "EVENT_GROUP",
+                                    "args": {},
+                                    "true": [
+                                        {
+                                            "id": "36a8c4cc-4ee3-4bd5-bd03-0ab51e5ddfe7",
+                                            "command": "EVENT_VARIABLE_MATH",
+                                            "args": {
+                                                "vectorX": "23",
+                                                "operation": "set",
+                                                "other": "rnd",
+                                                "vectorY": "110",
+                                                "value": "1",
+                                                "minValue": "0",
+                                                "maxValue": 5
+                                            }
+                                        },
+                                        {
+                                            "id": "864eedea-b1e4-42b9-b972-50b192f33e38",
+                                            "command": "EVENT_VARIABLE_MATH",
+                                            "args": {
+                                                "vectorX": "17",
+                                                "operation": "add",
+                                                "other": "var",
+                                                "vectorY": "23",
+                                                "value": "1",
+                                                "minValue": "0",
+                                                "maxValue": "255"
+                                            }
+                                        },
+                                        {
+                                            "id": "e6f225ea-22a3-4b02-96b2-1ee2e3225694",
+                                            "command": "EVENT_TEXT",
+                                            "args": {
+                                                "text": "You obtained $23$\ndata. You total\ndata is $17$."
+                                            }
+                                        },
+                                        {
+                                            "id": "2cd2fc38-d9de-4e37-ba33-044603c840b0",
+                                            "command": "EVENT_END"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "id": "8ef55005-cf09-4b33-be16-c83498d92fb6",
+                                    "command": "EVENT_END"
+                                }
+                            ]
+                        },
+                        {
+                            "id": "b0002a20-e9b5-41ed-8108-5d15b12d93f2",
+                            "command": "EVENT_END"
+                        }
+                    ]
+                }
+            ],
+            "triggers": [
+                {
+                    "id": "bc166e89-17da-49dc-adb0-3532ef5ccd36",
+                    "x": 9,
+                    "y": 17,
+                    "width": 2,
+                    "height": 1,
+                    "trigger": "walk",
+                    "script": [
+                        {
+                            "id": "b7c74632-0499-48a8-98db-13f863f24c5d",
+                            "command": "EVENT_SWITCH_SCENE",
+                            "args": {
+                                "sceneId": "2fcd3a6f-963e-4792-ac19-7339873f24a2",
+                                "x": 28,
+                                "y": 5,
+                                "direction": "down",
+                                "fadeSpeed": "2"
+                            }
+                        },
+                        {
+                            "id": "d0b2723e-61fd-40ea-bfb0-ea70f8b7f781",
+                            "command": "EVENT_END"
+                        }
+                    ]
+                }
+            ],
+            "collisions": [
+                0,
+                0,
+                224,
+                255,
+                127,
+                2,
+                0,
+                36,
+                0,
+                64,
+                2,
+                0,
+                36,
+                0,
+                64,
+                2,
+                0,
+                36,
+                0,
+                64,
+                2,
+                0,
+                36,
+                0,
+                64,
+                2,
+                0,
+                36,
+                0,
+                64,
+                2,
+                0,
+                36,
+                0,
+                64,
+                2,
+                0,
+                36,
+                0,
+                64,
+                254,
+                249,
+                7,
+                0,
+                0
+            ],
+            "script": [
+                {
+                    "id": "93011198-8f22-46d6-897e-718a9b25ceef",
                     "command": "EVENT_END"
                 }
             ]
