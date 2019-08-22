@@ -3189,7 +3189,7 @@
                             "id": "806ed329-1334-4219-a22e-321dc03a009e",
                             "command": "EVENT_GROUP",
                             "args": {
-                                "__collapse": true
+                                "__collapse": false
                             },
                             "true": [
                                 {
@@ -3215,6 +3215,50 @@
                                         "variable": "107",
                                         "__label": "Complete Quest 3"
                                     }
+                                },
+                                {
+                                    "id": "bdde8c69-adfd-4255-8e0e-60c9201fed67",
+                                    "command": "EVENT_GROUP",
+                                    "args": {},
+                                    "true": [
+                                        {
+                                            "id": "aeab19f2-c3e6-437a-8d98-66bc708782dd",
+                                            "command": "EVENT_VARIABLE_MATH",
+                                            "args": {
+                                                "vectorX": "23",
+                                                "operation": "set",
+                                                "other": "rnd",
+                                                "vectorY": "110",
+                                                "value": "1",
+                                                "minValue": "0",
+                                                "maxValue": 5
+                                            }
+                                        },
+                                        {
+                                            "id": "660e5d1d-f992-4531-817f-fa42c687b8bc",
+                                            "command": "EVENT_VARIABLE_MATH",
+                                            "args": {
+                                                "vectorX": "17",
+                                                "operation": "add",
+                                                "other": "var",
+                                                "vectorY": "23",
+                                                "value": "1",
+                                                "minValue": "0",
+                                                "maxValue": "255"
+                                            }
+                                        },
+                                        {
+                                            "id": "8d0a51fc-f0e1-4c2a-8cf4-676b988bbab1",
+                                            "command": "EVENT_TEXT",
+                                            "args": {
+                                                "text": "You obtained $23$\ndata. You total\ndata is $17$."
+                                            }
+                                        },
+                                        {
+                                            "id": "187cea34-1571-4ef5-b9bd-60234c19d0e4",
+                                            "command": "EVENT_END"
+                                        }
+                                    ]
                                 },
                                 {
                                     "id": "5f7dbf1e-3754-4abc-b20b-a6f6df2da6ae",
@@ -4151,21 +4195,13 @@
                     "id": "6ebd2a53-2ac1-4811-b5d6-14e4135a588b",
                     "spriteSheetId": "49f18b02-8273-4803-8b78-719db50ab553",
                     "x": 22,
-                    "y": 4,
+                    "y": 3,
                     "movementType": "static",
                     "direction": "down",
                     "moveSpeed": "1",
                     "animSpeed": "3",
                     "name": "PC",
                     "script": [
-                        {
-                            "id": "995307af-f98a-4a09-8437-741e0a253185",
-                            "command": "EVENT_SET_VALUE",
-                            "args": {
-                                "variable": "17",
-                                "value": 10
-                            }
-                        },
                         {
                             "id": "2d283b45-ebed-418d-b08d-316422f85986",
                             "command": "EVENT_SET_VALUE",
@@ -4202,8 +4238,8 @@
                                 "operator": ">",
                                 "comparator": 3,
                                 "__label": "How much data?",
-                                "__collapse": true,
-                                "__collapseElse": true
+                                "__collapse": false,
+                                "__collapseElse": false
                             },
                             "true": [
                                 {
