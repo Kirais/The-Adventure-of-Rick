@@ -78,10 +78,6 @@
             "name": "Sleep"
         },
         {
-            "id": "107",
-            "name": "Quest3_complete"
-        },
-        {
             "id": "108",
             "name": "Quest4_complete"
         },
@@ -120,6 +116,14 @@
         {
             "id": "106",
             "name": "Q2 Take Grad Course"
+        },
+        {
+            "id": "14",
+            "name": "Cat Dead"
+        },
+        {
+            "id": "107",
+            "name": "Q3 Do Experiment"
         }
     ],
     "backgrounds": [
@@ -2749,13 +2753,68 @@
         },
         {
             "id": "3a531c45-602a-46c4-abac-dcfae1c9e068",
-            "name": "Quest-1",
+            "name": "Q3 Do Experiment",
             "backgroundId": "a5de1155-3ea0-4993-aeea-68b01562e93a",
             "x": 1495,
             "y": 676,
             "width": 20,
             "height": 18,
-            "actors": [],
+            "actors": [
+                {
+                    "id": "14819bf2-09ba-4326-9f1b-75b1ae511732",
+                    "spriteSheetId": "2c66c422-96b1-4bcb-b342-71f514611f7f",
+                    "x": 9,
+                    "y": 8,
+                    "movementType": "static",
+                    "direction": "down",
+                    "moveSpeed": "1",
+                    "animSpeed": "3",
+                    "name": "Schrodinger's Cat",
+                    "script": [
+                        {
+                            "id": "806ed329-1334-4219-a22e-321dc03a009e",
+                            "command": "EVENT_GROUP",
+                            "args": {
+                                "__collapse": true
+                            },
+                            "true": [
+                                {
+                                    "id": "39c1fb58-3a28-4acf-bfc4-9635a314137b",
+                                    "command": "EVENT_TEXT",
+                                    "args": {
+                                        "text": "Am I dead, alive\nor at the same\ntime?"
+                                    }
+                                },
+                                {
+                                    "id": "3d1e5517-155c-40b3-aa88-ce07af281a53",
+                                    "command": "EVENT_CHOICE",
+                                    "args": {
+                                        "variable": "14",
+                                        "trueText": "Dead",
+                                        "falseText": "Alive"
+                                    }
+                                },
+                                {
+                                    "id": "5a28e525-edd3-4d2e-8863-47ffcc20b4c3",
+                                    "command": "EVENT_SET_TRUE",
+                                    "args": {
+                                        "variable": "107",
+                                        "__label": "Complete Quest 3"
+                                    }
+                                },
+                                {
+                                    "id": "5f7dbf1e-3754-4abc-b20b-a6f6df2da6ae",
+                                    "command": "EVENT_END"
+                                }
+                            ]
+                        },
+                        {
+                            "id": "8ff5018d-e62c-4295-afe6-f6a52e7556e3",
+                            "command": "EVENT_END"
+                        }
+                    ]
+                }
+            ],
             "triggers": [
                 {
                     "id": "f02bda47-f49d-4aa4-9a56-0d90fddd505c",
@@ -2829,6 +2888,12 @@
                 7,
                 0,
                 0
+            ],
+            "script": [
+                {
+                    "id": "93011198-8f22-46d6-897e-718a9b25ceef",
+                    "command": "EVENT_END"
+                }
             ]
         },
         {
@@ -3702,6 +3767,13 @@
                     "height": 2,
                     "trigger": "walk",
                     "script": [
+                        {
+                            "id": "b82c7a5b-e294-43cd-847d-6ebcbd147a65",
+                            "command": "EVENT_TEXT",
+                            "args": {
+                                "text": "Are you ready to\ndo experiment?"
+                            }
+                        },
                         {
                             "id": "3b8e4b64-efad-4315-bd52-3bcecf351e9a",
                             "command": "EVENT_SWITCH_SCENE",
