@@ -2099,7 +2099,7 @@
                                                         "variable": "13",
                                                         "trueText": "Yes",
                                                         "falseText": "No",
-                                                        "__collapse": true,
+                                                        "__collapse": false,
                                                         "__label": "Take Grad Courses?"
                                                     }
                                                 },
@@ -2127,10 +2127,10 @@
                                                             "command": "EVENT_TEXT",
                                                             "args": {
                                                                 "text": [
-                                                                    "Great! You are\nenrolled in PHY501",
-                                                                    "Quantum\nInformation\nProcessing"
+                                                                    "Great! You are\nenrolled in Ph219",
+                                                                    "Quantum\nComputation"
                                                                 ],
-                                                                "__collapse": true
+                                                                "__collapse": false
                                                             }
                                                         },
                                                         {
