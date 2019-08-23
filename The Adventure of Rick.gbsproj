@@ -2500,55 +2500,6 @@
                     "name": "Examiner",
                     "script": [
                         {
-                            "id": "bc32c803-7cd3-42dc-9218-7c569e8c1457",
-                            "command": "EVENT_GROUP",
-                            "args": {
-                                "__label": "Set data/paper total for testing",
-                                "__collapse": true
-                            },
-                            "true": [
-                                {
-                                    "id": "3a3ae855-9a36-4db3-b11b-df566e3767e5",
-                                    "command": "EVENT_SET_VALUE",
-                                    "args": {
-                                        "variable": "17",
-                                        "value": 5,
-                                        "__collapse": false
-                                    }
-                                },
-                                {
-                                    "id": "d260cb45-9553-4a63-aea4-543c11c3df41",
-                                    "command": "EVENT_SET_VALUE",
-                                    "args": {
-                                        "variable": "33",
-                                        "value": 0,
-                                        "__collapse": false
-                                    }
-                                },
-                                {
-                                    "id": "53e360b0-019a-412e-94ec-c1e9d3d655d5",
-                                    "command": "EVENT_SET_VALUE",
-                                    "args": {
-                                        "variable": "35",
-                                        "value": 1,
-                                        "__collapse": false
-                                    }
-                                },
-                                {
-                                    "id": "5f146383-28d2-4cea-90c8-c8654e9d19e5",
-                                    "command": "EVENT_SET_VALUE",
-                                    "args": {
-                                        "variable": "3",
-                                        "value": 30
-                                    }
-                                },
-                                {
-                                    "id": "78e4e8fa-73cd-48bf-8005-efb4dbc5fc70",
-                                    "command": "EVENT_END"
-                                }
-                            ]
-                        },
-                        {
                             "id": "0f9e0f08-4c7a-4124-924e-dc86d9ae75a6",
                             "command": "EVENT_GROUP",
                             "args": {
@@ -5556,7 +5507,7 @@
                                 "comparator": 3,
                                 "__label": "How much data?",
                                 "__collapse": false,
-                                "__collapseElse": false
+                                "__collapseElse": true
                             },
                             "true": [
                                 {
@@ -5645,7 +5596,7 @@
                                     "command": "EVENT_GROUP",
                                     "args": {
                                         "__label": "Accepted?",
-                                        "__collapse": true
+                                        "__collapse": false
                                     },
                                     "true": [
                                         {
@@ -5686,7 +5637,8 @@
                                                 "vectorY": "22",
                                                 "value": "1",
                                                 "minValue": "0",
-                                                "maxValue": 3
+                                                "maxValue": 3,
+                                                "__collapse": true
                                             }
                                         },
                                         {
@@ -5699,7 +5651,8 @@
                                                 "vectorY": "23",
                                                 "value": "1",
                                                 "minValue": "0",
-                                                "maxValue": "255"
+                                                "maxValue": "255",
+                                                "__collapse": true
                                             }
                                         },
                                         {
@@ -5710,8 +5663,8 @@
                                                 "operator": ">=",
                                                 "comparator": 1,
                                                 "__label": "Publish!",
-                                                "__collapse": true,
-                                                "__collapseElse": true
+                                                "__collapse": false,
+                                                "__collapseElse": false
                                             },
                                             "true": [
                                                 {
@@ -5751,6 +5704,15 @@
                                                             }
                                                         },
                                                         {
+                                                            "id": "af2bc745-491d-49d8-95fe-500a278ac859",
+                                                            "command": "EVENT_INC_VALUE",
+                                                            "args": {
+                                                                "variable": "33",
+                                                                "__label": "Nature++",
+                                                                "__collapse": true
+                                                            }
+                                                        },
+                                                        {
                                                             "id": "6428036b-2b8d-44f2-94ba-2399be17d275",
                                                             "command": "EVENT_END"
                                                         }
@@ -5761,6 +5723,15 @@
                                                             "command": "EVENT_TEXT",
                                                             "args": {
                                                                 "text": "Congrats! You\npublish on APL!"
+                                                            }
+                                                        },
+                                                        {
+                                                            "id": "9dac7fe4-a72e-45c5-a12b-b1fbb3a8938c",
+                                                            "command": "EVENT_INC_VALUE",
+                                                            "args": {
+                                                                "variable": "35",
+                                                                "__collapse": true,
+                                                                "__label": "APL++"
                                                             }
                                                         },
                                                         {
@@ -5782,7 +5753,7 @@
                                                         "text": [
                                                             "Your paper is\nrejected...",
                                                             "Collect more data\nand try again.",
-                                                            "Or... you can just\nsubmit again right\naway."
+                                                            "Or... just submit\nagain if you feel\nlucky."
                                                         ],
                                                         "__collapse": false
                                                     }
