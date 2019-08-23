@@ -182,10 +182,6 @@
             "name": "Nature total"
         },
         {
-            "id": "34",
-            "name": "APL balance"
-        },
-        {
             "id": "35",
             "name": "APL total"
         },
@@ -204,6 +200,18 @@
         {
             "id": "26",
             "name": "Examiner ATK"
+        },
+        {
+            "id": "38",
+            "name": "Player dead"
+        },
+        {
+            "id": "34",
+            "name": "APL balance"
+        },
+        {
+            "id": "36",
+            "name": "No single balance flag"
         }
     ],
     "backgrounds": [
@@ -2504,8 +2512,8 @@
                                     "command": "EVENT_SET_VALUE",
                                     "args": {
                                         "variable": "17",
-                                        "value": 50,
-                                        "__collapse": true
+                                        "value": 5,
+                                        "__collapse": false
                                     }
                                 },
                                 {
@@ -2524,6 +2532,14 @@
                                         "variable": "35",
                                         "value": 1,
                                         "__collapse": false
+                                    }
+                                },
+                                {
+                                    "id": "5f146383-28d2-4cea-90c8-c8654e9d19e5",
+                                    "command": "EVENT_SET_VALUE",
+                                    "args": {
+                                        "variable": "3",
+                                        "value": 30
                                     }
                                 },
                                 {
@@ -2819,7 +2835,7 @@
                             "args": {
                                 "variable": "100",
                                 "__collapseElse": true,
-                                "__collapse": true,
+                                "__collapse": false,
                                 "__label": "Start challenge"
                             },
                             "true": [
@@ -2836,8 +2852,151 @@
                                             "command": "EVENT_TEXT",
                                             "args": {
                                                 "text": "You have $31$ raw\ndata, $32$ Nature,\n$34$ APL",
-                                                "__collapse": true,
+                                                "__collapse": false,
                                                 "__label": "Show balance"
+                                            }
+                                        },
+                                        {
+                                            "id": "8f3f0907-a647-4f9f-889b-4c0bd4511a06",
+                                            "command": "EVENT_IF_VALUE",
+                                            "args": {
+                                                "variable": "31",
+                                                "operator": "<=",
+                                                "comparator": "0",
+                                                "__label": "No data",
+                                                "__collapse": true
+                                            },
+                                            "true": [
+                                                {
+                                                    "id": "1841f727-fbaf-49a8-9086-3e7527d1fb6e",
+                                                    "command": "EVENT_IF_VALUE",
+                                                    "args": {
+                                                        "variable": "32",
+                                                        "operator": "<=",
+                                                        "comparator": "0",
+                                                        "__label": "No Nature",
+                                                        "__collapse": true
+                                                    },
+                                                    "true": [
+                                                        {
+                                                            "id": "5180e842-274e-4cf2-a0f4-3e9a32da9273",
+                                                            "command": "EVENT_IF_VALUE",
+                                                            "args": {
+                                                                "variable": "34",
+                                                                "operator": "<=",
+                                                                "comparator": "0",
+                                                                "__collapseElse": true,
+                                                                "__label": "No APL",
+                                                                "__collapse": true
+                                                            },
+                                                            "true": [
+                                                                {
+                                                                    "id": "bb1141c3-b3fc-48e7-b7b5-f10c22ff9e64",
+                                                                    "command": "EVENT_TEXT",
+                                                                    "args": {
+                                                                        "text": "You ran out of\ndata and paper!"
+                                                                    }
+                                                                },
+                                                                {
+                                                                    "id": "c374e674-9dd2-4195-b752-952f136f6894",
+                                                                    "command": "EVENT_SET_TRUE",
+                                                                    "args": {
+                                                                        "variable": "38"
+                                                                    }
+                                                                },
+                                                                {
+                                                                    "id": "98cb58b8-01d7-4fd9-a0d5-f6b7e97d5ff8",
+                                                                    "command": "EVENT_IF_TRUE",
+                                                                    "args": {
+                                                                        "variable": "38",
+                                                                        "__label": "Dead",
+                                                                        "__collapseElse": true,
+                                                                        "__collapse": true
+                                                                    },
+                                                                    "true": [
+                                                                        {
+                                                                            "id": "617d5b5e-33d4-4305-8431-eb9e376fa0c8",
+                                                                            "command": "EVENT_TEXT",
+                                                                            "args": {
+                                                                                "text": [
+                                                                                    "Take some rest and\ntry again!"
+                                                                                ],
+                                                                                "__collapse": false
+                                                                            }
+                                                                        },
+                                                                        {
+                                                                            "id": "cec42500-a97a-47d9-93bc-afb1ff6f24ee",
+                                                                            "command": "EVENT_SET_TRUE",
+                                                                            "args": {
+                                                                                "variable": "104"
+                                                                            }
+                                                                        },
+                                                                        {
+                                                                            "id": "eabdfed2-b286-4b2c-a5c9-9bcd2df8a0cb",
+                                                                            "command": "EVENT_SWITCH_SCENE",
+                                                                            "args": {
+                                                                                "sceneId": "a7ea332d-0cf6-4a2a-85eb-1a0217dfa4e7",
+                                                                                "x": 6,
+                                                                                "y": 9,
+                                                                                "direction": "right",
+                                                                                "fadeSpeed": "2"
+                                                                            }
+                                                                        },
+                                                                        {
+                                                                            "id": "d9d70477-78c2-4253-8d51-e23d01a26de7",
+                                                                            "command": "EVENT_END"
+                                                                        }
+                                                                    ],
+                                                                    "false": [
+                                                                        {
+                                                                            "id": "e4d12ec2-1d1a-4f77-a7cf-fff882531316",
+                                                                            "command": "EVENT_END"
+                                                                        }
+                                                                    ]
+                                                                },
+                                                                {
+                                                                    "id": "585e907b-ce98-4cc9-9ee9-1304dac43d11",
+                                                                    "command": "EVENT_END"
+                                                                }
+                                                            ],
+                                                            "false": [
+                                                                {
+                                                                    "id": "069a676d-6c77-4348-a490-7bcb159ceca1",
+                                                                    "command": "EVENT_END"
+                                                                }
+                                                            ]
+                                                        },
+                                                        {
+                                                            "id": "950a3026-3199-4a40-aec3-3e6613f2e282",
+                                                            "command": "EVENT_END"
+                                                        }
+                                                    ],
+                                                    "false": [
+                                                        {
+                                                            "id": "f7899409-6d8f-47c7-9583-3556c673f62e",
+                                                            "command": "EVENT_END"
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "id": "6aaee221-7408-481f-9b9c-9b9cbb6f65fb",
+                                                    "command": "EVENT_END"
+                                                }
+                                            ],
+                                            "false": [
+                                                {
+                                                    "id": "fa3e0a3f-514b-40f3-9289-ef9677a22da0",
+                                                    "command": "EVENT_END"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "id": "c1ca998f-a31a-4af9-86dc-cdfd27fe47e1",
+                                            "command": "EVENT_SET_FALSE",
+                                            "args": {
+                                                "variable": "36",
+                                                "__collapse": false,
+                                                "__label": "Reset single balance flag"
                                             }
                                         },
                                         {
@@ -2941,12 +3100,11 @@
                                                             }
                                                         },
                                                         {
-                                                            "id": "6232ce1c-7b94-46dc-a2ac-d6d382944fcf",
-                                                            "command": "EVENT_SET_VALUE",
+                                                            "id": "07509806-e199-4f07-8d8d-b8fcd882e724",
+                                                            "command": "EVENT_SET_TRUE",
                                                             "args": {
-                                                                "variable": "9",
-                                                                "value": "0",
-                                                                "__label": "Set ATK to 0",
+                                                                "variable": "36",
+                                                                "__label": "No balance",
                                                                 "__collapse": true
                                                             }
                                                         },
@@ -3050,13 +3208,11 @@
                                                                     }
                                                                 },
                                                                 {
-                                                                    "id": "ae52aed2-6ac2-4446-a6ce-e1b623ed490f",
-                                                                    "command": "EVENT_SET_VALUE",
+                                                                    "id": "5fe2017b-f0ad-4076-9516-2c0d6f09c00f",
+                                                                    "command": "EVENT_SET_TRUE",
                                                                     "args": {
-                                                                        "variable": "9",
-                                                                        "value": "0",
-                                                                        "__label": "Set ATK to 0",
-                                                                        "__collapse": true
+                                                                        "variable": "36",
+                                                                        "__label": "No balance"
                                                                     }
                                                                 },
                                                                 {
@@ -3137,12 +3293,11 @@
                                                                     }
                                                                 },
                                                                 {
-                                                                    "id": "f69b2a10-5498-4522-b64b-9dcef4edf72a",
-                                                                    "command": "EVENT_SET_VALUE",
+                                                                    "id": "2d28daa8-de98-4fa2-9450-7ddd25a8eb16",
+                                                                    "command": "EVENT_SET_TRUE",
                                                                     "args": {
-                                                                        "variable": "9",
-                                                                        "value": "0",
-                                                                        "__label": "Set ATK to 0"
+                                                                        "variable": "36",
+                                                                        "__label": "No balance"
                                                                     }
                                                                 },
                                                                 {
@@ -3164,420 +3319,440 @@
                                             ]
                                         },
                                         {
-                                            "id": "ef4a12a0-56ba-4620-a892-056bbf380652",
-                                            "command": "EVENT_ACTOR_EMOTE",
+                                            "id": "15a44f0d-f801-4ad2-b880-80812f26fa4c",
+                                            "command": "EVENT_IF_FALSE",
                                             "args": {
-                                                "actorId": "player",
-                                                "emoteId": "4",
-                                                "__collapse": true,
-                                                "__label": "Show angry emo"
-                                            }
-                                        },
-                                        {
-                                            "id": "c3204abe-6296-4e02-bff6-e378bf60fb5b",
-                                            "command": "EVENT_VARIABLE_MATH",
-                                            "args": {
-                                                "vectorX": "101",
-                                                "operation": "set",
-                                                "other": "rnd",
-                                                "vectorY": "9",
-                                                "value": "1",
-                                                "minValue": 1,
-                                                "maxValue": 3,
-                                                "__collapse": true,
-                                                "__label": "Player Random Crit"
-                                            }
-                                        },
-                                        {
-                                            "id": "8c1afe78-1317-43be-a03b-ad4f194e15f4",
-                                            "command": "EVENT_IF_VALUE",
-                                            "args": {
-                                                "variable": "101",
-                                                "operator": "==",
-                                                "comparator": 3,
-                                                "__collapseElse": false,
-                                                "__collapse": false,
-                                                "__label": "Critical attack!"
+                                                "variable": "36",
+                                                "__collapseElse": true
                                             },
                                             "true": [
                                                 {
-                                                    "id": "1f0a73db-02b0-440f-8dd1-4b0a82a27ad2",
+                                                    "id": "ef4a12a0-56ba-4620-a892-056bbf380652",
+                                                    "command": "EVENT_ACTOR_EMOTE",
+                                                    "args": {
+                                                        "actorId": "player",
+                                                        "emoteId": "4",
+                                                        "__collapse": true,
+                                                        "__label": "Show angry emo"
+                                                    }
+                                                },
+                                                {
+                                                    "id": "c3204abe-6296-4e02-bff6-e378bf60fb5b",
                                                     "command": "EVENT_VARIABLE_MATH",
                                                     "args": {
-                                                        "vectorX": "9",
-                                                        "operation": "mul",
-                                                        "other": "val",
-                                                        "vectorY": "9",
-                                                        "value": 2,
-                                                        "minValue": "0",
-                                                        "maxValue": "255",
-                                                        "__collapse": true
-                                                    }
-                                                },
-                                                {
-                                                    "id": "03cbb03d-61bd-42ec-b96d-8597bd453b25",
-                                                    "command": "EVENT_TEXT",
-                                                    "args": {
-                                                        "text": "Critical attack!\nDeal $09$ damage",
-                                                        "__collapse": true
-                                                    }
-                                                },
-                                                {
-                                                    "id": "b6b3625d-04e2-44eb-8f29-9ebd90fcffb4",
-                                                    "command": "EVENT_END"
-                                                }
-                                            ],
-                                            "false": [
-                                                {
-                                                    "id": "abc19665-e076-44b3-bf82-213c7e872715",
-                                                    "command": "EVENT_VARIABLE_MATH",
-                                                    "args": {
-                                                        "vectorX": "9",
-                                                        "operation": "mul",
-                                                        "other": "val",
-                                                        "vectorY": "9",
-                                                        "value": 1,
-                                                        "minValue": "0",
-                                                        "maxValue": "255",
-                                                        "__collapse": false,
-                                                        "__label": "Normal attack"
-                                                    }
-                                                },
-                                                {
-                                                    "id": "1c1d3a4d-bb63-47e2-ad2d-cd4f2ce8d991",
-                                                    "command": "EVENT_TEXT",
-                                                    "args": {
-                                                        "text": "Normal attack.\nDeal $09$ damage."
-                                                    }
-                                                },
-                                                {
-                                                    "id": "fda92158-2825-43cd-b0e3-85a7674e0755",
-                                                    "command": "EVENT_END"
-                                                }
-                                            ]
-                                        },
-                                        {
-                                            "id": "6107303b-7a72-45ac-83b2-ac10a71c3abc",
-                                            "command": "EVENT_IF_VALUE_COMPARE",
-                                            "args": {
-                                                "vectorX": "7",
-                                                "operator": ">",
-                                                "vectorY": "9",
-                                                "__collapse": true,
-                                                "__collapseElse": true,
-                                                "__label": "Calculate examiner HP"
-                                            },
-                                            "true": [
-                                                {
-                                                    "id": "34a62b26-78d4-4da6-a987-7503ec77302e",
-                                                    "command": "EVENT_VARIABLE_MATH",
-                                                    "args": {
-                                                        "vectorX": "7",
-                                                        "operation": "sub",
-                                                        "other": "var",
+                                                        "vectorX": "101",
+                                                        "operation": "set",
+                                                        "other": "rnd",
                                                         "vectorY": "9",
                                                         "value": "1",
-                                                        "minValue": "0",
-                                                        "maxValue": "255"
+                                                        "minValue": 1,
+                                                        "maxValue": 3,
+                                                        "__collapse": true,
+                                                        "__label": "Player Random Crit"
                                                     }
                                                 },
                                                 {
-                                                    "id": "3f3914d4-3aac-4b82-8fea-54dfc6411444",
-                                                    "command": "EVENT_TEXT",
-                                                    "args": {
-                                                        "text": "Examiner\nremaining HP: $07$"
-                                                    }
-                                                },
-                                                {
-                                                    "id": "5475d52f-34e4-4325-9dce-bf5714c6e36f",
-                                                    "command": "EVENT_END"
-                                                }
-                                            ],
-                                            "false": [
-                                                {
-                                                    "id": "d7c8f9fb-4323-48a2-9b85-7a986332087a",
-                                                    "command": "EVENT_SET_VALUE",
-                                                    "args": {
-                                                        "variable": "7",
-                                                        "value": "0"
-                                                    }
-                                                },
-                                                {
-                                                    "id": "2e71eab6-44fb-44d3-8666-9cbe8c0774fc",
-                                                    "command": "EVENT_END"
-                                                }
-                                            ]
-                                        },
-                                        {
-                                            "id": "0661f2b1-e3f0-4654-b5b3-39f0b43f2e24",
-                                            "command": "EVENT_IF_VALUE",
-                                            "args": {
-                                                "variable": "7",
-                                                "operator": "<=",
-                                                "comparator": "0",
-                                                "__collapse": true,
-                                                "__collapseElse": true,
-                                                "__label": "Kill examiner"
-                                            },
-                                            "true": [
-                                                {
-                                                    "id": "6bdeb61e-94b9-49a7-9176-5fd9622c52fd",
-                                                    "command": "EVENT_VARIABLE_MATH",
-                                                    "args": {
-                                                        "vectorX": "4",
-                                                        "operation": "add",
-                                                        "other": "var",
-                                                        "vectorY": "10",
-                                                        "value": "1",
-                                                        "minValue": "0",
-                                                        "maxValue": "255"
-                                                    }
-                                                },
-                                                {
-                                                    "id": "819bcadb-95a1-45db-a128-19799146e01c",
-                                                    "command": "EVENT_TEXT",
-                                                    "args": {
-                                                        "text": [
-                                                            "Congratulations!\nYou got $10$ XP.\n",
-                                                            "Now you have $04$\nXP."
-                                                        ]
-                                                    }
-                                                },
-                                                {
-                                                    "id": "770406c8-c76e-4ace-915b-32dfa34d29ac",
+                                                    "id": "8c1afe78-1317-43be-a03b-ad4f194e15f4",
                                                     "command": "EVENT_IF_VALUE",
                                                     "args": {
-                                                        "variable": "4",
-                                                        "operator": ">",
-                                                        "comparator": 100,
+                                                        "variable": "101",
+                                                        "operator": "==",
+                                                        "comparator": 3,
+                                                        "__collapseElse": true,
                                                         "__collapse": true,
-                                                        "__label": "Gain XP",
-                                                        "__collapseElse": true
+                                                        "__label": "Critical attack!"
                                                     },
                                                     "true": [
                                                         {
-                                                            "id": "fb01c405-9d94-4666-8b80-75ad4390877f",
-                                                            "command": "EVENT_INC_VALUE",
-                                                            "args": {
-                                                                "variable": "6"
-                                                            }
-                                                        },
-                                                        {
-                                                            "id": "81c820b8-867a-47c7-ae7c-afd4583cf3b6",
+                                                            "id": "1f0a73db-02b0-440f-8dd1-4b0a82a27ad2",
                                                             "command": "EVENT_VARIABLE_MATH",
                                                             "args": {
-                                                                "vectorX": "3",
-                                                                "operation": "add",
+                                                                "vectorX": "9",
+                                                                "operation": "mul",
                                                                 "other": "val",
-                                                                "vectorY": "10",
-                                                                "value": 20,
+                                                                "vectorY": "9",
+                                                                "value": 2,
                                                                 "minValue": "0",
-                                                                "maxValue": "255"
+                                                                "maxValue": "255",
+                                                                "__collapse": true
                                                             }
                                                         },
                                                         {
-                                                            "id": "63a904c6-d5e3-403f-8508-943a33a1ffb9",
-                                                            "command": "EVENT_VARIABLE_MATH",
-                                                            "args": {
-                                                                "vectorX": "5",
-                                                                "operation": "add",
-                                                                "other": "val",
-                                                                "vectorY": "10",
-                                                                "value": 5,
-                                                                "minValue": "0",
-                                                                "maxValue": "255"
-                                                            }
-                                                        },
-                                                        {
-                                                            "id": "0e54f57b-7daf-456d-97eb-57250be4e05a",
-                                                            "command": "EVENT_SET_VALUE",
-                                                            "args": {
-                                                                "variable": "4",
-                                                                "value": "0"
-                                                            }
-                                                        },
-                                                        {
-                                                            "id": "2f4e3ce0-acd1-48b7-923e-7bcd90672819",
+                                                            "id": "03cbb03d-61bd-42ec-b96d-8597bd453b25",
                                                             "command": "EVENT_TEXT",
                                                             "args": {
-                                                                "text": "You leveled up!\nPlayer Level: $06$"
+                                                                "text": "Critical attack!\nDeal $09$ damage",
+                                                                "__collapse": true
                                                             }
                                                         },
                                                         {
-                                                            "id": "2091fe35-ff95-4610-bc46-63c19863cd87",
-                                                            "command": "EVENT_ACTOR_EMOTE",
-                                                            "args": {
-                                                                "actorId": "player",
-                                                                "emoteId": 0
-                                                            }
-                                                        },
-                                                        {
-                                                            "id": "b15f401f-b59f-4fb7-a316-0fbdc707dc86",
+                                                            "id": "b6b3625d-04e2-44eb-8f29-9ebd90fcffb4",
                                                             "command": "EVENT_END"
                                                         }
                                                     ],
                                                     "false": [
                                                         {
-                                                            "id": "78c9962f-f57e-4297-bad2-dee6964cb100",
+                                                            "id": "abc19665-e076-44b3-bf82-213c7e872715",
+                                                            "command": "EVENT_VARIABLE_MATH",
+                                                            "args": {
+                                                                "vectorX": "9",
+                                                                "operation": "mul",
+                                                                "other": "val",
+                                                                "vectorY": "9",
+                                                                "value": 1,
+                                                                "minValue": "0",
+                                                                "maxValue": "255",
+                                                                "__collapse": false,
+                                                                "__label": "Normal attack"
+                                                            }
+                                                        },
+                                                        {
+                                                            "id": "1c1d3a4d-bb63-47e2-ad2d-cd4f2ce8d991",
+                                                            "command": "EVENT_TEXT",
+                                                            "args": {
+                                                                "text": "Normal attack.\nDeal $09$ damage."
+                                                            }
+                                                        },
+                                                        {
+                                                            "id": "fda92158-2825-43cd-b0e3-85a7674e0755",
                                                             "command": "EVENT_END"
                                                         }
                                                     ]
                                                 },
                                                 {
-                                                    "id": "5ae78e14-c279-4134-be7b-ce91ee62eef7",
-                                                    "command": "EVENT_IF_TRUE",
+                                                    "id": "6107303b-7a72-45ac-83b2-ac10a71c3abc",
+                                                    "command": "EVENT_IF_VALUE_COMPARE",
                                                     "args": {
-                                                        "variable": "15",
-                                                        "__label": "Pass QE dialogue",
-                                                        "__collapse": true,
-                                                        "__collapseElse": true
+                                                        "vectorX": "7",
+                                                        "operator": ">",
+                                                        "vectorY": "9",
+                                                        "__collapse": false,
+                                                        "__collapseElse": false,
+                                                        "__label": "Calculate examiner HP"
                                                     },
                                                     "true": [
                                                         {
-                                                            "id": "283395ab-e81e-4c4f-93aa-0b11df236b97",
-                                                            "command": "EVENT_GROUP",
+                                                            "id": "34a62b26-78d4-4da6-a987-7503ec77302e",
+                                                            "command": "EVENT_VARIABLE_MATH",
                                                             "args": {
-                                                                "__label": "Pass QE",
-                                                                "__collapse": true
-                                                            },
-                                                            "true": [
-                                                                {
-                                                                    "id": "b0d28b92-ece8-43f2-8266-b3ce4f9f127f",
-                                                                    "command": "EVENT_TEXT",
-                                                                    "args": {
-                                                                        "text": "Congrats! You\npassed QE!"
-                                                                    }
-                                                                },
-                                                                {
-                                                                    "id": "9bf00000-9a77-4cc9-8de4-be62ac9c2948",
-                                                                    "command": "EVENT_SET_TRUE",
-                                                                    "args": {
-                                                                        "variable": "108"
-                                                                    }
-                                                                },
-                                                                {
-                                                                    "id": "a180ccc5-d776-4f9e-8186-ed7994fc3b79",
-                                                                    "command": "EVENT_SET_FALSE",
-                                                                    "args": {
-                                                                        "variable": "15"
-                                                                    }
-                                                                },
-                                                                {
-                                                                    "id": "d7d29700-870f-4622-909f-ea57be42ba14",
-                                                                    "command": "EVENT_ACTOR_HIDE",
-                                                                    "args": {
-                                                                        "actorId": "5372e0c0-7e8b-44a8-8fae-28f277938e12"
-                                                                    }
-                                                                },
-                                                                {
-                                                                    "id": "2a8178c3-99f9-4d71-8243-800d641290bf",
-                                                                    "command": "EVENT_STOP",
-                                                                    "args": {}
-                                                                },
-                                                                {
-                                                                    "id": "0c3c64fd-1501-4d98-86ab-5819e8fe60af",
-                                                                    "command": "EVENT_END"
-                                                                }
-                                                            ]
+                                                                "vectorX": "7",
+                                                                "operation": "sub",
+                                                                "other": "var",
+                                                                "vectorY": "9",
+                                                                "value": "1",
+                                                                "minValue": "0",
+                                                                "maxValue": "255"
+                                                            }
                                                         },
                                                         {
-                                                            "id": "76f142da-21a8-4338-a269-72fad3dd8517",
+                                                            "id": "3f3914d4-3aac-4b82-8fea-54dfc6411444",
+                                                            "command": "EVENT_TEXT",
+                                                            "args": {
+                                                                "text": "Examiner\nremaining HP: $07$"
+                                                            }
+                                                        },
+                                                        {
+                                                            "id": "5475d52f-34e4-4325-9dce-bf5714c6e36f",
                                                             "command": "EVENT_END"
                                                         }
                                                     ],
                                                     "false": [
                                                         {
-                                                            "id": "d6883583-860d-4153-b413-a4c4b592ba71",
-                                                            "command": "EVENT_IF_TRUE",
+                                                            "id": "d7c8f9fb-4323-48a2-9b85-7a986332087a",
+                                                            "command": "EVENT_SET_VALUE",
                                                             "args": {
-                                                                "variable": "16",
+                                                                "variable": "7",
+                                                                "value": "0"
+                                                            }
+                                                        },
+                                                        {
+                                                            "id": "2e71eab6-44fb-44d3-8666-9cbe8c0774fc",
+                                                            "command": "EVENT_END"
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "id": "0661f2b1-e3f0-4654-b5b3-39f0b43f2e24",
+                                                    "command": "EVENT_IF_VALUE",
+                                                    "args": {
+                                                        "variable": "7",
+                                                        "operator": "<=",
+                                                        "comparator": "0",
+                                                        "__collapse": true,
+                                                        "__collapseElse": true,
+                                                        "__label": "Kill examiner"
+                                                    },
+                                                    "true": [
+                                                        {
+                                                            "id": "6bdeb61e-94b9-49a7-9176-5fd9622c52fd",
+                                                            "command": "EVENT_VARIABLE_MATH",
+                                                            "args": {
+                                                                "vectorX": "4",
+                                                                "operation": "add",
+                                                                "other": "var",
+                                                                "vectorY": "10",
+                                                                "value": "1",
+                                                                "minValue": "0",
+                                                                "maxValue": "255"
+                                                            }
+                                                        },
+                                                        {
+                                                            "id": "819bcadb-95a1-45db-a128-19799146e01c",
+                                                            "command": "EVENT_TEXT",
+                                                            "args": {
+                                                                "text": [
+                                                                    "Congratulations!\nYou got $10$ XP.\n",
+                                                                    "Now you have $04$\nXP."
+                                                                ]
+                                                            }
+                                                        },
+                                                        {
+                                                            "id": "770406c8-c76e-4ace-915b-32dfa34d29ac",
+                                                            "command": "EVENT_IF_VALUE",
+                                                            "args": {
+                                                                "variable": "4",
+                                                                "operator": ">",
+                                                                "comparator": 100,
                                                                 "__collapse": true,
-                                                                "__label": "Pass defense dialogue"
+                                                                "__label": "Gain XP",
+                                                                "__collapseElse": true
                                                             },
                                                             "true": [
                                                                 {
-                                                                    "id": "33e54122-4acf-4a4d-b0a9-bd71ca4c1af2",
+                                                                    "id": "fb01c405-9d94-4666-8b80-75ad4390877f",
+                                                                    "command": "EVENT_INC_VALUE",
+                                                                    "args": {
+                                                                        "variable": "6"
+                                                                    }
+                                                                },
+                                                                {
+                                                                    "id": "81c820b8-867a-47c7-ae7c-afd4583cf3b6",
+                                                                    "command": "EVENT_VARIABLE_MATH",
+                                                                    "args": {
+                                                                        "vectorX": "3",
+                                                                        "operation": "add",
+                                                                        "other": "val",
+                                                                        "vectorY": "10",
+                                                                        "value": 20,
+                                                                        "minValue": "0",
+                                                                        "maxValue": "255"
+                                                                    }
+                                                                },
+                                                                {
+                                                                    "id": "63a904c6-d5e3-403f-8508-943a33a1ffb9",
+                                                                    "command": "EVENT_VARIABLE_MATH",
+                                                                    "args": {
+                                                                        "vectorX": "5",
+                                                                        "operation": "add",
+                                                                        "other": "val",
+                                                                        "vectorY": "10",
+                                                                        "value": 5,
+                                                                        "minValue": "0",
+                                                                        "maxValue": "255"
+                                                                    }
+                                                                },
+                                                                {
+                                                                    "id": "0e54f57b-7daf-456d-97eb-57250be4e05a",
+                                                                    "command": "EVENT_SET_VALUE",
+                                                                    "args": {
+                                                                        "variable": "4",
+                                                                        "value": "0"
+                                                                    }
+                                                                },
+                                                                {
+                                                                    "id": "2f4e3ce0-acd1-48b7-923e-7bcd90672819",
+                                                                    "command": "EVENT_TEXT",
+                                                                    "args": {
+                                                                        "text": "You leveled up!\nPlayer Level: $06$"
+                                                                    }
+                                                                },
+                                                                {
+                                                                    "id": "2091fe35-ff95-4610-bc46-63c19863cd87",
+                                                                    "command": "EVENT_ACTOR_EMOTE",
+                                                                    "args": {
+                                                                        "actorId": "player",
+                                                                        "emoteId": 0
+                                                                    }
+                                                                },
+                                                                {
+                                                                    "id": "b15f401f-b59f-4fb7-a316-0fbdc707dc86",
+                                                                    "command": "EVENT_END"
+                                                                }
+                                                            ],
+                                                            "false": [
+                                                                {
+                                                                    "id": "78c9962f-f57e-4297-bad2-dee6964cb100",
+                                                                    "command": "EVENT_END"
+                                                                }
+                                                            ]
+                                                        },
+                                                        {
+                                                            "id": "5ae78e14-c279-4134-be7b-ce91ee62eef7",
+                                                            "command": "EVENT_IF_TRUE",
+                                                            "args": {
+                                                                "variable": "15",
+                                                                "__label": "Pass QE dialogue",
+                                                                "__collapse": true,
+                                                                "__collapseElse": true
+                                                            },
+                                                            "true": [
+                                                                {
+                                                                    "id": "283395ab-e81e-4c4f-93aa-0b11df236b97",
                                                                     "command": "EVENT_GROUP",
                                                                     "args": {
-                                                                        "__label": "Pass Defense",
+                                                                        "__label": "Pass QE",
                                                                         "__collapse": true
                                                                     },
                                                                     "true": [
                                                                         {
-                                                                            "id": "6300ec00-dee1-4b28-8417-94e1d1416996",
+                                                                            "id": "b0d28b92-ece8-43f2-8266-b3ce4f9f127f",
                                                                             "command": "EVENT_TEXT",
                                                                             "args": {
-                                                                                "text": [
-                                                                                    "Congrats! You\npassed final\ndefense!",
-                                                                                    "You are now\nofficially Dr.\nSanchez!"
-                                                                                ]
+                                                                                "text": "Congrats! You\npassed QE!"
                                                                             }
                                                                         },
                                                                         {
-                                                                            "id": "5375f5e8-9c38-44b9-aff9-83839c5626f3",
+                                                                            "id": "9bf00000-9a77-4cc9-8de4-be62ac9c2948",
                                                                             "command": "EVENT_SET_TRUE",
                                                                             "args": {
-                                                                                "variable": "111"
+                                                                                "variable": "108"
                                                                             }
                                                                         },
                                                                         {
-                                                                            "id": "1729ffc7-dd2e-494a-a445-6299cb2dd80f",
+                                                                            "id": "a180ccc5-d776-4f9e-8186-ed7994fc3b79",
                                                                             "command": "EVENT_SET_FALSE",
                                                                             "args": {
-                                                                                "variable": "16"
+                                                                                "variable": "15"
                                                                             }
                                                                         },
                                                                         {
-                                                                            "id": "313d1810-d21a-4b51-b6c5-48c42acb9f95",
+                                                                            "id": "d7d29700-870f-4622-909f-ea57be42ba14",
                                                                             "command": "EVENT_ACTOR_HIDE",
                                                                             "args": {
                                                                                 "actorId": "5372e0c0-7e8b-44a8-8fae-28f277938e12"
                                                                             }
                                                                         },
                                                                         {
-                                                                            "id": "93b42124-3989-47cb-a36b-bb34a98f59c6",
-                                                                            "command": "EVENT_SET_FALSE",
-                                                                            "args": {
-                                                                                "variable": "100"
-                                                                            }
-                                                                        },
-                                                                        {
-                                                                            "id": "5ec2a0b3-e236-418b-874c-83cae232574f",
+                                                                            "id": "2a8178c3-99f9-4d71-8243-800d641290bf",
                                                                             "command": "EVENT_STOP",
                                                                             "args": {}
                                                                         },
                                                                         {
-                                                                            "id": "c6fc406d-5d09-409d-9609-a47f0d9234fe",
+                                                                            "id": "0c3c64fd-1501-4d98-86ab-5819e8fe60af",
                                                                             "command": "EVENT_END"
                                                                         }
                                                                     ]
                                                                 },
                                                                 {
-                                                                    "id": "25ed2e15-5aa2-42f8-9886-a52ca918680b",
+                                                                    "id": "76f142da-21a8-4338-a269-72fad3dd8517",
                                                                     "command": "EVENT_END"
                                                                 }
                                                             ],
                                                             "false": [
                                                                 {
-                                                                    "id": "e679dd84-e808-40e3-87ab-7f02a0bfebbc",
+                                                                    "id": "d6883583-860d-4153-b413-a4c4b592ba71",
+                                                                    "command": "EVENT_IF_TRUE",
+                                                                    "args": {
+                                                                        "variable": "16",
+                                                                        "__collapse": true,
+                                                                        "__label": "Pass defense dialogue"
+                                                                    },
+                                                                    "true": [
+                                                                        {
+                                                                            "id": "33e54122-4acf-4a4d-b0a9-bd71ca4c1af2",
+                                                                            "command": "EVENT_GROUP",
+                                                                            "args": {
+                                                                                "__label": "Pass Defense",
+                                                                                "__collapse": true
+                                                                            },
+                                                                            "true": [
+                                                                                {
+                                                                                    "id": "6300ec00-dee1-4b28-8417-94e1d1416996",
+                                                                                    "command": "EVENT_TEXT",
+                                                                                    "args": {
+                                                                                        "text": [
+                                                                                            "Congrats! You\npassed final\ndefense!",
+                                                                                            "You are now\nofficially Dr.\nSanchez!"
+                                                                                        ]
+                                                                                    }
+                                                                                },
+                                                                                {
+                                                                                    "id": "5375f5e8-9c38-44b9-aff9-83839c5626f3",
+                                                                                    "command": "EVENT_SET_TRUE",
+                                                                                    "args": {
+                                                                                        "variable": "111"
+                                                                                    }
+                                                                                },
+                                                                                {
+                                                                                    "id": "1729ffc7-dd2e-494a-a445-6299cb2dd80f",
+                                                                                    "command": "EVENT_SET_FALSE",
+                                                                                    "args": {
+                                                                                        "variable": "16"
+                                                                                    }
+                                                                                },
+                                                                                {
+                                                                                    "id": "313d1810-d21a-4b51-b6c5-48c42acb9f95",
+                                                                                    "command": "EVENT_ACTOR_HIDE",
+                                                                                    "args": {
+                                                                                        "actorId": "5372e0c0-7e8b-44a8-8fae-28f277938e12"
+                                                                                    }
+                                                                                },
+                                                                                {
+                                                                                    "id": "93b42124-3989-47cb-a36b-bb34a98f59c6",
+                                                                                    "command": "EVENT_SET_FALSE",
+                                                                                    "args": {
+                                                                                        "variable": "100"
+                                                                                    }
+                                                                                },
+                                                                                {
+                                                                                    "id": "5ec2a0b3-e236-418b-874c-83cae232574f",
+                                                                                    "command": "EVENT_STOP",
+                                                                                    "args": {}
+                                                                                },
+                                                                                {
+                                                                                    "id": "c6fc406d-5d09-409d-9609-a47f0d9234fe",
+                                                                                    "command": "EVENT_END"
+                                                                                }
+                                                                            ]
+                                                                        },
+                                                                        {
+                                                                            "id": "25ed2e15-5aa2-42f8-9886-a52ca918680b",
+                                                                            "command": "EVENT_END"
+                                                                        }
+                                                                    ],
+                                                                    "false": [
+                                                                        {
+                                                                            "id": "e679dd84-e808-40e3-87ab-7f02a0bfebbc",
+                                                                            "command": "EVENT_END"
+                                                                        }
+                                                                    ]
+                                                                },
+                                                                {
+                                                                    "id": "cbe2560a-c1f7-4758-8c6b-0c74c0cb96f0",
                                                                     "command": "EVENT_END"
                                                                 }
                                                             ]
                                                         },
                                                         {
-                                                            "id": "cbe2560a-c1f7-4758-8c6b-0c74c0cb96f0",
+                                                            "id": "dc2eee78-dbb1-4e0b-9b77-f29a8992d4c8",
+                                                            "command": "EVENT_END"
+                                                        }
+                                                    ],
+                                                    "false": [
+                                                        {
+                                                            "id": "da9a9d69-9cac-48b1-89b1-6e57f536ca18",
                                                             "command": "EVENT_END"
                                                         }
                                                     ]
                                                 },
                                                 {
-                                                    "id": "dc2eee78-dbb1-4e0b-9b77-f29a8992d4c8",
+                                                    "id": "d7437779-293c-4e2e-a72d-2a5a2a6b30bf",
                                                     "command": "EVENT_END"
                                                 }
                                             ],
                                             "false": [
                                                 {
-                                                    "id": "da9a9d69-9cac-48b1-89b1-6e57f536ca18",
+                                                    "id": "ab83564d-988e-4dc6-a62b-6111cf859e57",
                                                     "command": "EVENT_END"
                                                 }
                                             ]
@@ -3642,7 +3817,7 @@
                                                     "id": "3fdd7441-f4c6-494f-9713-9dd9eb0b3b8b",
                                                     "command": "EVENT_TEXT",
                                                     "args": {
-                                                        "text": "Examiner\nattacked you for\n$26$ damage!",
+                                                        "text": "Examiner attacked\nyou for $26$\ndamage!",
                                                         "__collapse": false
                                                     }
                                                 },
@@ -3671,7 +3846,7 @@
                                                     "id": "cd6f5021-3470-426a-929a-85790923e895",
                                                     "command": "EVENT_TEXT",
                                                     "args": {
-                                                        "text": "Examiner\nattacked you for\n$26$ damage!"
+                                                        "text": "Examiner attacked\nyou for $26$\ndamage!"
                                                     }
                                                 },
                                                 {
@@ -3681,27 +3856,57 @@
                                             ]
                                         },
                                         {
-                                            "id": "bff3a40d-458e-432a-b164-cc361f944d09",
-                                            "command": "EVENT_VARIABLE_MATH",
+                                            "id": "e8d78b11-f1aa-48ec-a8e3-07cc7d3db2c2",
+                                            "command": "EVENT_IF_VALUE_COMPARE",
                                             "args": {
                                                 "vectorX": "3",
-                                                "operation": "sub",
-                                                "other": "var",
-                                                "vectorY": "8",
-                                                "value": "1",
-                                                "minValue": "0",
-                                                "maxValue": "255",
+                                                "operator": ">",
+                                                "vectorY": "26",
                                                 "__collapse": false,
+                                                "__collapseElse": true,
                                                 "__label": "Calculate Player Confidence"
-                                            }
-                                        },
-                                        {
-                                            "id": "94290e47-3372-41b0-aff3-62af0ef4829c",
-                                            "command": "EVENT_TEXT",
-                                            "args": {
-                                                "text": "Your confidence\nlevel dropped to\n$03$.",
-                                                "__collapse": false
-                                            }
+                                            },
+                                            "true": [
+                                                {
+                                                    "id": "97054286-f61c-4ba2-a647-0022cd4d1559",
+                                                    "command": "EVENT_VARIABLE_MATH",
+                                                    "args": {
+                                                        "vectorX": "3",
+                                                        "operation": "sub",
+                                                        "other": "var",
+                                                        "vectorY": "26",
+                                                        "value": "1",
+                                                        "minValue": "0",
+                                                        "maxValue": "255"
+                                                    }
+                                                },
+                                                {
+                                                    "id": "94290e47-3372-41b0-aff3-62af0ef4829c",
+                                                    "command": "EVENT_TEXT",
+                                                    "args": {
+                                                        "text": "Your confidence\ndropped to $03$.",
+                                                        "__collapse": false
+                                                    }
+                                                },
+                                                {
+                                                    "id": "ffb7c94a-3445-489a-967c-f1fa3ad15a80",
+                                                    "command": "EVENT_END"
+                                                }
+                                            ],
+                                            "false": [
+                                                {
+                                                    "id": "91881e0e-79a3-4135-9792-98f26e3e9ba8",
+                                                    "command": "EVENT_SET_VALUE",
+                                                    "args": {
+                                                        "variable": "3",
+                                                        "value": "0"
+                                                    }
+                                                },
+                                                {
+                                                    "id": "219a89ae-c174-4d9e-9f32-5c0d768bfa78",
+                                                    "command": "EVENT_END"
+                                                }
+                                            ]
                                         },
                                         {
                                             "id": "867b04e7-252f-46c1-9359-c23109642b34",
@@ -3710,9 +3915,9 @@
                                                 "variable": "3",
                                                 "operator": "<=",
                                                 "comparator": "0",
-                                                "__collapseElse": true,
+                                                "__collapseElse": false,
                                                 "__label": "Lost confidence",
-                                                "__collapse": true
+                                                "__collapse": false
                                             },
                                             "true": [
                                                 {
@@ -3720,28 +3925,66 @@
                                                     "command": "EVENT_TEXT",
                                                     "args": {
                                                         "text": [
-                                                            "Uh-oh! You lost\nall your\nconfidence.",
-                                                            "Take some rest and\ntry again!"
+                                                            "Uh-oh! You lost\nall your\nconfidence."
                                                         ]
                                                     }
                                                 },
                                                 {
-                                                    "id": "ef6f6359-7682-420f-a67a-d362acaf75dc",
+                                                    "id": "a669751f-21cc-41f1-8df4-9d0d0838e32c",
                                                     "command": "EVENT_SET_TRUE",
                                                     "args": {
-                                                        "variable": "104"
+                                                        "variable": "38"
                                                     }
                                                 },
                                                 {
-                                                    "id": "f268c1e4-0d71-4931-8aea-5fb9472de746",
-                                                    "command": "EVENT_SWITCH_SCENE",
+                                                    "id": "053e615b-ba49-4d42-bc4d-6bcdf116973e",
+                                                    "command": "EVENT_IF_TRUE",
                                                     "args": {
-                                                        "sceneId": "a7ea332d-0cf6-4a2a-85eb-1a0217dfa4e7",
-                                                        "x": 6,
-                                                        "y": 9,
-                                                        "direction": "right",
-                                                        "fadeSpeed": "2"
-                                                    }
+                                                        "variable": "38",
+                                                        "__label": "Dead",
+                                                        "__collapseElse": true,
+                                                        "__collapse": true
+                                                    },
+                                                    "true": [
+                                                        {
+                                                            "id": "41d41a76-323a-4935-8009-c0c9acce13ea",
+                                                            "command": "EVENT_TEXT",
+                                                            "args": {
+                                                                "text": [
+                                                                    "Take some rest and\ntry again!"
+                                                                ],
+                                                                "__collapse": false
+                                                            }
+                                                        },
+                                                        {
+                                                            "id": "5c2e7b14-4734-4ff7-9973-71e8c6e1befd",
+                                                            "command": "EVENT_SET_TRUE",
+                                                            "args": {
+                                                                "variable": "104"
+                                                            }
+                                                        },
+                                                        {
+                                                            "id": "6db19e4e-b4d5-4fc8-bac0-9c979c82d047",
+                                                            "command": "EVENT_SWITCH_SCENE",
+                                                            "args": {
+                                                                "sceneId": "a7ea332d-0cf6-4a2a-85eb-1a0217dfa4e7",
+                                                                "x": 6,
+                                                                "y": 9,
+                                                                "direction": "right",
+                                                                "fadeSpeed": "2"
+                                                            }
+                                                        },
+                                                        {
+                                                            "id": "e2d580db-37dc-4fd7-8d39-57f18c478657",
+                                                            "command": "EVENT_END"
+                                                        }
+                                                    ],
+                                                    "false": [
+                                                        {
+                                                            "id": "992839c9-74b4-4f5f-b0c0-6adb36e275c1",
+                                                            "command": "EVENT_END"
+                                                        }
+                                                    ]
                                                 },
                                                 {
                                                     "id": "ca2e8590-0a81-4467-8bdd-d155ca59b2ac",
@@ -4588,9 +4831,9 @@
                                     "args": {
                                         "text": [
                                             "It's a new day!",
-                                            "HP has been\nrecoverd."
+                                            "Confidence has\nbeen recoverd."
                                         ],
-                                        "__collapse": true
+                                        "__collapse": false
                                     }
                                 },
                                 {
@@ -4763,9 +5006,9 @@
                             "args": {
                                 "text": [
                                     "It's a new day!",
-                                    "HP has been\nrecoverd."
+                                    "Confidence has\nbeen recoverd."
                                 ],
-                                "__collapse": true
+                                "__collapse": false
                             }
                         },
                         {
