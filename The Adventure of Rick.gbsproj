@@ -26,10 +26,6 @@
             "name": "Player Max HP"
         },
         {
-            "id": "3",
-            "name": "Player HP"
-        },
-        {
             "id": "4",
             "name": "Player XP"
         },
@@ -40,14 +36,6 @@
         {
             "id": "6",
             "name": "Player Level"
-        },
-        {
-            "id": "7",
-            "name": "Enemy HP"
-        },
-        {
-            "id": "8",
-            "name": "Enemy STR"
         },
         {
             "id": "101",
@@ -118,10 +106,6 @@
             "name": "Q3 Finish Experiment"
         },
         {
-            "id": "17",
-            "name": "How much data"
-        },
-        {
             "id": "19",
             "name": "Nature Data Requirement"
         },
@@ -162,16 +146,64 @@
             "name": "Do experiment?"
         },
         {
-            "id": "26",
-            "name": "Variable 026"
-        },
-        {
             "id": "100",
             "name": "Answer"
         },
         {
             "id": "111",
             "name": "Q7 Passed final defense"
+        },
+        {
+            "id": "17",
+            "name": "Data total"
+        },
+        {
+            "id": "30",
+            "name": "Data consumption"
+        },
+        {
+            "id": "31",
+            "name": "Data balance"
+        },
+        {
+            "id": "40",
+            "name": "Nature ATK"
+        },
+        {
+            "id": "32",
+            "name": "Nature balance"
+        },
+        {
+            "id": "41",
+            "name": "APL ATK"
+        },
+        {
+            "id": "33",
+            "name": "Nature total"
+        },
+        {
+            "id": "34",
+            "name": "APL balance"
+        },
+        {
+            "id": "35",
+            "name": "APL total"
+        },
+        {
+            "id": "7",
+            "name": "Examiner HP"
+        },
+        {
+            "id": "8",
+            "name": "Examiner STR"
+        },
+        {
+            "id": "3",
+            "name": "Player Confidence"
+        },
+        {
+            "id": "26",
+            "name": "Examiner ATK"
         }
     ],
     "backgrounds": [
@@ -183,7 +215,7 @@
             "imageWidth": 160,
             "imageHeight": 144,
             "filename": "cave.png",
-            "_v": 1566479203864
+            "_v": 1566556868029
         },
         {
             "id": "6cc0f474-498a-4114-b785-4926f664eb6a",
@@ -193,7 +225,7 @@
             "imageWidth": 160,
             "imageHeight": 192,
             "filename": "Classroom.png",
-            "_v": 1566479203864
+            "_v": 1566556868029
         },
         {
             "id": "d96ffdf0-ead9-4099-8a07-869ba5cb567c",
@@ -203,7 +235,7 @@
             "imageWidth": 256,
             "imageHeight": 256,
             "filename": "Cleanroom.png",
-            "_v": 1566479203864
+            "_v": 1566556868029
         },
         {
             "id": "5deee38e-f383-4a41-b217-23dd28692324",
@@ -213,7 +245,7 @@
             "imageWidth": 160,
             "imageHeight": 144,
             "filename": "Conference Airport.png",
-            "_v": 1566479203864
+            "_v": 1566556868029
         },
         {
             "id": "1fb9f4e3-74e2-45a6-8155-c0d4516c6107",
@@ -223,7 +255,7 @@
             "imageWidth": 256,
             "imageHeight": 256,
             "filename": "Conference Room.png",
-            "_v": 1566479203864
+            "_v": 1566556868029
         },
         {
             "id": "076ac98b-b2f2-4122-941a-152b5457ca93",
@@ -233,7 +265,7 @@
             "imageWidth": 256,
             "imageHeight": 256,
             "filename": "Conference.png",
-            "_v": 1566479203864
+            "_v": 1566556868029
         },
         {
             "id": "436ffbd9-39e8-47bb-8b21-98d406bca294",
@@ -243,7 +275,7 @@
             "imageWidth": 256,
             "imageHeight": 256,
             "filename": "Down-1-Lake.png",
-            "_v": 1566479203864
+            "_v": 1566556868029
         },
         {
             "id": "5dac439f-ce92-4631-9135-210800bb1580",
@@ -253,7 +285,7 @@
             "imageWidth": 160,
             "imageHeight": 144,
             "filename": "Empty-Menu.png",
-            "_v": 1566479203864
+            "_v": 1566556868029
         },
         {
             "id": "18c0b3ee-9193-4d93-926c-e58f4909b060",
@@ -263,7 +295,7 @@
             "imageWidth": 208,
             "imageHeight": 144,
             "filename": "Gurbs-adventure-tile-set-1.png",
-            "_v": 1566479203864
+            "_v": 1566556868029
         },
         {
             "id": "26e5bf7b-6e9e-46b7-b914-fb53d42769b9",
@@ -273,7 +305,7 @@
             "imageWidth": 160,
             "imageHeight": 160,
             "filename": "Gurbs-adventure-title-1.png",
-            "_v": 1566479203864
+            "_v": 1566556868029
         },
         {
             "id": "e1650476-5020-46be-b037-ef54df7c8601",
@@ -283,7 +315,7 @@
             "imageWidth": 160,
             "imageHeight": 200,
             "filename": "Gurbs-adventure-title.png",
-            "_v": 1566479203864
+            "_v": 1566556868030
         },
         {
             "id": "533d6f46-6fcd-4c61-9dce-a406931669bc",
@@ -293,7 +325,7 @@
             "imageWidth": 160,
             "imageHeight": 144,
             "filename": "Hometown Airport.png",
-            "_v": 1566479203864
+            "_v": 1566556868030
         },
         {
             "id": "aa221e8f-4984-4797-962b-bb0be59f9ea2",
@@ -303,7 +335,7 @@
             "imageWidth": 256,
             "imageHeight": 256,
             "filename": "Hometown.png",
-            "_v": 1566479203865
+            "_v": 1566556868030
         },
         {
             "id": "bd99eb4a-6b4b-4996-ad87-5df7e3d26ee1",
@@ -313,7 +345,7 @@
             "imageWidth": 160,
             "imageHeight": 144,
             "filename": "house.png",
-            "_v": 1566479203864
+            "_v": 1566556868030
         },
         {
             "id": "839e5bae-866f-4cf0-b301-c9ecc0fbfc2a",
@@ -323,7 +355,7 @@
             "imageWidth": 160,
             "imageHeight": 144,
             "filename": "Inventory.png",
-            "_v": 1566479203865
+            "_v": 1566556868030
         },
         {
             "id": "172ee048-0235-4843-8f39-901301573c90",
@@ -333,7 +365,7 @@
             "imageWidth": 256,
             "imageHeight": 256,
             "filename": "Lab.png",
-            "_v": 1566479203865
+            "_v": 1566556868030
         },
         {
             "id": "0a6664e8-1a37-4203-89d1-ae6efe824e02",
@@ -343,7 +375,7 @@
             "imageWidth": 256,
             "imageHeight": 256,
             "filename": "Left-1-SquirrelPath.png",
-            "_v": 1566479203865
+            "_v": 1566556868030
         },
         {
             "id": "a9c8d3b3-04f7-45a7-aed5-822b5674f81c",
@@ -353,7 +385,7 @@
             "imageWidth": 160,
             "imageHeight": 144,
             "filename": "logo.png",
-            "_v": 1566479203865
+            "_v": 1566556868030
         },
         {
             "id": "d7c8346f-7a8d-49dd-982f-0aa6d08c2bb9",
@@ -363,7 +395,7 @@
             "imageWidth": 160,
             "imageHeight": 144,
             "filename": "Main-Menu.png",
-            "_v": 1566479203865
+            "_v": 1566556868030
         },
         {
             "id": "4b344aa6-2281-40e3-a759-860e78a53ac4",
@@ -373,7 +405,7 @@
             "imageWidth": 256,
             "imageHeight": 256,
             "filename": "Map-Start.png",
-            "_v": 1566479203865
+            "_v": 1566556868030
         },
         {
             "id": "bb24688d-837f-4024-bd25-f409a675bb7e",
@@ -383,7 +415,7 @@
             "imageWidth": 160,
             "imageHeight": 144,
             "filename": "menu.png",
-            "_v": 1566479203865
+            "_v": 1566556868030
         },
         {
             "id": "67a85ed8-a941-4b2c-ab66-7f629d49cdce",
@@ -393,7 +425,7 @@
             "imageWidth": 256,
             "imageHeight": 256,
             "filename": "Office.png",
-            "_v": 1566479203865
+            "_v": 1566556868030
         },
         {
             "id": "ac05a586-a3c3-4c87-b65e-b2052646e012",
@@ -403,7 +435,7 @@
             "imageWidth": 256,
             "imageHeight": 256,
             "filename": "outside.png",
-            "_v": 1566479203865
+            "_v": 1566556868030
         },
         {
             "id": "b6772553-7ac2-420e-968c-a59bbf0edff4",
@@ -413,7 +445,7 @@
             "imageWidth": 160,
             "imageHeight": 144,
             "filename": "Quest List.png",
-            "_v": 1566479203865
+            "_v": 1566556868030
         },
         {
             "id": "cece1f71-bb1b-4b87-a22d-498cafff27d8",
@@ -423,7 +455,7 @@
             "imageWidth": 256,
             "imageHeight": 256,
             "filename": "Right-1-Town.png",
-            "_v": 1566479203867
+            "_v": 1566556868031
         },
         {
             "id": "dd1aad20-2fe2-4d99-98a6-9a1e8c7e8cd4",
@@ -433,7 +465,7 @@
             "imageWidth": 256,
             "imageHeight": 256,
             "filename": "stars.png",
-            "_v": 1566479203865
+            "_v": 1566556868031
         },
         {
             "id": "82af7dc3-13e9-40b8-80a7-6ebe507cde3e",
@@ -443,7 +475,7 @@
             "imageWidth": 160,
             "imageHeight": 144,
             "filename": "Stats.png",
-            "_v": 1566479203867
+            "_v": 1566556868031
         },
         {
             "id": "974820e0-d847-4e62-97b2-a6a0c3b1572a",
@@ -453,7 +485,7 @@
             "imageWidth": 128,
             "imageHeight": 208,
             "filename": "Tileset-1.png",
-            "_v": 1566479203867
+            "_v": 1566556868031
         },
         {
             "id": "eaf9b6ca-d468-4136-a78e-3988dc3c1861",
@@ -463,7 +495,7 @@
             "imageWidth": 128,
             "imageHeight": 528,
             "filename": "Tileset-2.png",
-            "_v": 1566479203867
+            "_v": 1566556868031
         },
         {
             "id": "4ea96a38-0029-40a1-9cad-3cddf3efb819",
@@ -473,7 +505,7 @@
             "imageWidth": 128,
             "imageHeight": 160,
             "filename": "Tileset-3.png",
-            "_v": 1566479203867
+            "_v": 1566556868031
         },
         {
             "id": "4d52e106-fec1-45d5-b738-4e545b7132b1",
@@ -483,7 +515,7 @@
             "imageWidth": 128,
             "imageHeight": 240,
             "filename": "Tileset-4.png",
-            "_v": 1566479203867
+            "_v": 1566556868031
         },
         {
             "id": "fa5ca27f-f451-4a56-ab5b-045e719b14c6",
@@ -493,7 +525,7 @@
             "imageWidth": 128,
             "imageHeight": 224,
             "filename": "Tileset-5.png",
-            "_v": 1566479203867
+            "_v": 1566556868031
         },
         {
             "id": "36f94c05-f243-4cf4-8dc6-5153824c88c4",
@@ -503,7 +535,7 @@
             "imageWidth": 160,
             "imageHeight": 144,
             "filename": "titlescreen.png",
-            "_v": 1566479203867
+            "_v": 1566556868031
         },
         {
             "id": "9b38ba6d-ea82-4d0e-9c93-1fbf8cd6804f",
@@ -513,7 +545,7 @@
             "imageWidth": 256,
             "imageHeight": 256,
             "filename": "underground.png",
-            "_v": 1566479203867
+            "_v": 1566556868031
         },
         {
             "id": "2ac5b2e8-8ab7-4d01-a7d5-6fa27c2e2cc3",
@@ -523,7 +555,7 @@
             "imageWidth": 160,
             "imageHeight": 144,
             "filename": "University Airport.png",
-            "_v": 1566479203867
+            "_v": 1566556868031
         },
         {
             "id": "88900ba7-202e-4f5a-922a-9f0eafd5fa1b",
@@ -533,7 +565,7 @@
             "imageWidth": 256,
             "imageHeight": 256,
             "filename": "University.png",
-            "_v": 1566479203867
+            "_v": 1566556868031
         },
         {
             "id": "7b53d781-381b-48eb-adbf-c1a62762b063",
@@ -543,7 +575,7 @@
             "imageWidth": 320,
             "imageHeight": 160,
             "filename": "Vehicles.png",
-            "_v": 1566479203867
+            "_v": 1566556868031
         },
         {
             "id": "4d4f06c1-88f6-4d5c-88a3-1892545b9305",
@@ -553,7 +585,7 @@
             "imageWidth": 160,
             "imageHeight": 144,
             "filename": "World Map.png",
-            "_v": 1566479203867
+            "_v": 1566556868031
         }
     ],
     "spriteSheets": [
@@ -563,7 +595,7 @@
             "numFrames": 0.25,
             "type": "animated",
             "filename": "Bar.png",
-            "_v": 1566479203906
+            "_v": 1566556868046
         },
         {
             "id": "aff753be-6ace-4f50-b50b-fa29642604f8",
@@ -571,7 +603,7 @@
             "numFrames": 1,
             "type": "static",
             "filename": "bed.png",
-            "_v": 1566479203906
+            "_v": 1566556868046
         },
         {
             "id": "2c66c422-96b1-4bcb-b342-71f514611f7f",
@@ -579,7 +611,7 @@
             "numFrames": 1,
             "type": "static",
             "filename": "cat.png",
-            "_v": 1566479203906
+            "_v": 1566556868046
         },
         {
             "id": "3e0f7562-9292-4dc8-8ce1-9a44cad60779",
@@ -587,7 +619,7 @@
             "numFrames": 3,
             "type": "actor",
             "filename": "checkbox.png",
-            "_v": 1566479203906
+            "_v": 1566556868046
         },
         {
             "id": "3b5ddfc5-553f-495c-b00a-2c76e5a5f54c",
@@ -595,7 +627,7 @@
             "numFrames": 1,
             "type": "static",
             "filename": "dog.png",
-            "_v": 1566479203906
+            "_v": 1566556868046
         },
         {
             "id": "514ece9d-c49f-404b-b843-12d22a22710d",
@@ -603,7 +635,7 @@
             "numFrames": 2,
             "type": "animated",
             "filename": "duck.png",
-            "_v": 1566479203907
+            "_v": 1566556868046
         },
         {
             "id": "453c341e-8abb-4b1e-ba73-026b6bcfc937",
@@ -611,7 +643,7 @@
             "numFrames": 4,
             "type": "animated",
             "filename": "fire.png",
-            "_v": 1566479203907
+            "_v": 1566556868046
         },
         {
             "id": "79fca63a-1653-492d-b051-d610544a7cb7",
@@ -619,7 +651,7 @@
             "numFrames": 4,
             "type": "animated",
             "filename": "flower1.png",
-            "_v": 1566479203907
+            "_v": 1566556868046
         },
         {
             "id": "f27e6a95-e776-4243-87eb-ec9b5e452115",
@@ -627,7 +659,7 @@
             "numFrames": 1,
             "type": "static",
             "filename": "Goblin.png",
-            "_v": 1566479203907
+            "_v": 1566556868046
         },
         {
             "id": "faa40495-00c2-4408-b859-b2deb3b31d20",
@@ -635,7 +667,7 @@
             "numFrames": 1,
             "type": "static",
             "filename": "Heart.png",
-            "_v": 1566479203907
+            "_v": 1566556868046
         },
         {
             "id": "61e3ccf8-e0e0-44f6-87ad-be760a0cda2c",
@@ -643,7 +675,7 @@
             "numFrames": 1,
             "type": "static",
             "filename": "ice.png",
-            "_v": 1566479203907
+            "_v": 1566556868046
         },
         {
             "id": "9fc7ab07-719f-4b80-91f5-12cda59291b1",
@@ -651,7 +683,7 @@
             "numFrames": 4,
             "type": "animated",
             "filename": "Items.png",
-            "_v": 1566479203907
+            "_v": 1566556868046
         },
         {
             "id": "ed299b8f-7667-40ea-a856-064fc95712df",
@@ -659,7 +691,7 @@
             "numFrames": 3,
             "type": "actor",
             "filename": "npc001.png",
-            "_v": 1566479203907
+            "_v": 1566556868046
         },
         {
             "id": "058c41f7-e3e6-441c-aa45-7578b1a07f4f",
@@ -667,7 +699,7 @@
             "numFrames": 3,
             "type": "actor",
             "filename": "npc002.png",
-            "_v": 1566479203907
+            "_v": 1566556868047
         },
         {
             "id": "f10d093f-e05d-4471-89b8-adad412b6899",
@@ -675,7 +707,7 @@
             "numFrames": 6,
             "type": "actor_animated",
             "filename": "npc003.png",
-            "_v": 1566479203907
+            "_v": 1566556868046
         },
         {
             "id": "49f18b02-8273-4803-8b78-719db50ab553",
@@ -683,7 +715,7 @@
             "numFrames": 1,
             "type": "static",
             "filename": "PC.png",
-            "_v": 1566479203907
+            "_v": 1566556868046
         },
         {
             "id": "62ff8b0a-2bc6-435f-b329-5081f1116656",
@@ -691,7 +723,7 @@
             "numFrames": 6,
             "type": "actor_animated",
             "filename": "player.png",
-            "_v": 1566479203907
+            "_v": 1566556868046
         },
         {
             "id": "956208da-720d-48e9-a601-6f1aed0918ba",
@@ -699,7 +731,7 @@
             "numFrames": 1,
             "type": "static",
             "filename": "radio.png",
-            "_v": 1566479203908
+            "_v": 1566556868046
         },
         {
             "id": "f7306258-4eec-4c06-a9ec-f95441173969",
@@ -707,7 +739,7 @@
             "numFrames": 6,
             "type": "actor_animated",
             "filename": "Rick-blackhair.png",
-            "_v": 1566479203908
+            "_v": 1566556868047
         },
         {
             "id": "31090c22-2e38-46c0-8594-0217c55adc64",
@@ -715,7 +747,7 @@
             "numFrames": 2,
             "type": "animated",
             "filename": "Rick-head.png",
-            "_v": 1566479203908
+            "_v": 1566556868048
         },
         {
             "id": "3145337b-57af-48e8-aff5-8fd10d6c25b0",
@@ -723,7 +755,7 @@
             "numFrames": 6,
             "type": "actor_animated",
             "filename": "Rick.png",
-            "_v": 1566479203908
+            "_v": 1566556868047
         },
         {
             "id": "ad18f586-eef6-4217-adbf-b7fe7b0f68ef",
@@ -731,7 +763,7 @@
             "numFrames": 1,
             "type": "static",
             "filename": "rock.png",
-            "_v": 1566479203908
+            "_v": 1566556868047
         },
         {
             "id": "706d77c9-040e-463a-992c-0ec9efdd83ef",
@@ -739,7 +771,7 @@
             "numFrames": 1,
             "type": "static",
             "filename": "sage.png",
-            "_v": 1566479203908
+            "_v": 1566556868047
         },
         {
             "id": "1d4745ce-72ea-4a66-ac76-0c3ead2e7991",
@@ -747,7 +779,7 @@
             "numFrames": 2,
             "type": "animated",
             "filename": "savepoint.png",
-            "_v": 1566479203908
+            "_v": 1566556868047
         },
         {
             "id": "341e4100-8b9b-4eaa-ad39-803169238658",
@@ -755,7 +787,7 @@
             "numFrames": 1,
             "type": "static",
             "filename": "seed.png",
-            "_v": 1566479203908
+            "_v": 1566556868047
         },
         {
             "id": "e1354ca4-b68d-4ff0-970f-cf391b988047",
@@ -763,7 +795,7 @@
             "numFrames": 1,
             "type": "static",
             "filename": "signpost.png",
-            "_v": 1566479203908
+            "_v": 1566556868047
         },
         {
             "id": "73bae49a-718e-4dcd-b8c1-98aa5b095920",
@@ -771,7 +803,7 @@
             "numFrames": 1,
             "type": "static",
             "filename": "soil.png",
-            "_v": 1566479203908
+            "_v": 1566556868048
         },
         {
             "id": "e5a60aad-9551-4e3b-8826-9ca060e4025f",
@@ -779,7 +811,7 @@
             "numFrames": 3,
             "type": "actor",
             "filename": "Squirrel.png",
-            "_v": 1566479203908
+            "_v": 1566556868048
         },
         {
             "id": "15c12b89-8a44-41ca-8a92-c9674bf05433",
@@ -787,7 +819,7 @@
             "numFrames": 6,
             "type": "actor_animated",
             "filename": "Supervisor1.png",
-            "_v": 1566479203908
+            "_v": 1566556868048
         },
         {
             "id": "e027c92c-abed-42b7-8999-010d28093d3d",
@@ -795,7 +827,7 @@
             "numFrames": 4,
             "type": "animated",
             "filename": "sword.png",
-            "_v": 1566479203908
+            "_v": 1566556868048
         },
         {
             "id": "6b89a409-9c01-498f-9321-5d7c12751b25",
@@ -803,7 +835,7 @@
             "numFrames": 1,
             "type": "static",
             "filename": "torch.png",
-            "_v": 1566479203908
+            "_v": 1566556868048
         }
     ],
     "scenes": [
@@ -2460,13 +2492,169 @@
                     "name": "Examiner",
                     "script": [
                         {
+                            "id": "bc32c803-7cd3-42dc-9218-7c569e8c1457",
+                            "command": "EVENT_GROUP",
+                            "args": {
+                                "__label": "Set data/paper total for testing",
+                                "__collapse": true
+                            },
+                            "true": [
+                                {
+                                    "id": "3a3ae855-9a36-4db3-b11b-df566e3767e5",
+                                    "command": "EVENT_SET_VALUE",
+                                    "args": {
+                                        "variable": "17",
+                                        "value": 50,
+                                        "__collapse": true
+                                    }
+                                },
+                                {
+                                    "id": "d260cb45-9553-4a63-aea4-543c11c3df41",
+                                    "command": "EVENT_SET_VALUE",
+                                    "args": {
+                                        "variable": "33",
+                                        "value": 0,
+                                        "__collapse": false
+                                    }
+                                },
+                                {
+                                    "id": "53e360b0-019a-412e-94ec-c1e9d3d655d5",
+                                    "command": "EVENT_SET_VALUE",
+                                    "args": {
+                                        "variable": "35",
+                                        "value": 1,
+                                        "__collapse": false
+                                    }
+                                },
+                                {
+                                    "id": "78e4e8fa-73cd-48bf-8005-efb4dbc5fc70",
+                                    "command": "EVENT_END"
+                                }
+                            ]
+                        },
+                        {
+                            "id": "0f9e0f08-4c7a-4124-924e-dc86d9ae75a6",
+                            "command": "EVENT_GROUP",
+                            "args": {
+                                "__label": "Initialize combat",
+                                "__collapse": true
+                            },
+                            "true": [
+                                {
+                                    "id": "9d0de02f-9a73-4413-8ffe-3b62c010aefa",
+                                    "command": "EVENT_GROUP",
+                                    "args": {
+                                        "__label": "Set ATK"
+                                    },
+                                    "true": [
+                                        {
+                                            "id": "a2c4a682-4e1b-484e-9d7c-a7a10425f880",
+                                            "command": "EVENT_SET_VALUE",
+                                            "args": {
+                                                "variable": "30",
+                                                "value": 5,
+                                                "__label": "Set raw data ATK",
+                                                "__collapse": true
+                                            }
+                                        },
+                                        {
+                                            "id": "5d9419c8-f593-4a8f-b8b2-02d5a3ef78ac",
+                                            "command": "EVENT_SET_VALUE",
+                                            "args": {
+                                                "variable": "40",
+                                                "value": 100,
+                                                "__label": "Set Nature ATK",
+                                                "__collapse": true
+                                            }
+                                        },
+                                        {
+                                            "id": "63288579-a384-4a00-81e9-bc09e7ad9a97",
+                                            "command": "EVENT_SET_VALUE",
+                                            "args": {
+                                                "variable": "41",
+                                                "value": 20,
+                                                "__label": "Set APL ATK",
+                                                "__collapse": true
+                                            }
+                                        },
+                                        {
+                                            "id": "adaef959-edd5-4b5e-bcc9-72424777dd6f",
+                                            "command": "EVENT_END"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "id": "b0aa34bd-1769-4a8a-a8fb-2c0224dcc25b",
+                                    "command": "EVENT_GROUP",
+                                    "args": {
+                                        "__label": "Reset balance"
+                                    },
+                                    "true": [
+                                        {
+                                            "id": "62da54a0-12ba-4a66-a9a6-309bd9da25d1",
+                                            "command": "EVENT_VARIABLE_MATH",
+                                            "args": {
+                                                "vectorX": "31",
+                                                "operation": "set",
+                                                "other": "var",
+                                                "vectorY": "17",
+                                                "value": "1",
+                                                "minValue": "0",
+                                                "maxValue": "255",
+                                                "__label": "Reset data balance",
+                                                "__collapse": true
+                                            }
+                                        },
+                                        {
+                                            "id": "822219bf-7871-4ae9-9ffa-7fc3630e923f",
+                                            "command": "EVENT_VARIABLE_MATH",
+                                            "args": {
+                                                "vectorX": "32",
+                                                "operation": "set",
+                                                "other": "var",
+                                                "vectorY": "33",
+                                                "value": "1",
+                                                "minValue": "0",
+                                                "maxValue": "255",
+                                                "__label": "Reset Nature balance",
+                                                "__collapse": true
+                                            }
+                                        },
+                                        {
+                                            "id": "7403dd0f-4631-4d8f-9223-40d42dbd15d2",
+                                            "command": "EVENT_VARIABLE_MATH",
+                                            "args": {
+                                                "vectorX": "34",
+                                                "operation": "set",
+                                                "other": "var",
+                                                "vectorY": "35",
+                                                "value": "1",
+                                                "minValue": "0",
+                                                "maxValue": "255",
+                                                "__label": "Reset APL balance",
+                                                "__collapse": true
+                                            }
+                                        },
+                                        {
+                                            "id": "f664466f-4b55-4e83-b399-326f7dd5e051",
+                                            "command": "EVENT_END"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "id": "06c49857-62a7-49b1-9e9c-cd411d7ede2b",
+                                    "command": "EVENT_END"
+                                }
+                            ]
+                        },
+                        {
                             "id": "571651bb-5a38-43e9-b5fc-0e77a06b5cd4",
                             "command": "EVENT_IF_TRUE",
                             "args": {
                                 "variable": "15",
                                 "__collapse": true,
                                 "__collapseElse": true,
-                                "__label": "QE?"
+                                "__label": "Initialize examiner QE/Defense"
                             },
                             "true": [
                                 {
@@ -2501,7 +2689,8 @@
                                             "args": {
                                                 "variable": "7",
                                                 "value": 50,
-                                                "__collapse": false
+                                                "__collapse": true,
+                                                "__label": "HP"
                                             }
                                         },
                                         {
@@ -2509,8 +2698,9 @@
                                             "command": "EVENT_SET_VALUE",
                                             "args": {
                                                 "variable": "8",
-                                                "value": 0,
-                                                "__collapse": false
+                                                "value": 5,
+                                                "__collapse": true,
+                                                "__label": "STR"
                                             }
                                         },
                                         {
@@ -2519,7 +2709,8 @@
                                             "args": {
                                                 "variable": "10",
                                                 "value": 40,
-                                                "__collapse": false
+                                                "__collapse": true,
+                                                "__label": "XP gain"
                                             }
                                         },
                                         {
@@ -2564,7 +2755,7 @@
                                             "id": "ca36c453-f907-446f-9430-0661efe683f8",
                                             "command": "EVENT_GROUP",
                                             "args": {
-                                                "__collapse": false,
+                                                "__collapse": true,
                                                 "__label": "Initilialize examiner stats"
                                             },
                                             "true": [
@@ -2574,7 +2765,8 @@
                                                     "args": {
                                                         "variable": "7",
                                                         "value": 200,
-                                                        "__collapse": true
+                                                        "__collapse": false,
+                                                        "__label": "HP"
                                                     }
                                                 },
                                                 {
@@ -2583,7 +2775,8 @@
                                                     "args": {
                                                         "variable": "8",
                                                         "value": 10,
-                                                        "__collapse": true
+                                                        "__collapse": true,
+                                                        "__label": "STR"
                                                     }
                                                 },
                                                 {
@@ -2592,7 +2785,8 @@
                                                     "args": {
                                                         "variable": "10",
                                                         "value": 100,
-                                                        "__collapse": true
+                                                        "__collapse": true,
+                                                        "__label": "XP gain"
                                                     }
                                                 },
                                                 {
@@ -2624,24 +2818,45 @@
                             "command": "EVENT_IF_TRUE",
                             "args": {
                                 "variable": "100",
-                                "__collapseElse": false,
-                                "__collapse": false
+                                "__collapseElse": true,
+                                "__collapse": true,
+                                "__label": "Start challenge"
                             },
                             "true": [
                                 {
                                     "id": "6d678b0d-1ed5-4d3e-aab6-1fdefa73d138",
                                     "command": "EVENT_LOOP",
                                     "args": {
-                                        "__collapse": false
+                                        "__collapse": false,
+                                        "__label": "Combat"
                                     },
                                     "true": [
+                                        {
+                                            "id": "8fffe66f-642f-4185-831d-0f8b73abba65",
+                                            "command": "EVENT_TEXT",
+                                            "args": {
+                                                "text": "You have $31$ raw\ndata, $32$ Nature,\n$34$ APL",
+                                                "__collapse": true,
+                                                "__label": "Show balance"
+                                            }
+                                        },
+                                        {
+                                            "id": "78c68767-b2ab-4f15-b511-56060a00d548",
+                                            "command": "EVENT_TEXT",
+                                            "args": {
+                                                "text": "What do you to use\nfor attack?",
+                                                "__collapse": true
+                                            }
+                                        },
                                         {
                                             "id": "a3daeb32-cb4f-4857-be17-6f2b0cdce4e0",
                                             "command": "EVENT_CHOICE",
                                             "args": {
                                                 "variable": "100",
-                                                "trueText": "Attack?",
-                                                "falseText": "Cancel"
+                                                "trueText": "Raw data",
+                                                "falseText": "Paper",
+                                                "__label": "Attack method",
+                                                "__collapse": false
                                             }
                                         },
                                         {
@@ -2649,155 +2864,94 @@
                                             "command": "EVENT_IF_TRUE",
                                             "args": {
                                                 "variable": "100",
-                                                "__collapse": false
+                                                "__collapse": false,
+                                                "__collapseElse": false,
+                                                "__label": "Attack with raw data?"
                                             },
                                             "true": [
                                                 {
-                                                    "id": "ef4a12a0-56ba-4620-a892-056bbf380652",
-                                                    "command": "EVENT_ACTOR_EMOTE",
-                                                    "args": {
-                                                        "actorId": "player",
-                                                        "emoteId": "4"
-                                                    }
-                                                },
-                                                {
-                                                    "id": "616910f2-d3cc-468f-9351-02776a654d03",
-                                                    "command": "EVENT_VARIABLE_MATH",
-                                                    "args": {
-                                                        "vectorX": "9",
-                                                        "operation": "set",
-                                                        "other": "var",
-                                                        "vectorY": "5",
-                                                        "value": "1",
-                                                        "minValue": "0",
-                                                        "maxValue": "255",
-                                                        "__collapse": false
-                                                    }
-                                                },
-                                                {
-                                                    "id": "c3204abe-6296-4e02-bff6-e378bf60fb5b",
-                                                    "command": "EVENT_VARIABLE_MATH",
-                                                    "args": {
-                                                        "vectorX": "101",
-                                                        "operation": "set",
-                                                        "other": "rnd",
-                                                        "vectorY": "9",
-                                                        "value": "1",
-                                                        "minValue": 1,
-                                                        "maxValue": 3
-                                                    }
-                                                },
-                                                {
-                                                    "id": "8c1afe78-1317-43be-a03b-ad4f194e15f4",
+                                                    "id": "160177ab-1077-4c9a-99f8-73283665a52e",
                                                     "command": "EVENT_IF_VALUE",
                                                     "args": {
-                                                        "variable": "101",
-                                                        "operator": "==",
-                                                        "comparator": 3,
-                                                        "__collapseElse": true,
-                                                        "__collapse": true
-                                                    },
-                                                    "true": [
-                                                        {
-                                                            "id": "1f0a73db-02b0-440f-8dd1-4b0a82a27ad2",
-                                                            "command": "EVENT_VARIABLE_MATH",
-                                                            "args": {
-                                                                "vectorX": "9",
-                                                                "operation": "mul",
-                                                                "other": "val",
-                                                                "vectorY": "9",
-                                                                "value": 2,
-                                                                "minValue": "0",
-                                                                "maxValue": "255"
-                                                            }
-                                                        },
-                                                        {
-                                                            "id": "03cbb03d-61bd-42ec-b96d-8597bd453b25",
-                                                            "command": "EVENT_TEXT",
-                                                            "args": {
-                                                                "text": "You crit! Deal\n$09$ damage."
-                                                            }
-                                                        },
-                                                        {
-                                                            "id": "b6b3625d-04e2-44eb-8f29-9ebd90fcffb4",
-                                                            "command": "EVENT_END"
-                                                        }
-                                                    ],
-                                                    "false": [
-                                                        {
-                                                            "id": "abc19665-e076-44b3-bf82-213c7e872715",
-                                                            "command": "EVENT_VARIABLE_MATH",
-                                                            "args": {
-                                                                "vectorX": "9",
-                                                                "operation": "mul",
-                                                                "other": "val",
-                                                                "vectorY": "9",
-                                                                "value": 1,
-                                                                "minValue": "0",
-                                                                "maxValue": "255",
-                                                                "__collapse": false
-                                                            }
-                                                        },
-                                                        {
-                                                            "id": "1c1d3a4d-bb63-47e2-ad2d-cd4f2ce8d991",
-                                                            "command": "EVENT_TEXT",
-                                                            "args": {
-                                                                "text": "No crit. Deal\n$09$ damage."
-                                                            }
-                                                        },
-                                                        {
-                                                            "id": "fda92158-2825-43cd-b0e3-85a7674e0755",
-                                                            "command": "EVENT_END"
-                                                        }
-                                                    ]
-                                                },
-                                                {
-                                                    "id": "6107303b-7a72-45ac-83b2-ac10a71c3abc",
-                                                    "command": "EVENT_IF_VALUE_COMPARE",
-                                                    "args": {
-                                                        "vectorX": "7",
+                                                        "variable": "31",
                                                         "operator": ">",
-                                                        "vectorY": "9",
-                                                        "__collapse": false,
-                                                        "__collapseElse": false
+                                                        "comparator": "0"
                                                     },
                                                     "true": [
                                                         {
-                                                            "id": "34a62b26-78d4-4da6-a987-7503ec77302e",
-                                                            "command": "EVENT_VARIABLE_MATH",
+                                                            "id": "83916e21-de1a-4a9e-9b21-7b439d3f6c9b",
+                                                            "command": "EVENT_GROUP",
                                                             "args": {
-                                                                "vectorX": "7",
-                                                                "operation": "sub",
-                                                                "other": "var",
-                                                                "vectorY": "9",
-                                                                "value": "1",
-                                                                "minValue": "0",
-                                                                "maxValue": "255"
-                                                            }
+                                                                "__label": "Initialize combat",
+                                                                "__collapse": true
+                                                            },
+                                                            "true": [
+                                                                {
+                                                                    "id": "616910f2-d3cc-468f-9351-02776a654d03",
+                                                                    "command": "EVENT_VARIABLE_MATH",
+                                                                    "args": {
+                                                                        "vectorX": "9",
+                                                                        "operation": "set",
+                                                                        "other": "var",
+                                                                        "vectorY": "30",
+                                                                        "value": "1",
+                                                                        "minValue": "0",
+                                                                        "maxValue": "255",
+                                                                        "__collapse": true,
+                                                                        "__label": "Set ATK"
+                                                                    }
+                                                                },
+                                                                {
+                                                                    "id": "a52dafbe-1787-4358-8b98-5046b57ccbf8",
+                                                                    "command": "EVENT_VARIABLE_MATH",
+                                                                    "args": {
+                                                                        "vectorX": "31",
+                                                                        "operation": "sub",
+                                                                        "other": "var",
+                                                                        "vectorY": "30",
+                                                                        "value": "1",
+                                                                        "minValue": "0",
+                                                                        "maxValue": "255",
+                                                                        "__label": "Calculate data balance",
+                                                                        "__collapse": true
+                                                                    }
+                                                                },
+                                                                {
+                                                                    "id": "bde2d552-e9ca-438a-8a63-fde0a3c4c620",
+                                                                    "command": "EVENT_END"
+                                                                }
+                                                            ]
                                                         },
                                                         {
-                                                            "id": "3f3914d4-3aac-4b82-8fea-54dfc6411444",
-                                                            "command": "EVENT_TEXT",
-                                                            "args": {
-                                                                "text": "Supervisor\nremaining HP: $07$"
-                                                            }
-                                                        },
-                                                        {
-                                                            "id": "5475d52f-34e4-4325-9dce-bf5714c6e36f",
+                                                            "id": "412a71e2-8ea5-43fd-8d54-b5330c50719f",
                                                             "command": "EVENT_END"
                                                         }
                                                     ],
                                                     "false": [
                                                         {
-                                                            "id": "d7c8f9fb-4323-48a2-9b85-7a986332087a",
+                                                            "id": "ed5e26f0-820e-4818-bac8-622deeba301f",
+                                                            "command": "EVENT_TEXT",
+                                                            "args": {
+                                                                "text": [
+                                                                    "Excuse me! You do\nhave any raw data!",
+                                                                    "Attack with papers\ninstead!"
+                                                                ],
+                                                                "__label": "No balance warning",
+                                                                "__collapse": true
+                                                            }
+                                                        },
+                                                        {
+                                                            "id": "6232ce1c-7b94-46dc-a2ac-d6d382944fcf",
                                                             "command": "EVENT_SET_VALUE",
                                                             "args": {
-                                                                "variable": "7",
-                                                                "value": "0"
+                                                                "variable": "9",
+                                                                "value": "0",
+                                                                "__label": "Set ATK to 0",
+                                                                "__collapse": true
                                                             }
                                                         },
                                                         {
-                                                            "id": "2e71eab6-44fb-44d3-8666-9cbe8c0774fc",
+                                                            "id": "b59d1b3e-47b2-4976-b066-3c71ae99aae8",
                                                             "command": "EVENT_END"
                                                         }
                                                     ]
@@ -2809,7 +2963,347 @@
                                             ],
                                             "false": [
                                                 {
+                                                    "id": "9b80c82e-9617-40b0-83d0-1f7b4e6b560f",
+                                                    "command": "EVENT_CHOICE",
+                                                    "args": {
+                                                        "variable": "100",
+                                                        "trueText": "Nature",
+                                                        "falseText": "APL",
+                                                        "__collapse": true,
+                                                        "__label": "Attack with Nature?"
+                                                    }
+                                                },
+                                                {
+                                                    "id": "4b0acac1-237c-4243-a7e3-07b4850345d5",
+                                                    "command": "EVENT_IF_TRUE",
+                                                    "args": {
+                                                        "variable": "100",
+                                                        "__label": "Attack with Nature",
+                                                        "__collapseElse": false,
+                                                        "__collapse": true
+                                                    },
+                                                    "true": [
+                                                        {
+                                                            "id": "5ac0391e-9c10-48b6-9c86-9cba52e7cf5a",
+                                                            "command": "EVENT_IF_VALUE",
+                                                            "args": {
+                                                                "variable": "32",
+                                                                "operator": ">",
+                                                                "comparator": "0",
+                                                                "__collapse": false
+                                                            },
+                                                            "true": [
+                                                                {
+                                                                    "id": "ab24f31b-e403-4918-a039-f9469e528d87",
+                                                                    "command": "EVENT_GROUP",
+                                                                    "args": {
+                                                                        "__label": "Initialize combat",
+                                                                        "__collapse": false
+                                                                    },
+                                                                    "true": [
+                                                                        {
+                                                                            "id": "c584793d-fc1d-4b91-bd9b-bf1e4ecdbcbf",
+                                                                            "command": "EVENT_VARIABLE_MATH",
+                                                                            "args": {
+                                                                                "vectorX": "9",
+                                                                                "operation": "set",
+                                                                                "other": "var",
+                                                                                "vectorY": "40",
+                                                                                "value": "1",
+                                                                                "minValue": "0",
+                                                                                "maxValue": "255",
+                                                                                "__collapse": true,
+                                                                                "__label": "Set ATK"
+                                                                            }
+                                                                        },
+                                                                        {
+                                                                            "id": "fd25a248-90ed-4798-8c02-2384a00c4dc9",
+                                                                            "command": "EVENT_DEC_VALUE",
+                                                                            "args": {
+                                                                                "variable": "32",
+                                                                                "__label": "Calculate Nature balance",
+                                                                                "__collapse": true
+                                                                            }
+                                                                        },
+                                                                        {
+                                                                            "id": "d4926db6-c63b-4e82-88bc-ecc0d3cd25b2",
+                                                                            "command": "EVENT_END"
+                                                                        }
+                                                                    ]
+                                                                },
+                                                                {
+                                                                    "id": "66b6b7ec-a789-4596-9d7b-1cb9a2da9ea3",
+                                                                    "command": "EVENT_END"
+                                                                }
+                                                            ],
+                                                            "false": [
+                                                                {
+                                                                    "id": "ede79d4c-1c79-4269-b42f-3a79cf93167e",
+                                                                    "command": "EVENT_TEXT",
+                                                                    "args": {
+                                                                        "text": [
+                                                                            "Excuse me! You do\nhave any Nature!",
+                                                                            "Attack with raw\ndata or APL!"
+                                                                        ],
+                                                                        "__label": "No balance warning",
+                                                                        "__collapse": true
+                                                                    }
+                                                                },
+                                                                {
+                                                                    "id": "ae52aed2-6ac2-4446-a6ce-e1b623ed490f",
+                                                                    "command": "EVENT_SET_VALUE",
+                                                                    "args": {
+                                                                        "variable": "9",
+                                                                        "value": "0",
+                                                                        "__label": "Set ATK to 0",
+                                                                        "__collapse": true
+                                                                    }
+                                                                },
+                                                                {
+                                                                    "id": "40ffe730-57bc-4bfe-acba-478cac37a872",
+                                                                    "command": "EVENT_END"
+                                                                }
+                                                            ]
+                                                        },
+                                                        {
+                                                            "id": "a5f08e5e-d412-45dc-b83e-795e08cb101f",
+                                                            "command": "EVENT_END"
+                                                        }
+                                                    ],
+                                                    "false": [
+                                                        {
+                                                            "id": "d64d4d37-7a0a-482a-92ef-5d622f458c7b",
+                                                            "command": "EVENT_IF_VALUE",
+                                                            "args": {
+                                                                "variable": "34",
+                                                                "operator": ">",
+                                                                "comparator": "0",
+                                                                "__collapse": false
+                                                            },
+                                                            "true": [
+                                                                {
+                                                                    "id": "8175d74c-2bdc-4cdc-858a-3ac7d481ad36",
+                                                                    "command": "EVENT_GROUP",
+                                                                    "args": {
+                                                                        "__label": "Initialize combat"
+                                                                    },
+                                                                    "true": [
+                                                                        {
+                                                                            "id": "b2a7457f-d2ff-4dc4-a6e3-6173cd6ea047",
+                                                                            "command": "EVENT_VARIABLE_MATH",
+                                                                            "args": {
+                                                                                "vectorX": "9",
+                                                                                "operation": "set",
+                                                                                "other": "var",
+                                                                                "vectorY": "41",
+                                                                                "value": "1",
+                                                                                "minValue": "0",
+                                                                                "maxValue": "255",
+                                                                                "__collapse": false,
+                                                                                "__label": "Set ATK"
+                                                                            }
+                                                                        },
+                                                                        {
+                                                                            "id": "84d1bcbf-5b42-415f-af7e-a35f3d3deab7",
+                                                                            "command": "EVENT_DEC_VALUE",
+                                                                            "args": {
+                                                                                "variable": "34",
+                                                                                "__label": "Calculate Nature balance",
+                                                                                "__collapse": false
+                                                                            }
+                                                                        },
+                                                                        {
+                                                                            "id": "ca3d4474-6401-40db-8d42-9b92767192c9",
+                                                                            "command": "EVENT_END"
+                                                                        }
+                                                                    ]
+                                                                },
+                                                                {
+                                                                    "id": "b4648fac-4b71-4477-b103-de06b87b18be",
+                                                                    "command": "EVENT_END"
+                                                                }
+                                                            ],
+                                                            "false": [
+                                                                {
+                                                                    "id": "ebbd3c8e-ced8-4abe-b440-e3b86861cf2a",
+                                                                    "command": "EVENT_TEXT",
+                                                                    "args": {
+                                                                        "text": [
+                                                                            "Excuse me! You do\nhave any APL!",
+                                                                            "Attack with raw\ndata or Nature!"
+                                                                        ],
+                                                                        "__label": "No balance warning",
+                                                                        "__collapse": false
+                                                                    }
+                                                                },
+                                                                {
+                                                                    "id": "f69b2a10-5498-4522-b64b-9dcef4edf72a",
+                                                                    "command": "EVENT_SET_VALUE",
+                                                                    "args": {
+                                                                        "variable": "9",
+                                                                        "value": "0",
+                                                                        "__label": "Set ATK to 0"
+                                                                    }
+                                                                },
+                                                                {
+                                                                    "id": "9d63fa50-dd6a-4c2a-b9ad-4348039ca349",
+                                                                    "command": "EVENT_END"
+                                                                }
+                                                            ]
+                                                        },
+                                                        {
+                                                            "id": "ac9ff9f8-a5d2-4519-9309-fe1774b68a50",
+                                                            "command": "EVENT_END"
+                                                        }
+                                                    ]
+                                                },
+                                                {
                                                     "id": "5a9f8ddc-a39d-4ad7-8ad8-8fb66e45eb3d",
+                                                    "command": "EVENT_END"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "id": "ef4a12a0-56ba-4620-a892-056bbf380652",
+                                            "command": "EVENT_ACTOR_EMOTE",
+                                            "args": {
+                                                "actorId": "player",
+                                                "emoteId": "4",
+                                                "__collapse": true,
+                                                "__label": "Show angry emo"
+                                            }
+                                        },
+                                        {
+                                            "id": "c3204abe-6296-4e02-bff6-e378bf60fb5b",
+                                            "command": "EVENT_VARIABLE_MATH",
+                                            "args": {
+                                                "vectorX": "101",
+                                                "operation": "set",
+                                                "other": "rnd",
+                                                "vectorY": "9",
+                                                "value": "1",
+                                                "minValue": 1,
+                                                "maxValue": 3,
+                                                "__collapse": true,
+                                                "__label": "Player Random Crit"
+                                            }
+                                        },
+                                        {
+                                            "id": "8c1afe78-1317-43be-a03b-ad4f194e15f4",
+                                            "command": "EVENT_IF_VALUE",
+                                            "args": {
+                                                "variable": "101",
+                                                "operator": "==",
+                                                "comparator": 3,
+                                                "__collapseElse": false,
+                                                "__collapse": false,
+                                                "__label": "Critical attack!"
+                                            },
+                                            "true": [
+                                                {
+                                                    "id": "1f0a73db-02b0-440f-8dd1-4b0a82a27ad2",
+                                                    "command": "EVENT_VARIABLE_MATH",
+                                                    "args": {
+                                                        "vectorX": "9",
+                                                        "operation": "mul",
+                                                        "other": "val",
+                                                        "vectorY": "9",
+                                                        "value": 2,
+                                                        "minValue": "0",
+                                                        "maxValue": "255",
+                                                        "__collapse": true
+                                                    }
+                                                },
+                                                {
+                                                    "id": "03cbb03d-61bd-42ec-b96d-8597bd453b25",
+                                                    "command": "EVENT_TEXT",
+                                                    "args": {
+                                                        "text": "Critical attack!\nDeal $09$ damage",
+                                                        "__collapse": true
+                                                    }
+                                                },
+                                                {
+                                                    "id": "b6b3625d-04e2-44eb-8f29-9ebd90fcffb4",
+                                                    "command": "EVENT_END"
+                                                }
+                                            ],
+                                            "false": [
+                                                {
+                                                    "id": "abc19665-e076-44b3-bf82-213c7e872715",
+                                                    "command": "EVENT_VARIABLE_MATH",
+                                                    "args": {
+                                                        "vectorX": "9",
+                                                        "operation": "mul",
+                                                        "other": "val",
+                                                        "vectorY": "9",
+                                                        "value": 1,
+                                                        "minValue": "0",
+                                                        "maxValue": "255",
+                                                        "__collapse": false,
+                                                        "__label": "Normal attack"
+                                                    }
+                                                },
+                                                {
+                                                    "id": "1c1d3a4d-bb63-47e2-ad2d-cd4f2ce8d991",
+                                                    "command": "EVENT_TEXT",
+                                                    "args": {
+                                                        "text": "Normal attack.\nDeal $09$ damage."
+                                                    }
+                                                },
+                                                {
+                                                    "id": "fda92158-2825-43cd-b0e3-85a7674e0755",
+                                                    "command": "EVENT_END"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "id": "6107303b-7a72-45ac-83b2-ac10a71c3abc",
+                                            "command": "EVENT_IF_VALUE_COMPARE",
+                                            "args": {
+                                                "vectorX": "7",
+                                                "operator": ">",
+                                                "vectorY": "9",
+                                                "__collapse": true,
+                                                "__collapseElse": true,
+                                                "__label": "Calculate examiner HP"
+                                            },
+                                            "true": [
+                                                {
+                                                    "id": "34a62b26-78d4-4da6-a987-7503ec77302e",
+                                                    "command": "EVENT_VARIABLE_MATH",
+                                                    "args": {
+                                                        "vectorX": "7",
+                                                        "operation": "sub",
+                                                        "other": "var",
+                                                        "vectorY": "9",
+                                                        "value": "1",
+                                                        "minValue": "0",
+                                                        "maxValue": "255"
+                                                    }
+                                                },
+                                                {
+                                                    "id": "3f3914d4-3aac-4b82-8fea-54dfc6411444",
+                                                    "command": "EVENT_TEXT",
+                                                    "args": {
+                                                        "text": "Examiner\nremaining HP: $07$"
+                                                    }
+                                                },
+                                                {
+                                                    "id": "5475d52f-34e4-4325-9dce-bf5714c6e36f",
+                                                    "command": "EVENT_END"
+                                                }
+                                            ],
+                                            "false": [
+                                                {
+                                                    "id": "d7c8f9fb-4323-48a2-9b85-7a986332087a",
+                                                    "command": "EVENT_SET_VALUE",
+                                                    "args": {
+                                                        "variable": "7",
+                                                        "value": "0"
+                                                    }
+                                                },
+                                                {
+                                                    "id": "2e71eab6-44fb-44d3-8666-9cbe8c0774fc",
                                                     "command": "EVENT_END"
                                                 }
                                             ]
@@ -2821,7 +3315,9 @@
                                                 "variable": "7",
                                                 "operator": "<=",
                                                 "comparator": "0",
-                                                "__collapse": false
+                                                "__collapse": true,
+                                                "__collapseElse": true,
+                                                "__label": "Kill examiner"
                                             },
                                             "true": [
                                                 {
@@ -2854,7 +3350,9 @@
                                                         "variable": "4",
                                                         "operator": ">",
                                                         "comparator": 100,
-                                                        "__collapse": false
+                                                        "__collapse": true,
+                                                        "__label": "Gain XP",
+                                                        "__collapseElse": true
                                                     },
                                                     "true": [
                                                         {
@@ -2929,7 +3427,10 @@
                                                     "id": "5ae78e14-c279-4134-be7b-ce91ee62eef7",
                                                     "command": "EVENT_IF_TRUE",
                                                     "args": {
-                                                        "variable": "15"
+                                                        "variable": "15",
+                                                        "__label": "Pass QE dialogue",
+                                                        "__collapse": true,
+                                                        "__collapseElse": true
                                                     },
                                                     "true": [
                                                         {
@@ -2990,7 +3491,8 @@
                                                             "command": "EVENT_IF_TRUE",
                                                             "args": {
                                                                 "variable": "16",
-                                                                "__collapse": false
+                                                                "__collapse": true,
+                                                                "__label": "Pass defense dialogue"
                                                             },
                                                             "true": [
                                                                 {
@@ -2998,7 +3500,7 @@
                                                                     "command": "EVENT_GROUP",
                                                                     "args": {
                                                                         "__label": "Pass Defense",
-                                                                        "__collapse": false
+                                                                        "__collapse": true
                                                                     },
                                                                     "true": [
                                                                         {
@@ -3081,6 +3583,104 @@
                                             ]
                                         },
                                         {
+                                            "id": "62df7ffb-a979-4c13-bcfa-261413452743",
+                                            "command": "EVENT_VARIABLE_MATH",
+                                            "args": {
+                                                "vectorX": "26",
+                                                "operation": "set",
+                                                "other": "var",
+                                                "vectorY": "8",
+                                                "value": "1",
+                                                "minValue": "0",
+                                                "maxValue": "255",
+                                                "__collapse": true,
+                                                "__label": "Set Examiner ATK"
+                                            }
+                                        },
+                                        {
+                                            "id": "6c1636c6-9feb-431e-8ec9-56058d24a62e",
+                                            "command": "EVENT_VARIABLE_MATH",
+                                            "args": {
+                                                "vectorX": "101",
+                                                "operation": "set",
+                                                "other": "rnd",
+                                                "vectorY": "9",
+                                                "value": "1",
+                                                "minValue": 1,
+                                                "maxValue": 3,
+                                                "__collapse": true,
+                                                "__label": "Examiner Random Crit"
+                                            }
+                                        },
+                                        {
+                                            "id": "b28e6f1f-c1a0-49ed-8f77-2516c8dc8730",
+                                            "command": "EVENT_IF_VALUE",
+                                            "args": {
+                                                "variable": "101",
+                                                "operator": "==",
+                                                "comparator": 3,
+                                                "__collapseElse": true,
+                                                "__collapse": true,
+                                                "__label": "Critical attack!"
+                                            },
+                                            "true": [
+                                                {
+                                                    "id": "d00db408-d3f2-469a-a2ad-1dde285efa6d",
+                                                    "command": "EVENT_VARIABLE_MATH",
+                                                    "args": {
+                                                        "vectorX": "26",
+                                                        "operation": "mul",
+                                                        "other": "val",
+                                                        "vectorY": "9",
+                                                        "value": 2,
+                                                        "minValue": "0",
+                                                        "maxValue": "255",
+                                                        "__collapse": false
+                                                    }
+                                                },
+                                                {
+                                                    "id": "3fdd7441-f4c6-494f-9713-9dd9eb0b3b8b",
+                                                    "command": "EVENT_TEXT",
+                                                    "args": {
+                                                        "text": "Examiner\nattacked you for\n$26$ damage!",
+                                                        "__collapse": false
+                                                    }
+                                                },
+                                                {
+                                                    "id": "2e92bd9c-2445-44fb-8d6d-289a8a861664",
+                                                    "command": "EVENT_END"
+                                                }
+                                            ],
+                                            "false": [
+                                                {
+                                                    "id": "1ead247f-ec1b-4e89-a38a-ca049166e2ab",
+                                                    "command": "EVENT_VARIABLE_MATH",
+                                                    "args": {
+                                                        "vectorX": "26",
+                                                        "operation": "mul",
+                                                        "other": "val",
+                                                        "vectorY": "9",
+                                                        "value": 1,
+                                                        "minValue": "0",
+                                                        "maxValue": "255",
+                                                        "__collapse": false,
+                                                        "__label": "Normal attack"
+                                                    }
+                                                },
+                                                {
+                                                    "id": "cd6f5021-3470-426a-929a-85790923e895",
+                                                    "command": "EVENT_TEXT",
+                                                    "args": {
+                                                        "text": "Examiner\nattacked you for\n$26$ damage!"
+                                                    }
+                                                },
+                                                {
+                                                    "id": "637adf25-635c-41af-a6ff-ea88893f4440",
+                                                    "command": "EVENT_END"
+                                                }
+                                            ]
+                                        },
+                                        {
                                             "id": "bff3a40d-458e-432a-b164-cc361f944d09",
                                             "command": "EVENT_VARIABLE_MATH",
                                             "args": {
@@ -3090,15 +3690,70 @@
                                                 "vectorY": "8",
                                                 "value": "1",
                                                 "minValue": "0",
-                                                "maxValue": "255"
+                                                "maxValue": "255",
+                                                "__collapse": false,
+                                                "__label": "Calculate Player Confidence"
                                             }
                                         },
                                         {
-                                            "id": "d08a97af-dd1e-4146-bf14-aa0fcd40c2d9",
+                                            "id": "94290e47-3372-41b0-aff3-62af0ef4829c",
                                             "command": "EVENT_TEXT",
                                             "args": {
-                                                "text": "Supervisor\nattacked you for\n$08$ damage!"
+                                                "text": "Your confidence\nlevel dropped to\n$03$.",
+                                                "__collapse": false
                                             }
+                                        },
+                                        {
+                                            "id": "867b04e7-252f-46c1-9359-c23109642b34",
+                                            "command": "EVENT_IF_VALUE",
+                                            "args": {
+                                                "variable": "3",
+                                                "operator": "<=",
+                                                "comparator": "0",
+                                                "__collapseElse": true,
+                                                "__label": "Lost confidence",
+                                                "__collapse": true
+                                            },
+                                            "true": [
+                                                {
+                                                    "id": "f7268117-e0bf-46f0-ac8e-53134bac6f14",
+                                                    "command": "EVENT_TEXT",
+                                                    "args": {
+                                                        "text": [
+                                                            "Uh-oh! You lost\nall your\nconfidence.",
+                                                            "Take some rest and\ntry again!"
+                                                        ]
+                                                    }
+                                                },
+                                                {
+                                                    "id": "ef6f6359-7682-420f-a67a-d362acaf75dc",
+                                                    "command": "EVENT_SET_TRUE",
+                                                    "args": {
+                                                        "variable": "104"
+                                                    }
+                                                },
+                                                {
+                                                    "id": "f268c1e4-0d71-4931-8aea-5fb9472de746",
+                                                    "command": "EVENT_SWITCH_SCENE",
+                                                    "args": {
+                                                        "sceneId": "a7ea332d-0cf6-4a2a-85eb-1a0217dfa4e7",
+                                                        "x": 6,
+                                                        "y": 9,
+                                                        "direction": "right",
+                                                        "fadeSpeed": "2"
+                                                    }
+                                                },
+                                                {
+                                                    "id": "ca2e8590-0a81-4467-8bdd-d155ca59b2ac",
+                                                    "command": "EVENT_END"
+                                                }
+                                            ],
+                                            "false": [
+                                                {
+                                                    "id": "208c6a2f-0884-4ce5-b32d-632543ade1f8",
+                                                    "command": "EVENT_END"
+                                                }
+                                            ]
                                         },
                                         {
                                             "id": "bf32cf28-4747-459c-bc6c-01f178ddcd1e",
@@ -3550,7 +4205,8 @@
                                                 "vectorY": "110",
                                                 "value": "1",
                                                 "minValue": "0",
-                                                "maxValue": 5
+                                                "maxValue": 5,
+                                                "__collapse": false
                                             }
                                         },
                                         {
@@ -3563,7 +4219,8 @@
                                                 "vectorY": "23",
                                                 "value": "1",
                                                 "minValue": "0",
-                                                "maxValue": "255"
+                                                "maxValue": "255",
+                                                "__collapse": false
                                             }
                                         },
                                         {
@@ -4029,7 +4686,105 @@
                 0,
                 0
             ],
-            "notes": "For sleeping and saving data"
+            "notes": "For sleeping and saving data",
+            "script": [
+                {
+                    "id": "3daeb54b-9945-4740-af54-6228af7ff6c1",
+                    "command": "EVENT_IF_TRUE",
+                    "args": {
+                        "variable": "104",
+                        "__label": "Sleep == True"
+                    },
+                    "true": [
+                        {
+                            "id": "1898c96e-7b39-4a34-b03a-6c172681ae3d",
+                            "command": "EVENT_ACTOR_MOVE_TO",
+                            "args": {
+                                "actorId": "player",
+                                "x": 4,
+                                "y": 8,
+                                "__label": "Go to bed",
+                                "__collapse": true
+                            }
+                        },
+                        {
+                            "id": "7efdfc2e-d683-49ff-939b-021602d368a7",
+                            "command": "EVENT_FADE_OUT",
+                            "args": {
+                                "speed": "1",
+                                "__collapse": true
+                            }
+                        },
+                        {
+                            "id": "9f30e0db-51f9-4d3e-8e4e-98775fa41cf3",
+                            "command": "EVENT_WAIT",
+                            "args": {
+                                "time": 1,
+                                "__collapse": true
+                            }
+                        },
+                        {
+                            "id": "1b743574-76f8-4f36-8d82-2a291e3129e4",
+                            "command": "EVENT_FADE_IN",
+                            "args": {
+                                "speed": "1",
+                                "__collapse": true
+                            }
+                        },
+                        {
+                            "id": "2f5f1227-5b00-4fe7-990d-d18cae98785b",
+                            "command": "EVENT_ACTOR_MOVE_TO",
+                            "args": {
+                                "actorId": "player",
+                                "x": 6,
+                                "y": 8,
+                                "__label": "Get up",
+                                "__collapse": true
+                            }
+                        },
+                        {
+                            "id": "015563a9-3d5e-4d2c-b6f1-cf3365f36f3c",
+                            "command": "EVENT_VARIABLE_MATH",
+                            "args": {
+                                "vectorX": "3",
+                                "operation": "set",
+                                "other": "var",
+                                "vectorY": "2",
+                                "value": "1",
+                                "minValue": "0",
+                                "maxValue": "255",
+                                "__label": "Replenish HP",
+                                "__collapse": true
+                            }
+                        },
+                        {
+                            "id": "c5b3c00b-6f30-43be-a8d2-e31e91dbf18b",
+                            "command": "EVENT_TEXT",
+                            "args": {
+                                "text": [
+                                    "It's a new day!",
+                                    "HP has been\nrecoverd."
+                                ],
+                                "__collapse": true
+                            }
+                        },
+                        {
+                            "id": "3224dbf2-b242-4bf0-829d-9856de02dd12",
+                            "command": "EVENT_END"
+                        }
+                    ],
+                    "false": [
+                        {
+                            "id": "394c87b6-843a-4135-ba22-6b0ac5d78012",
+                            "command": "EVENT_END"
+                        }
+                    ]
+                },
+                {
+                    "id": "f5c641c4-0e3b-417c-92b5-7baa51df3f68",
+                    "command": "EVENT_END"
+                }
+            ]
         },
         {
             "id": "bb69947c-3a95-4fad-b108-550b8c6887e3",
@@ -7473,13 +8228,13 @@
             "id": "d8d04fc7-ada8-4593-a93c-583b35a726ea",
             "name": "Peters_Song_NEW",
             "filename": "Peters_Song_NEW.mod",
-            "_v": 1566479203912
+            "_v": 1566556868050
         },
         {
             "id": "f50428ab-a084-4591-9bba-2ba10fe7b1c6",
             "name": "template",
             "filename": "template.mod",
-            "_v": 1566479203912
+            "_v": 1566556868051
         }
     ]
 }
