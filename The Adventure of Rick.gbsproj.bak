@@ -6503,7 +6503,7 @@
                     "command": "EVENT_GROUP",
                     "args": {
                         "__label": "Testing",
-                        "__collapse": false
+                        "__collapse": true
                     },
                     "children": {
                         "true": [
@@ -6528,17 +6528,8 @@
                                 "id": "fd61781f-6a90-40f9-8819-192d23a8fb15",
                                 "command": "EVENT_SET_VALUE",
                                 "args": {
-                                    "variable": "35",
-                                    "value": 5
-                                },
-                                "__type": "event"
-                            },
-                            {
-                                "id": "62a8c59a-bf19-4f88-a7d3-8a329257a604",
-                                "command": "EVENT_SET_VALUE",
-                                "args": {
-                                    "variable": "33",
-                                    "value": 7
+                                    "variable": "53",
+                                    "value": "0"
                                 },
                                 "__type": "event"
                             },
