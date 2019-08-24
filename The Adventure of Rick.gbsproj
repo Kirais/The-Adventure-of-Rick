@@ -5,7 +5,7 @@
         "startX": 0,
         "startY": 0,
         "startDirection": "up",
-        "zoom": 100,
+        "zoom": 200,
         "startSceneId": "12282cd5-d71e-4ea9-a48b-09b2e3e2ef3c",
         "playerSpriteSheetId": "f7306258-4eec-4c06-a9ec-f95441173969"
     },
@@ -212,6 +212,18 @@
         {
             "id": "36",
             "name": "No single balance flag"
+        },
+        {
+            "id": "50",
+            "name": "Confidence 1"
+        },
+        {
+            "id": "48",
+            "name": "Confidence 100"
+        },
+        {
+            "id": "49",
+            "name": "Confidence 10"
         }
     ],
     "backgrounds": [
@@ -223,7 +235,7 @@
             "imageWidth": 160,
             "imageHeight": 144,
             "filename": "cave.png",
-            "_v": 1566573909891
+            "_v": 1566636772045
         },
         {
             "id": "6cc0f474-498a-4114-b785-4926f664eb6a",
@@ -233,7 +245,7 @@
             "imageWidth": 160,
             "imageHeight": 192,
             "filename": "Classroom.png",
-            "_v": 1566573909891
+            "_v": 1566636772049
         },
         {
             "id": "d96ffdf0-ead9-4099-8a07-869ba5cb567c",
@@ -243,7 +255,7 @@
             "imageWidth": 256,
             "imageHeight": 256,
             "filename": "Cleanroom.png",
-            "_v": 1566573909891
+            "_v": 1566636772045
         },
         {
             "id": "5deee38e-f383-4a41-b217-23dd28692324",
@@ -253,7 +265,7 @@
             "imageWidth": 160,
             "imageHeight": 144,
             "filename": "Conference Airport.png",
-            "_v": 1566573909891
+            "_v": 1566636772045
         },
         {
             "id": "1fb9f4e3-74e2-45a6-8155-c0d4516c6107",
@@ -263,7 +275,7 @@
             "imageWidth": 256,
             "imageHeight": 256,
             "filename": "Conference Room.png",
-            "_v": 1566573909891
+            "_v": 1566636772046
         },
         {
             "id": "076ac98b-b2f2-4122-941a-152b5457ca93",
@@ -273,7 +285,7 @@
             "imageWidth": 256,
             "imageHeight": 256,
             "filename": "Conference.png",
-            "_v": 1566573909891
+            "_v": 1566636772046
         },
         {
             "id": "436ffbd9-39e8-47bb-8b21-98d406bca294",
@@ -283,7 +295,7 @@
             "imageWidth": 256,
             "imageHeight": 256,
             "filename": "Down-1-Lake.png",
-            "_v": 1566573909891
+            "_v": 1566636772046
         },
         {
             "id": "5dac439f-ce92-4631-9135-210800bb1580",
@@ -293,7 +305,7 @@
             "imageWidth": 160,
             "imageHeight": 144,
             "filename": "Empty-Menu.png",
-            "_v": 1566573909891
+            "_v": 1566636772046
         },
         {
             "id": "18c0b3ee-9193-4d93-926c-e58f4909b060",
@@ -303,7 +315,7 @@
             "imageWidth": 208,
             "imageHeight": 144,
             "filename": "Gurbs-adventure-tile-set-1.png",
-            "_v": 1566573909893
+            "_v": 1566636772046
         },
         {
             "id": "26e5bf7b-6e9e-46b7-b914-fb53d42769b9",
@@ -313,7 +325,7 @@
             "imageWidth": 160,
             "imageHeight": 160,
             "filename": "Gurbs-adventure-title-1.png",
-            "_v": 1566573909892
+            "_v": 1566636772046
         },
         {
             "id": "e1650476-5020-46be-b037-ef54df7c8601",
@@ -323,7 +335,7 @@
             "imageWidth": 160,
             "imageHeight": 200,
             "filename": "Gurbs-adventure-title.png",
-            "_v": 1566573909893
+            "_v": 1566636772046
         },
         {
             "id": "533d6f46-6fcd-4c61-9dce-a406931669bc",
@@ -333,7 +345,7 @@
             "imageWidth": 160,
             "imageHeight": 144,
             "filename": "Hometown Airport.png",
-            "_v": 1566573909893
+            "_v": 1566636772047
         },
         {
             "id": "aa221e8f-4984-4797-962b-bb0be59f9ea2",
@@ -343,7 +355,7 @@
             "imageWidth": 256,
             "imageHeight": 256,
             "filename": "Hometown.png",
-            "_v": 1566573909893
+            "_v": 1566636772047
         },
         {
             "id": "bd99eb4a-6b4b-4996-ad87-5df7e3d26ee1",
@@ -353,7 +365,7 @@
             "imageWidth": 160,
             "imageHeight": 144,
             "filename": "house.png",
-            "_v": 1566573909893
+            "_v": 1566636772049
         },
         {
             "id": "839e5bae-866f-4cf0-b301-c9ecc0fbfc2a",
@@ -363,7 +375,7 @@
             "imageWidth": 160,
             "imageHeight": 144,
             "filename": "Inventory.png",
-            "_v": 1566573909893
+            "_v": 1566636772047
         },
         {
             "id": "172ee048-0235-4843-8f39-901301573c90",
@@ -373,7 +385,7 @@
             "imageWidth": 256,
             "imageHeight": 256,
             "filename": "Lab.png",
-            "_v": 1566573909893
+            "_v": 1566636772047
         },
         {
             "id": "0a6664e8-1a37-4203-89d1-ae6efe824e02",
@@ -383,7 +395,7 @@
             "imageWidth": 256,
             "imageHeight": 256,
             "filename": "Left-1-SquirrelPath.png",
-            "_v": 1566573909893
+            "_v": 1566636772047
         },
         {
             "id": "a9c8d3b3-04f7-45a7-aed5-822b5674f81c",
@@ -393,7 +405,7 @@
             "imageWidth": 160,
             "imageHeight": 144,
             "filename": "logo.png",
-            "_v": 1566573909893
+            "_v": 1566636772048
         },
         {
             "id": "d7c8346f-7a8d-49dd-982f-0aa6d08c2bb9",
@@ -403,7 +415,7 @@
             "imageWidth": 160,
             "imageHeight": 144,
             "filename": "Main-Menu.png",
-            "_v": 1566573909893
+            "_v": 1566636772047
         },
         {
             "id": "4b344aa6-2281-40e3-a759-860e78a53ac4",
@@ -413,7 +425,7 @@
             "imageWidth": 256,
             "imageHeight": 256,
             "filename": "Map-Start.png",
-            "_v": 1566573909893
+            "_v": 1566636772048
         },
         {
             "id": "bb24688d-837f-4024-bd25-f409a675bb7e",
@@ -423,7 +435,7 @@
             "imageWidth": 160,
             "imageHeight": 144,
             "filename": "menu.png",
-            "_v": 1566573909893
+            "_v": 1566636772048
         },
         {
             "id": "67a85ed8-a941-4b2c-ab66-7f629d49cdce",
@@ -433,7 +445,7 @@
             "imageWidth": 256,
             "imageHeight": 256,
             "filename": "Office.png",
-            "_v": 1566573909893
+            "_v": 1566636772047
         },
         {
             "id": "ac05a586-a3c3-4c87-b65e-b2052646e012",
@@ -443,7 +455,7 @@
             "imageWidth": 256,
             "imageHeight": 256,
             "filename": "outside.png",
-            "_v": 1566573909893
+            "_v": 1566636772048
         },
         {
             "id": "b6772553-7ac2-420e-968c-a59bbf0edff4",
@@ -453,7 +465,7 @@
             "imageWidth": 160,
             "imageHeight": 144,
             "filename": "Quest List.png",
-            "_v": 1566573909893
+            "_v": 1566636772048
         },
         {
             "id": "cece1f71-bb1b-4b87-a22d-498cafff27d8",
@@ -463,7 +475,7 @@
             "imageWidth": 256,
             "imageHeight": 256,
             "filename": "Right-1-Town.png",
-            "_v": 1566573909893
+            "_v": 1566636772048
         },
         {
             "id": "dd1aad20-2fe2-4d99-98a6-9a1e8c7e8cd4",
@@ -473,7 +485,7 @@
             "imageWidth": 256,
             "imageHeight": 256,
             "filename": "stars.png",
-            "_v": 1566573909893
+            "_v": 1566636772048
         },
         {
             "id": "82af7dc3-13e9-40b8-80a7-6ebe507cde3e",
@@ -483,7 +495,7 @@
             "imageWidth": 160,
             "imageHeight": 144,
             "filename": "Stats.png",
-            "_v": 1566573909893
+            "_v": 1566636772048
         },
         {
             "id": "974820e0-d847-4e62-97b2-a6a0c3b1572a",
@@ -493,7 +505,7 @@
             "imageWidth": 128,
             "imageHeight": 208,
             "filename": "Tileset-1.png",
-            "_v": 1566573909893
+            "_v": 1566636772048
         },
         {
             "id": "eaf9b6ca-d468-4136-a78e-3988dc3c1861",
@@ -503,7 +515,7 @@
             "imageWidth": 128,
             "imageHeight": 528,
             "filename": "Tileset-2.png",
-            "_v": 1566573909893
+            "_v": 1566636772048
         },
         {
             "id": "4ea96a38-0029-40a1-9cad-3cddf3efb819",
@@ -513,7 +525,7 @@
             "imageWidth": 128,
             "imageHeight": 160,
             "filename": "Tileset-3.png",
-            "_v": 1566573909893
+            "_v": 1566636772048
         },
         {
             "id": "4d52e106-fec1-45d5-b738-4e545b7132b1",
@@ -523,7 +535,7 @@
             "imageWidth": 128,
             "imageHeight": 240,
             "filename": "Tileset-4.png",
-            "_v": 1566573909893
+            "_v": 1566636772048
         },
         {
             "id": "fa5ca27f-f451-4a56-ab5b-045e719b14c6",
@@ -533,7 +545,7 @@
             "imageWidth": 128,
             "imageHeight": 224,
             "filename": "Tileset-5.png",
-            "_v": 1566573909893
+            "_v": 1566636772048
         },
         {
             "id": "36f94c05-f243-4cf4-8dc6-5153824c88c4",
@@ -543,7 +555,7 @@
             "imageWidth": 160,
             "imageHeight": 144,
             "filename": "titlescreen.png",
-            "_v": 1566573909893
+            "_v": 1566636772048
         },
         {
             "id": "9b38ba6d-ea82-4d0e-9c93-1fbf8cd6804f",
@@ -553,7 +565,7 @@
             "imageWidth": 256,
             "imageHeight": 256,
             "filename": "underground.png",
-            "_v": 1566573909893
+            "_v": 1566636772048
         },
         {
             "id": "2ac5b2e8-8ab7-4d01-a7d5-6fa27c2e2cc3",
@@ -563,7 +575,7 @@
             "imageWidth": 160,
             "imageHeight": 144,
             "filename": "University Airport.png",
-            "_v": 1566573909893
+            "_v": 1566636772049
         },
         {
             "id": "88900ba7-202e-4f5a-922a-9f0eafd5fa1b",
@@ -573,7 +585,7 @@
             "imageWidth": 256,
             "imageHeight": 256,
             "filename": "University.png",
-            "_v": 1566573909893
+            "_v": 1566636772048
         },
         {
             "id": "7b53d781-381b-48eb-adbf-c1a62762b063",
@@ -583,7 +595,7 @@
             "imageWidth": 320,
             "imageHeight": 160,
             "filename": "Vehicles.png",
-            "_v": 1566573909893
+            "_v": 1566636772049
         },
         {
             "id": "4d4f06c1-88f6-4d5c-88a3-1892545b9305",
@@ -593,7 +605,7 @@
             "imageWidth": 160,
             "imageHeight": 144,
             "filename": "World Map.png",
-            "_v": 1566573909893
+            "_v": 1566636772049
         }
     ],
     "spriteSheets": [
@@ -603,7 +615,7 @@
             "numFrames": 0.25,
             "type": "animated",
             "filename": "Bar.png",
-            "_v": 1566573909901
+            "_v": 1566636772060
         },
         {
             "id": "aff753be-6ace-4f50-b50b-fa29642604f8",
@@ -611,7 +623,7 @@
             "numFrames": 1,
             "type": "static",
             "filename": "bed.png",
-            "_v": 1566573909901
+            "_v": 1566636772059
         },
         {
             "id": "2c66c422-96b1-4bcb-b342-71f514611f7f",
@@ -619,7 +631,7 @@
             "numFrames": 1,
             "type": "static",
             "filename": "cat.png",
-            "_v": 1566573909901
+            "_v": 1566636772060
         },
         {
             "id": "3e0f7562-9292-4dc8-8ce1-9a44cad60779",
@@ -627,7 +639,15 @@
             "numFrames": 3,
             "type": "actor",
             "filename": "checkbox.png",
-            "_v": 1566573909901
+            "_v": 1566636772059
+        },
+        {
+            "id": "9c47b4d0-1247-47bb-8341-d0c2dda8b63f",
+            "name": "digit",
+            "numFrames": 10,
+            "type": "animated",
+            "filename": "digit.png",
+            "_v": 1566636772060
         },
         {
             "id": "3b5ddfc5-553f-495c-b00a-2c76e5a5f54c",
@@ -635,7 +655,7 @@
             "numFrames": 1,
             "type": "static",
             "filename": "dog.png",
-            "_v": 1566573909901
+            "_v": 1566636772060
         },
         {
             "id": "514ece9d-c49f-404b-b843-12d22a22710d",
@@ -643,7 +663,7 @@
             "numFrames": 2,
             "type": "animated",
             "filename": "duck.png",
-            "_v": 1566573909901
+            "_v": 1566636772060
         },
         {
             "id": "453c341e-8abb-4b1e-ba73-026b6bcfc937",
@@ -651,7 +671,7 @@
             "numFrames": 4,
             "type": "animated",
             "filename": "fire.png",
-            "_v": 1566573909901
+            "_v": 1566636772060
         },
         {
             "id": "79fca63a-1653-492d-b051-d610544a7cb7",
@@ -659,7 +679,7 @@
             "numFrames": 4,
             "type": "animated",
             "filename": "flower1.png",
-            "_v": 1566573909901
+            "_v": 1566636772060
         },
         {
             "id": "f27e6a95-e776-4243-87eb-ec9b5e452115",
@@ -667,7 +687,7 @@
             "numFrames": 1,
             "type": "static",
             "filename": "Goblin.png",
-            "_v": 1566573909901
+            "_v": 1566636772060
         },
         {
             "id": "faa40495-00c2-4408-b859-b2deb3b31d20",
@@ -675,7 +695,7 @@
             "numFrames": 1,
             "type": "static",
             "filename": "Heart.png",
-            "_v": 1566573909901
+            "_v": 1566636772060
         },
         {
             "id": "61e3ccf8-e0e0-44f6-87ad-be760a0cda2c",
@@ -683,7 +703,7 @@
             "numFrames": 1,
             "type": "static",
             "filename": "ice.png",
-            "_v": 1566573909901
+            "_v": 1566636772060
         },
         {
             "id": "9fc7ab07-719f-4b80-91f5-12cda59291b1",
@@ -691,7 +711,7 @@
             "numFrames": 4,
             "type": "animated",
             "filename": "Items.png",
-            "_v": 1566573909901
+            "_v": 1566636772061
         },
         {
             "id": "ed299b8f-7667-40ea-a856-064fc95712df",
@@ -699,7 +719,7 @@
             "numFrames": 3,
             "type": "actor",
             "filename": "npc001.png",
-            "_v": 1566573909901
+            "_v": 1566636772061
         },
         {
             "id": "058c41f7-e3e6-441c-aa45-7578b1a07f4f",
@@ -707,7 +727,7 @@
             "numFrames": 3,
             "type": "actor",
             "filename": "npc002.png",
-            "_v": 1566573909901
+            "_v": 1566636772061
         },
         {
             "id": "f10d093f-e05d-4471-89b8-adad412b6899",
@@ -715,7 +735,7 @@
             "numFrames": 6,
             "type": "actor_animated",
             "filename": "npc003.png",
-            "_v": 1566573909901
+            "_v": 1566636772061
         },
         {
             "id": "49f18b02-8273-4803-8b78-719db50ab553",
@@ -723,7 +743,7 @@
             "numFrames": 1,
             "type": "static",
             "filename": "PC.png",
-            "_v": 1566573909902
+            "_v": 1566636772061
         },
         {
             "id": "62ff8b0a-2bc6-435f-b329-5081f1116656",
@@ -731,7 +751,7 @@
             "numFrames": 6,
             "type": "actor_animated",
             "filename": "player.png",
-            "_v": 1566573909901
+            "_v": 1566636772061
         },
         {
             "id": "956208da-720d-48e9-a601-6f1aed0918ba",
@@ -739,7 +759,7 @@
             "numFrames": 1,
             "type": "static",
             "filename": "radio.png",
-            "_v": 1566573909902
+            "_v": 1566636772061
         },
         {
             "id": "f7306258-4eec-4c06-a9ec-f95441173969",
@@ -747,7 +767,7 @@
             "numFrames": 6,
             "type": "actor_animated",
             "filename": "Rick-blackhair.png",
-            "_v": 1566573909902
+            "_v": 1566636772061
         },
         {
             "id": "31090c22-2e38-46c0-8594-0217c55adc64",
@@ -755,7 +775,7 @@
             "numFrames": 2,
             "type": "animated",
             "filename": "Rick-head.png",
-            "_v": 1566573909902
+            "_v": 1566636772061
         },
         {
             "id": "3145337b-57af-48e8-aff5-8fd10d6c25b0",
@@ -763,7 +783,7 @@
             "numFrames": 6,
             "type": "actor_animated",
             "filename": "Rick.png",
-            "_v": 1566573909902
+            "_v": 1566636772061
         },
         {
             "id": "ad18f586-eef6-4217-adbf-b7fe7b0f68ef",
@@ -771,7 +791,7 @@
             "numFrames": 1,
             "type": "static",
             "filename": "rock.png",
-            "_v": 1566573909902
+            "_v": 1566636772061
         },
         {
             "id": "706d77c9-040e-463a-992c-0ec9efdd83ef",
@@ -779,7 +799,7 @@
             "numFrames": 1,
             "type": "static",
             "filename": "sage.png",
-            "_v": 1566573909902
+            "_v": 1566636772061
         },
         {
             "id": "1d4745ce-72ea-4a66-ac76-0c3ead2e7991",
@@ -787,7 +807,7 @@
             "numFrames": 2,
             "type": "animated",
             "filename": "savepoint.png",
-            "_v": 1566573909902
+            "_v": 1566636772061
         },
         {
             "id": "341e4100-8b9b-4eaa-ad39-803169238658",
@@ -795,7 +815,7 @@
             "numFrames": 1,
             "type": "static",
             "filename": "seed.png",
-            "_v": 1566573909902
+            "_v": 1566636772061
         },
         {
             "id": "e1354ca4-b68d-4ff0-970f-cf391b988047",
@@ -803,7 +823,7 @@
             "numFrames": 1,
             "type": "static",
             "filename": "signpost.png",
-            "_v": 1566573909902
+            "_v": 1566636772061
         },
         {
             "id": "73bae49a-718e-4dcd-b8c1-98aa5b095920",
@@ -811,7 +831,7 @@
             "numFrames": 1,
             "type": "static",
             "filename": "soil.png",
-            "_v": 1566573909902
+            "_v": 1566636772061
         },
         {
             "id": "e5a60aad-9551-4e3b-8826-9ca060e4025f",
@@ -819,7 +839,7 @@
             "numFrames": 3,
             "type": "actor",
             "filename": "Squirrel.png",
-            "_v": 1566573909902
+            "_v": 1566636772061
         },
         {
             "id": "15c12b89-8a44-41ca-8a92-c9674bf05433",
@@ -827,7 +847,7 @@
             "numFrames": 6,
             "type": "actor_animated",
             "filename": "Supervisor1.png",
-            "_v": 1566573909902
+            "_v": 1566636772061
         },
         {
             "id": "e027c92c-abed-42b7-8999-010d28093d3d",
@@ -835,7 +855,7 @@
             "numFrames": 4,
             "type": "animated",
             "filename": "sword.png",
-            "_v": 1566573909902
+            "_v": 1566636772061
         },
         {
             "id": "6b89a409-9c01-498f-9321-5d7c12751b25",
@@ -843,7 +863,7 @@
             "numFrames": 1,
             "type": "static",
             "filename": "torch.png",
-            "_v": 1566573909902
+            "_v": 1566636772061
         }
     ],
     "scenes": [
@@ -1049,7 +1069,7 @@
                                     "command": "EVENT_SET_VALUE",
                                     "args": {
                                         "variable": "2",
-                                        "value": 50
+                                        "value": 231
                                     }
                                 },
                                 {
@@ -6988,115 +7008,109 @@
             "height": 18,
             "actors": [
                 {
-                    "id": "fc80e091-cb79-41e8-bd01-fbc64a107d4d",
-                    "spriteSheetId": "faa40495-00c2-4408-b859-b2deb3b31d20",
+                    "id": "231f3512-5d6a-4ac1-93b2-b3dfe454ffe8",
+                    "spriteSheetId": "9c47b4d0-1247-47bb-8341-d0c2dda8b63f",
                     "x": 1,
                     "y": 9,
                     "movementType": "static",
                     "direction": "down",
                     "moveSpeed": "1",
                     "animSpeed": "3",
-                    "name": "Heart 1",
+                    "name": "Confidence 100",
                     "script": [
                         {
-                            "id": "26f04f7e-0856-4efa-ba70-28ccc203d2d5",
+                            "id": "a9abe024-efd1-4bab-ad6d-e006ac21289c",
+                            "command": "EVENT_ACTOR_SET_FRAME",
+                            "args": {
+                                "actorId": "231f3512-5d6a-4ac1-93b2-b3dfe454ffe8",
+                                "frame": 0
+                            }
+                        },
+                        {
+                            "id": "696a978f-aec0-4dd1-80b5-458a3bdb9a70",
                             "command": "EVENT_END"
                         }
                     ]
                 },
                 {
-                    "id": "c7d39fee-2c7e-472d-b0fa-2184b786db9d",
-                    "spriteSheetId": "faa40495-00c2-4408-b859-b2deb3b31d20",
+                    "id": "96b6821d-8617-4521-9ffa-52ca898978d5",
+                    "spriteSheetId": "9c47b4d0-1247-47bb-8341-d0c2dda8b63f",
                     "x": 3,
                     "y": 9,
                     "movementType": "static",
                     "direction": "down",
                     "moveSpeed": "1",
                     "animSpeed": "3",
-                    "name": "Heart 2"
+                    "name": "Confidence 10"
                 },
                 {
-                    "id": "7c249e2c-55b6-4998-be6b-7fdc352ff959",
-                    "spriteSheetId": "faa40495-00c2-4408-b859-b2deb3b31d20",
+                    "id": "eedfdc20-f760-4731-929b-70d8b7f17a6b",
+                    "spriteSheetId": "9c47b4d0-1247-47bb-8341-d0c2dda8b63f",
                     "x": 5,
                     "y": 9,
                     "movementType": "static",
                     "direction": "down",
                     "moveSpeed": "1",
                     "animSpeed": "3",
-                    "name": "Heart 3"
-                },
-                {
-                    "id": "f9cd33c8-153c-441f-a568-b8cf93a69673",
-                    "spriteSheetId": "faa40495-00c2-4408-b859-b2deb3b31d20",
-                    "x": 7,
-                    "y": 9,
-                    "movementType": "static",
-                    "direction": "down",
-                    "moveSpeed": "1",
-                    "animSpeed": "3",
-                    "name": "Heart 4"
-                },
-                {
-                    "id": "82152d1f-6efd-4eb4-b6e5-7078378a4665",
-                    "spriteSheetId": "faa40495-00c2-4408-b859-b2deb3b31d20",
-                    "x": 9,
-                    "y": 9,
-                    "movementType": "static",
-                    "direction": "down",
-                    "moveSpeed": "1",
-                    "animSpeed": "3",
-                    "name": "Heart 5"
-                },
-                {
-                    "id": "c7498ace-9408-43d8-8b7b-e380de5fdf58",
-                    "spriteSheetId": "faa40495-00c2-4408-b859-b2deb3b31d20",
-                    "x": 11,
-                    "y": 9,
-                    "movementType": "static",
-                    "direction": "down",
-                    "moveSpeed": "1",
-                    "animSpeed": "3",
-                    "name": "Heart 6"
-                },
-                {
-                    "id": "96d779e9-4fe2-43b6-9708-0b651f9df4ab",
-                    "spriteSheetId": "faa40495-00c2-4408-b859-b2deb3b31d20",
-                    "x": 13,
-                    "y": 9,
-                    "movementType": "static",
-                    "direction": "down",
-                    "moveSpeed": "1",
-                    "animSpeed": "3",
-                    "name": "Heart 7"
-                },
-                {
-                    "id": "d15a3b1e-3f5a-44c0-b50b-b87db702f0de",
-                    "spriteSheetId": "faa40495-00c2-4408-b859-b2deb3b31d20",
-                    "x": 15,
-                    "y": 9,
-                    "movementType": "static",
-                    "direction": "down",
-                    "moveSpeed": "1",
-                    "animSpeed": "3",
-                    "name": "Heart 8"
-                },
-                {
-                    "id": "02de691c-6a78-43db-a1f5-b88fdf8665c8",
-                    "spriteSheetId": "faa40495-00c2-4408-b859-b2deb3b31d20",
-                    "x": 17,
-                    "y": 9,
-                    "movementType": "static",
-                    "direction": "down",
-                    "moveSpeed": "1",
-                    "animSpeed": "3",
-                    "name": "Heart 9",
+                    "name": "Confidence 1",
                     "script": [
                         {
-                            "id": "26f04f7e-0856-4efa-ba70-28ccc203d2d5",
+                            "id": "5bfd7444-f581-4983-a480-5ab78c92910a",
+                            "command": "EVENT_ACTOR_SET_FRAME",
+                            "args": {
+                                "actorId": "99eb6fc5-44b0-42bf-afa8-16f501719346",
+                                "frame": 0
+                            }
+                        },
+                        {
+                            "id": "696a978f-aec0-4dd1-80b5-458a3bdb9a70",
                             "command": "EVENT_END"
                         }
                     ]
+                },
+                {
+                    "id": "41dc8846-fd47-4b0b-8cca-f6ce7f1be4be",
+                    "spriteSheetId": "9c47b4d0-1247-47bb-8341-d0c2dda8b63f",
+                    "x": 1,
+                    "y": 12,
+                    "movementType": "static",
+                    "direction": "down",
+                    "moveSpeed": "1",
+                    "animSpeed": "3",
+                    "name": "Data 10"
+                },
+                {
+                    "id": "63fb59d3-90a5-40e0-86f8-69fbdc04a9c9",
+                    "spriteSheetId": "9c47b4d0-1247-47bb-8341-d0c2dda8b63f",
+                    "x": 3,
+                    "y": 12,
+                    "movementType": "static",
+                    "direction": "down",
+                    "moveSpeed": "1",
+                    "animSpeed": "3",
+                    "name": "Data 1"
+                },
+                {
+                    "id": "5895454f-7777-442e-b3d8-de0e861fba26",
+                    "spriteSheetId": "9c47b4d0-1247-47bb-8341-d0c2dda8b63f",
+                    "x": 8,
+                    "y": 15,
+                    "movementType": "static",
+                    "direction": "down",
+                    "moveSpeed": "1",
+                    "animSpeed": "3",
+                    "name": "APL 1"
+                },
+                {
+                    "id": "99eb6fc5-44b0-42bf-afa8-16f501719346",
+                    "spriteSheetId": "9c47b4d0-1247-47bb-8341-d0c2dda8b63f",
+                    "x": 16,
+                    "y": 15,
+                    "movementType": "static",
+                    "direction": "down",
+                    "moveSpeed": "1",
+                    "animSpeed": "3",
+                    "name": "Nature 1"
                 }
             ],
             "triggers": [],
@@ -7156,6 +7170,154 @@
                     }
                 },
                 {
+                    "id": "276c907e-d963-4634-9780-ce6f0f29a032",
+                    "command": "EVENT_GROUP",
+                    "args": {
+                        "__label": "Set C100",
+                        "__collapse": true
+                    },
+                    "true": [
+                        {
+                            "id": "3f32a303-60cb-4d59-a7dd-b78194f6130f",
+                            "command": "EVENT_VARIABLE_MATH",
+                            "args": {
+                                "vectorX": "48",
+                                "operation": "set",
+                                "other": "var",
+                                "vectorY": "3",
+                                "value": "1",
+                                "minValue": "0",
+                                "maxValue": "255",
+                                "__collapse": false
+                            }
+                        },
+                        {
+                            "id": "f67d0ddd-5995-4036-b534-53da9a2c7d68",
+                            "command": "EVENT_VARIABLE_MATH",
+                            "args": {
+                                "vectorX": "48",
+                                "operation": "div",
+                                "other": "val",
+                                "vectorY": "36",
+                                "value": 100,
+                                "minValue": "0",
+                                "maxValue": "255",
+                                "__collapse": false
+                            }
+                        },
+                        {
+                            "id": "25249a9a-c2df-42e7-9623-6a6df495a118",
+                            "command": "EVENT_END"
+                        }
+                    ]
+                },
+                {
+                    "id": "a483bdef-6278-4798-b6ea-90001eca9255",
+                    "command": "EVENT_GROUP",
+                    "args": {
+                        "__label": "Set C10",
+                        "__collapse": true
+                    },
+                    "true": [
+                        {
+                            "id": "78778e3a-86ec-4ba7-86a3-9e363c2faeab",
+                            "command": "EVENT_VARIABLE_MATH",
+                            "args": {
+                                "vectorX": "49",
+                                "operation": "set",
+                                "other": "var",
+                                "vectorY": "3",
+                                "value": "1",
+                                "minValue": "0",
+                                "maxValue": "255",
+                                "__collapse": true
+                            }
+                        },
+                        {
+                            "id": "60b2e278-5075-4e84-8d20-6f83137131be",
+                            "command": "EVENT_VARIABLE_MATH",
+                            "args": {
+                                "vectorX": "49",
+                                "operation": "mod",
+                                "other": "val",
+                                "vectorY": "36",
+                                "value": 100,
+                                "minValue": "0",
+                                "maxValue": "255",
+                                "__collapse": true
+                            }
+                        },
+                        {
+                            "id": "6ffb5e7c-e224-4a6a-9652-52dadf652415",
+                            "command": "EVENT_VARIABLE_MATH",
+                            "args": {
+                                "vectorX": "49",
+                                "operation": "div",
+                                "other": "val",
+                                "vectorY": "36",
+                                "value": 10,
+                                "minValue": "0",
+                                "maxValue": "255",
+                                "__collapse": false
+                            }
+                        },
+                        {
+                            "id": "264a82c7-665d-407c-ab70-cec2b7093d90",
+                            "command": "EVENT_END"
+                        }
+                    ]
+                },
+                {
+                    "id": "bdf757bc-6793-4f39-b15f-b97cf78ea2f7",
+                    "command": "EVENT_GROUP",
+                    "args": {
+                        "__label": "Set C1",
+                        "__collapse": true
+                    },
+                    "true": [
+                        {
+                            "id": "695eb7e6-a3e2-488e-bef8-879c77350707",
+                            "command": "EVENT_VARIABLE_MATH",
+                            "args": {
+                                "vectorX": "50",
+                                "operation": "set",
+                                "other": "var",
+                                "vectorY": "3",
+                                "value": "1",
+                                "minValue": "0",
+                                "maxValue": "255",
+                                "__collapse": true
+                            }
+                        },
+                        {
+                            "id": "bd53b4da-e887-4cc9-a53d-d6e6e35ce332",
+                            "command": "EVENT_VARIABLE_MATH",
+                            "args": {
+                                "vectorX": "50",
+                                "operation": "mod",
+                                "other": "val",
+                                "vectorY": "36",
+                                "value": 10,
+                                "minValue": "0",
+                                "maxValue": "255",
+                                "__collapse": true
+                            }
+                        },
+                        {
+                            "id": "5864c2f2-030b-42b2-915a-dd5e197a3c5d",
+                            "command": "EVENT_END"
+                        }
+                    ]
+                },
+                {
+                    "id": "99d8b58b-0c97-4da2-8408-fec7f8dacda6",
+                    "command": "EVENT_TEXT",
+                    "args": {
+                        "text": "C: $03$\n$48$,$49$,$50$",
+                        "__collapse": false
+                    }
+                },
+                {
                     "id": "facceff0-1d53-474e-b81a-dd55147b752a",
                     "command": "EVENT_LOOP",
                     "args": {
@@ -7167,7 +7329,7 @@
                             "command": "EVENT_IF_INPUT",
                             "args": {
                                 "input": [
-                                    "up"
+                                    "select"
                                 ],
                                 "__collapse": true,
                                 "__collapseElse": true,
@@ -7234,300 +7396,6 @@
                         },
                         {
                             "id": "87e5cb03-abdc-4bd7-af71-dda5b2b6a164",
-                            "command": "EVENT_END"
-                        }
-                    ]
-                },
-                {
-                    "id": "60aa02bd-f748-4f14-bd29-26e0085545a0",
-                    "command": "EVENT_GROUP",
-                    "args": {
-                        "__label": "Show Confidence",
-                        "__collapse": true
-                    },
-                    "true": [
-                        {
-                            "id": "cbda6c80-50b8-4e13-a9db-2118288b2732",
-                            "command": "EVENT_IF_VALUE",
-                            "args": {
-                                "variable": "3",
-                                "operator": "<",
-                                "comparator": 90,
-                                "__collapseElse": true,
-                                "__collapse": false
-                            },
-                            "true": [
-                                {
-                                    "id": "0f41da1b-bfad-4169-b3af-c228ee352d00",
-                                    "command": "EVENT_ACTOR_HIDE",
-                                    "args": {
-                                        "actorId": "02de691c-6a78-43db-a1f5-b88fdf8665c8",
-                                        "__collapse": true,
-                                        "__label": "Hide Heart"
-                                    }
-                                },
-                                {
-                                    "id": "8452f2c3-daae-4d77-a845-a89318b19eee",
-                                    "command": "EVENT_END"
-                                }
-                            ],
-                            "false": [
-                                {
-                                    "id": "51225ec3-f049-48df-9e39-92aa49790942",
-                                    "command": "EVENT_END"
-                                }
-                            ]
-                        },
-                        {
-                            "id": "bae28f27-6b4f-41b6-95b7-4b338c660a6c",
-                            "command": "EVENT_IF_VALUE",
-                            "args": {
-                                "variable": "3",
-                                "operator": "<",
-                                "comparator": 80,
-                                "__collapseElse": true
-                            },
-                            "true": [
-                                {
-                                    "id": "bdb2e31b-e94b-4d08-a8c1-d735ca67bce1",
-                                    "command": "EVENT_ACTOR_HIDE",
-                                    "args": {
-                                        "actorId": "d15a3b1e-3f5a-44c0-b50b-b87db702f0de",
-                                        "__collapse": false,
-                                        "__label": "Hide Heart"
-                                    }
-                                },
-                                {
-                                    "id": "8fae56d9-ca0c-42bb-bbaf-b24db221c54c",
-                                    "command": "EVENT_END"
-                                }
-                            ],
-                            "false": [
-                                {
-                                    "id": "a7307f21-1feb-4989-b14b-be7fd05a0449",
-                                    "command": "EVENT_END"
-                                }
-                            ]
-                        },
-                        {
-                            "id": "1a6fbf34-419e-4f1b-b812-4fadf7742613",
-                            "command": "EVENT_IF_VALUE",
-                            "args": {
-                                "variable": "3",
-                                "operator": "<",
-                                "comparator": 70,
-                                "__collapseElse": true
-                            },
-                            "true": [
-                                {
-                                    "id": "aa6d62eb-b9d5-44ee-aa9c-ae268ecada70",
-                                    "command": "EVENT_ACTOR_HIDE",
-                                    "args": {
-                                        "actorId": "96d779e9-4fe2-43b6-9708-0b651f9df4ab",
-                                        "__collapse": false,
-                                        "__label": "Hide Heart"
-                                    }
-                                },
-                                {
-                                    "id": "6b530fe8-8b3d-4388-a5d3-c64af86e3328",
-                                    "command": "EVENT_END"
-                                }
-                            ],
-                            "false": [
-                                {
-                                    "id": "e5c622dc-f16d-424c-87cd-b8d128996ee9",
-                                    "command": "EVENT_END"
-                                }
-                            ]
-                        },
-                        {
-                            "id": "531d0ab8-1adc-478c-ab3d-107252783a0e",
-                            "command": "EVENT_IF_VALUE",
-                            "args": {
-                                "variable": "3",
-                                "operator": "<",
-                                "comparator": 60,
-                                "__collapseElse": true
-                            },
-                            "true": [
-                                {
-                                    "id": "de8e1a85-1684-4053-8840-8e3b6afcddcc",
-                                    "command": "EVENT_ACTOR_HIDE",
-                                    "args": {
-                                        "actorId": "c7498ace-9408-43d8-8b7b-e380de5fdf58",
-                                        "__collapse": false,
-                                        "__label": "Hide Heart"
-                                    }
-                                },
-                                {
-                                    "id": "0078220d-9165-47cc-b70a-6c78fb3f6d99",
-                                    "command": "EVENT_END"
-                                }
-                            ],
-                            "false": [
-                                {
-                                    "id": "556db573-ec44-48f3-a49e-d6e77bf5e637",
-                                    "command": "EVENT_END"
-                                }
-                            ]
-                        },
-                        {
-                            "id": "4d308c01-88b5-4ef8-9567-d3995f6a0bb2",
-                            "command": "EVENT_IF_VALUE",
-                            "args": {
-                                "variable": "3",
-                                "operator": "<",
-                                "comparator": 50,
-                                "__collapseElse": true
-                            },
-                            "true": [
-                                {
-                                    "id": "e2d2450c-7b72-4efd-82e4-66dd9125eedb",
-                                    "command": "EVENT_ACTOR_HIDE",
-                                    "args": {
-                                        "actorId": "82152d1f-6efd-4eb4-b6e5-7078378a4665",
-                                        "__collapse": false,
-                                        "__label": "Hide Heart"
-                                    }
-                                },
-                                {
-                                    "id": "dd498d97-e604-473e-95cd-14a7e2c54912",
-                                    "command": "EVENT_END"
-                                }
-                            ],
-                            "false": [
-                                {
-                                    "id": "182c1913-303c-40b0-81eb-91d28d6bb5ea",
-                                    "command": "EVENT_END"
-                                }
-                            ]
-                        },
-                        {
-                            "id": "aa7b6d1f-23a6-49bd-b363-3a5e64a1f28c",
-                            "command": "EVENT_IF_VALUE",
-                            "args": {
-                                "variable": "3",
-                                "operator": "<",
-                                "comparator": 40,
-                                "__collapseElse": true
-                            },
-                            "true": [
-                                {
-                                    "id": "d92bc54d-7688-4a2c-8c62-c24b81d2a637",
-                                    "command": "EVENT_ACTOR_HIDE",
-                                    "args": {
-                                        "actorId": "f9cd33c8-153c-441f-a568-b8cf93a69673",
-                                        "__collapse": false,
-                                        "__label": "Hide Heart"
-                                    }
-                                },
-                                {
-                                    "id": "b435afe7-7e6c-4faf-bbc9-9aeed5206f53",
-                                    "command": "EVENT_END"
-                                }
-                            ],
-                            "false": [
-                                {
-                                    "id": "d4595ac5-f8c0-4088-96cb-0a001e07e109",
-                                    "command": "EVENT_END"
-                                }
-                            ]
-                        },
-                        {
-                            "id": "657d2fc8-3d7f-4abe-b27a-eb7fdd05954f",
-                            "command": "EVENT_IF_VALUE",
-                            "args": {
-                                "variable": "3",
-                                "operator": "<",
-                                "comparator": 30,
-                                "__collapseElse": true
-                            },
-                            "true": [
-                                {
-                                    "id": "9a078ab9-9fd1-4205-aba2-9d7c0e877b2a",
-                                    "command": "EVENT_ACTOR_HIDE",
-                                    "args": {
-                                        "actorId": "7c249e2c-55b6-4998-be6b-7fdc352ff959",
-                                        "__collapse": false,
-                                        "__label": "Hide Heart"
-                                    }
-                                },
-                                {
-                                    "id": "6b0b6127-f84a-432e-a547-2f2475c7ad6d",
-                                    "command": "EVENT_END"
-                                }
-                            ],
-                            "false": [
-                                {
-                                    "id": "f35254ca-4ac5-48a3-8b02-e14e42b9dea7",
-                                    "command": "EVENT_END"
-                                }
-                            ]
-                        },
-                        {
-                            "id": "53b93090-14bc-4aab-b29f-717de8a91752",
-                            "command": "EVENT_IF_VALUE",
-                            "args": {
-                                "variable": "3",
-                                "operator": "<",
-                                "comparator": 20,
-                                "__collapseElse": true
-                            },
-                            "true": [
-                                {
-                                    "id": "520f9ffc-2f17-43df-a17a-818d1a85e864",
-                                    "command": "EVENT_ACTOR_HIDE",
-                                    "args": {
-                                        "actorId": "c7d39fee-2c7e-472d-b0fa-2184b786db9d",
-                                        "__collapse": false,
-                                        "__label": "Hide Heart"
-                                    }
-                                },
-                                {
-                                    "id": "24bce302-64f5-4f23-8f30-2e4f31871c89",
-                                    "command": "EVENT_END"
-                                }
-                            ],
-                            "false": [
-                                {
-                                    "id": "87b8abab-0014-44a5-b680-ccb1f7abe95b",
-                                    "command": "EVENT_END"
-                                }
-                            ]
-                        },
-                        {
-                            "id": "9d0edeb0-e52e-4da0-b2ee-2e4f4ab9c0dd",
-                            "command": "EVENT_IF_VALUE",
-                            "args": {
-                                "variable": "3",
-                                "operator": "<",
-                                "comparator": 10,
-                                "__collapseElse": true
-                            },
-                            "true": [
-                                {
-                                    "id": "227b3cf5-ee09-4bad-bc19-9939ff072422",
-                                    "command": "EVENT_ACTOR_HIDE",
-                                    "args": {
-                                        "actorId": "fc80e091-cb79-41e8-bd01-fbc64a107d4d",
-                                        "__collapse": false,
-                                        "__label": "Hide Heart"
-                                    }
-                                },
-                                {
-                                    "id": "a37d9e02-6d52-4b9e-b69f-cd40c0897951",
-                                    "command": "EVENT_END"
-                                }
-                            ],
-                            "false": [
-                                {
-                                    "id": "ac157ac3-1869-41dc-8681-5b470913356b",
-                                    "command": "EVENT_END"
-                                }
-                            ]
-                        },
-                        {
-                            "id": "6860993a-1f43-4743-8298-ea5e5dd5f1e3",
                             "command": "EVENT_END"
                         }
                     ]
@@ -8546,13 +8414,13 @@
             "id": "d8d04fc7-ada8-4593-a93c-583b35a726ea",
             "name": "Peters_Song_NEW",
             "filename": "Peters_Song_NEW.mod",
-            "_v": 1566573909903
+            "_v": 1566636772066
         },
         {
             "id": "f50428ab-a084-4591-9bba-2ba10fe7b1c6",
             "name": "template",
             "filename": "template.mod",
-            "_v": 1566573909903
+            "_v": 1566636772066
         }
     ]
 }
