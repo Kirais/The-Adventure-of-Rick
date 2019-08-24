@@ -2,7 +2,7 @@
     "settings": {
         "showCollisions": true,
         "showConnections": true,
-        "worldScrollX": 2584,
+        "worldScrollX": 2781,
         "worldScrollY": 1508,
         "zoom": 200,
         "customColorsWhite": "E0F8D0",
@@ -3517,9 +3517,9 @@
                             "command": "EVENT_SWITCH_SCENE",
                             "args": {
                                 "sceneId": "a89e901e-f312-4d6b-81af-d5c92b9fd823",
-                                "x": 2,
-                                "y": 1,
-                                "direction": "up",
+                                "x": 1,
+                                "y": 9,
+                                "direction": "right",
                                 "fadeSpeed": "2"
                             }
                         },
@@ -5128,8 +5128,8 @@
                             "command": "EVENT_SWITCH_SCENE",
                             "args": {
                                 "sceneId": "a89e901e-f312-4d6b-81af-d5c92b9fd823",
-                                "x": 9,
-                                "y": 16,
+                                "x": 2,
+                                "y": 15,
                                 "direction": "up",
                                 "fadeSpeed": "2"
                             }
@@ -7545,7 +7545,7 @@
         {
             "id": "a89e901e-f312-4d6b-81af-d5c92b9fd823",
             "name": "Experiment 2",
-            "backgroundId": "5dac439f-ce92-4631-9135-210800bb1580",
+            "backgroundId": "39e88ce9-85c7-4622-b3d6-c3b0eda06b43",
             "x": 1498,
             "y": 874,
             "width": 20,
@@ -7559,7 +7559,7 @@
                     "animSpeed": "3",
                     "id": "2c1b8617-3188-4d2e-8c3e-26d7401d30d3",
                     "x": 8,
-                    "y": 6,
+                    "y": 9,
                     "name": "X gate",
                     "script": [
                         {
@@ -7737,49 +7737,52 @@
                                         }
                                     },
                                     {
-                                        "id": "95574d79-392f-470b-bb3a-40235fb0e009",
-                                        "command": "EVENT_IF_VALUE",
+                                        "id": "f93de572-5067-4f3b-ba74-785ebe30f0e3",
+                                        "command": "EVENT_IF_VALUE_COMPARE",
                                         "args": {
-                                            "variable": "71",
+                                            "vectorX": "71",
                                             "operator": "==",
-                                            "comparator": 8,
+                                            "vectorY": "62",
+                                            "__collapseElse": true,
                                             "__label": "Apply X gate",
-                                            "__collapse": true,
-                                            "__collapseElse": true
+                                            "__collapse": true
                                         },
                                         "children": {
                                             "true": [
                                                 {
-                                                    "id": "42b301e5-1b0f-467e-9d9a-f0e4e5bd3553",
+                                                    "id": "78acd74b-8fbd-499c-88c6-b4c756a6aa15",
                                                     "command": "EVENT_SET_VALUE",
                                                     "args": {
                                                         "variable": "60",
                                                         "value": 1,
-                                                        "__collapse": true
+                                                        "__collapse": true,
+                                                        "__label": "Set 1"
                                                     }
                                                 },
                                                 {
-                                                    "id": "493e7984-e1de-4d20-8d7e-d6b228de3df1",
+                                                    "id": "d3b6b67d-ed64-48f3-849d-51d440e7ce14",
                                                     "command": "EVENT_END"
                                                 }
                                             ],
                                             "false": [
                                                 {
-                                                    "id": "3aa8ff82-37bf-4149-9992-7cee2399130f",
+                                                    "id": "55be55dc-327d-403b-92f3-861ca93a9bec",
                                                     "command": "EVENT_SET_VALUE",
                                                     "args": {
                                                         "variable": "60",
-                                                        "value": 0,
-                                                        "__collapse": true
+                                                        "value": null,
+                                                        "__collapse": false,
+                                                        "__label": "Set 0"
                                                     },
                                                     "__type": "event"
                                                 },
                                                 {
-                                                    "id": "9e1bfd3c-f5e5-4eef-8727-88d6cd03314c",
+                                                    "id": "4e026e1b-62fd-49cd-a254-256b1e480ce3",
                                                     "command": "EVENT_END"
                                                 }
                                             ]
-                                        }
+                                        },
+                                        "__type": "event"
                                     },
                                     {
                                         "id": "dc01b422-c33d-49ec-9ab1-7c88238a6566",
@@ -7849,8 +7852,8 @@
                     "moveSpeed": "1",
                     "animSpeed": "3",
                     "id": "497571ae-c70e-4f09-aa02-1cdf2d6bc56c",
-                    "x": 3,
-                    "y": 8,
+                    "x": 10,
+                    "y": 9,
                     "animate": false,
                     "name": "Qubit 1"
                 },
@@ -7861,8 +7864,8 @@
                     "moveSpeed": "1",
                     "animSpeed": "3",
                     "id": "ba16419a-54d1-40d6-8658-0d92919a1f90",
-                    "x": 17,
-                    "y": 8,
+                    "x": 18,
+                    "y": 9,
                     "name": "Rock"
                 }
             ],
@@ -7870,7 +7873,7 @@
                 {
                     "id": "bd015633-7a95-4f7f-910e-3861c8322337",
                     "x": 0,
-                    "y": 7,
+                    "y": 8,
                     "width": 1,
                     "height": 2,
                     "trigger": "walk",
@@ -7891,52 +7894,60 @@
                             "command": "EVENT_END"
                         }
                     ]
+                },
+                {
+                    "trigger": "walk",
+                    "id": "5551173d-a577-4683-8a05-ee355ba2f87f",
+                    "x": 19,
+                    "y": 8,
+                    "width": 1,
+                    "height": 2
                 }
             ],
             "collisions": [
+                1,
+                0,
+                224,
+                255,
+                127,
+                2,
+                0,
+                36,
+                0,
+                64,
+                2,
+                0,
+                36,
+                0,
+                64,
+                2,
+                0,
+                52,
+                0,
+                192,
                 0,
                 0,
                 0,
                 0,
                 0,
+                3,
                 0,
+                44,
                 0,
+                64,
+                2,
                 0,
+                36,
                 0,
+                64,
+                2,
                 0,
+                36,
                 0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
+                64,
+                254,
+                255,
+                7,
                 0,
                 0
             ],
@@ -7947,6 +7958,16 @@
                     "args": {},
                     "children": {
                         "true": [
+                            {
+                                "id": "c2ae7160-e14c-4c51-8835-ec86e00a11b0",
+                                "command": "EVENT_ACTOR_GET_POSITION",
+                                "args": {
+                                    "actorId": "497571ae-c70e-4f09-aa02-1cdf2d6bc56c",
+                                    "vectorX": "61",
+                                    "vectorY": "62",
+                                    "__collapse": true
+                                }
+                            },
                             {
                                 "id": "ccf4bb50-be0c-4d2a-a53c-033cbab75f80",
                                 "command": "EVENT_ACTOR_GET_POSITION",
@@ -7959,15 +7980,15 @@
                                 }
                             },
                             {
-                                "id": "2f0694cd-a016-4167-bff8-1f56dc2dd876",
-                                "command": "EVENT_IF_VALUE",
+                                "id": "c960aeb2-71c4-4235-bd99-ca7972bc92f0",
+                                "command": "EVENT_IF_VALUE_COMPARE",
                                 "args": {
-                                    "variable": "71",
+                                    "vectorX": "71",
                                     "operator": "==",
-                                    "comparator": 8,
+                                    "vectorY": "62",
+                                    "__collapseElse": true,
                                     "__label": "Apply X gate",
-                                    "__collapse": true,
-                                    "__collapseElse": true
+                                    "__collapse": false
                                 },
                                 "children": {
                                     "true": [
@@ -7977,17 +7998,29 @@
                                             "args": {
                                                 "variable": "60",
                                                 "value": 1,
-                                                "__collapse": true
+                                                "__collapse": true,
+                                                "__label": "Set 1"
                                             }
                                         },
                                         {
-                                            "id": "0725446e-dd0e-4bc5-af93-873117219eec",
+                                            "id": "f48864cf-597f-489a-8267-20a3635983d5",
                                             "command": "EVENT_END"
                                         }
                                     ],
                                     "false": [
                                         {
-                                            "id": "8ff1af73-0bfc-40dc-a859-902ca91f87e7",
+                                            "id": "6017cc51-746f-41f6-9316-4412d808dc8a",
+                                            "command": "EVENT_SET_VALUE",
+                                            "args": {
+                                                "variable": "60",
+                                                "value": null,
+                                                "__collapse": false,
+                                                "__label": "Set 0"
+                                            },
+                                            "__type": "event"
+                                        },
+                                        {
+                                            "id": "536f0dee-9987-4d06-8cb7-f25110c4db40",
                                             "command": "EVENT_END"
                                         }
                                     ]
@@ -8009,7 +8042,8 @@
                                 "args": {
                                     "variable": "60",
                                     "__collapse": true,
-                                    "__collapseElse": true
+                                    "__collapseElse": true,
+                                    "__label": "Show rock"
                                 },
                                 "children": {
                                     "true": [
@@ -8707,19 +8741,17 @@
         {
             "id": "71",
             "name": "X gate Y"
+        },
+        {
+            "id": "61",
+            "name": "Qubit 1 X"
+        },
+        {
+            "id": "62",
+            "name": "Qubit 1 Y"
         }
     ],
     "backgrounds": [
-        {
-            "id": "a5de1155-3ea0-4993-aeea-68b01562e93a",
-            "name": "cave",
-            "width": 20,
-            "height": 18,
-            "imageWidth": 160,
-            "imageHeight": 144,
-            "filename": "cave.png",
-            "_v": 1566654413196
-        },
         {
             "id": "6cc0f474-498a-4114-b785-4926f664eb6a",
             "name": "Classroom",
@@ -8738,16 +8770,6 @@
             "imageWidth": 256,
             "imageHeight": 256,
             "filename": "Cleanroom.png",
-            "_v": 1566654413197
-        },
-        {
-            "id": "076ac98b-b2f2-4122-941a-152b5457ca93",
-            "name": "Conference",
-            "width": 32,
-            "height": 32,
-            "imageWidth": 256,
-            "imageHeight": 256,
-            "filename": "Conference.png",
             "_v": 1566654413197
         },
         {
@@ -8771,6 +8793,16 @@
             "_v": 1566654413197
         },
         {
+            "id": "076ac98b-b2f2-4122-941a-152b5457ca93",
+            "name": "Conference",
+            "width": 32,
+            "height": 32,
+            "imageWidth": 256,
+            "imageHeight": 256,
+            "filename": "Conference.png",
+            "_v": 1566654413197
+        },
+        {
             "id": "436ffbd9-39e8-47bb-8b21-98d406bca294",
             "name": "Down-1-Lake",
             "width": 32,
@@ -8779,6 +8811,16 @@
             "imageHeight": 256,
             "filename": "Down-1-Lake.png",
             "_v": 1566654413197
+        },
+        {
+            "id": "39e88ce9-85c7-4622-b3d6-c3b0eda06b43",
+            "name": "E2 Quiz",
+            "width": 20,
+            "height": 18,
+            "imageWidth": 160,
+            "imageHeight": 144,
+            "filename": "E2 Quiz.png",
+            "_v": 1566656185586
         },
         {
             "id": "5dac439f-ce92-4631-9135-210800bb1580",
@@ -8801,16 +8843,6 @@
             "_v": 1566654413197
         },
         {
-            "id": "e1650476-5020-46be-b037-ef54df7c8601",
-            "name": "Gurbs-adventure-title",
-            "width": 20,
-            "height": 25,
-            "imageWidth": 160,
-            "imageHeight": 200,
-            "filename": "Gurbs-adventure-title.png",
-            "_v": 1566654413197
-        },
-        {
             "id": "26e5bf7b-6e9e-46b7-b914-fb53d42769b9",
             "name": "Gurbs-adventure-title-1",
             "width": 20,
@@ -8821,13 +8853,13 @@
             "_v": 1566654413197
         },
         {
-            "id": "aa221e8f-4984-4797-962b-bb0be59f9ea2",
-            "name": "Hometown",
-            "width": 32,
-            "height": 32,
-            "imageWidth": 256,
-            "imageHeight": 256,
-            "filename": "Hometown.png",
+            "id": "e1650476-5020-46be-b037-ef54df7c8601",
+            "name": "Gurbs-adventure-title",
+            "width": 20,
+            "height": 25,
+            "imageWidth": 160,
+            "imageHeight": 200,
+            "filename": "Gurbs-adventure-title.png",
             "_v": 1566654413197
         },
         {
@@ -8841,14 +8873,14 @@
             "_v": 1566654413197
         },
         {
-            "id": "bd99eb4a-6b4b-4996-ad87-5df7e3d26ee1",
-            "name": "house",
-            "width": 20,
-            "height": 18,
-            "imageWidth": 160,
-            "imageHeight": 144,
-            "filename": "house.png",
-            "_v": 1566654413198
+            "id": "aa221e8f-4984-4797-962b-bb0be59f9ea2",
+            "name": "Hometown",
+            "width": 32,
+            "height": 32,
+            "imageWidth": 256,
+            "imageHeight": 256,
+            "filename": "Hometown.png",
+            "_v": 1566654413197
         },
         {
             "id": "839e5bae-866f-4cf0-b301-c9ecc0fbfc2a",
@@ -8881,16 +8913,6 @@
             "_v": 1566654413199
         },
         {
-            "id": "a9c8d3b3-04f7-45a7-aed5-822b5674f81c",
-            "name": "logo",
-            "width": 20,
-            "height": 18,
-            "imageWidth": 160,
-            "imageHeight": 144,
-            "filename": "logo.png",
-            "_v": 1566654413198
-        },
-        {
             "id": "d7c8346f-7a8d-49dd-982f-0aa6d08c2bb9",
             "name": "Main-Menu",
             "width": 20,
@@ -8911,16 +8933,6 @@
             "_v": 1566654413198
         },
         {
-            "id": "bb24688d-837f-4024-bd25-f409a675bb7e",
-            "name": "menu",
-            "width": 20,
-            "height": 18,
-            "imageWidth": 160,
-            "imageHeight": 144,
-            "filename": "menu.png",
-            "_v": 1566654413198
-        },
-        {
             "id": "67a85ed8-a941-4b2c-ab66-7f629d49cdce",
             "name": "Office",
             "width": 32,
@@ -8928,16 +8940,6 @@
             "imageWidth": 256,
             "imageHeight": 256,
             "filename": "Office.png",
-            "_v": 1566654413198
-        },
-        {
-            "id": "ac05a586-a3c3-4c87-b65e-b2052646e012",
-            "name": "outside",
-            "width": 32,
-            "height": 32,
-            "imageWidth": 256,
-            "imageHeight": 256,
-            "filename": "outside.png",
             "_v": 1566654413198
         },
         {
@@ -8958,16 +8960,6 @@
             "imageWidth": 256,
             "imageHeight": 256,
             "filename": "Right-1-Town.png",
-            "_v": 1566654413198
-        },
-        {
-            "id": "dd1aad20-2fe2-4d99-98a6-9a1e8c7e8cd4",
-            "name": "stars",
-            "width": 32,
-            "height": 32,
-            "imageWidth": 256,
-            "imageHeight": 256,
-            "filename": "stars.png",
             "_v": 1566654413198
         },
         {
@@ -9031,23 +9023,13 @@
             "_v": 1566654413198
         },
         {
-            "id": "36f94c05-f243-4cf4-8dc6-5153824c88c4",
-            "name": "titlescreen",
+            "id": "2ac5b2e8-8ab7-4d01-a7d5-6fa27c2e2cc3",
+            "name": "University Airport",
             "width": 20,
             "height": 18,
             "imageWidth": 160,
             "imageHeight": 144,
-            "filename": "titlescreen.png",
-            "_v": 1566654413198
-        },
-        {
-            "id": "9b38ba6d-ea82-4d0e-9c93-1fbf8cd6804f",
-            "name": "underground",
-            "width": 32,
-            "height": 32,
-            "imageWidth": 256,
-            "imageHeight": 256,
-            "filename": "underground.png",
+            "filename": "University Airport.png",
             "_v": 1566654413198
         },
         {
@@ -9058,16 +9040,6 @@
             "imageWidth": 256,
             "imageHeight": 256,
             "filename": "University.png",
-            "_v": 1566654413198
-        },
-        {
-            "id": "2ac5b2e8-8ab7-4d01-a7d5-6fa27c2e2cc3",
-            "name": "University Airport",
-            "width": 20,
-            "height": 18,
-            "imageWidth": 160,
-            "imageHeight": 144,
-            "filename": "University Airport.png",
             "_v": 1566654413198
         },
         {
@@ -9088,6 +9060,86 @@
             "imageWidth": 160,
             "imageHeight": 144,
             "filename": "World Map.png",
+            "_v": 1566654413198
+        },
+        {
+            "id": "a5de1155-3ea0-4993-aeea-68b01562e93a",
+            "name": "cave",
+            "width": 20,
+            "height": 18,
+            "imageWidth": 160,
+            "imageHeight": 144,
+            "filename": "cave.png",
+            "_v": 1566654413196
+        },
+        {
+            "id": "bd99eb4a-6b4b-4996-ad87-5df7e3d26ee1",
+            "name": "house",
+            "width": 20,
+            "height": 18,
+            "imageWidth": 160,
+            "imageHeight": 144,
+            "filename": "house.png",
+            "_v": 1566654413198
+        },
+        {
+            "id": "a9c8d3b3-04f7-45a7-aed5-822b5674f81c",
+            "name": "logo",
+            "width": 20,
+            "height": 18,
+            "imageWidth": 160,
+            "imageHeight": 144,
+            "filename": "logo.png",
+            "_v": 1566654413198
+        },
+        {
+            "id": "bb24688d-837f-4024-bd25-f409a675bb7e",
+            "name": "menu",
+            "width": 20,
+            "height": 18,
+            "imageWidth": 160,
+            "imageHeight": 144,
+            "filename": "menu.png",
+            "_v": 1566654413198
+        },
+        {
+            "id": "ac05a586-a3c3-4c87-b65e-b2052646e012",
+            "name": "outside",
+            "width": 32,
+            "height": 32,
+            "imageWidth": 256,
+            "imageHeight": 256,
+            "filename": "outside.png",
+            "_v": 1566654413198
+        },
+        {
+            "id": "dd1aad20-2fe2-4d99-98a6-9a1e8c7e8cd4",
+            "name": "stars",
+            "width": 32,
+            "height": 32,
+            "imageWidth": 256,
+            "imageHeight": 256,
+            "filename": "stars.png",
+            "_v": 1566654413198
+        },
+        {
+            "id": "36f94c05-f243-4cf4-8dc6-5153824c88c4",
+            "name": "titlescreen",
+            "width": 20,
+            "height": 18,
+            "imageWidth": 160,
+            "imageHeight": 144,
+            "filename": "titlescreen.png",
+            "_v": 1566654413198
+        },
+        {
+            "id": "9b38ba6d-ea82-4d0e-9c93-1fbf8cd6804f",
+            "name": "underground",
+            "width": 32,
+            "height": 32,
+            "imageWidth": 256,
+            "imageHeight": 256,
+            "filename": "underground.png",
             "_v": 1566654413198
         }
     ],
