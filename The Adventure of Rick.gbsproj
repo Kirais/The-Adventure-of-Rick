@@ -2,8 +2,8 @@
     "settings": {
         "showCollisions": true,
         "showConnections": true,
-        "worldScrollX": 456,
-        "worldScrollY": 403,
+        "worldScrollX": 2064,
+        "worldScrollY": 799,
         "zoom": 200,
         "customColorsWhite": "E0F8D0",
         "customColorsLight": "88C070",
@@ -696,8 +696,8 @@
             "triggers": [
                 {
                     "id": "63a24a18-d8f7-4c71-87ea-4ff840328513",
-                    "x": 8,
-                    "y": 8,
+                    "x": 9,
+                    "y": 9,
                     "width": 2,
                     "height": 1,
                     "trigger": "walk",
@@ -788,8 +788,8 @@
                 },
                 {
                     "id": "e97c5789-4a1c-42a0-a427-a84804476c23",
-                    "x": 4,
-                    "y": 8,
+                    "x": 5,
+                    "y": 9,
                     "width": 2,
                     "height": 1,
                     "trigger": "walk",
@@ -934,42 +934,42 @@
                 255,
                 255,
                 255,
-                255,
-                31,
+                1,
+                0,
+                0,
+                128,
+                253,
+                63,
                 224,
                 159,
-                3,
-                16,
+                5,
+                32,
                 32,
                 144,
-                3,
-                16,
+                5,
+                32,
                 32,
                 144,
-                3,
-                16,
+                5,
+                32,
                 32,
                 144,
-                3,
-                112,
-                56,
-                240,
-                3,
-                112,
-                56,
-                240,
-                3,
-                112,
-                56,
-                240,
-                207,
-                124,
-                120,
-                254,
-                1,
-                0,
-                0,
-                128,
+                5,
+                32,
+                32,
+                144,
+                101,
+                38,
+                32,
+                144,
+                149,
+                41,
+                32,
+                144,
+                157,
+                57,
+                96,
+                158,
                 1,
                 0,
                 0,
@@ -994,22 +994,22 @@
                 0,
                 32,
                 144,
-                255,
-                31,
-                56,
-                240,
+                241,
                 15,
-                28,
-                56,
-                240,
+                32,
+                144,
+                17,
+                8,
+                32,
+                144,
+                17,
+                8,
+                32,
+                144,
+                145,
                 15,
-                28,
-                56,
-                240,
-                159,
-                31,
-                120,
-                254,
+                96,
+                158,
                 1,
                 0,
                 0,
@@ -5070,8 +5070,8 @@
                             "command": "EVENT_SWITCH_SCENE",
                             "args": {
                                 "sceneId": "cffb2dbb-ba2e-4f70-a5b3-2f847e4c9511",
-                                "x": 4,
-                                "y": 9,
+                                "x": 5,
+                                "y": 10,
                                 "direction": "down",
                                 "fadeSpeed": "2"
                             }
@@ -5652,8 +5652,8 @@
                             "command": "EVENT_SWITCH_SCENE",
                             "args": {
                                 "sceneId": "cffb2dbb-ba2e-4f70-a5b3-2f847e4c9511",
-                                "x": 8,
-                                "y": 9,
+                                "x": 9,
+                                "y": 10,
                                 "direction": "down",
                                 "fadeSpeed": "2"
                             }
@@ -10881,16 +10881,6 @@
     ],
     "backgrounds": [
         {
-            "id": "a5de1155-3ea0-4993-aeea-68b01562e93a",
-            "name": "cave",
-            "width": 20,
-            "height": 18,
-            "imageWidth": 160,
-            "imageHeight": 144,
-            "filename": "cave.png",
-            "_v": 1566755689998
-        },
-        {
             "id": "6cc0f474-498a-4114-b785-4926f664eb6a",
             "name": "Classroom",
             "width": 20,
@@ -10911,16 +10901,6 @@
             "_v": 1566755689997
         },
         {
-            "id": "076ac98b-b2f2-4122-941a-152b5457ca93",
-            "name": "Conference",
-            "width": 32,
-            "height": 32,
-            "imageWidth": 256,
-            "imageHeight": 256,
-            "filename": "Conference.png",
-            "_v": 1566755689998
-        },
-        {
             "id": "5deee38e-f383-4a41-b217-23dd28692324",
             "name": "Conference Airport",
             "width": 20,
@@ -10938,6 +10918,16 @@
             "imageWidth": 256,
             "imageHeight": 256,
             "filename": "Conference Room.png",
+            "_v": 1566755689998
+        },
+        {
+            "id": "076ac98b-b2f2-4122-941a-152b5457ca93",
+            "name": "Conference",
+            "width": 32,
+            "height": 32,
+            "imageWidth": 256,
+            "imageHeight": 256,
+            "filename": "Conference.png",
             "_v": 1566755689998
         },
         {
@@ -10981,16 +10971,6 @@
             "_v": 1566755689998
         },
         {
-            "id": "e1650476-5020-46be-b037-ef54df7c8601",
-            "name": "Gurbs-adventure-title",
-            "width": 20,
-            "height": 25,
-            "imageWidth": 160,
-            "imageHeight": 200,
-            "filename": "Gurbs-adventure-title.png",
-            "_v": 1566755689998
-        },
-        {
             "id": "26e5bf7b-6e9e-46b7-b914-fb53d42769b9",
             "name": "Gurbs-adventure-title-1",
             "width": 20,
@@ -10998,6 +10978,16 @@
             "imageWidth": 160,
             "imageHeight": 160,
             "filename": "Gurbs-adventure-title-1.png",
+            "_v": 1566755689998
+        },
+        {
+            "id": "e1650476-5020-46be-b037-ef54df7c8601",
+            "name": "Gurbs-adventure-title",
+            "width": 20,
+            "height": 25,
+            "imageWidth": 160,
+            "imageHeight": 200,
+            "filename": "Gurbs-adventure-title.png",
             "_v": 1566755689998
         },
         {
@@ -11011,16 +11001,6 @@
             "_v": 1566755689998
         },
         {
-            "id": "aa221e8f-4984-4797-962b-bb0be59f9ea2",
-            "name": "Hometown",
-            "width": 20,
-            "height": 18,
-            "imageWidth": 160,
-            "imageHeight": 144,
-            "filename": "Hometown.png",
-            "_v": 1566756169582
-        },
-        {
             "id": "533d6f46-6fcd-4c61-9dce-a406931669bc",
             "name": "Hometown Airport",
             "width": 20,
@@ -11031,14 +11011,14 @@
             "_v": 1566755689998
         },
         {
-            "id": "bd99eb4a-6b4b-4996-ad87-5df7e3d26ee1",
-            "name": "house",
+            "id": "aa221e8f-4984-4797-962b-bb0be59f9ea2",
+            "name": "Hometown",
             "width": 20,
             "height": 18,
             "imageWidth": 160,
             "imageHeight": 144,
-            "filename": "house.png",
-            "_v": 1566755689998
+            "filename": "Hometown.png",
+            "_v": 1566756169582
         },
         {
             "id": "172ee048-0235-4843-8f39-901301573c90",
@@ -11048,16 +11028,6 @@
             "imageWidth": 256,
             "imageHeight": 256,
             "filename": "Lab.png",
-            "_v": 1566755689998
-        },
-        {
-            "id": "a9c8d3b3-04f7-45a7-aed5-822b5674f81c",
-            "name": "logo",
-            "width": 20,
-            "height": 18,
-            "imageWidth": 160,
-            "imageHeight": 144,
-            "filename": "logo.png",
             "_v": 1566755689998
         },
         {
@@ -11131,16 +11101,6 @@
             "_v": 1566755689998
         },
         {
-            "id": "35e4208c-c902-4c9f-8a5d-2514b619962c",
-            "name": "Others/menu",
-            "width": 20,
-            "height": 18,
-            "imageWidth": 160,
-            "imageHeight": 144,
-            "filename": "Others/menu.png",
-            "_v": 1566755689998
-        },
-        {
             "id": "26090375-a9f9-4b72-a72f-7c0fa2b9d298",
             "name": "Others/Right-1-Town",
             "width": 32,
@@ -11148,16 +11108,6 @@
             "imageWidth": 256,
             "imageHeight": 256,
             "filename": "Others/Right-1-Town.png",
-            "_v": 1566755689999
-        },
-        {
-            "id": "1cca990e-a448-4530-81e6-cfa2f6f96db5",
-            "name": "Others/stars",
-            "width": 32,
-            "height": 32,
-            "imageWidth": 256,
-            "imageHeight": 256,
-            "filename": "Others/stars.png",
             "_v": 1566755689999
         },
         {
@@ -11211,13 +11161,33 @@
             "_v": 1566755689999
         },
         {
-            "id": "ac05a586-a3c3-4c87-b65e-b2052646e012",
-            "name": "outside",
+            "id": "35e4208c-c902-4c9f-8a5d-2514b619962c",
+            "name": "Others/menu",
+            "width": 20,
+            "height": 18,
+            "imageWidth": 160,
+            "imageHeight": 144,
+            "filename": "Others/menu.png",
+            "_v": 1566755689998
+        },
+        {
+            "id": "823bf84d-a3ff-43bc-a104-1f3cadebc611",
+            "name": "Others/outside",
             "width": 32,
             "height": 32,
             "imageWidth": 256,
             "imageHeight": 256,
-            "filename": "outside.png",
+            "filename": "Others/outside.png",
+            "_v": 1566756308736
+        },
+        {
+            "id": "1cca990e-a448-4530-81e6-cfa2f6f96db5",
+            "name": "Others/stars",
+            "width": 32,
+            "height": 32,
+            "imageWidth": 256,
+            "imageHeight": 256,
+            "filename": "Others/stars.png",
             "_v": 1566755689999
         },
         {
@@ -11231,16 +11201,6 @@
             "_v": 1566755689999
         },
         {
-            "id": "4b8a5aee-b9ba-4426-a36c-c7294310e8bc",
-            "name": "rick_adventure_tileset",
-            "width": 32,
-            "height": 26,
-            "imageWidth": 320,
-            "imageHeight": 208,
-            "filename": "rick_adventure_tileset.png",
-            "_v": 1566756156571
-        },
-        {
             "id": "82af7dc3-13e9-40b8-80a7-6ebe507cde3e",
             "name": "Stats",
             "width": 20,
@@ -11248,36 +11208,6 @@
             "imageWidth": 160,
             "imageHeight": 144,
             "filename": "Stats.png",
-            "_v": 1566755689999
-        },
-        {
-            "id": "36f94c05-f243-4cf4-8dc6-5153824c88c4",
-            "name": "titlescreen",
-            "width": 20,
-            "height": 18,
-            "imageWidth": 160,
-            "imageHeight": 144,
-            "filename": "titlescreen.png",
-            "_v": 1566755689999
-        },
-        {
-            "id": "9b38ba6d-ea82-4d0e-9c93-1fbf8cd6804f",
-            "name": "underground",
-            "width": 32,
-            "height": 32,
-            "imageWidth": 256,
-            "imageHeight": 256,
-            "filename": "underground.png",
-            "_v": 1566755689999
-        },
-        {
-            "id": "88900ba7-202e-4f5a-922a-9f0eafd5fa1b",
-            "name": "University",
-            "width": 32,
-            "height": 32,
-            "imageWidth": 256,
-            "imageHeight": 256,
-            "filename": "University.png",
             "_v": 1566755689999
         },
         {
@@ -11289,6 +11219,16 @@
             "imageHeight": 144,
             "filename": "University Airport.png",
             "_v": 1566755689999
+        },
+        {
+            "id": "88900ba7-202e-4f5a-922a-9f0eafd5fa1b",
+            "name": "University",
+            "width": 32,
+            "height": 32,
+            "imageWidth": 256,
+            "imageHeight": 256,
+            "filename": "University.png",
+            "_v": 1566756660073
         },
         {
             "id": "7b53d781-381b-48eb-adbf-c1a62762b063",
@@ -11308,6 +11248,66 @@
             "imageWidth": 160,
             "imageHeight": 144,
             "filename": "World Map.png",
+            "_v": 1566755689999
+        },
+        {
+            "id": "a5de1155-3ea0-4993-aeea-68b01562e93a",
+            "name": "cave",
+            "width": 20,
+            "height": 18,
+            "imageWidth": 160,
+            "imageHeight": 144,
+            "filename": "cave.png",
+            "_v": 1566755689998
+        },
+        {
+            "id": "bd99eb4a-6b4b-4996-ad87-5df7e3d26ee1",
+            "name": "house",
+            "width": 20,
+            "height": 18,
+            "imageWidth": 160,
+            "imageHeight": 144,
+            "filename": "house.png",
+            "_v": 1566755689998
+        },
+        {
+            "id": "a9c8d3b3-04f7-45a7-aed5-822b5674f81c",
+            "name": "logo",
+            "width": 20,
+            "height": 18,
+            "imageWidth": 160,
+            "imageHeight": 144,
+            "filename": "logo.png",
+            "_v": 1566755689998
+        },
+        {
+            "id": "4b8a5aee-b9ba-4426-a36c-c7294310e8bc",
+            "name": "rick_adventure_tileset",
+            "width": 32,
+            "height": 26,
+            "imageWidth": 320,
+            "imageHeight": 208,
+            "filename": "rick_adventure_tileset.png",
+            "_v": 1566756156571
+        },
+        {
+            "id": "36f94c05-f243-4cf4-8dc6-5153824c88c4",
+            "name": "titlescreen",
+            "width": 20,
+            "height": 18,
+            "imageWidth": 160,
+            "imageHeight": 144,
+            "filename": "titlescreen.png",
+            "_v": 1566755689999
+        },
+        {
+            "id": "9b38ba6d-ea82-4d0e-9c93-1fbf8cd6804f",
+            "name": "underground",
+            "width": 32,
+            "height": 32,
+            "imageWidth": 256,
+            "imageHeight": 256,
+            "filename": "underground.png",
             "_v": 1566755689999
         }
     ],
