@@ -2,8 +2,8 @@
     "settings": {
         "showCollisions": true,
         "showConnections": true,
-        "worldScrollX": 2213,
-        "worldScrollY": 1146,
+        "worldScrollX": 2424,
+        "worldScrollY": 1647,
         "zoom": 200,
         "customColorsWhite": "E0F8D0",
         "customColorsLight": "88C070",
@@ -3516,9 +3516,9 @@
                             "id": "2c958e86-36f5-431b-a88e-2b0b03e2f05d",
                             "command": "EVENT_SWITCH_SCENE",
                             "args": {
-                                "sceneId": "a89e901e-f312-4d6b-81af-d5c92b9fd823",
-                                "x": 8,
-                                "y": 16,
+                                "sceneId": "ef669de7-1271-42f8-b79c-064f1b32deff",
+                                "x": 15,
+                                "y": 22,
                                 "direction": "up",
                                 "fadeSpeed": "2"
                             }
@@ -5128,8 +5128,8 @@
                             "command": "EVENT_SWITCH_SCENE",
                             "args": {
                                 "sceneId": "a89e901e-f312-4d6b-81af-d5c92b9fd823",
-                                "x": 2,
-                                "y": 15,
+                                "x": 8,
+                                "y": 16,
                                 "direction": "up",
                                 "fadeSpeed": "2"
                             }
