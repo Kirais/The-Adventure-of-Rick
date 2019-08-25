@@ -2,8 +2,8 @@
     "settings": {
         "showCollisions": true,
         "showConnections": true,
-        "worldScrollX": 2522,
-        "worldScrollY": 685,
+        "worldScrollX": 1321,
+        "worldScrollY": 2140,
         "zoom": 200,
         "customColorsWhite": "E0F8D0",
         "customColorsLight": "88C070",
@@ -7207,7 +7207,7 @@
                 255,
                 255,
                 255,
-                241,
+                1,
                 0,
                 0,
                 128,
@@ -7215,14 +7215,14 @@
                 255,
                 255,
                 249,
-                145,
+                241,
                 16,
                 8,
-                137,
-                241,
-                0,
-                0,
                 143,
+                1,
+                0,
+                0,
+                128,
                 1,
                 0,
                 0,
@@ -10993,7 +10993,7 @@
             "imageWidth": 256,
             "imageHeight": 256,
             "filename": "Cleanroom.png",
-            "_v": 1566702426404
+            "_v": 1566715996374
         },
         {
             "id": "5deee38e-f383-4a41-b217-23dd28692324",
@@ -11013,7 +11013,7 @@
             "imageWidth": 256,
             "imageHeight": 256,
             "filename": "Conference Room.png",
-            "_v": 1566704579651
+            "_v": 1566717494248
         },
         {
             "id": "076ac98b-b2f2-4122-941a-152b5457ca93",
@@ -11383,7 +11383,7 @@
             "imageWidth": 320,
             "imageHeight": 320,
             "filename": "rick_adventure_tileset.png",
-            "_v": 1566715097020
+            "_v": 1566717468809
         },
         {
             "id": "36f94c05-f243-4cf4-8dc6-5153824c88c4",
