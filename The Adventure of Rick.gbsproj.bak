@@ -2,8 +2,8 @@
     "settings": {
         "showCollisions": true,
         "showConnections": true,
-        "worldScrollX": 668,
-        "worldScrollY": 1389,
+        "worldScrollX": 616,
+        "worldScrollY": 1264,
         "zoom": 200,
         "customColorsWhite": "E0F8D0",
         "customColorsLight": "88C070",
@@ -458,8 +458,8 @@
                             "command": "EVENT_SWITCH_SCENE",
                             "args": {
                                 "sceneId": "fb7b31c7-9a2e-46fe-97e0-6625634e9f5e",
-                                "x": 1,
-                                "y": 3,
+                                "x": 4,
+                                "y": 6,
                                 "direction": "down",
                                 "fadeSpeed": "2"
                             }
@@ -608,9 +608,9 @@
                             "command": "EVENT_SWITCH_SCENE",
                             "args": {
                                 "sceneId": "fb7b31c7-9a2e-46fe-97e0-6625634e9f5e",
-                                "x": 4,
-                                "y": 11,
-                                "direction": "up",
+                                "x": 15,
+                                "y": 5,
+                                "direction": "down",
                                 "fadeSpeed": "2"
                             }
                         },
@@ -1073,10 +1073,10 @@
             "triggers": [
                 {
                     "id": "661bd8bc-92a2-4e55-9757-57b44633ad06",
-                    "x": 3,
-                    "y": 12,
+                    "x": 15,
+                    "y": 4,
                     "width": 3,
-                    "height": 2,
+                    "height": 1,
                     "trigger": "walk",
                     "script": [
                         {
@@ -1098,9 +1098,9 @@
                 },
                 {
                     "id": "8738afa4-c5a6-49fb-94a5-42c6faefacde",
-                    "x": 1,
-                    "y": 1,
-                    "width": 2,
+                    "x": 3,
+                    "y": 11,
+                    "width": 4,
                     "height": 2,
                     "trigger": "walk",
                     "script": [
@@ -1153,12 +1153,12 @@
                 24,
                 0,
                 128,
-                197,
+                1,
                 0,
-                88,
-                12,
+                24,
+                0,
                 128,
-                25,
+                1,
                 0,
                 24,
                 0,
@@ -5299,10 +5299,10 @@
             "triggers": [
                 {
                     "id": "ba899308-4887-4642-a7f5-4d3ff9d098f0",
-                    "x": 1,
-                    "y": 1,
-                    "width": 2,
-                    "height": 2,
+                    "x": 6,
+                    "y": 4,
+                    "width": 3,
+                    "height": 1,
                     "trigger": "walk",
                     "script": [
                         {
@@ -5351,20 +5351,20 @@
             "collisions": [
                 255,
                 255,
-                159,
+                31,
+                0,
+                128,
                 1,
+                0,
+                152,
+                3,
+                128,
+                57,
+                0,
+                24,
+                3,
                 128,
                 25,
-                0,
-                24,
-                0,
-                128,
-                1,
-                0,
-                24,
-                0,
-                128,
-                1,
                 0,
                 24,
                 0,
@@ -5459,8 +5459,8 @@
                             "command": "EVENT_SWITCH_SCENE",
                             "args": {
                                 "sceneId": "d2068854-59d0-46b3-adfa-6f7ab72e46c0",
-                                "x": 1,
-                                "y": 3,
+                                "x": 6,
+                                "y": 5,
                                 "direction": "down",
                                 "fadeSpeed": "2"
                             }
@@ -11008,7 +11008,7 @@
             "imageWidth": 160,
             "imageHeight": 144,
             "filename": "Hometown Airport.png",
-            "_v": 1566755689998
+            "_v": 1566759484127
         },
         {
             "id": "aa221e8f-4984-4797-962b-bb0be59f9ea2",
