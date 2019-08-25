@@ -2,8 +2,8 @@
     "settings": {
         "showCollisions": true,
         "showConnections": true,
-        "worldScrollX": 632,
-        "worldScrollY": 573,
+        "worldScrollX": 938,
+        "worldScrollY": 709,
         "zoom": 100,
         "customColorsWhite": "E0F8D0",
         "customColorsLight": "88C070",
@@ -7544,7 +7544,7 @@
         },
         {
             "id": "a89e901e-f312-4d6b-81af-d5c92b9fd823",
-            "name": "Experiment 2",
+            "name": "E2 Quiz 1",
             "backgroundId": "dbbdd77b-de6c-4f1e-8d55-79de4aded687",
             "x": 1498,
             "y": 874,
@@ -8653,7 +8653,7 @@
             ]
         },
         {
-            "name": "Scene 23",
+            "name": "E2 Quiz 2",
             "backgroundId": "c16684e5-1566-4f75-b847-29dbc37c86df",
             "width": 20,
             "height": 18,
