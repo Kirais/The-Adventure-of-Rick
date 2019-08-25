@@ -2,8 +2,8 @@
     "settings": {
         "showCollisions": true,
         "showConnections": true,
-        "worldScrollX": 1321,
-        "worldScrollY": 2140,
+        "worldScrollX": 2424,
+        "worldScrollY": 1647,
         "zoom": 200,
         "customColorsWhite": "E0F8D0",
         "customColorsLight": "88C070",
@@ -3516,9 +3516,9 @@
                             "id": "2c958e86-36f5-431b-a88e-2b0b03e2f05d",
                             "command": "EVENT_SWITCH_SCENE",
                             "args": {
-                                "sceneId": "a89e901e-f312-4d6b-81af-d5c92b9fd823",
-                                "x": 8,
-                                "y": 16,
+                                "sceneId": "ef669de7-1271-42f8-b79c-064f1b32deff",
+                                "x": 15,
+                                "y": 22,
                                 "direction": "up",
                                 "fadeSpeed": "2"
                             }
@@ -4767,7 +4767,7 @@
                     "id": "6ebd2a53-2ac1-4811-b5d6-14e4135a588b",
                     "spriteSheetId": "49f18b02-8273-4803-8b78-719db50ab553",
                     "x": 22,
-                    "y": 3,
+                    "y": 2,
                     "movementType": "static",
                     "direction": "down",
                     "moveSpeed": "1",
@@ -5128,8 +5128,8 @@
                             "command": "EVENT_SWITCH_SCENE",
                             "args": {
                                 "sceneId": "a89e901e-f312-4d6b-81af-d5c92b9fd823",
-                                "x": 2,
-                                "y": 15,
+                                "x": 8,
+                                "y": 16,
                                 "direction": "up",
                                 "fadeSpeed": "2"
                             }
@@ -5253,7 +5253,7 @@
                 1,
                 48,
                 1,
-                248,
+                128,
                 1,
                 240,
                 1,
@@ -11123,7 +11123,7 @@
             "imageWidth": 256,
             "imageHeight": 256,
             "filename": "Lab.png",
-            "_v": 1566702426406
+            "_v": 1566718683916
         },
         {
             "id": "67a85ed8-a941-4b2c-ab66-7f629d49cdce",
@@ -11383,7 +11383,7 @@
             "imageWidth": 320,
             "imageHeight": 320,
             "filename": "rick_adventure_tileset.png",
-            "_v": 1566717468809
+            "_v": 1566718550719
         },
         {
             "id": "36f94c05-f243-4cf4-8dc6-5153824c88c4",
