@@ -2,8 +2,8 @@
     "settings": {
         "showCollisions": true,
         "showConnections": true,
-        "worldScrollX": 2064,
-        "worldScrollY": 799,
+        "worldScrollX": 668,
+        "worldScrollY": 1389,
         "zoom": 200,
         "customColorsWhite": "E0F8D0",
         "customColorsLight": "88C070",
@@ -558,9 +558,9 @@
                             "command": "EVENT_SWITCH_SCENE",
                             "args": {
                                 "sceneId": "d2068854-59d0-46b3-adfa-6f7ab72e46c0",
-                                "x": 4,
-                                "y": 11,
-                                "direction": "up",
+                                "x": 14,
+                                "y": 13,
+                                "direction": "down",
                                 "fadeSpeed": "2"
                             }
                         },
@@ -5299,9 +5299,9 @@
             "triggers": [
                 {
                     "id": "ba899308-4887-4642-a7f5-4d3ff9d098f0",
-                    "x": 1,
-                    "y": 1,
-                    "width": 2,
+                    "x": 6,
+                    "y": 4,
+                    "width": 3,
                     "height": 2,
                     "trigger": "walk",
                     "script": [
@@ -5324,9 +5324,9 @@
                 },
                 {
                     "id": "fa1f7400-a3cb-451e-8acf-d77ec703c5c4",
-                    "x": 3,
-                    "y": 12,
-                    "width": 3,
+                    "x": 13,
+                    "y": 11,
+                    "width": 4,
                     "height": 2,
                     "trigger": "walk",
                     "script": [
@@ -5351,8 +5351,18 @@
             "collisions": [
                 255,
                 255,
-                159,
+                31,
+                0,
+                128,
                 1,
+                0,
+                152,
+                3,
+                128,
+                57,
+                0,
+                24,
+                3,
                 128,
                 25,
                 0,
@@ -5375,16 +5385,6 @@
                 0,
                 128,
                 1,
-                0,
-                24,
-                0,
-                128,
-                197,
-                0,
-                88,
-                12,
-                128,
-                25,
                 0,
                 24,
                 0,
@@ -10908,7 +10908,7 @@
             "imageWidth": 160,
             "imageHeight": 144,
             "filename": "Conference Airport.png",
-            "_v": 1566755689997
+            "_v": 1566759273050
         },
         {
             "id": "1fb9f4e3-74e2-45a6-8155-c0d4516c6107",
@@ -11288,7 +11288,7 @@
             "imageWidth": 320,
             "imageHeight": 208,
             "filename": "rick_adventure_tileset.png",
-            "_v": 1566756156571
+            "_v": 1566759183201
         },
         {
             "id": "36f94c05-f243-4cf4-8dc6-5153824c88c4",
