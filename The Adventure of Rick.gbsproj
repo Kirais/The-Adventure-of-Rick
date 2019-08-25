@@ -3,7 +3,7 @@
         "showCollisions": true,
         "showConnections": true,
         "worldScrollX": 273,
-        "worldScrollY": 1955,
+        "worldScrollY": 1648,
         "zoom": 200,
         "customColorsWhite": "E0F8D0",
         "customColorsLight": "88C070",
@@ -6999,7 +6999,7 @@
                     "id": "facceff0-1d53-474e-b81a-dd55147b752a",
                     "command": "EVENT_LOOP",
                     "args": {
-                        "__collapse": false
+                        "__collapse": true
                     },
                     "children": {
                         "true": [
