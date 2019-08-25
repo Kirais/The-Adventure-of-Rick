@@ -423,7 +423,7 @@
                 {
                     "id": "aa8178e9-1b1a-4e34-960e-a6453860f607",
                     "x": 5,
-                    "y": 7,
+                    "y": 6,
                     "width": 2,
                     "height": 1,
                     "trigger": "walk",
@@ -3460,8 +3460,8 @@
                             "args": {
                                 "sceneId": "275c3f86-7afd-4b24-b057-4cab5b28c1c0",
                                 "x": 5,
-                                "y": 8,
-                                "direction": "",
+                                "y": 7,
+                                "direction": "down",
                                 "fadeSpeed": "2"
                             }
                         },

@@ -2,8 +2,8 @@
     "settings": {
         "showCollisions": true,
         "showConnections": true,
-        "worldScrollX": 456,
-        "worldScrollY": 459,
+        "worldScrollX": 915,
+        "worldScrollY": 1121,
         "zoom": 200,
         "customColorsWhite": "E0F8D0",
         "customColorsLight": "88C070",
@@ -547,10 +547,10 @@
             "triggers": [
                 {
                     "id": "3ec6db88-7397-4655-bb1a-c03f905b2724",
-                    "x": 3,
-                    "y": 12,
+                    "x": 16,
+                    "y": 4,
                     "width": 3,
-                    "height": 2,
+                    "height": 1,
                     "trigger": "walk",
                     "script": [
                         {
@@ -558,8 +558,8 @@
                             "command": "EVENT_SWITCH_SCENE",
                             "args": {
                                 "sceneId": "d2068854-59d0-46b3-adfa-6f7ab72e46c0",
-                                "x": 14,
-                                "y": 13,
+                                "x": 6,
+                                "y": 5,
                                 "direction": "down",
                                 "fadeSpeed": "2"
                             }
@@ -572,9 +572,9 @@
                 },
                 {
                     "id": "faedd91c-908c-4e1a-8dea-7ece4b9d0316",
-                    "x": 1,
-                    "y": 1,
-                    "width": 2,
+                    "x": 9,
+                    "y": 11,
+                    "width": 4,
                     "height": 2,
                     "trigger": "walk",
                     "script": [
@@ -597,10 +597,10 @@
                 },
                 {
                     "id": "2cd90631-e737-42db-a397-24f3b6d5e83b",
-                    "x": 3,
-                    "y": 5,
+                    "x": 5,
+                    "y": 4,
                     "width": 3,
-                    "height": 2,
+                    "height": 1,
                     "trigger": "walk",
                     "script": [
                         {
@@ -624,23 +624,28 @@
             "collisions": [
                 255,
                 255,
-                159,
-                1,
-                128,
-                25,
-                0,
-                24,
+                31,
                 0,
                 128,
                 1,
                 0,
-                88,
-                12,
-                128,
-                197,
-                0,
+                184,
+                1,
+                141,
+                31,
+                240,
                 152,
                 1,
+                140,
+                13,
+                96,
+                24,
+                0,
+                128,
+                1,
+                0,
+                24,
+                0,
                 128,
                 1,
                 0,
@@ -652,12 +657,7 @@
                 24,
                 0,
                 128,
-                197,
-                0,
-                88,
-                12,
-                128,
-                25,
+                1,
                 0,
                 24,
                 0,
@@ -916,8 +916,8 @@
                             "command": "EVENT_SWITCH_SCENE",
                             "args": {
                                 "sceneId": "7cf80d50-cea7-4c6b-9e7d-d9fb47aff1e1",
-                                "x": 1,
-                                "y": 3,
+                                "x": 10,
+                                "y": 13,
                                 "direction": "down",
                                 "fadeSpeed": "2"
                             }
@@ -1084,9 +1084,9 @@
                             "command": "EVENT_SWITCH_SCENE",
                             "args": {
                                 "sceneId": "7cf80d50-cea7-4c6b-9e7d-d9fb47aff1e1",
-                                "x": 4,
-                                "y": 4,
-                                "direction": "up",
+                                "x": 5,
+                                "y": 5,
+                                "direction": "down",
                                 "fadeSpeed": "2"
                             }
                         },
@@ -5299,10 +5299,10 @@
             "triggers": [
                 {
                     "id": "ba899308-4887-4642-a7f5-4d3ff9d098f0",
-                    "x": 6,
-                    "y": 4,
-                    "width": 3,
-                    "height": 1,
+                    "x": 13,
+                    "y": 11,
+                    "width": 4,
+                    "height": 2,
                     "trigger": "walk",
                     "script": [
                         {
@@ -5324,10 +5324,10 @@
                 },
                 {
                     "id": "fa1f7400-a3cb-451e-8acf-d77ec703c5c4",
-                    "x": 13,
-                    "y": 11,
-                    "width": 4,
-                    "height": 2,
+                    "x": 6,
+                    "y": 4,
+                    "width": 3,
+                    "height": 1,
                     "trigger": "walk",
                     "script": [
                         {
@@ -5335,9 +5335,9 @@
                             "command": "EVENT_SWITCH_SCENE",
                             "args": {
                                 "sceneId": "7cf80d50-cea7-4c6b-9e7d-d9fb47aff1e1",
-                                "x": 4,
-                                "y": 11,
-                                "direction": "up",
+                                "x": 16,
+                                "y": 5,
+                                "direction": "down",
                                 "fadeSpeed": "2"
                             }
                         },
@@ -5459,8 +5459,8 @@
                             "command": "EVENT_SWITCH_SCENE",
                             "args": {
                                 "sceneId": "d2068854-59d0-46b3-adfa-6f7ab72e46c0",
-                                "x": 6,
-                                "y": 5,
+                                "x": 14,
+                                "y": 13,
                                 "direction": "down",
                                 "fadeSpeed": "2"
                             }
@@ -11288,7 +11288,7 @@
             "imageWidth": 160,
             "imageHeight": 144,
             "filename": "University Airport.png",
-            "_v": 1566759834536
+            "_v": 1566760033826
         },
         {
             "id": "7b53d781-381b-48eb-adbf-c1a62762b063",
