@@ -2,8 +2,8 @@
     "settings": {
         "showCollisions": true,
         "showConnections": true,
-        "worldScrollX": 0,
-        "worldScrollY": 263,
+        "worldScrollX": 927,
+        "worldScrollY": 505,
         "zoom": 100,
         "customColorsWhite": "E0F8D0",
         "customColorsLight": "88C070",
@@ -745,7 +745,7 @@
                 },
                 {
                     "id": "90857627-2fef-4aa2-aced-6749794be9fe",
-                    "x": 5,
+                    "x": 6,
                     "y": 19,
                     "width": 2,
                     "height": 1,
@@ -889,7 +889,7 @@
                     "id": "65d84093-ba63-411f-b9cf-8c1b1ac4366c",
                     "x": 3,
                     "y": 27,
-                    "width": 2,
+                    "width": 4,
                     "height": 2,
                     "trigger": "walk",
                     "script": [
@@ -988,7 +988,7 @@
                 8,
                 32,
                 144,
-                145,
+                49,
                 15,
                 96,
                 158,
@@ -1020,11 +1020,11 @@
                 0,
                 0,
                 128,
-                97,
+                1,
                 0,
                 0,
                 128,
-                97,
+                65,
                 0,
                 0,
                 128,
@@ -4014,7 +4014,7 @@
                             "command": "EVENT_SWITCH_SCENE",
                             "args": {
                                 "sceneId": "cffb2dbb-ba2e-4f70-a5b3-2f847e4c9511",
-                                "x": 5,
+                                "x": 6,
                                 "y": 20,
                                 "direction": "down",
                                 "fadeSpeed": "2"
@@ -6396,57 +6396,6 @@
                     "args": {
                         "actorId": "player",
                         "__collapse": true
-                    }
-                },
-                {
-                    "id": "15bf06ea-4fdd-4e3d-a3da-4a56c04456d3",
-                    "command": "EVENT_GROUP",
-                    "args": {
-                        "__label": "Testing",
-                        "__collapse": true
-                    },
-                    "children": {
-                        "true": [
-                            {
-                                "id": "375d0888-23d3-48bf-995e-a397e8ca4665",
-                                "command": "EVENT_SET_VALUE",
-                                "args": {
-                                    "variable": "3",
-                                    "value": 52
-                                }
-                            },
-                            {
-                                "id": "e7866da7-5583-4e4f-ac70-47c4977a7082",
-                                "command": "EVENT_SET_VALUE",
-                                "args": {
-                                    "variable": "17",
-                                    "value": 23
-                                },
-                                "__type": "event"
-                            },
-                            {
-                                "id": "fd61781f-6a90-40f9-8819-192d23a8fb15",
-                                "command": "EVENT_SET_VALUE",
-                                "args": {
-                                    "variable": "35",
-                                    "value": null
-                                },
-                                "__type": "event"
-                            },
-                            {
-                                "id": "62a8c59a-bf19-4f88-a7d3-8a329257a604",
-                                "command": "EVENT_SET_VALUE",
-                                "args": {
-                                    "variable": "33",
-                                    "value": null
-                                },
-                                "__type": "event"
-                            },
-                            {
-                                "id": "65d7aa71-6746-44cb-9548-837233930d8d",
-                                "command": "EVENT_END"
-                            }
-                        ]
                     }
                 },
                 {
@@ -10155,6 +10104,53 @@
                             "command": "EVENT_END"
                         }
                     ]
+                },
+                {
+                    "trigger": "walk",
+                    "id": "2c2b4651-08b6-43a2-ae45-9cbf6ff468bb",
+                    "x": 19,
+                    "y": 8,
+                    "width": 1,
+                    "height": 2,
+                    "script": [
+                        {
+                            "id": "2fd26313-1bd3-47f5-8f69-f17160141fa8",
+                            "command": "EVENT_TEXT",
+                            "args": {
+                                "text": [
+                                    "You confidence\nincreased 50!"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "3a5c27ff-02f8-48b9-adc8-5c03e235c176",
+                            "command": "EVENT_VARIABLE_MATH",
+                            "args": {
+                                "vectorX": "3",
+                                "operation": "add",
+                                "other": "val",
+                                "vectorY": "73",
+                                "value": 50,
+                                "minValue": "0",
+                                "maxValue": "255"
+                            }
+                        },
+                        {
+                            "id": "9781db7e-a105-4eae-9b30-5026a7c6dd88",
+                            "command": "EVENT_SWITCH_SCENE",
+                            "args": {
+                                "sceneId": "ef669de7-1271-42f8-b79c-064f1b32deff",
+                                "x": 5,
+                                "y": 4,
+                                "direction": "right",
+                                "fadeSpeed": "2"
+                            }
+                        },
+                        {
+                            "id": "7d9b512d-176d-49d9-a74c-202a25ea7e94",
+                            "command": "EVENT_END"
+                        }
+                    ]
                 }
             ],
             "script": [
@@ -11229,6 +11225,16 @@
             "_v": 1566785789132
         },
         {
+            "id": "cd792582-63df-45e3-8dce-cc976a03fc22",
+            "name": "Rick_and_Morty_logo",
+            "width": 10,
+            "height": 9,
+            "imageWidth": 80,
+            "imageHeight": 74,
+            "filename": "Rick_and_Morty_logo.png",
+            "_v": 1566788518482
+        },
+        {
             "id": "82af7dc3-13e9-40b8-80a7-6ebe507cde3e",
             "name": "Stats",
             "width": 20,
@@ -11326,7 +11332,7 @@
             "imageWidth": 160,
             "imageHeight": 144,
             "filename": "title.png",
-            "_v": 1566788237601
+            "_v": 1566789607478
         },
         {
             "id": "36f94c05-f243-4cf4-8dc6-5153824c88c4",
