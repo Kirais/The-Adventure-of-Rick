@@ -2,9 +2,9 @@
     "settings": {
         "showCollisions": true,
         "showConnections": true,
-        "worldScrollX": 927,
-        "worldScrollY": 207,
-        "zoom": 100,
+        "worldScrollX": 2777,
+        "worldScrollY": 1345,
+        "zoom": 200,
         "customColorsWhite": "E0F8D0",
         "customColorsLight": "88C070",
         "customColorsDark": "306850",
@@ -1616,7 +1616,7 @@
                             "command": "EVENT_GROUP",
                             "args": {
                                 "__label": "Initialize combat",
-                                "__collapse": true
+                                "__collapse": false
                             },
                             "children": {
                                 "true": [
@@ -1624,7 +1624,8 @@
                                         "id": "9d0de02f-9a73-4413-8ffe-3b62c010aefa",
                                         "command": "EVENT_GROUP",
                                         "args": {
-                                            "__label": "Set ATK"
+                                            "__label": "Set ATK",
+                                            "__collapse": true
                                         },
                                         "children": {
                                             "true": [
@@ -10144,6 +10145,21 @@
                                 "value": 20,
                                 "minValue": "0",
                                 "maxValue": "255"
+                            },
+                            "__type": "event"
+                        },
+                        {
+                            "id": "17af0d1e-abe4-433b-839d-db5ffcc052ff",
+                            "command": "EVENT_VARIABLE_MATH",
+                            "args": {
+                                "vectorX": "2",
+                                "operation": "add",
+                                "other": "val",
+                                "vectorY": "73",
+                                "value": 20,
+                                "minValue": "0",
+                                "maxValue": "255",
+                                "__collapse": false
                             },
                             "__type": "event"
                         },
