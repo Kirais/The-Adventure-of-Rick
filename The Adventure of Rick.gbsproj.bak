@@ -4410,7 +4410,7 @@
                 },
                 {
                     "id": "30723af9-9d70-4737-8fa5-e6fdb4581977",
-                    "spriteSheetId": "15c12b89-8a44-41ca-8a92-c9674bf05433",
+                    "spriteSheetId": "fe150d32-3ea9-4693-bc09-99f44d85bd71",
                     "x": 26,
                     "y": 10,
                     "movementType": "randomWalk",
@@ -11548,7 +11548,7 @@
             "numFrames": 6,
             "type": "actor_animated",
             "filename": "Supervisor3.png",
-            "_v": 1566786506579
+            "_v": 1566787560350
         },
         {
             "id": "aff753be-6ace-4f50-b50b-fa29642604f8",
