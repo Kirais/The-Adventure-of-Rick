@@ -3,7 +3,7 @@
         "showCollisions": true,
         "showConnections": true,
         "worldScrollX": 927,
-        "worldScrollY": 490,
+        "worldScrollY": 207,
         "zoom": 100,
         "customColorsWhite": "E0F8D0",
         "customColorsLight": "88C070",
@@ -863,7 +863,7 @@
                 {
                     "id": "4abe77ec-b55d-42e6-a8e0-c62722dfc34e",
                     "x": 23,
-                    "y": 8,
+                    "y": 9,
                     "width": 2,
                     "height": 1,
                     "trigger": "walk",
@@ -3169,7 +3169,7 @@
                             "args": {
                                 "sceneId": "cffb2dbb-ba2e-4f70-a5b3-2f847e4c9511",
                                 "x": 23,
-                                "y": 9,
+                                "y": 10,
                                 "direction": "down",
                                 "fadeSpeed": "2"
                             }
@@ -8610,7 +8610,7 @@
                     "moveSpeed": "1",
                     "animSpeed": "3",
                     "id": "f991446c-cb04-4a4e-be04-e67c4dc05193",
-                    "x": 15,
+                    "x": 16,
                     "y": 9,
                     "name": "Rock 1",
                     "__type": "actor"
@@ -8635,7 +8635,7 @@
                     "moveSpeed": "1",
                     "animSpeed": "3",
                     "id": "04a5af17-0f32-4028-91ba-4ab36a16c956",
-                    "x": 17,
+                    "x": 18,
                     "y": 9,
                     "name": "Rock 2",
                     "__type": "actor"
@@ -11334,7 +11334,7 @@
             "imageWidth": 320,
             "imageHeight": 208,
             "filename": "rick_adventure_tileset.png",
-            "_v": 1566790521520
+            "_v": 1566793288070
         },
         {
             "id": "8fb0164a-99a7-453a-9a5f-d3d29b76e6e5",
