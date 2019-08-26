@@ -2,8 +2,8 @@
     "settings": {
         "showCollisions": true,
         "showConnections": true,
-        "worldScrollX": 915,
-        "worldScrollY": 1121,
+        "worldScrollX": 316,
+        "worldScrollY": 1474,
         "zoom": 200,
         "customColorsWhite": "E0F8D0",
         "customColorsLight": "88C070",
@@ -6944,7 +6944,7 @@
                                             "args": {
                                                 "sceneId": "5bc18ec6-6023-40c7-916d-adc11f508d35",
                                                 "x": 0,
-                                                "y": 0,
+                                                "y": 7,
                                                 "direction": "",
                                                 "fadeSpeed": "2"
                                             }
@@ -7264,7 +7264,7 @@
                     "id": "b42f38cf-365e-42d3-a9a5-bd9b67a21c9a",
                     "spriteSheetId": "31090c22-2e38-46c0-8594-0217c55adc64",
                     "x": 2,
-                    "y": 5,
+                    "y": 6,
                     "movementType": "static",
                     "direction": "down",
                     "moveSpeed": "1",
@@ -7275,7 +7275,53 @@
                 }
             ],
             "triggers": [],
-            "collisions": [],
+            "collisions": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+            ],
             "script": [
                 {
                     "id": "000bb6eb-1b7e-4ffe-894b-62e1cbd946af",
@@ -7303,7 +7349,7 @@
                                     "comparator": "0",
                                     "__label": "At Home?",
                                     "__collapseElse": false,
-                                    "__collapse": false
+                                    "__collapse": true
                                 },
                                 "children": {
                                     "true": [
@@ -7313,7 +7359,7 @@
                                             "args": {
                                                 "actorId": "b42f38cf-365e-42d3-a9a5-bd9b67a21c9a",
                                                 "x": 2,
-                                                "y": 5,
+                                                "y": 6,
                                                 "__collapse": false
                                             }
                                         },
@@ -7331,7 +7377,7 @@
                                                 "operator": "==",
                                                 "comparator": 1,
                                                 "__label": "At University?",
-                                                "__collapse": false,
+                                                "__collapse": true,
                                                 "__collapseElse": false
                                             },
                                             "children": {
@@ -7341,8 +7387,8 @@
                                                         "command": "EVENT_ACTOR_SET_POSITION",
                                                         "args": {
                                                             "actorId": "b42f38cf-365e-42d3-a9a5-bd9b67a21c9a",
-                                                            "x": 13,
-                                                            "y": 6
+                                                            "x": 14,
+                                                            "y": 7
                                                         }
                                                     },
                                                     {
@@ -7359,7 +7405,7 @@
                                                             "operator": "==",
                                                             "comparator": 2,
                                                             "__label": "At Conference?",
-                                                            "__collapse": true,
+                                                            "__collapse": false,
                                                             "__collapseElse": true
                                                         },
                                                         "children": {
@@ -7370,7 +7416,7 @@
                                                                     "args": {
                                                                         "actorId": "b42f38cf-365e-42d3-a9a5-bd9b67a21c9a",
                                                                         "x": 12,
-                                                                        "y": 13
+                                                                        "y": 14
                                                                     }
                                                                 },
                                                                 {
@@ -11238,7 +11284,7 @@
             "imageWidth": 320,
             "imageHeight": 208,
             "filename": "rick_adventure_tileset.png",
-            "_v": 1566759834536
+            "_v": 1566782714177
         },
         {
             "id": "82af7dc3-13e9-40b8-80a7-6ebe507cde3e",
@@ -11308,7 +11354,7 @@
             "imageWidth": 160,
             "imageHeight": 144,
             "filename": "World Map.png",
-            "_v": 1566759834537
+            "_v": 1566782724455
         }
     ],
     "spriteSheets": [
