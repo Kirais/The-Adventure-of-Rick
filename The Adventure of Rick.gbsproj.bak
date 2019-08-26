@@ -2,8 +2,8 @@
     "settings": {
         "showCollisions": true,
         "showConnections": true,
-        "worldScrollX": 927,
-        "worldScrollY": 505,
+        "worldScrollX": 0,
+        "worldScrollY": 317,
         "zoom": 100,
         "customColorsWhite": "E0F8D0",
         "customColorsLight": "88C070",
@@ -103,7 +103,7 @@
                     "command": "EVENT_GROUP",
                     "args": {
                         "__label": "Attach Menu",
-                        "__collapse": true
+                        "__collapse": false
                     },
                     "children": {
                         "true": [
@@ -208,7 +208,7 @@
                                             "command": "EVENT_SET_VALUE",
                                             "args": {
                                                 "variable": "2",
-                                                "value": 231
+                                                "value": 50
                                             }
                                         },
                                         {
@@ -1178,10 +1178,10 @@
             "actors": [
                 {
                     "id": "e8d94560-fddb-4bd1-937a-49b5feb06507",
-                    "spriteSheetId": "f10d093f-e05d-4471-89b8-adad412b6899",
+                    "spriteSheetId": "39f9d319-4732-478f-a8b3-1aa06561e5d8",
                     "x": 11,
                     "y": 17,
-                    "movementType": "randomFace",
+                    "movementType": "static",
                     "direction": "down",
                     "moveSpeed": "1",
                     "animSpeed": "3",
@@ -3550,7 +3550,9 @@
                                         "id": "39c1fb58-3a28-4acf-bfc4-9635a314137b",
                                         "command": "EVENT_TEXT",
                                         "args": {
-                                            "text": "Am I dead, alive\nor at the same\ntime?"
+                                            "text": [
+                                                "Am I dead or\nalive?"
+                                            ]
                                         }
                                     },
                                     {
@@ -5432,7 +5434,7 @@
                     "id": "1ae044df-cae3-4105-bfc0-cde8ad81353d",
                     "x": 7,
                     "y": 27,
-                    "width": 2,
+                    "width": 4,
                     "height": 2,
                     "trigger": "walk",
                     "script": [
@@ -5467,58 +5469,58 @@
                 0,
                 0,
                 0,
+                248,
+                255,
+                255,
+                31,
+                8,
                 0,
                 0,
+                16,
+                8,
                 0,
                 0,
+                16,
+                8,
                 0,
                 0,
+                16,
+                8,
                 0,
                 0,
+                16,
+                8,
                 0,
                 0,
+                16,
+                8,
                 0,
                 0,
+                16,
+                8,
                 0,
                 0,
+                16,
+                8,
                 0,
                 0,
+                16,
+                8,
                 0,
                 0,
+                16,
+                8,
                 0,
                 0,
+                16,
+                8,
                 0,
                 0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
+                16,
+                248,
+                231,
+                255,
+                31,
                 0,
                 0,
                 0,
@@ -6001,7 +6003,7 @@
                                 "args": {
                                     "variable": "106",
                                     "__collapseElse": true,
-                                    "__collapse": true,
+                                    "__collapse": false,
                                     "__label": "Quest2 Check"
                                 },
                                 "children": {
@@ -6847,7 +6849,7 @@
                     "id": "facceff0-1d53-474e-b81a-dd55147b752a",
                     "command": "EVENT_LOOP",
                     "args": {
-                        "__collapse": true
+                        "__collapse": false
                     },
                     "children": {
                         "true": [
@@ -6898,9 +6900,10 @@
                                 "command": "EVENT_IF_INPUT",
                                 "args": {
                                     "input": [
-                                        "b"
+                                        "b",
+                                        "select"
                                     ],
-                                    "__collapse": true,
+                                    "__collapse": false,
                                     "__label": "Exit",
                                     "__collapseElse": true
                                 },
@@ -8170,18 +8173,18 @@
             "height": 18,
             "actors": [
                 {
-                    "id": "1b39933c-5000-46b1-9af0-0a8b3c761660",
                     "spriteSheetId": "2c66c422-96b1-4bcb-b342-71f514611f7f",
-                    "x": 9,
-                    "y": 8,
                     "movementType": "static",
                     "direction": "down",
                     "moveSpeed": "1",
                     "animSpeed": "3",
+                    "id": "83b17d53-cd26-4cae-b24e-c64bd2a82a25",
+                    "x": 9,
+                    "y": 8,
                     "name": "Schrodinger's Cat",
                     "script": [
                         {
-                            "id": "b33026f6-4f55-4987-b89b-28da758f5dd3",
+                            "id": "2228439e-a22f-4e18-9c25-3fdecbc44de6",
                             "command": "EVENT_GROUP",
                             "args": {
                                 "__collapse": false
@@ -8189,14 +8192,16 @@
                             "children": {
                                 "true": [
                                     {
-                                        "id": "f1dd1365-8f44-4080-80d6-d58b39504260",
+                                        "id": "9e67f056-3408-48c7-ad1a-13d6ebabfb49",
                                         "command": "EVENT_TEXT",
                                         "args": {
-                                            "text": "Am I dead, alive\nor at the same\ntime?"
+                                            "text": [
+                                                "Am I dead or\nalive?"
+                                            ]
                                         }
                                     },
                                     {
-                                        "id": "b3e707e4-563e-4aaa-9ac3-8d1a58057427",
+                                        "id": "dcf620c8-37f5-4a5d-9879-4c0daca00a82",
                                         "command": "EVENT_CHOICE",
                                         "args": {
                                             "variable": "14",
@@ -8205,7 +8210,7 @@
                                         }
                                     },
                                     {
-                                        "id": "80096ce8-b1c7-49d8-b96e-611c1a2b5511",
+                                        "id": "5b7b5cbd-c407-4060-a118-8dc39cb4c271",
                                         "command": "EVENT_SET_TRUE",
                                         "args": {
                                             "variable": "107",
@@ -8213,13 +8218,13 @@
                                         }
                                     },
                                     {
-                                        "id": "8a3030c4-2ea6-4635-987b-2a720a593b94",
+                                        "id": "bc16d33e-f18d-4430-bbe5-092033d62067",
                                         "command": "EVENT_GROUP",
                                         "args": {},
                                         "children": {
                                             "true": [
                                                 {
-                                                    "id": "357f2371-cd77-4c8d-adb6-78c28b872ea7",
+                                                    "id": "65f05572-888b-42a6-a000-7d349c68fbc3",
                                                     "command": "EVENT_VARIABLE_MATH",
                                                     "args": {
                                                         "vectorX": "23",
@@ -8228,11 +8233,12 @@
                                                         "vectorY": "110",
                                                         "value": "1",
                                                         "minValue": "0",
-                                                        "maxValue": 5
+                                                        "maxValue": 5,
+                                                        "__collapse": false
                                                     }
                                                 },
                                                 {
-                                                    "id": "8dc49417-4255-4fdf-81e4-47dce324d470",
+                                                    "id": "5bd41b95-b6bd-410a-bb25-fbe3a8c7c0e4",
                                                     "command": "EVENT_VARIABLE_MATH",
                                                     "args": {
                                                         "vectorX": "17",
@@ -8241,35 +8247,37 @@
                                                         "vectorY": "23",
                                                         "value": "1",
                                                         "minValue": "0",
-                                                        "maxValue": "255"
+                                                        "maxValue": "255",
+                                                        "__collapse": false
                                                     }
                                                 },
                                                 {
-                                                    "id": "a5337d95-568e-4e14-b4ae-abd7d2e36b2e",
+                                                    "id": "144ff71f-48ee-4925-83b2-5aa759b6de25",
                                                     "command": "EVENT_TEXT",
                                                     "args": {
                                                         "text": "You obtained $23$\ndata. You total\ndata is $17$."
                                                     }
                                                 },
                                                 {
-                                                    "id": "1e76fb44-5763-4938-b087-c1180f336f4d",
+                                                    "id": "f5462bd9-1d1d-4c52-8a3a-bf8b8455f541",
                                                     "command": "EVENT_END"
                                                 }
                                             ]
                                         }
                                     },
                                     {
-                                        "id": "9a1eda74-7a9b-4731-87cb-7d33c781db83",
+                                        "id": "b5ce95a9-86da-47c1-89d5-bfd33c74a56b",
                                         "command": "EVENT_END"
                                     }
                                 ]
                             }
                         },
                         {
-                            "id": "8d04c194-43a3-4c79-abbd-840805152fd8",
+                            "id": "83bd7a71-e6ca-4b64-a4c3-b05cdd7d1a4f",
                             "command": "EVENT_END"
                         }
-                    ]
+                    ],
+                    "__type": "actor"
                 }
             ],
             "triggers": [
@@ -8363,18 +8371,18 @@
             "height": 18,
             "actors": [
                 {
-                    "id": "9df0422a-5b82-45a2-913b-5dce07638a54",
                     "spriteSheetId": "2c66c422-96b1-4bcb-b342-71f514611f7f",
-                    "x": 9,
-                    "y": 8,
                     "movementType": "static",
                     "direction": "down",
                     "moveSpeed": "1",
                     "animSpeed": "3",
+                    "id": "07286593-5a8d-471c-a701-23c1ca280bb8",
+                    "x": 9,
+                    "y": 8,
                     "name": "Schrodinger's Cat",
                     "script": [
                         {
-                            "id": "d32e7512-8eac-4329-b994-7d07a4829d42",
+                            "id": "cb22e759-8165-4509-870c-c741baf10db0",
                             "command": "EVENT_GROUP",
                             "args": {
                                 "__collapse": false
@@ -8382,14 +8390,16 @@
                             "children": {
                                 "true": [
                                     {
-                                        "id": "22780cfc-1971-476b-a402-ded36a3d3f55",
+                                        "id": "3cad9bee-1c25-4a6b-aa76-3ae478f20d5b",
                                         "command": "EVENT_TEXT",
                                         "args": {
-                                            "text": "Am I dead, alive\nor at the same\ntime?"
+                                            "text": [
+                                                "Am I dead or\nalive?"
+                                            ]
                                         }
                                     },
                                     {
-                                        "id": "6c6ac6b5-a13b-45d1-9d65-a231337f8391",
+                                        "id": "819a0a1c-c935-415a-82f4-1a1bdaf4e744",
                                         "command": "EVENT_CHOICE",
                                         "args": {
                                             "variable": "14",
@@ -8398,7 +8408,7 @@
                                         }
                                     },
                                     {
-                                        "id": "b9613a59-3efc-4af8-8976-d56ef7555695",
+                                        "id": "d7bb3d45-0b95-416a-91b3-003b1d6c0c0b",
                                         "command": "EVENT_SET_TRUE",
                                         "args": {
                                             "variable": "107",
@@ -8406,13 +8416,13 @@
                                         }
                                     },
                                     {
-                                        "id": "201cca00-e714-408a-89b3-52d74c5f68c3",
+                                        "id": "47cef405-e2bd-4b3f-8207-a57de834d306",
                                         "command": "EVENT_GROUP",
                                         "args": {},
                                         "children": {
                                             "true": [
                                                 {
-                                                    "id": "36a8c4cc-4ee3-4bd5-bd03-0ab51e5ddfe7",
+                                                    "id": "ddb5c6db-228f-493c-a4be-761b9486e8e5",
                                                     "command": "EVENT_VARIABLE_MATH",
                                                     "args": {
                                                         "vectorX": "23",
@@ -8421,11 +8431,12 @@
                                                         "vectorY": "110",
                                                         "value": "1",
                                                         "minValue": "0",
-                                                        "maxValue": 5
+                                                        "maxValue": 5,
+                                                        "__collapse": false
                                                     }
                                                 },
                                                 {
-                                                    "id": "864eedea-b1e4-42b9-b972-50b192f33e38",
+                                                    "id": "acd12a16-01bc-48d8-951c-071c9d8981b5",
                                                     "command": "EVENT_VARIABLE_MATH",
                                                     "args": {
                                                         "vectorX": "17",
@@ -8434,35 +8445,37 @@
                                                         "vectorY": "23",
                                                         "value": "1",
                                                         "minValue": "0",
-                                                        "maxValue": "255"
+                                                        "maxValue": "255",
+                                                        "__collapse": false
                                                     }
                                                 },
                                                 {
-                                                    "id": "e6f225ea-22a3-4b02-96b2-1ee2e3225694",
+                                                    "id": "2770ba3e-6474-4461-8f51-757eab1d3485",
                                                     "command": "EVENT_TEXT",
                                                     "args": {
                                                         "text": "You obtained $23$\ndata. You total\ndata is $17$."
                                                     }
                                                 },
                                                 {
-                                                    "id": "2cd2fc38-d9de-4e37-ba33-044603c840b0",
+                                                    "id": "349e4f3f-ab87-40d8-adee-631c014c6375",
                                                     "command": "EVENT_END"
                                                 }
                                             ]
                                         }
                                     },
                                     {
-                                        "id": "8ef55005-cf09-4b33-be16-c83498d92fb6",
+                                        "id": "22dc691c-f3d5-47f7-a2ef-a117eedebf2d",
                                         "command": "EVENT_END"
                                     }
                                 ]
                             }
                         },
                         {
-                            "id": "b0002a20-e9b5-41ed-8108-5d15b12d93f2",
+                            "id": "1e2db591-e69c-4b33-adec-d2da20cf05e8",
                             "command": "EVENT_END"
                         }
-                    ]
+                    ],
+                    "__type": "actor"
                 }
             ],
             "triggers": [
@@ -8622,8 +8635,8 @@
                     "moveSpeed": "1",
                     "animSpeed": "3",
                     "id": "f991446c-cb04-4a4e-be04-e67c4dc05193",
-                    "x": 14,
-                    "y": 8,
+                    "x": 16,
+                    "y": 9,
                     "name": "Rock 1",
                     "__type": "actor"
                 },
@@ -8647,8 +8660,8 @@
                     "moveSpeed": "1",
                     "animSpeed": "3",
                     "id": "04a5af17-0f32-4028-91ba-4ab36a16c956",
-                    "x": 14,
-                    "y": 11,
+                    "x": 18,
+                    "y": 9,
                     "name": "Rock 2",
                     "__type": "actor"
                 },
@@ -10952,7 +10965,7 @@
             "imageWidth": 256,
             "imageHeight": 256,
             "filename": "Conference.png",
-            "_v": 1566759834535
+            "_v": 1566790785192
         },
         {
             "id": "39e88ce9-85c7-4622-b3d6-c3b0eda06b43",
@@ -11222,7 +11235,7 @@
             "imageWidth": 160,
             "imageHeight": 144,
             "filename": "Quest List.png",
-            "_v": 1566785789132
+            "_v": 1566790189999
         },
         {
             "id": "cd792582-63df-45e3-8dce-cc976a03fc22",
@@ -11242,7 +11255,7 @@
             "imageWidth": 160,
             "imageHeight": 144,
             "filename": "Stats.png",
-            "_v": 1566784561666
+            "_v": 1566790539993
         },
         {
             "id": "2ac5b2e8-8ab7-4d01-a7d5-6fa27c2e2cc3",
@@ -11322,7 +11335,7 @@
             "imageWidth": 320,
             "imageHeight": 208,
             "filename": "rick_adventure_tileset.png",
-            "_v": 1566784542022
+            "_v": 1566790521520
         },
         {
             "id": "8fb0164a-99a7-453a-9a5f-d3d29b76e6e5",
@@ -11567,10 +11580,10 @@
         {
             "id": "3e0f7562-9292-4dc8-8ce1-9a44cad60779",
             "name": "checkbox",
-            "numFrames": 2,
-            "type": "animated",
+            "numFrames": 3,
+            "type": "actor",
             "filename": "checkbox.png",
-            "_v": 1566783777704
+            "_v": 1566791055245
         },
         {
             "id": "efbfe752-75b0-4d79-9ddb-b9c5ec8f3469",
