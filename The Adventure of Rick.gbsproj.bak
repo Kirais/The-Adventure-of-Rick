@@ -2,7 +2,7 @@
     "settings": {
         "showCollisions": true,
         "showConnections": true,
-        "worldScrollX": 0,
+        "worldScrollX": 925,
         "worldScrollY": 0,
         "zoom": 100,
         "customColorsWhite": "E0F8D0",
@@ -4308,7 +4308,7 @@
                 },
                 {
                     "id": "27a66357-38be-4b12-be00-cca6886db2bc",
-                    "spriteSheetId": "15c12b89-8a44-41ca-8a92-c9674bf05433",
+                    "spriteSheetId": "cf35a825-c173-4154-93ba-bbb085b33bf9",
                     "x": 17,
                     "y": 5,
                     "movementType": "faceInteraction",
@@ -7019,7 +7019,7 @@
             "actors": [
                 {
                     "id": "2381aae2-0547-421d-8729-8edd8b9fca0c",
-                    "spriteSheetId": "e027c92c-abed-42b7-8999-010d28093d3d",
+                    "spriteSheetId": "04e2115d-378e-4822-a3e0-ffbfe39e387c",
                     "x": 9,
                     "y": 4,
                     "movementType": "static",
@@ -7971,7 +7971,7 @@
                     "moveSpeed": "1",
                     "animSpeed": "3",
                     "id": "ba16419a-54d1-40d6-8658-0d92919a1f90",
-                    "x": 17,
+                    "x": 18,
                     "y": 9,
                     "name": "Rock"
                 }
@@ -11274,7 +11274,7 @@
             "imageWidth": 160,
             "imageHeight": 144,
             "filename": "Quest List.png",
-            "_v": 1566759834536
+            "_v": 1566785789132
         },
         {
             "id": "4b8a5aee-b9ba-4426-a36c-c7294310e8bc",
@@ -11284,7 +11284,7 @@
             "imageWidth": 320,
             "imageHeight": 208,
             "filename": "rick_adventure_tileset.png",
-            "_v": 1566782714177
+            "_v": 1566784542022
         },
         {
             "id": "82af7dc3-13e9-40b8-80a7-6ebe507cde3e",
@@ -11294,7 +11294,7 @@
             "imageWidth": 160,
             "imageHeight": 144,
             "filename": "Stats.png",
-            "_v": 1566759834537
+            "_v": 1566784561666
         },
         {
             "id": "36f94c05-f243-4cf4-8dc6-5153824c88c4",
@@ -11324,7 +11324,7 @@
             "imageWidth": 256,
             "imageHeight": 256,
             "filename": "University.png",
-            "_v": 1566759834536
+            "_v": 1566784728127
         },
         {
             "id": "2ac5b2e8-8ab7-4d01-a7d5-6fa27c2e2cc3",
@@ -11364,7 +11364,7 @@
             "numFrames": 1,
             "type": "static",
             "filename": "APL.png",
-            "_v": 1566783825549
+            "_v": 1566786136065
         },
         {
             "id": "40ec8006-dd57-45af-a857-fb2eabfc8bd0",
@@ -11479,6 +11479,14 @@
             "_v": 1566759834539
         },
         {
+            "id": "7bf7dfb2-efe7-4b6c-869a-c5ea5036bb66",
+            "name": "Others/seed",
+            "numFrames": 1,
+            "type": "static",
+            "filename": "Others/seed.png",
+            "_v": 1566786450741
+        },
+        {
             "id": "c129c149-db7f-4dc1-a1fb-1ac84dcaf173",
             "name": "Others/torch",
             "numFrames": 1,
@@ -11527,6 +11535,22 @@
             "_v": 1566759834540
         },
         {
+            "id": "cf35a825-c173-4154-93ba-bbb085b33bf9",
+            "name": "Supervisor2",
+            "numFrames": 6,
+            "type": "actor_animated",
+            "filename": "Supervisor2.png",
+            "_v": 1566787009379
+        },
+        {
+            "id": "fe150d32-3ea9-4693-bc09-99f44d85bd71",
+            "name": "Supervisor3",
+            "numFrames": 6,
+            "type": "actor_animated",
+            "filename": "Supervisor3.png",
+            "_v": 1566786506579
+        },
+        {
             "id": "aff753be-6ace-4f50-b50b-fa29642604f8",
             "name": "bed",
             "numFrames": 1,
@@ -11567,14 +11591,6 @@
             "_v": 1566759834537
         },
         {
-            "id": "3b5ddfc5-553f-495c-b00a-2c76e5a5f54c",
-            "name": "dog",
-            "numFrames": 1,
-            "type": "static",
-            "filename": "dog.png",
-            "_v": 1566759834537
-        },
-        {
             "id": "e89acb0a-0af7-4c58-b832-572a5ace26a8",
             "name": "h-gate",
             "numFrames": 1,
@@ -11583,20 +11599,28 @@
             "_v": 1566759834538
         },
         {
+            "id": "39f9d319-4732-478f-a8b3-1aa06561e5d8",
+            "name": "lecturer",
+            "numFrames": 1,
+            "type": "static",
+            "filename": "lecturer.png",
+            "_v": 1566786086419
+        },
+        {
+            "id": "04e2115d-378e-4822-a3e0-ffbfe39e387c",
+            "name": "mic",
+            "numFrames": 1,
+            "type": "static",
+            "filename": "mic.png",
+            "_v": 1566786428992
+        },
+        {
             "id": "6a53f3ed-ddb9-4550-af0f-4f35e0fd98df",
             "name": "nature",
             "numFrames": 1,
             "type": "static",
             "filename": "nature.png",
             "_v": 1566783822070
-        },
-        {
-            "id": "f10d093f-e05d-4471-89b8-adad412b6899",
-            "name": "npc003",
-            "numFrames": 6,
-            "type": "actor_animated",
-            "filename": "npc003.png",
-            "_v": 1566759834538
         },
         {
             "id": "d264b9f3-49b9-4b18-9a55-1890953ec2bf",
@@ -11636,23 +11660,15 @@
             "numFrames": 1,
             "type": "static",
             "filename": "rock.png",
-            "_v": 1566759834540
+            "_v": 1566785522875
         },
         {
             "id": "1d4745ce-72ea-4a66-ac76-0c3ead2e7991",
             "name": "savepoint",
-            "numFrames": 2,
-            "type": "animated",
-            "filename": "savepoint.png",
-            "_v": 1566759834540
-        },
-        {
-            "id": "341e4100-8b9b-4eaa-ad39-803169238658",
-            "name": "seed",
             "numFrames": 1,
             "type": "static",
-            "filename": "seed.png",
-            "_v": 1566759834540
+            "filename": "savepoint.png",
+            "_v": 1566785468007
         },
         {
             "id": "e1354ca4-b68d-4ff0-970f-cf391b988047",
@@ -11663,28 +11679,12 @@
             "_v": 1566783862526
         },
         {
-            "id": "73bae49a-718e-4dcd-b8c1-98aa5b095920",
-            "name": "soil",
-            "numFrames": 1,
-            "type": "static",
-            "filename": "soil.png",
-            "_v": 1566759834540
-        },
-        {
             "id": "a871296e-4f7f-4b60-a19d-42c22ead882f",
             "name": "statevector",
             "numFrames": 2,
             "type": "animated",
             "filename": "statevector.png",
             "_v": 1566759834540
-        },
-        {
-            "id": "e027c92c-abed-42b7-8999-010d28093d3d",
-            "name": "sword",
-            "numFrames": 4,
-            "type": "animated",
-            "filename": "sword.png",
-            "_v": 1566759834541
         },
         {
             "id": "49226aab-1621-4c2d-a425-ad3543082a94",
