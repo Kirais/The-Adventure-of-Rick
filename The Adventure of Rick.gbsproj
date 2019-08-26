@@ -2,8 +2,8 @@
     "settings": {
         "showCollisions": true,
         "showConnections": true,
-        "worldScrollX": 0,
-        "worldScrollY": 0,
+        "worldScrollX": 927,
+        "worldScrollY": 330,
         "zoom": 100,
         "customColorsWhite": "E0F8D0",
         "customColorsLight": "88C070",
@@ -8610,7 +8610,7 @@
                     "moveSpeed": "1",
                     "animSpeed": "3",
                     "id": "f991446c-cb04-4a4e-be04-e67c4dc05193",
-                    "x": 16,
+                    "x": 15,
                     "y": 9,
                     "name": "Rock 1",
                     "__type": "actor"
@@ -8635,7 +8635,7 @@
                     "moveSpeed": "1",
                     "animSpeed": "3",
                     "id": "04a5af17-0f32-4028-91ba-4ab36a16c956",
-                    "x": 18,
+                    "x": 17,
                     "y": 9,
                     "name": "Rock 2",
                     "__type": "actor"
@@ -10106,22 +10106,46 @@
                             "command": "EVENT_TEXT",
                             "args": {
                                 "text": [
-                                    "You confidence\nincreased 50!"
+                                    "You collected 25\ndata!"
                                 ]
                             }
                         },
                         {
+                            "id": "e3c56e71-d4ec-497e-8598-152ae3501444",
+                            "command": "EVENT_TEXT",
+                            "args": {
+                                "text": [
+                                    "You confidence\nincreased 20!"
+                                ]
+                            },
+                            "__type": "event"
+                        },
+                        {
                             "id": "3a5c27ff-02f8-48b9-adc8-5c03e235c176",
+                            "command": "EVENT_VARIABLE_MATH",
+                            "args": {
+                                "vectorX": "17",
+                                "operation": "add",
+                                "other": "val",
+                                "vectorY": "73",
+                                "value": 25,
+                                "minValue": "0",
+                                "maxValue": "255"
+                            }
+                        },
+                        {
+                            "id": "6ebe47b7-607d-4272-b270-b2d8193108cc",
                             "command": "EVENT_VARIABLE_MATH",
                             "args": {
                                 "vectorX": "3",
                                 "operation": "add",
                                 "other": "val",
                                 "vectorY": "73",
-                                "value": 50,
+                                "value": 20,
                                 "minValue": "0",
                                 "maxValue": "255"
-                            }
+                            },
+                            "__type": "event"
                         },
                         {
                             "id": "9781db7e-a105-4eae-9b30-5026a7c6dd88",
