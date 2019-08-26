@@ -2,9 +2,9 @@
     "settings": {
         "showCollisions": true,
         "showConnections": true,
-        "worldScrollX": 0,
-        "worldScrollY": 0,
-        "zoom": 100,
+        "worldScrollX": 2706,
+        "worldScrollY": 1497,
+        "zoom": 200,
         "customColorsWhite": "E0F8D0",
         "customColorsLight": "88C070",
         "customColorsDark": "306850",
@@ -7971,7 +7971,7 @@
                     "moveSpeed": "1",
                     "animSpeed": "3",
                     "id": "ba16419a-54d1-40d6-8658-0d92919a1f90",
-                    "x": 17,
+                    "x": 18,
                     "y": 9,
                     "name": "Rock"
                 }
@@ -11284,7 +11284,7 @@
             "imageWidth": 320,
             "imageHeight": 208,
             "filename": "rick_adventure_tileset.png",
-            "_v": 1566782714177
+            "_v": 1566784542022
         },
         {
             "id": "82af7dc3-13e9-40b8-80a7-6ebe507cde3e",
@@ -11294,7 +11294,7 @@
             "imageWidth": 160,
             "imageHeight": 144,
             "filename": "Stats.png",
-            "_v": 1566759834537
+            "_v": 1566784561666
         },
         {
             "id": "36f94c05-f243-4cf4-8dc6-5153824c88c4",
@@ -11324,7 +11324,7 @@
             "imageWidth": 256,
             "imageHeight": 256,
             "filename": "University.png",
-            "_v": 1566759834536
+            "_v": 1566784728127
         },
         {
             "id": "2ac5b2e8-8ab7-4d01-a7d5-6fa27c2e2cc3",
@@ -11567,14 +11567,6 @@
             "_v": 1566759834537
         },
         {
-            "id": "3b5ddfc5-553f-495c-b00a-2c76e5a5f54c",
-            "name": "dog",
-            "numFrames": 1,
-            "type": "static",
-            "filename": "dog.png",
-            "_v": 1566759834537
-        },
-        {
             "id": "e89acb0a-0af7-4c58-b832-572a5ace26a8",
             "name": "h-gate",
             "numFrames": 1,
@@ -11636,15 +11628,15 @@
             "numFrames": 1,
             "type": "static",
             "filename": "rock.png",
-            "_v": 1566759834540
+            "_v": 1566785522875
         },
         {
             "id": "1d4745ce-72ea-4a66-ac76-0c3ead2e7991",
             "name": "savepoint",
-            "numFrames": 2,
-            "type": "animated",
+            "numFrames": 1,
+            "type": "static",
             "filename": "savepoint.png",
-            "_v": 1566759834540
+            "_v": 1566785468007
         },
         {
             "id": "341e4100-8b9b-4eaa-ad39-803169238658",
@@ -11661,14 +11653,6 @@
             "type": "static",
             "filename": "signpost.png",
             "_v": 1566783862526
-        },
-        {
-            "id": "73bae49a-718e-4dcd-b8c1-98aa5b095920",
-            "name": "soil",
-            "numFrames": 1,
-            "type": "static",
-            "filename": "soil.png",
-            "_v": 1566759834540
         },
         {
             "id": "a871296e-4f7f-4b60-a19d-42c22ead882f",

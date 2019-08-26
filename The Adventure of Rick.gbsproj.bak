@@ -2,9 +2,9 @@
     "settings": {
         "showCollisions": true,
         "showConnections": true,
-        "worldScrollX": 316,
-        "worldScrollY": 1474,
-        "zoom": 200,
+        "worldScrollX": 0,
+        "worldScrollY": 0,
+        "zoom": 100,
         "customColorsWhite": "E0F8D0",
         "customColorsLight": "88C070",
         "customColorsDark": "306850",
@@ -6943,7 +6943,7 @@
                                             "command": "EVENT_SWITCH_SCENE",
                                             "args": {
                                                 "sceneId": "5bc18ec6-6023-40c7-916d-adc11f508d35",
-                                                "x": 0,
+                                                "x": 2,
                                                 "y": 7,
                                                 "direction": "",
                                                 "fadeSpeed": "2"
@@ -11361,10 +11361,10 @@
         {
             "id": "54387a78-efbf-413e-89a6-f0fdf423ac07",
             "name": "APL",
-            "numFrames": 2,
-            "type": "animated",
+            "numFrames": 1,
+            "type": "static",
             "filename": "APL.png",
-            "_v": 1566759834537
+            "_v": 1566783825549
         },
         {
             "id": "40ec8006-dd57-45af-a857-fb2eabfc8bd0",
@@ -11375,60 +11375,12 @@
             "_v": 1566759834537
         },
         {
-            "id": "aff753be-6ace-4f50-b50b-fa29642604f8",
-            "name": "bed",
-            "numFrames": 1,
-            "type": "static",
-            "filename": "bed.png",
-            "_v": 1566759834537
-        },
-        {
-            "id": "2c66c422-96b1-4bcb-b342-71f514611f7f",
-            "name": "cat",
-            "numFrames": 1,
-            "type": "static",
-            "filename": "cat.png",
-            "_v": 1566759834537
-        },
-        {
-            "id": "3e0f7562-9292-4dc8-8ce1-9a44cad60779",
-            "name": "checkbox",
-            "numFrames": 3,
-            "type": "actor",
-            "filename": "checkbox.png",
-            "_v": 1566759834537
-        },
-        {
-            "id": "3929e479-a76d-4e88-baae-614db01585a8",
-            "name": "digit",
-            "numFrames": 10,
-            "type": "animated",
-            "filename": "digit.png",
-            "_v": 1566759834537
-        },
-        {
-            "id": "3b5ddfc5-553f-495c-b00a-2c76e5a5f54c",
-            "name": "dog",
-            "numFrames": 1,
-            "type": "static",
-            "filename": "dog.png",
-            "_v": 1566759834537
-        },
-        {
-            "id": "e89acb0a-0af7-4c58-b832-572a5ace26a8",
-            "name": "h-gate",
-            "numFrames": 1,
-            "type": "static",
-            "filename": "h-gate.png",
-            "_v": 1566759834538
-        },
-        {
             "id": "faa40495-00c2-4408-b859-b2deb3b31d20",
             "name": "Heart",
             "numFrames": 1,
             "type": "static",
             "filename": "Heart.png",
-            "_v": 1566759834538
+            "_v": 1566783834901
         },
         {
             "id": "176bf1d4-8856-41e1-a4c6-a21fb855398f",
@@ -11439,12 +11391,28 @@
             "_v": 1566759834537
         },
         {
-            "id": "f10d093f-e05d-4471-89b8-adad412b6899",
-            "name": "npc003",
-            "numFrames": 6,
-            "type": "actor_animated",
-            "filename": "npc003.png",
-            "_v": 1566759834538
+            "id": "3e96d6bd-9bd3-4fb7-a6f5-d4048256dbc1",
+            "name": "Others/Goblin",
+            "numFrames": 1,
+            "type": "static",
+            "filename": "Others/Goblin.png",
+            "_v": 1566759834539
+        },
+        {
+            "id": "8f031b0c-ee94-4c13-994b-ee317ddc0377",
+            "name": "Others/Items",
+            "numFrames": 4,
+            "type": "animated",
+            "filename": "Others/Items.png",
+            "_v": 1566759834539
+        },
+        {
+            "id": "84a44a37-08b6-46ca-bfe0-2d3efa41220f",
+            "name": "Others/Squirrel",
+            "numFrames": 3,
+            "type": "actor",
+            "filename": "Others/Squirrel.png",
+            "_v": 1566759834539
         },
         {
             "id": "34d31c31-717b-4bb2-81f1-004a9f19d327",
@@ -11471,27 +11439,11 @@
             "_v": 1566759834538
         },
         {
-            "id": "3e96d6bd-9bd3-4fb7-a6f5-d4048256dbc1",
-            "name": "Others/Goblin",
-            "numFrames": 1,
-            "type": "static",
-            "filename": "Others/Goblin.png",
-            "_v": 1566759834539
-        },
-        {
             "id": "b836821b-3597-49a8-987f-28ea7b3fdc26",
             "name": "Others/ice",
             "numFrames": 1,
             "type": "static",
             "filename": "Others/ice.png",
-            "_v": 1566759834539
-        },
-        {
-            "id": "8f031b0c-ee94-4c13-994b-ee317ddc0377",
-            "name": "Others/Items",
-            "numFrames": 4,
-            "type": "animated",
-            "filename": "Others/Items.png",
             "_v": 1566759834539
         },
         {
@@ -11527,14 +11479,6 @@
             "_v": 1566759834539
         },
         {
-            "id": "84a44a37-08b6-46ca-bfe0-2d3efa41220f",
-            "name": "Others/Squirrel",
-            "numFrames": 3,
-            "type": "actor",
-            "filename": "Others/Squirrel.png",
-            "_v": 1566759834539
-        },
-        {
             "id": "c129c149-db7f-4dc1-a1fb-1ac84dcaf173",
             "name": "Others/torch",
             "numFrames": 1,
@@ -11543,19 +11487,123 @@
             "_v": 1566759834539
         },
         {
-            "id": "d264b9f3-49b9-4b18-9a55-1890953ec2bf",
-            "name": "papers",
-            "numFrames": 2,
-            "type": "animated",
-            "filename": "papers.png",
-            "_v": 1566759834539
-        },
-        {
             "id": "49f18b02-8273-4803-8b78-719db50ab553",
             "name": "PC",
             "numFrames": 1,
             "type": "static",
             "filename": "PC.png",
+            "_v": 1566783814966
+        },
+        {
+            "id": "f7306258-4eec-4c06-a9ec-f95441173969",
+            "name": "Rick-blackhair",
+            "numFrames": 6,
+            "type": "actor_animated",
+            "filename": "Rick-blackhair.png",
+            "_v": 1566759834539
+        },
+        {
+            "id": "31090c22-2e38-46c0-8594-0217c55adc64",
+            "name": "Rick-head",
+            "numFrames": 2,
+            "type": "animated",
+            "filename": "Rick-head.png",
+            "_v": 1566759834539
+        },
+        {
+            "id": "3145337b-57af-48e8-aff5-8fd10d6c25b0",
+            "name": "Rick",
+            "numFrames": 6,
+            "type": "actor_animated",
+            "filename": "Rick.png",
+            "_v": 1566759834539
+        },
+        {
+            "id": "15c12b89-8a44-41ca-8a92-c9674bf05433",
+            "name": "Supervisor1",
+            "numFrames": 6,
+            "type": "actor_animated",
+            "filename": "Supervisor1.png",
+            "_v": 1566759834540
+        },
+        {
+            "id": "aff753be-6ace-4f50-b50b-fa29642604f8",
+            "name": "bed",
+            "numFrames": 1,
+            "type": "static",
+            "filename": "bed.png",
+            "_v": 1566783849473
+        },
+        {
+            "id": "2c66c422-96b1-4bcb-b342-71f514611f7f",
+            "name": "cat",
+            "numFrames": 2,
+            "type": "animated",
+            "filename": "cat.png",
+            "_v": 1566783797105
+        },
+        {
+            "id": "3e0f7562-9292-4dc8-8ce1-9a44cad60779",
+            "name": "checkbox",
+            "numFrames": 2,
+            "type": "animated",
+            "filename": "checkbox.png",
+            "_v": 1566783777704
+        },
+        {
+            "id": "efbfe752-75b0-4d79-9ddb-b9c5ec8f3469",
+            "name": "data",
+            "numFrames": 1,
+            "type": "static",
+            "filename": "data.png",
+            "_v": 1566783831295
+        },
+        {
+            "id": "3929e479-a76d-4e88-baae-614db01585a8",
+            "name": "digit",
+            "numFrames": 10,
+            "type": "animated",
+            "filename": "digit.png",
+            "_v": 1566759834537
+        },
+        {
+            "id": "3b5ddfc5-553f-495c-b00a-2c76e5a5f54c",
+            "name": "dog",
+            "numFrames": 1,
+            "type": "static",
+            "filename": "dog.png",
+            "_v": 1566759834537
+        },
+        {
+            "id": "e89acb0a-0af7-4c58-b832-572a5ace26a8",
+            "name": "h-gate",
+            "numFrames": 1,
+            "type": "static",
+            "filename": "h-gate.png",
+            "_v": 1566759834538
+        },
+        {
+            "id": "6a53f3ed-ddb9-4550-af0f-4f35e0fd98df",
+            "name": "nature",
+            "numFrames": 1,
+            "type": "static",
+            "filename": "nature.png",
+            "_v": 1566783822070
+        },
+        {
+            "id": "f10d093f-e05d-4471-89b8-adad412b6899",
+            "name": "npc003",
+            "numFrames": 6,
+            "type": "actor_animated",
+            "filename": "npc003.png",
+            "_v": 1566759834538
+        },
+        {
+            "id": "d264b9f3-49b9-4b18-9a55-1890953ec2bf",
+            "name": "papers",
+            "numFrames": 2,
+            "type": "animated",
+            "filename": "papers.png",
             "_v": 1566759834539
         },
         {
@@ -11580,31 +11628,7 @@
             "numFrames": 1,
             "type": "static",
             "filename": "radio.png",
-            "_v": 1566759834539
-        },
-        {
-            "id": "3145337b-57af-48e8-aff5-8fd10d6c25b0",
-            "name": "Rick",
-            "numFrames": 6,
-            "type": "actor_animated",
-            "filename": "Rick.png",
-            "_v": 1566759834539
-        },
-        {
-            "id": "f7306258-4eec-4c06-a9ec-f95441173969",
-            "name": "Rick-blackhair",
-            "numFrames": 6,
-            "type": "actor_animated",
-            "filename": "Rick-blackhair.png",
-            "_v": 1566759834539
-        },
-        {
-            "id": "31090c22-2e38-46c0-8594-0217c55adc64",
-            "name": "Rick-head",
-            "numFrames": 2,
-            "type": "animated",
-            "filename": "Rick-head.png",
-            "_v": 1566759834539
+            "_v": 1566783804655
         },
         {
             "id": "ad18f586-eef6-4217-adbf-b7fe7b0f68ef",
@@ -11636,7 +11660,7 @@
             "numFrames": 1,
             "type": "static",
             "filename": "signpost.png",
-            "_v": 1566759834540
+            "_v": 1566783862526
         },
         {
             "id": "73bae49a-718e-4dcd-b8c1-98aa5b095920",
@@ -11652,14 +11676,6 @@
             "numFrames": 2,
             "type": "animated",
             "filename": "statevector.png",
-            "_v": 1566759834540
-        },
-        {
-            "id": "15c12b89-8a44-41ca-8a92-c9674bf05433",
-            "name": "Supervisor1",
-            "numFrames": 6,
-            "type": "actor_animated",
-            "filename": "Supervisor1.png",
             "_v": 1566759834540
         },
         {
